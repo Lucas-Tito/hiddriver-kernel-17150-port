@@ -1,0 +1,159 @@
+diff --git a/hiddriver/main.cpp b/hiddriver/main.cpp
+index 769b019..f0e31ed 100644
+--- a/hiddriver/main.cpp
++++ b/hiddriver/main.cpp
+@@ -41,6 +41,67 @@ HANDLE MakeThread(LPTHREAD_START_ROUTINE Address, PVOID arg) {
+ 
+ void XNotifyUI(XNOTIFYQUEUEUI_TYPE Type, PWCHAR String) { XNotifyQueueUI(Type, XUSER_INDEX_ANY, XNOTIFYUI_PRIORITY_DEFAULT, String, 0); }
+ 
++// Diagnostic log for retail consoles, where DbgPrint goes nowhere. The USB callbacks
++// can't touch files or XNotify, so they only format into a ring buffer; the mapping
++// manager thread flushes it to HDD:\hiddriver_log.txt.
++#define DIAG_LOG_PATH "HDD:\\hiddriver_log.txt"
++#define DIAG_SLOTS 256
++#define DIAG_LINE 192
++struct DiagSlot {
++	volatile LONG seq;
++	char text[DIAG_LINE];
++};
++DiagSlot g_diagSlots[DIAG_SLOTS];
++volatile LONG g_diagWrite = 0;
++LONG g_diagRead = 0;
++
++// Last device seen by HidAddDeviceHook, announced on screen by the manager thread
++struct DiagDevice {
++	volatile LONG seq;
++	uint16_t vendorId, productId;
++	uint8_t cls, subCls, proto;
++};
++DiagDevice g_diagDevice;
++
++ULONG DiagLog(const char* fmt, ...) {
++	LONG idx = InterlockedIncrement(&g_diagWrite) - 1;
++	DiagSlot* slot = &g_diagSlots[idx % DIAG_SLOTS];
++	va_list args;
++	va_start(args, fmt);
++	_vsnprintf(slot->text, DIAG_LINE - 1, fmt, args);
++	va_end(args);
++	slot->text[DIAG_LINE - 1] = 0;
++	__lwsync();
++	slot->seq = idx + 1;
++	return 0;
++}
++
++void DiagFlush() {
++	FILE* f = nullptr;
++	while (true) {
++		DiagSlot* slot = &g_diagSlots[g_diagRead % DIAG_SLOTS];
++		LONG seq = slot->seq;
++		if (seq <= g_diagRead)
++			break;
++		if (!f && !(f = fopen(DIAG_LOG_PATH, "a")))
++			return;
++		if (seq > g_diagRead + 1) {
++			// writer lapped the ring, skip ahead to the oldest line still there
++			fprintf(f, "[... %d lines lost ...]\n", (int)(seq - 1 - g_diagRead));
++			g_diagRead = seq - 1;
++		}
++		fputs(slot->text, f);
++		size_t len = strlen(slot->text);
++		if (!len || slot->text[len - 1] != '\n')
++			fputc('\n', f);
++		g_diagRead++;
++	}
++	if (f)
++		fclose(f);
++}
++
++#define DbgPrint DiagLog
++
+ struct UsbTrb {
+ 	DWORD endpoint;
+ 	DWORD callback;
+@@ -436,19 +497,21 @@ int32_t setConfigurationComplete(DWORD deviceHandle, int32_t status) {
+ 	else if (g_InitState == InitState::INIT_GET_REPORT_DESCRIPTOR) {
+ 		// Report descriptor request completed
+ 		DbgPrint("EINTIM: Report descriptor request completed successfully\n");
+-		g_InitState = InitState::INIT_DONE;
++
++		// Dump the raw report descriptor so it can be parsed offline
++		for (int off = 0; off < hidDescriptorBuffer.wDescriptorLength; off += 32) {
++			char hex[32 * 3 + 1];
++			int n = 0;
++			for (int j = off; j < off + 32 && j < hidDescriptorBuffer.wDescriptorLength; j++)
++				n += sprintf(hex + n, "%02X ", ((uint8_t*)reportDescriptorBuffer)[j]);
++			DbgPrint("EINTIM: RDESC %04X: %s\n", off, hex);
++		}
+ 
+ 		HID_ReportInfo_t* reportInfo = nullptr;
+ 		uint8_t parseResult = USB_ProcessHIDReport((const uint8_t*)reportDescriptorBuffer,
+ 			hidDescriptorBuffer.wDescriptorLength,
+ 			&reportInfo);
+ 
+-		c.reportInfo = reportInfo;
+-		c.reportId = FindGamepadReportId(reportInfo);
+-
+-		DbgPrint("EINTIM: Parsed descriptor. UsingReportIDs: %d, Report ID: %d\r\n",
+-			(int)reportInfo->UsingReportIDs, c.reportId);
+-
+ 		if (parseResult != HID_PARSE_Successful || !reportInfo) {
+ 			DbgPrint("EINTIM: Failed to parse HID descriptor: error %d\r\n", parseResult);
+ 			g_InitState = InitState::INIT_FAILED;
+@@ -691,7 +754,29 @@ void HidFillButtonsReport(
+ unsigned int __stdcall MappingThreadProc(void* param);
+ unsigned int __stdcall MappingManagerThreadProc(void* param){
+ 	// This thread monitors for controllers needing mapping and spawns mapping threads
++	LONG announcedDevice = 0;
++	InitState announcedState = g_InitState;
++	XNotifyUI(XNOTIFYUI_CUSTOM, L"hiddriver diag carregado");
+ 	while (true) {
++		DiagFlush();
++
++		if (g_diagDevice.seq != announcedDevice) {
++			announcedDevice = g_diagDevice.seq;
++			wchar_t msg[96];
++			_snwprintf(msg, 95, L"USB %04X:%04X classe %d/%d/%d", g_diagDevice.vendorId, g_diagDevice.productId,
++				g_diagDevice.cls, g_diagDevice.subCls, g_diagDevice.proto);
++			msg[95] = 0;
++			XNotifyUI(XNOTIFYUI_CUSTOM, msg);
++		}
++
++		if (g_InitState != announcedState) {
++			announcedState = g_InitState;
++			if (announcedState == INIT_FAILED)
++				XNotifyUI(XNOTIFYUI_CUSTOM, L"hiddriver: init do controle falhou (ver log)");
++			else if (announcedState == INIT_DONE)
++				XNotifyUI(XNOTIFYUI_CUSTOM, L"hiddriver: descritor HID lido");
++		}
++
+ 		for (int i = 0; i < 4; i++) {
+ 			// Check if controller exists, has reportInfo, but no mapping, and mapping not already in progress
+ 			if (connectedControllers[i].controllerDriver &&
+@@ -1222,6 +1307,18 @@ int HidAddDeviceHook(deviceHandle* deviceHandle) {
+ 	DbgPrint("EINTIM: IS USB1.0: %d\n", isOhci);
+ 	DbgPrint("EINTIM: USB device descriptor Pointer: %p\n", device_descriptor);
+ 	DbgPrint("EINTIM: HID device vendor id: %x, product id: %x\n", vendorId, productId);
++	DbgPrint("EINTIM: Interface %d class %d subclass %d protocol %d, %d endpoints\n",
++		interface_descriptor->bInterfaceNumber, interface_descriptor->bInterfaceClass,
++		interface_descriptor->bInterfaceSubClass, interface_descriptor->bInterfaceProtocol,
++		interface_descriptor->bNumEndpoints);
++
++	g_diagDevice.vendorId = vendorId;
++	g_diagDevice.productId = productId;
++	g_diagDevice.cls = interface_descriptor->bInterfaceClass;
++	g_diagDevice.subCls = interface_descriptor->bInterfaceSubClass;
++	g_diagDevice.proto = interface_descriptor->bInterfaceProtocol;
++	__lwsync();
++	InterlockedIncrement(&g_diagDevice.seq);
+ 
+ 	if (interface_descriptor->bInterfaceClass == 0x03 &&
+ 		interface_descriptor->bInterfaceSubClass == 0 &&
+@@ -1561,7 +1658,7 @@ BOOL APIENTRY DllMain(HANDLE Handle, DWORD Reason, PVOID Reserved) {
+ 			return FALSE;
+ 		}
+ 
+-		DbgPrint("EINTIM: HELLO from xbox 360 HID controller driver version 0.6 beta\n");
++		DbgPrint("EINTIM: HELLO from xbox 360 HID controller driver version 0.6 beta (diag build)\n");
+ 		if (!initFunctionPointers())
+ 			return FALSE;
+ 

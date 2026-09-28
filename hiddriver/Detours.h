@@ -9,6 +9,9 @@
 #include <xtl.h>
 #include <stdint.h>
 
+// Defined in Detours.cpp: writes back and invalidates the caches for code written at runtime
+void FlushCodeRange(const void* Address, SIZE_T Size);
+
 #define MASK_N_BITS(N) ( ( 1 << ( N ) ) - 1 )
 
 #define POWERPC_HI(X) ( ( X >> 16 ) & 0xFFFF )
@@ -297,6 +300,7 @@ public:
 		// Create trampoline and copy and fix instructions to the trampoline.
 		//
 		this->TrampolineAddress = &Detour::TrampolineBuffer[Detour::TrampolineSize];
+		const SIZE_T TrampolineStart = Detour::TrampolineSize;
 
 		for (SIZE_T i = 0; i < (HookSize / 4); i++)
 		{
@@ -315,7 +319,10 @@ public:
 		//
 		// Finally write the branch to the function that we are hooking.
 		//
+		FlushCodeRange(&Detour::TrampolineBuffer[TrampolineStart], Detour::TrampolineSize - TrampolineStart);
+
 		Detour::WriteFarBranch(this->HookSource, this->HookTarget, false, false);
+		FlushCodeRange(this->HookSource, HookSize);
 
 		return true;
 	}
@@ -325,6 +332,7 @@ public:
 		if (this->HookSource && this->OriginalLength)
 		{
 			memcpy(this->HookSource, this->OriginalInstructions, this->OriginalLength);
+			FlushCodeRange(this->HookSource, this->OriginalLength);
 
 			this->OriginalLength = 0;
 			this->HookSource = NULL;

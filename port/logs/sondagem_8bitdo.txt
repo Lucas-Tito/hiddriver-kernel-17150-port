@@ -1,0 +1,20 @@
+Plugue o controle agora (espero 60 s)...
+
+Novo dispositivo: 2DC8:3016 (bus 3 addr 10)
+  device class 00/00/00, bcdUSB 0110, maxpacket0 8
+  manufacturer: 8BitDo
+  product: IDLE
+  interface 0 alt 0: classe 03/00/00  [EP 84 max 64, EP 05 max 64]
+  string 0xEE langid 0000: STALL (ok para o Xbox) -> [Errno 32] Pipe error
+  string 0xEE langid 0409: STALL (ok para o Xbox) -> [Errno 32] Pipe error
+
+Agora troque de modo (se for o caso), aperte botoes e mexa os analogicos por 90 s;
+mostro qualquer reconexao e sondo cada dispositivo novo.
+  [16:03:20] SAIU   2DC8:3016 (bus 3 addr 10)
+  [16:03:21] ENTROU 2DC8:3016 (bus 3 addr 11)
+  device class 00/00/00, bcdUSB 0200, maxpacket0 8
+  manufacturer: 8BitDo
+  product: Ultimate C 2.4G Wireless Controller 
+  interface 0 alt 0: classe 03/00/00  [EP 84 max 64, EP 05 max 64]
+  string 0xEE langid 0000: STALL (ok para o Xbox) -> [Errno 32] Pipe error
+  string 0xEE langid 0409: STALL (ok para o Xbox) -> [Errno 32] Pipe error

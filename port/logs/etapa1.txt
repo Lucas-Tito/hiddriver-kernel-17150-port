@@ -1,0 +1,6 @@
+
+==== boot, log via hidlogh:\ ====
+EINTIM: HELLO from xbox 360 HID controller driver version 0.5 (port 17150), kernel 17150, stage 1, log root hidlogh:\
+EINTIM: notify patch: ordinal 1183 at 816A2450, +48 = 409A
+EINTIM: notify patch applied
+EINTIM: notify thread: showing "hiddriver: etapa 1 ativa (so log)"

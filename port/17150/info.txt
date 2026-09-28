@@ -1,0 +1,32 @@
+kerneldump for hiddriver port
+Kernel 2.0.17150.0
+Devkit flag (0x8010D334==0): 0
+
+xboxkrnl.exe: ImageBase=80040000 SizeOfFullImage=001C0000 SizeOfNtImage=001C0000 NtHeadersBase=80040000 EntryPoint=00000000 TimeDateStamp=5481EE40 CheckSum=00170371
+  ordinal  189 = 8007FF08
+  ordinal  740 = 800D78F0
+  ordinal  742 = 800D9440
+  ordinal  744 = 800D92F8
+  ordinal  746 = 800D9098
+  ordinal  747 = 800D90B8
+  ordinal  748 = 800D9190
+  ordinal  749 = 800D9110
+  ordinal  750 = 800D9150
+  ordinal  751 = 800D9000
+  ordinal  759 = 800D92D8
+xam.xex: ImageBase=815F0000 SizeOfFullImage=00610000 SizeOfNtImage=00610000 NtHeadersBase=815F0000 EntryPoint=81695F60 TimeDateStamp=5481EEAA CheckSum=004A90EC
+  ordinal  401 = 816F07A8
+  ordinal  402 = 816F0A00
+  ordinal  685 = 816F0578
+  ordinal 1183 = 816A2450
+
+Loaded modules:
+  815F0000 +00610000 xam.xex
+  91F00000 +00020000 launch.xex
+  91090000 +0004E000 nomni.xex
+  91680000 +0002D000 ximecore.xex
+  91240000 +0004F000 Xam.Community.xex
+  913E0000 +00048000 hud.xex
+  91A00000 +00084000 FreeStylePlugin.xex
+  82000000 +00060000 testeplugin.xex
+  80160708 +92000000 À
