@@ -11,7 +11,7 @@
     <network/>
     <allpackages/>
   </mediatypes>
-  <version major="2" minor="0" build="0x4497" qfe="0"/>
-  <baseaddr addr="0x81F00000"/>
+  <version major="1" minor="0" build="0" qfe="0"/>
+  <baseaddr addr="0x81E00000"/>
   <sysdll/>
 </xex>

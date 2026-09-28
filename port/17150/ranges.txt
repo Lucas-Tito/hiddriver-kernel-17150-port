@@ -1,0 +1,2 @@
+xam 815F0000-81C00000: 1552 valid pages, 0 faulted
+kernel 80040000-80400000: 448 valid pages, 0 faulted

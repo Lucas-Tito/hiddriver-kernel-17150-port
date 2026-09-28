@@ -26,6 +26,202 @@ BOOL IsTrayOpen() {
 	return (Output[1] == 0x60);
 }
 
+// This console likes to kill non system threads on title switches
+HANDLE MakeThread(LPTHREAD_START_ROUTINE Address, PVOID arg) {
+	HANDLE Handle = 0;
+	ExCreateThread(&Handle, 0, 0, XapiThreadStartup, Address, arg, (EX_CREATE_FLAG_SUSPENDED | EX_CREATE_FLAG_SYSTEM | 0x18000424));
+	XSetThreadProcessor(Handle, 4);
+	SetThreadPriority(Handle, THREAD_PRIORITY_NORMAL);
+	ResumeThread(Handle);
+	return Handle;
+}
+
+void Notify(const wchar_t* msg) {
+	XNotifyQueueUI(XNOTIFYUI_TYPE_PREFERRED_REVIEW, XUSER_INDEX_ANY, XNOTIFYUI_PRIORITY_HIGH, (PWCHAR)msg, 0);
+}
+
+// Diagnostic log for retail consoles, where DbgPrint goes nowhere. USB callbacks only
+// format into a ring buffer; DllMain and the notify thread flush it to hiddriver_log.txt at
+// the root of the HDD. Only the HDD: the USB drives go away while the USB stack is reset.
+//
+// Code running in the system process (a DashLaunch plugin) resolves drive links under
+// \System??\, not \??\ (that one is the title namespace). As a fallback, DashLaunch itself
+// creates the system links hdd: and usb:.
+#define DIAG_SLOTS 256
+#define DIAG_LINE 192
+struct DiagSlot {
+	volatile LONG seq;
+	char text[DIAG_LINE];
+};
+DiagSlot g_diagSlots[DIAG_SLOTS];
+volatile LONG g_diagWrite = 0;
+volatile LONG g_diagRead = 0;
+
+struct DiagDrive {
+	const char* link;   // our own system link, or nullptr to use one DashLaunch created
+	const char* device;
+	const char* root;
+};
+static const DiagDrive kHddRoots[] = {
+	{ "\\System??\\hidlogh:", "\\Device\\Harddisk0\\Partition1", "hidlogh:\\" },
+	{ nullptr, nullptr, "hdd:\\" },
+};
+static const DiagDrive kUsbRoots[] = {
+	{ "\\System??\\hidlogu:", "\\Device\\Mass0", "hidlogu:\\" },
+	{ nullptr, nullptr, "usb:\\" },
+};
+const char* g_logRoot = nullptr; // HDD root that accepted a write
+
+static void MountRoot(const DiagDrive& d) {
+	if (!d.link)
+		return;
+	STRING link, device;
+	RtlInitAnsiString(&link, d.link);
+	RtlInitAnsiString(&device, d.device);
+	ObCreateSymbolicLink(&link, &device); // fails harmlessly if it already exists
+}
+
+void MountDiagDrives() {
+	for (int i = 0; i < sizeof(kHddRoots) / sizeof(kHddRoots[0]); i++)
+		MountRoot(kHddRoots[i]);
+	for (int i = 0; i < sizeof(kUsbRoots) / sizeof(kUsbRoots[0]); i++)
+		MountRoot(kUsbRoots[i]);
+
+	for (int i = 0; i < sizeof(kHddRoots) / sizeof(kHddRoots[0]) && !g_logRoot; i++) {
+		char path[64];
+		_snprintf(path, sizeof(path), "%shiddriver_log.txt", kHddRoots[i].root);
+		FILE* f = fopen(path, "a");
+		if (f) {
+			fprintf(f, "\n==== boot, log via %s ====\n", kHddRoots[i].root);
+			fclose(f);
+			g_logRoot = kHddRoots[i].root;
+		}
+	}
+}
+
+static bool FileExistsIn(const DiagDrive* roots, int count, const char* name) {
+	for (int i = 0; i < count; i++) {
+		char path[64];
+		_snprintf(path, sizeof(path), "%s%s", roots[i].root, name);
+		if (GetFileAttributesA(path) != INVALID_FILE_ATTRIBUTES)
+			return true;
+	}
+	return false;
+}
+
+bool DiagFileExists(const char* name) {
+	return FileExistsIn(kHddRoots, sizeof(kHddRoots) / sizeof(kHddRoots[0]), name) ||
+		FileExistsIn(kUsbRoots, sizeof(kUsbRoots) / sizeof(kUsbRoots[0]), name);
+}
+
+// Up to size-1 characters of a text file at the HDD root; empty string if missing
+void ReadHddFileText(const char* name, char* buf, int size) {
+	buf[0] = 0;
+	for (int i = 0; i < sizeof(kHddRoots) / sizeof(kHddRoots[0]); i++) {
+		char path[64];
+		_snprintf(path, sizeof(path), "%s%s", kHddRoots[i].root, name);
+		FILE* f = fopen(path, "r");
+		if (f) {
+			int n = (int)fread(buf, 1, size - 1, f);
+			buf[n > 0 ? n : 0] = 0;
+			fclose(f);
+			return;
+		}
+	}
+}
+
+ULONG DiagLog(const char* fmt, ...) {
+	LONG idx = InterlockedIncrement(&g_diagWrite) - 1;
+	DiagSlot* slot = &g_diagSlots[idx % DIAG_SLOTS];
+	va_list args;
+	va_start(args, fmt);
+	_vsnprintf(slot->text, DIAG_LINE - 1, fmt, args);
+	va_end(args);
+	slot->text[DIAG_LINE - 1] = 0;
+	__lwsync();
+	slot->seq = idx + 1;
+	return idx + 1;
+}
+
+// Waits (bounded) until the flush thread has written line 'seq' to disk. Used right after
+// logging in the USB hooks: if the console freezes a few ms later, the line is already on the HDD.
+void WaitFlushed(ULONG seq, DWORD maxMs) {
+	DWORD start = GetTickCount();
+	while (g_diagRead < (LONG)seq && GetTickCount() - start < maxMs)
+		YieldProcessor();
+}
+
+// Open, append, close on every flush, so a crash never loses what was already flushed
+void DiagFlush() {
+	if (!g_logRoot)
+		return;
+	char path[64];
+	_snprintf(path, sizeof(path), "%shiddriver_log.txt", g_logRoot);
+	while (true) {
+		DiagSlot* slot = &g_diagSlots[g_diagRead % DIAG_SLOTS];
+		LONG seq = slot->seq;
+		if (seq <= g_diagRead)
+			break;
+		char line[DIAG_LINE + 32];
+		if (seq > g_diagRead + 1) {
+			_snprintf(line, sizeof(line), "[... %d lines lost ...]\n", (int)(seq - 1 - g_diagRead));
+			g_diagRead = seq - 1;
+		} else {
+			size_t len = strlen(slot->text);
+			_snprintf(line, sizeof(line), "%s%s", slot->text, (len && slot->text[len - 1] == '\n') ? "" : "\n");
+			g_diagRead++;
+		}
+		FILE* f = fopen(path, "a");
+		if (f) {
+			fputs(line, f);
+			fclose(f);
+		}
+	}
+}
+
+#define DbgPrint DiagLog
+#define DbgPrintSync(...) DiagLog(__VA_ARGS__) // no waiting: spinning inside USB callbacks holds the node lock
+
+// Re-reads a patched or hooked address, to prove the write to kernel/xam code took effect.
+// A hook starts with "lis r0, target@hi" (0x3C00xxxx) once installed.
+void LogReadback(const char* what, void* address) {
+	DbgPrint("EINTIM: readback %-28s %08X = %08X\n", what, (DWORD)address, *(DWORD*)address);
+}
+
+// Per-hook call counters, printed by the heartbeat: they tell "hook never runs" apart from
+// "hook runs but its log line is lost"
+enum HookCounter { HIT_DEVMATCH, HIT_IFMATCH, HIT_ADDCOMPLETE, HIT_HIDADD, HIT_HIDREMOVE,
+	HIT_INACTIVITY, HIT_GETSTATE, HIT_SETSTATE, HIT_CAPS, HIT_COUNT };
+volatile LONG g_hits[HIT_COUNT];
+#define COUNT_HIT(which) InterlockedIncrement(&g_hits[which])
+
+// Logs the first call of a hook, so a freeze can be pinned to the last hook that ran
+#define LOG_FIRST_CALL(name) { static volatile LONG once = 0; if (InterlockedExchange(&once, 1) == 0) DbgPrintSync("EINTIM: first call: %s\n", name); }
+
+// Logs (user, status) only when it changes, per user slot (0-3, 4 = any other value)
+// At most 10 lines per second across all callers, so a flapping status can't flood the log
+static void LogStatusChange(const char* what, DWORD* last, DWORD user, DWORD status) {
+	int slot = (user & 0xFF) < 4 ? (user & 0xFF) : 4;
+	if (last[slot] == status)
+		return;
+	last[slot] = status;
+
+	static DWORD windowStart = 0;
+	static int linesInWindow = 0, suppressed = 0;
+	DWORD now = GetTickCount();
+	if (now - windowStart >= 1000) {
+		if (suppressed)
+			DbgPrint("EINTIM: (%d status lines suppressed)\n", suppressed);
+		windowStart = now;
+		linesInWindow = 0;
+		suppressed = 0;
+	}
+	if (linesInWindow++ < 10)
+		DbgPrintSync("EINTIM: %s user %X -> status %X\n", what, user, status);
+	else
+		suppressed++;
+}
+
 
 struct usb_device_descriptor {
 	uint8_t  bLength;             // Size of this descriptor in bytes (18)
@@ -86,6 +282,7 @@ enum ControllerType {
 	UNKNOWN_DEVICE = -1,
 	SONY_DUALSHOCK4,
 	SONY_DUALSENSE,
+	GENERIC_RAW, // hardcoded byte layout from kRawLayouts
 };
 
 const uint16_t SONY_VENDOR_ID = 0x054C;
@@ -153,6 +350,42 @@ struct DS4ButtonsReport : Report {
 			  uint8_t vendor_defined;
 };
 #pragma pack(pop)
+
+// Hardcoded layouts for generic DirectInput controllers.
+// All offsets are byte offsets into the raw interrupt packet (report ID byte included, if the device uses one).
+#define RAW_NONE 0xFF
+enum RawButton {
+	RAW_A, RAW_B, RAW_X, RAW_Y,
+	RAW_LB, RAW_RB, RAW_LT, RAW_RT,
+	RAW_BACK, RAW_START, RAW_L3, RAW_R3, RAW_GUIDE,
+	RAW_BUTTON_COUNT
+};
+
+struct RawLayout {
+	const char* name;
+	uint16_t vendorId;
+	uint16_t productId;
+	int16_t reportId;       // -1 if the device sends no report ID
+	uint8_t lx, ly, rx, ry; // 8 bit axes, 0x80 = center
+	uint8_t lt, rt;         // 8 bit analog triggers, RAW_NONE if digital (then RAW_LT/RAW_RT buttons are used)
+	uint8_t hat;            // hat switch byte
+	uint8_t hatShift;       // 0 = low nibble, 4 = high nibble
+	uint8_t buttons;        // first byte of the button bitfield
+	uint8_t bit[RAW_BUTTON_COUNT]; // bit index from 'buttons' for each RawButton, RAW_NONE if absent
+};
+
+static const RawLayout kRawLayouts[] = {
+	// Filled from captures made with tools/capturar_controle.sh
+	{ nullptr } // end marker
+};
+
+const RawLayout* FindRawLayout(uint16_t vendorId, uint16_t productId) {
+	for (int i = 0; kRawLayouts[i].name; i++) {
+		if (kRawLayouts[i].vendorId == vendorId && kRawLayouts[i].productId == productId)
+			return &kRawLayouts[i];
+	}
+	return nullptr;
+}
 
 
 struct deviceHandle;
@@ -263,10 +496,48 @@ struct Controller {
 	uint8_t userIndex;
 	uint32_t packetNumber;
 	ControllerType controllerType;
+	const RawLayout* rawLayout;
 	void* reportData;
 } __declspec(align(4));
 
 Controller connectedControllers[4];
+
+static bool RawBit(const RawLayout* l, const uint8_t* p, RawButton b) {
+	uint8_t bit = l->bit[b];
+	if (bit == RAW_NONE)
+		return false;
+	return (p[l->buttons + bit / 8] >> (bit % 8)) & 1;
+}
+
+ButtonsReport DecodeRawReport(const RawLayout* l, const uint8_t* p) {
+	ButtonsReport b = ButtonsReport();
+	b.x = l->lx != RAW_NONE ? p[l->lx] : 0x80;
+	b.y = l->ly != RAW_NONE ? p[l->ly] : 0x80;
+	b.z = l->rx != RAW_NONE ? p[l->rx] : 0x80;
+	b.rz = l->ry != RAW_NONE ? p[l->ry] : 0x80;
+
+	// ButtonsReport keeps the triggers in rx (left) and ry (right)
+	b.rx = l->lt != RAW_NONE ? p[l->lt] : (RawBit(l, p, RAW_LT) ? 0xFF : 0);
+	b.ry = l->rt != RAW_NONE ? p[l->rt] : (RawBit(l, p, RAW_RT) ? 0xFF : 0);
+
+	uint8_t hat = l->hat != RAW_NONE ? (p[l->hat] >> l->hatShift) & 0x0F : HAT_NEUTRAL;
+	b.hatSwitch = hat <= HAT_UP_LEFT ? hat : HAT_NEUTRAL;
+
+	b.cross = RawBit(l, p, RAW_A);
+	b.circle = RawBit(l, p, RAW_B);
+	b.square = RawBit(l, p, RAW_X);
+	b.triangle = RawBit(l, p, RAW_Y);
+	b.l1 = RawBit(l, p, RAW_LB);
+	b.r1 = RawBit(l, p, RAW_RB);
+	b.l2 = RawBit(l, p, RAW_LT);
+	b.r2 = RawBit(l, p, RAW_RT);
+	b.create = RawBit(l, p, RAW_BACK);
+	b.options = RawBit(l, p, RAW_START);
+	b.l3 = RawBit(l, p, RAW_L3);
+	b.r3 = RawBit(l, p, RAW_R3);
+	b.ps = RawBit(l, p, RAW_GUIDE);
+	return b;
+}
 
 int interruptHandler(DWORD deviceHandle, int32_t a2) {
 	HidControllerExtension* driverExtension = (HidControllerExtension*)((deviceHandle - 4));
@@ -280,6 +551,18 @@ int interruptHandler(DWORD deviceHandle, int32_t a2) {
 			index = i;
 			break;
 		}
+	}
+
+	if (index < 0) // not one of ours: upstream indexed connectedControllers[-1]
+		return 0;
+
+	if (connectedControllers[index].controllerType == GENERIC_RAW) {
+		const RawLayout* l = connectedControllers[index].rawLayout;
+		const uint8_t* p = (const uint8_t*)report;
+		if (l->reportId < 0 || p[0] == l->reportId) {
+			connectedControllers[index].currentState = DecodeRawReport(l, p);
+		}
+		return UsbdQueueAsyncTransfer(driverExtension->deviceHandle, &driverExtension->interruptEndpoint);
 	}
 
 	if (report->reportId == 1) {
@@ -323,6 +606,8 @@ int interruptHandler(DWORD deviceHandle, int32_t a2) {
 
 
 int HidRemoveDeviceHook(deviceHandle* deviceHandle2) {
+	COUNT_HIT(HIT_HIDREMOVE);
+	DbgPrintSync("EINTIM: HID remove device %p\n", deviceHandle2);
 	bool found = false;
 	int index = 0;
 	for (int i = 0; i < (sizeof(connectedControllers) / sizeof(Controller)); i++) {
@@ -356,11 +641,13 @@ int HidRemoveDeviceHook(deviceHandle* deviceHandle2) {
 		DbgPrint("EINTIM: Removed virtual controller from XAM.\n");
 		return 0;
 	}
+	return 0; // already cleaned up (upstream fell off the end here)
 }
 
 int reportData = 0;
 int HidAddDeviceHook(deviceHandle* deviceHandle) {
-	DbgPrint("EINTIM: HID add device %p\n", deviceHandle);
+	COUNT_HIT(HIT_HIDADD);
+	DbgPrintSync("EINTIM: HID add device %p\n", deviceHandle);
 	usb_device_descriptor* device_descriptor = UsbdGetDeviceDescriptor(deviceHandle);
 	usb_interface_descriptor* interface_descriptor = UsbdGetInterfaceDescriptor(deviceHandle);
 	usb_endpoint_descriptor* endpoint_descriptor = UsbdGetEndpointDescriptor(deviceHandle, 0, USB_ENDPOINT_TYPE_INTERRUPT, USB_DIRECTION_IN);
@@ -376,8 +663,15 @@ int HidAddDeviceHook(deviceHandle* deviceHandle) {
 	DbgPrint("EINTIM: USB interface descriptor Pointer: %p\n", interface_descriptor);
 	DbgPrint("EINTIM: USB endpoint interrupt in descriptor Pointer: %p\n", endpoint_descriptor);
 	DbgPrint("EINTIM: HID device vendor id: %x, product id: %x\n", vendorId, productId);
+	DbgPrint("EINTIM: Interface %d class %d subclass %d protocol %d\n", interface_descriptor->bInterfaceNumber,
+		interface_descriptor->bInterfaceClass, interface_descriptor->bInterfaceSubClass, interface_descriptor->bInterfaceProtocol);
 
 	ControllerType controllerType = UNKNOWN_DEVICE;
+	const RawLayout* rawLayout = FindRawLayout(vendorId, productId);
+	if (rawLayout) {
+		DbgPrint("EINTIM: Hardcoded layout: %s\n", rawLayout->name);
+		controllerType = GENERIC_RAW;
+	}
 
 	if (vendorId == SONY_VENDOR_ID) {
 		if (productId == DUALSENSE_PRODUCT_ID || productId == DUALSENSE_EDGE_PRODUCT_ID)
@@ -404,6 +698,9 @@ int HidAddDeviceHook(deviceHandle* deviceHandle) {
 
 		Controller c = Controller();
 		c.controllerType = controllerType;
+		c.rawLayout = rawLayout;
+		c.currentState.hatSwitch = HAT_NEUTRAL;
+		c.currentState.x = c.currentState.y = c.currentState.z = c.currentState.rz = 0x80;
 		c.packetNumber = 0;
 		HidControllerExtension* controllerDriver = new HidControllerExtension();
 		c.deviceHandle = deviceHandle;
@@ -475,7 +772,10 @@ int16_t ConvertToFullRange(uint8_t input, bool invert_y = false) {
 }
 
 DWORD XamInputGetStateHook(DWORD user, DWORD flags, XINPUT_STATE* input_state) {
+	COUNT_HIT(HIT_GETSTATE);
 	DWORD status = XamInputGetStateDetour.GetOriginal<decltype(&XamInputGetStateHook)>()(user, flags, input_state);
+	static DWORD lastStatus[5] = { 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF };
+	LogStatusChange("GetState", lastStatus, user, status);
 
 	if ((user & 0xFF) == 0xFF)
 		user = 0;
@@ -599,6 +899,8 @@ DWORD XamInputGetStateHook(DWORD user, DWORD flags, XINPUT_STATE* input_state) {
 }
 
 DWORD XamInputSetStateHook(DWORD user, DWORD flags, XINPUT_STATE* pInputState, BYTE bAmplitude, BYTE bFrequency, BYTE bOffset) {
+	COUNT_HIT(HIT_SETSTATE);
+	LOG_FIRST_CALL("XamInputSetState");
 	DWORD status = XamInputSetStateDetour.GetOriginal<decltype(&XamInputSetStateHook)>()(user, flags, pInputState, bAmplitude, bFrequency, bOffset);
 
 	if ((user & 0xFF) == 0xFF)
@@ -626,7 +928,10 @@ DWORD XamInputSetStateHook(DWORD user, DWORD flags, XINPUT_STATE* pInputState, B
 }
 
 DWORD XamInputGetCapabilitiesExHook(DWORD unk, DWORD user, DWORD flags, XINPUT_CAPABILITIES_EX* capabilities) {
+	COUNT_HIT(HIT_CAPS);
 	DWORD status = XamInputGetCapabilitiesDetour.GetOriginal<decltype(&XamInputGetCapabilitiesExHook)>()(unk, user, flags, capabilities);
+	static DWORD lastStatus[5] = { 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF };
+	LogStatusChange("GetCapabilitiesEx", lastStatus, user, status);
 
 	if ((user & 0xFF) == 0xFF)
 		user = 0;
@@ -660,10 +965,13 @@ DWORD XamInputGetCapabilitiesExHook(DWORD unk, DWORD user, DWORD flags, XINPUT_C
 		capabilities->Vibration.wRightMotorSpeed = 0;
 		return ERROR_SUCCESS;
 	}
+	return status; // upstream fell off the end here for real controllers
 }
 
 // fix for inactivity (screen dimming)
 int XamInactivityDetectRecentActivityHook(DWORD r3) {
+	COUNT_HIT(HIT_INACTIVITY);
+	LOG_FIRST_CALL("XamInactivityDetectRecentActivity");
 	// check if a controller is connected
 	for (int i = 0; i < 4; i++) {
 		if (connectedControllers[i].controllerDriver != (HidControllerExtension*)0) {
@@ -679,9 +987,44 @@ void* XamInputGetState = nullptr;
 void* XamInputSetState = nullptr;
 void* XamInputGetCapabilitiesEx = nullptr;
 bool isDevkit = true;
+bool isKernel17150 = false;
 DWORD UsbPhysicalPage = 0;
+
+// Checks the instruction at 'addr' before we rely on it or patch it. 'patched' is the value
+// we write there, accepted too so a second load doesn't refuse its own patches.
+bool Expect(DWORD addr, DWORD original, DWORD patched, const char* what) {
+	DWORD value = *(DWORD*)addr;
+	bool ok = value == original || (patched && value == patched);
+	DbgPrint("EINTIM: check %-28s %08X = %08X (esperado %08X) %s\n", what, addr, value, original, ok ? "ok" : "DIFERENTE");
+	return ok;
+}
+
+// Addresses for retail kernel 2.0.17150.0, found from a memory dump of that kernel using the
+// signatures in the comments of the 17559 branch (see port/ in the repo). Every one of them is
+// checked against the bytes seen in the dump before anything is patched or hooked.
+bool check17150() {
+	bool ok = true;
+	ok &= Expect(0x800D9418, 0x8943000B, 0, "UsbdGetInterfaceDescriptor");
+	ok &= Expect(0x816D83A8, 0x7C8B2378, 0, "XamUserBindDeviceCallback");
+	ok &= Expect(0x800D9EF8, 0x3D60800E, 0, "UsbdPowerDownNotification");
+	ok &= Expect(0x800D9C38, 0x7D8802A6, 0, "UsbdDriverEntry");
+	ok &= Expect(0x800D9C94, 0x3F80801A, 0, "UsbPhysicalPage (lis)");
+	ok &= Expect(0x800D9C98, 0x93FCC8D8, 0, "UsbPhysicalPage (stw)");
+	ok &= Expect(0x816F0804, 0x3D6081AB, 0, "RoutedToSysapp (lis)");
+	ok &= Expect(0x816F080C, 0x396BC6E8, 0, "RoutedToSysapp (addi)");
+	ok &= Expect(0x800E1514, 0x40820018, 0x48000018, "bugcheck 1");
+	ok &= Expect(0x800DE810, 0x40820018, 0x48000018, "bugcheck 2");
+	ok &= Expect(0x800D9E30, 0x4BF8DC29, 0x60000000, "registro duplo 1");
+	ok &= Expect(0x800D9E20, 0x4BF97189, 0x60000000, "registro duplo 2");
+	ok &= Expect(0x800E5CD0, 0x7D8802A6, 0, "HidAddDevice");
+	ok &= Expect(0x800E5C90, 0x81630000, 0, "HidRemoveDevice");
+	ok &= Expect(0x81695268, 0x3D6081AA, 0, "XamInactivityDetect");
+	return ok;
+}
+
 bool initFunctionPointers() {
-	isDevkit = *(uint32_t*)(0x8010D334) == 0x00000000;
+	isKernel17150 = XboxKrnlVersion->Build == 17150;
+	isDevkit = !isKernel17150 && *(uint32_t*)(0x8010D334) == 0x00000000;
 	HANDLE kernelHandle = GetModuleHandleA("xboxkrnl.exe");
 
 	if (!kernelHandle) {
@@ -708,7 +1051,24 @@ bool initFunctionPointers() {
 	XexGetProcedureAddress(xamHandle, 401, &XamInputGetState);
 	XexGetProcedureAddress(xamHandle, 402, &XamInputSetState);
 
-	if (isDevkit) {
+	if (isKernel17150) {
+		DbgPrint("EINTIM: Running on retail kernel 17150\n");
+		if (!check17150()) {
+			DbgPrint("EINTIM: 17150 addresses don't match this console. Aborting before touching anything.\n");
+			return false;
+		}
+		UsbdGetInterfaceDescriptor = (usb_interface_descriptor_func_t)0x800D9418;
+		XamUserBindDeviceCallback = (xam_user_bind_device_callback_func_t)0x816D83A8;
+		UsbdPowerDownNotification = (usbd_powerdown_notification_func_t)0x800D9EF8; // handler in the struct passed by UsbdDriverEntry's last call
+		UsbdDriverEntry = (usbd_powerdown_notification_func_t)0x800D9C38;
+
+		// read right before the call to XamShouldSuppressSystemInput inside XamInputGetState
+		XampInputRoutedToSysapp = (DWORD*)0x81AAC6E8;
+
+		UsbPhysicalPage = 0x8019C8D8;
+		// the USB reset patches are applied by ApplyUsbResetPatches17150, only in stage 3
+	}
+	else if (isDevkit) {
 		DbgPrint("EINTIM: Running in devkit mode\n");
 		UsbdGetInterfaceDescriptor = (usb_interface_descriptor_func_t)0x8010D2D0; // 89 43 ? ? 3D 60 ? ? 89 2D ? ? 39 6B ? ? 55 4A FF 3A 2B 09 ? ? 7D 6A 58 2E ? ? ? ? ? ? ? ? 89 4D ? ? 2B 0A ? ? ? ? ? ? ? ? ? ? 81 4B ? ? 7F 03 50 40 ? ? ? ? ? ? ? ? A1 4B very bad direct signature. XREF sig: 89 63 ? ? 38 A1
 		XamUserBindDeviceCallback = (xam_user_bind_device_callback_func_t)0x817A34B8; // 7C 8B 23 78 7C A4 2B 78 54 CA 06 3F
@@ -758,50 +1118,263 @@ bool initFunctionPointers() {
 	return true;
 }
 
+#define KILL_SWITCH_FILE "hiddriver_desligar.txt"
+#define STAGE_FILE "hiddriver_etapa.txt"
+
+// Stages, chosen by the first character of hiddriver_etapa.txt at the HDD root (default 1):
+//   1 = load, log and notify only; nothing in the USB stack is touched
+//   2 = + hooks (new devices go through HidAddDeviceHook), no USB reset
+//   3 = + USB reset patches and the USB reset, i.e. the full upstream behaviour
+int g_stage = 1;
+const wchar_t* g_notifyMessage = L"hiddriver: ativo";
+
+void ApplyUsbResetPatches17150() {
+	//Remove two usb related bugchecks to allow reinitialisation of the usb driver
+	*(DWORD*)0x800E1514 = 0x48000018;
+	*(DWORD*)0x800DE810 = 0x48000018;
+
+	// Prevent double registration of Usbd handlers because the console wont shutdown cleanly otherwise
+	*(DWORD*)0x800D9E30 = 0x60000000;
+	*(DWORD*)0x800D9E20 = 0x60000000;
+
+	FlushCodeRange((void*)0x800E1514, 4);
+	FlushCodeRange((void*)0x800DE810, 4);
+	FlushCodeRange((void*)0x800D9E20, 0x14);
+
+	LogReadback("bugcheck 1", (void*)0x800E1514);
+	LogReadback("bugcheck 2", (void*)0x800DE810);
+	LogReadback("registro duplo 1", (void*)0x800D9E30);
+	LogReadback("registro duplo 2", (void*)0x800D9E20);
+}
+
+// XNotify drops notifications queued from the system process unless this branch in xam
+// ordinal 1183 is made unconditional (upstream commit 3049f04; JRPC2 does the same).
+// Only patched when the expected instruction is there.
+void ApplyNotifyPatch() {
+	HANDLE xamHandle = GetModuleHandleA("xam.xex");
+	DWORD notify = 0;
+	if (!xamHandle || XexGetProcedureAddress(xamHandle, 1183, &notify) != 0 || !notify) {
+		DbgPrint("EINTIM: notify patch: xam ordinal 1183 not found\n");
+		return;
+	}
+	short* site = (short*)(notify + 48);
+	DbgPrint("EINTIM: notify patch: ordinal 1183 at %08X, +48 = %04X\n", notify, (unsigned short)*site);
+	if (*site == 0x409A) {
+		*site = 0x4800;
+		FlushCodeRange(site, sizeof(*site));
+		DbgPrint("EINTIM: notify patch applied, readback %04X\n", (unsigned short)*site);
+	} else if (*site == 0x4800) {
+		DbgPrint("EINTIM: notify patch already present (JRPC2 or a previous load)\n");
+	} else {
+		DbgPrint("EINTIM: notify patch skipped, unexpected instruction\n");
+	}
+}
+
+// Read-only hook on the kernel function that picks the class driver for each USB
+// interface (17150: 0x800D7170). Logs what was plugged and which driver took it.
+Detour UsbMatchDetour;
+typedef DWORD (*usb_match_func_t)(BYTE* device, BYTE* iface);
+
+const char* UsbDriverName(DWORD entry) {
+	switch (entry) {
+	case 0: return "nenhum driver";
+	case 0x80162254: return "HID (HidAddDevice)";
+	case 0x80162238: return "mass storage";
+	case 0x8016228C: return "classe 6 / composto";
+	case 0x801622B8: return "camera (classe E)";
+	case 0x801626C8: case 0x80162634: case 0x80162578: case 0x80162618:
+	case 0x80162934: case 0x80162A00: case 0x80162960: case 0x801625D0: return "XInput (FF/5D)";
+	case 0x8016CFC4: return "lista especial";
+	}
+	if (entry >= 0x90000000 && entry < 0xA0000000)
+		return "lista dinamica (outro modulo)";
+	return "outro";
+}
+
+DWORD UsbMatchHook(BYTE* device, BYTE* iface) {
+	COUNT_HIT(HIT_IFMATCH);
+	DWORD entry = UsbMatchDetour.GetOriginal<usb_match_func_t>()(device, iface);
+	const BYTE* dd = device + 0x4C; // device descriptor, little endian
+	DbgPrintSync("EINTIM: USB match: VID %04X PID %04X if %d class %02X/%02X/%02X -> %08X %s\n",
+		dd[8] | (dd[9] << 8), dd[10] | (dd[11] << 8), iface[2], iface[5], iface[6], iface[7], entry, UsbDriverName(entry));
+	return entry;
+}
+
+// Device-level selection (17150: 0x800D70D8), used instead of the interface-level one when
+// the node is a whole device; it also consults the dynamic claim list.
+Detour UsbDeviceMatchDetour;
+typedef DWORD (*usb_device_match_func_t)(BYTE* device, BYTE* iface);
+
+DWORD UsbDeviceMatchHook(BYTE* device, BYTE* iface) {
+	COUNT_HIT(HIT_DEVMATCH);
+	DWORD entry = UsbDeviceMatchDetour.GetOriginal<usb_device_match_func_t>()(device, iface);
+	const BYTE* dd = device + 0x4C;
+	DbgPrintSync("EINTIM: USB device match: VID %04X PID %04X device class %02X/%02X/%02X -> %08X %s\n",
+		dd[8] | (dd[9] << 8), dd[10] | (dd[11] << 8), dd[4], dd[5], dd[6], entry, UsbDriverName(entry));
+	return entry;
+}
+
+// Logs devices that end up rejected (no driver took them, or a driver refused them)
+Detour UsbdAddDeviceCompleteDetour;
+
+int UsbdAddDeviceCompleteHook(deviceHandle* handle, int status) {
+	COUNT_HIT(HIT_ADDCOMPLETE);
+	if (status != 0) {
+		usb_device_descriptor* dd = UsbdGetDeviceDescriptor(handle);
+		DbgPrintSync("EINTIM: USB add complete: handle %p status %X (rejeitado) VID %04X PID %04X\n", handle, status,
+			dd ? swap_endianness_16(dd->idVendor) : 0, dd ? swap_endianness_16(dd->idProduct) : 0);
+	}
+	return UsbdAddDeviceCompleteDetour.GetOriginal<decltype(&UsbdAddDeviceCompleteHook)>()(handle, status);
+}
+
+// Letters after the stage number in hiddriver_etapa.txt skip hooks, to bisect a freeze:
+// a = HidAddDevice/HidRemoveDevice, m = USB match logger, i = XamInactivityDetect,
+// g = XamInputGetState, s = XamInputSetState, c = XamInputGetCapabilitiesEx
+char g_skipHooks[16] = "";
+bool HookEnabled(char letter) { return strchr(g_skipHooks, letter) == nullptr; }
+
+bool InitDriver(bool resetUsb) {
+	if (!initFunctionPointers())
+		return false;
+
+	if (isKernel17150 && HookEnabled('m')) {
+		if (Expect(0x800D7170, 0x7D8802A6, 0, "UsbMatch (prologo)") && Expect(0x800D7190, 0x8B7E0005, 0, "UsbMatch (lbz class)")) {
+			UsbMatchDetour = Detour((void*)0x800D7170, (void*)UsbMatchHook);
+			UsbMatchDetour.Install();
+			LogReadback("UsbMatch", (void*)0x800D7170);
+			DbgPrint("EINTIM: hook on: USB match logger\n");
+		}
+		if (Expect(0x800D70D8, 0x7D8802A6, 0, "UsbDeviceMatch (prologo)") && Expect(0x800D7110, 0x2B0A0009, 0, "UsbDeviceMatch (hub)")) {
+			UsbDeviceMatchDetour = Detour((void*)0x800D70D8, (void*)UsbDeviceMatchHook);
+			UsbDeviceMatchDetour.Install();
+			LogReadback("UsbDeviceMatch", (void*)0x800D70D8);
+			DbgPrint("EINTIM: hook on: USB device match logger\n");
+		}
+		if (Expect((DWORD)UsbdAddDeviceComplete, 0x7D8802A6, 0, "UsbdAddDeviceComplete")) {
+			UsbdAddDeviceCompleteDetour = Detour((void*)UsbdAddDeviceComplete, (void*)UsbdAddDeviceCompleteHook);
+			UsbdAddDeviceCompleteDetour.Install();
+			LogReadback("UsbdAddDeviceComplete", (void*)UsbdAddDeviceComplete);
+			DbgPrint("EINTIM: hook on: UsbdAddDeviceComplete logger\n");
+		}
+	}
+
+	if (isKernel17150) {
+		HidAddDeviceDetour = Detour((void*)0x800E5CD0, (void*)HidAddDeviceHook);
+		HidRemoveDeviceDetour = Detour((void*)0x800E5C90, (void*)HidRemoveDeviceHook);
+		XamInactivityDetectRecentActivityDetour = Detour((void*)0x81695268, (void*)XamInactivityDetectRecentActivityHook);
+	}
+	else if (isDevkit) {
+		HidAddDeviceDetour = Detour((void*)0x8011AE38, (void*)HidAddDeviceHook); // 7D 88 02 A6 ? ? ? ? 94 21 ? ? 7C 7C 1B 78 ? ? ? ? 7C 7F 1B 79
+		HidRemoveDeviceDetour = Detour((void*)0x8011ADF8, (void*)HidRemoveDeviceHook); // 81 63 ? ? 39 40 ? ? 39 20 ? ? 99 4B
+		XamInactivityDetectRecentActivityDetour = Detour((void*)0x81750588, (void*)XamInactivityDetectRecentActivityHook); // 3D 60 81 ?? 3D 40 81 ?? E8 6B ?? ?? E9 6A ?? ?? 7F 23 58 40 40 98 00 0C
+	}
+	else {
+		HidAddDeviceDetour = Detour((void*)0x800E4D68, (void*)HidAddDeviceHook); // 7D 88 02 A6 ? ? ? ? 94 21 ? ? 7C 7B 1B 78 ? ? ? ? 7C 7F 1B 79
+		HidRemoveDeviceDetour = Detour((void*)0x800E4D28, (void*)HidRemoveDeviceHook); // 81 63 ? ? 39 40 ? ? 39 20 ? ? 99 4B
+		XamInactivityDetectRecentActivityDetour = Detour((void*)0x81695DE8, (void*)XamInactivityDetectRecentActivityHook); // 3D 60 81 ?? 3D 40 81 ?? E8 6B ?? ?? E9 6A ?? ?? 7F 23 58 40 40 98 00 0C
+	}
+
+	XamInputGetCapabilitiesDetour = Detour(XamInputGetCapabilitiesEx, (void*)XamInputGetCapabilitiesExHook);
+	XamInputGetStateDetour = Detour(XamInputGetState, (void*)XamInputGetStateHook);
+	XamInputSetStateDetour = Detour(XamInputSetState, (void*)XamInputSetStateHook);
+
+	if (HookEnabled('a')) { HidAddDeviceDetour.Install(); HidRemoveDeviceDetour.Install(); DbgPrint("EINTIM: hook on: HidAddDevice/HidRemoveDevice\n"); }
+	if (HookEnabled('g')) { XamInputGetStateDetour.Install(); DbgPrint("EINTIM: hook on: XamInputGetState\n"); }
+	if (HookEnabled('s')) { XamInputSetStateDetour.Install(); DbgPrint("EINTIM: hook on: XamInputSetState\n"); }
+	if (HookEnabled('c')) { XamInputGetCapabilitiesDetour.Install(); DbgPrint("EINTIM: hook on: XamInputGetCapabilitiesEx\n"); }
+	if (HookEnabled('i')) { XamInactivityDetectRecentActivityDetour.Install(); DbgPrint("EINTIM: hook on: XamInactivityDetectRecentActivity\n"); }
+	if (isKernel17150) {
+		LogReadback("HidAddDevice", (void*)0x800E5CD0);
+		LogReadback("HidRemoveDevice", (void*)0x800E5C90);
+		LogReadback("XamInactivityDetect", (void*)0x81695268);
+	}
+	LogReadback("XamInputGetState", XamInputGetState);
+	DbgPrint("EINTIM: Hooks installed (skipped: \"%s\")\n", g_skipHooks);
+
+	if (!resetUsb) {
+		DbgPrint("EINTIM: Stage 2: USB reset skipped\n");
+		return true;
+	}
+
+	if (isKernel17150)
+		ApplyUsbResetPatches17150();
+
+	DbgPrint("EINTIM: Resetting USB driver!\n");
+	DiagFlush();
+	UsbdPowerDownNotification();
+	//For some reason microsoft doesnt clean up this page by themselves in the shutdown notification, so ill do it for them, call me mr nice guy :)
+	MmFreePhysicalMemory(0, *(DWORD*)UsbPhysicalPage);
+	DbgPrint("EINTIM: USB driver shutdown complete.\n");
+	UsbdDriverEntry();
+	DbgPrint("EINTIM: USB driver reset complete.\n");
+	return true;
+}
+
+// Shows the result once the dashboard is up. Runs on its own thread: in every earlier log,
+// nothing was ever written after XNotifyQueueUI, so it may never return here.
+unsigned int __stdcall NotifyThread(void*) {
+	Sleep(15000);
+	DbgPrint("EINTIM: notify: calling XNotifyQueueUI \"%S\"\n", g_notifyMessage);
+	Notify(g_notifyMessage);
+	DbgPrint("EINTIM: notify: XNotifyQueueUI returned\n");
+	return 0;
+}
+
+// Flushes the log every 10 ms, plus a heartbeat with the hook counters every 5 s
+unsigned int __stdcall FlushThread(void*) {
+	SetThreadPriority(GetCurrentThread(), THREAD_PRIORITY_HIGHEST);
+	DWORD lastBeat = GetTickCount();
+	while (true) {
+		DWORD now = GetTickCount();
+		if (now - lastBeat >= 5000) {
+			lastBeat = now;
+			DbgPrint("EINTIM: alive t=%u write=%d read=%d hits dev=%d if=%d addc=%d hidadd=%d hidrem=%d inact=%d get=%d set=%d caps=%d\n",
+				now / 1000, g_diagWrite, g_diagRead, g_hits[HIT_DEVMATCH], g_hits[HIT_IFMATCH], g_hits[HIT_ADDCOMPLETE],
+				g_hits[HIT_HIDADD], g_hits[HIT_HIDREMOVE], g_hits[HIT_INACTIVITY], g_hits[HIT_GETSTATE],
+				g_hits[HIT_SETSTATE], g_hits[HIT_CAPS]);
+		}
+		DiagFlush();
+		Sleep(10);
+	}
+	return 0;
+}
+
 BOOL APIENTRY DllMain(HANDLE Handle, DWORD Reason, PVOID Reserved)
 {
 	if (Reason == DLL_PROCESS_ATTACH)
 	{
-		if ((XboxKrnlVersion->Build != 17559 && XboxKrnlVersion->Build != 17489) || IsTrayOpen()) {
-			DbgPrint("EINTIM: Only 17559 and 17489 dashboards are currently supported or the disk tray is open. Aborting launch...\n");
+		if (XboxKrnlVersion->Build != 17559 && XboxKrnlVersion->Build != 17489 && XboxKrnlVersion->Build != 17150)
+			return FALSE;
+
+		MountDiagDrives();
+		char stageText[16];
+		ReadHddFileText(STAGE_FILE, stageText, sizeof(stageText));
+		g_stage = (stageText[0] >= '1' && stageText[0] <= '3') ? stageText[0] - '0' : 1;
+		for (int i = 1, n = 0; stageText[0] && stageText[i] && n < (int)sizeof(g_skipHooks) - 1; i++)
+			if (stageText[i] >= 'a' && stageText[i] <= 'z')
+				g_skipHooks[n++] = stageText[i];
+		DbgPrint("EINTIM: HELLO from xbox 360 HID controller driver version 0.5 (port 17150), kernel %d, stage %d, skip \"%s\", log root %s\n",
+			XboxKrnlVersion->Build, g_stage, g_skipHooks, g_logRoot ? g_logRoot : "(none)");
+
+		if (IsTrayOpen() || DiagFileExists(KILL_SWITCH_FILE)) {
+			DbgPrint("EINTIM: Disc tray open or " KILL_SWITCH_FILE " found. Not starting.\n");
+			DiagFlush();
 			return FALSE;
 		}
 
-		DbgPrint("EINTIM: HELLO from xbox 360 HID controller driver version 0.5\n");
-		if (!initFunctionPointers())
-			return FALSE;
+		ApplyNotifyPatch();
 
-		if (isDevkit) {
-			HidAddDeviceDetour = Detour((void*)0x8011AE38, (void*)HidAddDeviceHook); // 7D 88 02 A6 ? ? ? ? 94 21 ? ? 7C 7C 1B 78 ? ? ? ? 7C 7F 1B 79
-			HidRemoveDeviceDetour = Detour((void*)0x8011ADF8, (void*)HidRemoveDeviceHook); // 81 63 ? ? 39 40 ? ? 39 20 ? ? 99 4B
-			XamInactivityDetectRecentActivityDetour = Detour((void*)0x81750588, (void*)XamInactivityDetectRecentActivityHook); // 3D 60 81 ?? 3D 40 81 ?? E8 6B ?? ?? E9 6A ?? ?? 7F 23 58 40 40 98 00 0C
+		if (g_stage == 1) {
+			g_notifyMessage = L"hiddriver: etapa 1 ativa (so log)";
+		} else if (InitDriver(g_stage >= 3)) {
+			g_notifyMessage = g_stage == 2 ? L"hiddriver: etapa 2 ativa (ganchos, sem reset USB)"
+				: L"hiddriver: etapa 3 ativa (ganchos + reset USB)";
+		} else {
+			g_notifyMessage = L"hiddriver: enderecos nao conferem, nada foi alterado";
 		}
-		else {
-			HidAddDeviceDetour = Detour((void*)0x800E4D68, (void*)HidAddDeviceHook); // 7D 88 02 A6 ? ? ? ? 94 21 ? ? 7C 7B 1B 78 ? ? ? ? 7C 7F 1B 79
-			HidRemoveDeviceDetour = Detour((void*)0x800E4D28, (void*)HidRemoveDeviceHook); // 81 63 ? ? 39 40 ? ? 39 20 ? ? 99 4B
-			XamInactivityDetectRecentActivityDetour = Detour((void*)0x81695DE8, (void*)XamInactivityDetectRecentActivityHook); // 3D 60 81 ?? 3D 40 81 ?? E8 6B ?? ?? E9 6A ?? ?? 7F 23 58 40 40 98 00 0C
-		}
-
-		HidAddDeviceDetour.Install();
-		HidRemoveDeviceDetour.Install();
-
-		XamInputGetCapabilitiesDetour = Detour(XamInputGetCapabilitiesEx, (void*)XamInputGetCapabilitiesExHook);
-		XamInputGetStateDetour = Detour(XamInputGetState, (void*)XamInputGetStateHook);
-		XamInputSetStateDetour = Detour(XamInputSetState, (void*)XamInputSetStateHook);
-
-		XamInputGetStateDetour.Install();
-		XamInputSetStateDetour.Install();
-		XamInputGetCapabilitiesDetour.Install();
-		XamInactivityDetectRecentActivityDetour.Install();
-
-		DbgPrint("EINTIM: Resetting USB driver!\n");
-		UsbdPowerDownNotification();
-		//For some reason microsoft doesnt clean up this page by themselves in the shutdown notification, so ill do it for them, call me mr nice guy :)
-		MmFreePhysicalMemory(0, *(DWORD*)UsbPhysicalPage);
-		DbgPrint("EINTIM: USB driver shutdown complete.\n");
-		UsbdDriverEntry();
-		DbgPrint("EINTIM: USB driver reset complete.\n");
-		DbgPrint("EINTIM: Hooks installed\n");
+		DiagFlush();
+		MakeThread((LPTHREAD_START_ROUTINE)FlushThread, nullptr);
+		MakeThread((LPTHREAD_START_ROUTINE)NotifyThread, nullptr);
 	}
 	return TRUE;
 }

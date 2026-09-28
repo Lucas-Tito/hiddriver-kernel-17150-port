@@ -1,0 +1,26 @@
+Plugue o controle agora (espero 60 s)...
+
+Novo dispositivo: 045E:028E (bus 3 addr 8)
+  device class FF/FF/FF, bcdUSB 0200, maxpacket0 64
+  manufacturer:  
+  product: USB Controller
+  interface 0 alt 0: classe FF/5D/01  [EP 82 max 32, EP 02 max 32]
+  string 0xEE langid 0000: 18 bytes 12 03 4d 00 53 00 46 00 54 00 31 00 30 00 30 00 90 00
+  MSFT100 valido, vendor code 90; pedindo Extended Compat ID
+  compat ID: 28 00 00 00 00 01 04 00 01 00 00 00 00 00 00 00 00 02 58 55 53 42 31 30 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  string 0xEE langid 0409: 18 bytes 12 03 4d 00 53 00 46 00 54 00 31 00 30 00 30 00 90 00
+  MSFT100 valido, vendor code 90; pedindo Extended Compat ID
+  compat ID: 28 00 00 00 00 01 04 00 01 00 00 00 00 00 00 00 00 02 58 55 53 42 31 30 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+Agora troque de modo (se for o caso), aperte botoes e mexa os analogicos por 90 s;
+mostro qualquer reconexao e sondo cada dispositivo novo.
+  [16:01:28] SAIU   045E:028E (bus 3 addr 8)
+  [16:01:29] ENTROU 2345:E037 (bus 3 addr 9)
+  device class 00/00/00, bcdUSB 0200, maxpacket0 64
+  manufacturer:  
+  product: EasySMX X05
+  interface 0 alt 0: classe 03/00/00  [EP 81 max 32, EP 01 max 32]
+  interface 1 alt 0: classe 03/00/00  [EP 83 max 32]
+  string 0xEE langid 0000: STALL (ok para o Xbox) -> [Errno 32] Pipe error
+  string 0xEE langid 0409: STALL (ok para o Xbox) -> [Errno 32] Pipe error
+Fim.
