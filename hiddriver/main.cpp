@@ -49,9 +49,15 @@ void Notify(const wchar_t* msg) {
 // creates the system links hdd: and usb:.
 #define DIAG_SLOTS 256
 #define DIAG_LINE 192
+#define DIAG_ARGS 14
+// A slot keeps the format string and the raw argument words, not formatted text: the CRT's
+// _vsnprintf is not safe inside USB callbacks (it touches per-thread CRT data and can allocate),
+// and calling it there froze the console. The flush thread formats later, on a normal thread.
+// Every %s/%S argument must therefore point to static data (string literals or globals).
 struct DiagSlot {
 	volatile LONG seq;
-	char text[DIAG_LINE];
+	const char* fmt;
+	DWORD args[DIAG_ARGS];
 };
 DiagSlot g_diagSlots[DIAG_SLOTS];
 volatile LONG g_diagWrite = 0;
@@ -135,9 +141,10 @@ ULONG DiagLog(const char* fmt, ...) {
 	DiagSlot* slot = &g_diagSlots[idx % DIAG_SLOTS];
 	va_list args;
 	va_start(args, fmt);
-	_vsnprintf(slot->text, DIAG_LINE - 1, fmt, args);
+	for (int i = 0; i < DIAG_ARGS; i++)
+		slot->args[i] = va_arg(args, DWORD); // reading past the real arguments is harmless: extras are ignored
 	va_end(args);
-	slot->text[DIAG_LINE - 1] = 0;
+	slot->fmt = fmt;
 	__lwsync();
 	slot->seq = idx + 1;
 	return idx + 1;
@@ -167,8 +174,14 @@ void DiagFlush() {
 			_snprintf(line, sizeof(line), "[... %d lines lost ...]\n", (int)(seq - 1 - g_diagRead));
 			g_diagRead = seq - 1;
 		} else {
-			size_t len = strlen(slot->text);
-			_snprintf(line, sizeof(line), "%s%s", slot->text, (len && slot->text[len - 1] == '\n') ? "" : "\n");
+			const DWORD* a = slot->args;
+			int n = _snprintf(line, DIAG_LINE, slot->fmt, a[0], a[1], a[2], a[3], a[4], a[5], a[6],
+				a[7], a[8], a[9], a[10], a[11], a[12], a[13]);
+			if (n < 0 || n >= DIAG_LINE)
+				n = DIAG_LINE - 1;
+			line[n] = 0;
+			if (!n || line[n - 1] != '\n')
+				strcat(line, "\n");
 			g_diagRead++;
 		}
 		FILE* f = fopen(path, "a");
