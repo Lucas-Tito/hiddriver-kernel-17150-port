@@ -43,7 +43,8 @@ def find_nodes(vid, pid):
         # .../1-2:1.0/0003:2345:E037.0007 -> interface 0
         iface = next((p.split(".")[-1] for p in real.split("/") if ":" in p and "." in p and p.count(":") == 1), "?")
         desc = open(os.path.join(path, "device", "report_descriptor"), "rb").read()
-        nodes.append({"node": "/dev/" + os.path.basename(path), "interface": iface, "descriptor": desc.hex()})
+        name = next((l.split("=", 1)[1] for l in uevent.splitlines() if l.startswith("HID_NAME=")), "")
+        nodes.append({"node": "/dev/" + os.path.basename(path), "interface": iface, "name": name, "descriptor": desc.hex()})
     return nodes
 
 
@@ -59,7 +60,43 @@ def record(fds, seconds):
                     out[node].append(os.read(fd, 256).hex())
                 except BlockingIOError:
                     pass
+                except OSError:
+                    raise Reconnected()
     return out
+
+
+class Reconnected(Exception):
+    """The device went away (e.g. the 8BitDo receiver leaving its IDLE phase)."""
+
+
+def wait_ready(vid, pid):
+    """Nodes of the device once it is present, not in an IDLE phase, and stable for 2 s."""
+    print(f"Procurando {vid:04X}:{pid:04X}... (plugue, ligue o controle e, se for o caso, troque para DInput)")
+    shown = None
+    stable_since = None
+    deadline = time.time() + 120
+    while time.time() < deadline:
+        nodes = find_nodes(vid, pid)
+        key = [(n["node"], n["name"]) for n in nodes]
+        if nodes and any("IDLE" in n["name"].upper() for n in nodes):
+            if shown != key:
+                print(f"  {nodes[0]['name']}: fase IDLE, esperando o controle se conectar ao receptor...")
+            stable_since = None
+        elif nodes:
+            if key != shown:
+                stable_since = time.time()
+            elif stable_since and time.time() - stable_since >= 2:
+                return nodes
+        shown = key
+        time.sleep(0.3)
+    print("Controle nao ficou pronto.")
+    sys.exit(1)
+
+
+def open_nodes(nodes):
+    for n in nodes:
+        print(f"  {n['node']}: interface {n['interface']}, {n['name']}, descritor de {len(n['descriptor']) // 2} bytes")
+    return {n["node"]: os.open(n["node"], os.O_RDONLY | os.O_NONBLOCK) for n in nodes}
 
 
 def most_common(reports):
@@ -93,26 +130,29 @@ def main():
         print(__doc__)
         sys.exit(1)
     nome, vid, pid = sys.argv[1], int(sys.argv[2], 16), int(sys.argv[3], 16)
-    print(f"Procurando {vid:04X}:{pid:04X}... (plugue e, se for o caso, troque para DInput)")
-    nodes = []
-    for _ in range(120):
-        nodes = find_nodes(vid, pid)
-        if nodes:
-            break
-        time.sleep(0.5)
-    if not nodes:
-        print("Controle nao encontrado.")
-        sys.exit(1)
-    time.sleep(1.0)
-    nodes = find_nodes(vid, pid)
-    for n in nodes:
-        print(f"  {n['node']}: interface {n['interface']}, descritor de {len(n['descriptor']) // 2} bytes")
-
-    fds = {n["node"]: os.open(n["node"], os.O_RDONLY | os.O_NONBLOCK) for n in nodes}
+    nodes = wait_ready(vid, pid)
+    fds = open_nodes(nodes)
     resultado = {"nome": nome, "vid": f"{vid:04X}", "pid": f"{pid:04X}", "interfaces": nodes, "controles": {}}
 
-    input("\nSolte tudo e aperte ENTER. Nao toque no controle por 3 segundos...")
-    repouso = record(fds, 3)
+    def reopen():
+        nonlocal nodes, fds
+        print("  o controle se reconectou; reabrindo...")
+        for fd in fds.values():
+            try:
+                os.close(fd)
+            except OSError:
+                pass
+        nodes = wait_ready(vid, pid)
+        fds = open_nodes(nodes)
+        resultado["interfaces"] = nodes
+
+    while True:
+        input("\nSolte tudo e aperte ENTER. Nao toque no controle por 3 segundos...")
+        try:
+            repouso = record(fds, 3)
+            break
+        except Reconnected:
+            reopen()
     base = {node: most_common(r) for node, r in repouso.items()}
     resultado["repouso"] = {node: {"report": base[node], "quantidade": len(r)} for node, r in repouso.items()}
     for node in fds:
@@ -120,12 +160,18 @@ def main():
 
     for controle, tipo in CONTROLES:
         acao = "mova o analogico ate o fim e SEGURE" if tipo == "eixo" else "SEGURE (aperte ate o fundo)"
-        input(f"\n[{controle}] Aperte ENTER e, em seguida, {acao} por 3 segundos...")
-        time.sleep(0.3)
-        capt = record(fds, 3)
+        while True:
+            input(f"\n[{controle}] Aperte ENTER e, em seguida, {acao} por 3 segundos...")
+            time.sleep(0.3)
+            try:
+                capt = record(fds, 3)
+                break
+            except Reconnected:
+                reopen()
+                print("  (repita este controle)")
         resultado["controles"][controle] = {}
         for node in fds:
-            mud = diff(base[node], capt[node])
+            mud = diff(base.get(node), capt[node])
             resultado["controles"][controle][node] = {"reports": len(capt[node]), "mudancas": mud}
             if mud:
                 print(f"  {node}: " + ", ".join(f"byte {m['byte']} bits {m['bits_mudaram']} {m['repouso']}->{m['min']}..{m['max']}" for m in mud))
