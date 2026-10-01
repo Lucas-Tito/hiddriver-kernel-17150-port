@@ -1306,6 +1306,26 @@ void UsbCompatReplyHook(BYTE* nodePlusC, DWORD status) {
 	UsbCompatReplyDetour.GetOriginal<usb_reply_func_t>()(nodePlusC, status);
 }
 
+// Completion callbacks of the enumeration requests right before the 0xEE probe. The 8BitDo
+// receiver is discarded from the SET_CONFIGURATION one (0x800D83F8), so log their status.
+Detour UsbSetConfigDoneDetour;    // 0x800D83F8: SET_CONFIGURATION (request set up at 0x800D84F0)
+Detour UsbConfigDescDoneDetour;   // 0x800D8468: GET_DESCRIPTOR(configuration)
+
+void UsbSetConfigDoneHook(BYTE* nodePlusC, DWORD status) {
+	DWORD vid, pid;
+	BYTE* node = nodePlusC - 0xC;
+	NodeIds(node, &vid, &pid);
+	DbgPrintSync("EINTIM: USB SET_CONFIGURATION done: VID %04X PID %04X config %d status %08X\n", vid, pid, node[0x65], status);
+	UsbSetConfigDoneDetour.GetOriginal<usb_reply_func_t>()(nodePlusC, status);
+}
+
+void UsbConfigDescDoneHook(BYTE* nodePlusC, DWORD status) {
+	DWORD vid, pid;
+	NodeIds(nodePlusC - 0xC, &vid, &pid);
+	DbgPrintSync("EINTIM: USB config descriptor done: VID %04X PID %04X status %08X\n", vid, pid, status);
+	UsbConfigDescDoneDetour.GetOriginal<usb_reply_func_t>()(nodePlusC, status);
+}
+
 void UsbDiscardHook(BYTE* node) {
 	DWORD vid, pid;
 	NodeIds(node, &vid, &pid);
@@ -1346,6 +1366,16 @@ bool InitDriver(bool resetUsb) {
 			UsbCompatReplyDetour = Detour((void*)0x800D80A0, (void*)UsbCompatReplyHook);
 			UsbCompatReplyDetour.Install();
 			LogReadback("UsbCompatReply", (void*)0x800D80A0);
+		}
+		if (Expect(0x800D83F8, 0x7D8802A6, 0, "UsbSetConfigDone") && Expect(0x800D8404, 0x3BE3FFF4, 0, "UsbSetConfigDone (node)")) {
+			UsbSetConfigDoneDetour = Detour((void*)0x800D83F8, (void*)UsbSetConfigDoneHook);
+			UsbSetConfigDoneDetour.Install();
+			LogReadback("UsbSetConfigDone", (void*)0x800D83F8);
+		}
+		if (Expect(0x800D8468, 0x7D8802A6, 0, "UsbConfigDescDone") && Expect(0x800D8474, 0x3BE3FFF4, 0, "UsbConfigDescDone (node)")) {
+			UsbConfigDescDoneDetour = Detour((void*)0x800D8468, (void*)UsbConfigDescDoneHook);
+			UsbConfigDescDoneDetour.Install();
+			LogReadback("UsbConfigDescDone", (void*)0x800D8468);
 		}
 		if (Expect(0x800D7D00, 0x7D8802A6, 0, "UsbDiscard") && Expect(0x800D7D20, 0x897F027F, 0, "UsbDiscard (retry flag)")) {
 			UsbDiscardDetour = Detour((void*)0x800D7D00, (void*)UsbDiscardHook);
