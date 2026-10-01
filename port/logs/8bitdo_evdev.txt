@@ -1,0 +1,147 @@
+lendo /dev/input/by-id/usb-8BitDo_Ultimate_C_2.4G_Wireless_Controller_2DDC23209D-event-joystick por 240 s
+   0.0s EIXO ABS_Y = 128
+   0.0s EIXO ABS_Z = 152
+   0.0s EIXO ABS_RZ = 148
+   0.1s EIXO ABS_X = 128
+   0.5s EIXO ABS_Z = 221
+   0.5s EIXO ABS_X = 194
+   0.6s EIXO ABS_RZ = 83
+   0.8s EIXO ABS_Y = 62
+   0.9s EIXO ABS_RZ = 18
+   1.0s EIXO ABS_Z = 154
+   1.1s EIXO ABS_X = 130
+   1.1s EIXO ABS_Z = 89
+   1.2s EIXO ABS_X = 62
+   1.2s EIXO ABS_RZ = 85
+   1.3s EIXO ABS_Z = 23
+   1.3s EIXO ABS_RZ = 154
+   1.4s EIXO ABS_Y = 129
+   1.5s EIXO ABS_RZ = 222
+   1.6s EIXO ABS_Z = 89
+   1.6s EIXO ABS_X = 128
+   1.6s EIXO ABS_Z = 160
+   1.7s EIXO ABS_X = 198
+   1.7s EIXO ABS_Z = 230
+   1.9s EIXO ABS_RZ = 156
+   2.0s EIXO ABS_RZ = 88
+   2.1s EIXO ABS_Y = 64
+   2.1s EIXO ABS_RZ = 24
+   2.2s EIXO ABS_Y = 0
+   2.2s EIXO ABS_Z = 162
+   2.3s EIXO ABS_X = 131
+   2.3s EIXO ABS_Z = 94
+   2.4s EIXO ABS_X = 66
+   2.5s EIXO ABS_RZ = 90
+   2.5s EIXO ABS_Y = 68
+   2.6s EIXO ABS_RZ = 155
+   2.7s EIXO ABS_X = 132
+   2.7s EIXO ABS_Y = 132
+   2.7s EIXO ABS_Z = 159
+   2.8s EIXO ABS_X = 198
+   2.8s EIXO ABS_Z = 225
+   3.0s EIXO ABS_RZ = 91
+   3.1s EIXO ABS_Y = 66
+   3.2s EIXO ABS_RZ = 24
+   3.2s EIXO ABS_Y = 2
+   3.2s EIXO ABS_Z = 158
+   3.3s EIXO ABS_X = 129
+   3.3s EIXO ABS_Z = 88
+   3.4s EIXO ABS_X = 64
+   3.5s EIXO ABS_Z = 24
+   3.5s EIXO ABS_Y = 70
+   3.5s EIXO ABS_RZ = 94
+   3.7s EIXO ABS_Z = 93
+   3.8s EIXO ABS_X = 129
+   3.8s EIXO ABS_Z = 157
+   4.1s EIXO ABS_RZ = 25
+   4.3s EIXO ABS_Z = 91
+   4.4s EIXO ABS_X = 65
+   4.4s EIXO ABS_RZ = 93
+   4.5s EIXO ABS_RZ = 158
+   4.7s EIXO ABS_X = 133
+   4.7s EIXO ABS_Y = 134
+   4.7s EIXO ABS_Z = 155
+   4.8s EIXO ABS_X = 197
+   5.1s EIXO ABS_X = 133
+   5.2s EIXO ABS_Z = 80
+   5.8s TECLA codigo 0x130 -> botao HID 1 (bit 0)
+   6.0s TECLA codigo 0x134 -> botao HID 5 (bit 4)
+   6.2s TECLA codigo 0x131 -> botao HID 2 (bit 1)
+   7.3s TECLA codigo 0x133 -> botao HID 4 (bit 3)
+   7.6s TECLA codigo 0x131 -> botao HID 2 (bit 1)
+   7.6s TECLA codigo 0x134 -> botao HID 5 (bit 4)
+   7.7s TECLA codigo 0x131 -> botao HID 2 (bit 1)
+   8.8s TECLA codigo 0x13b -> botao HID 12 (bit 11)
+   9.4s TECLA codigo 0x133 -> botao HID 4 (bit 3)
+   9.4s TECLA codigo 0x13b -> botao HID 12 (bit 11)
+   9.8s TECLA codigo 0x134 -> botao HID 5 (bit 4)
+  10.1s TECLA codigo 0x13b -> botao HID 12 (bit 11)
+  10.1s TECLA codigo 0x133 -> botao HID 4 (bit 3)
+  11.3s TECLA codigo 0x133 -> botao HID 4 (bit 3)
+  11.3s TECLA codigo 0x13b -> botao HID 12 (bit 11)
+  11.6s TECLA codigo 0x134 -> botao HID 5 (bit 4)
+  12.2s TECLA codigo 0x13b -> botao HID 12 (bit 11)
+  12.5s TECLA codigo 0x134 -> botao HID 5 (bit 4)
+  12.8s TECLA codigo 0x133 -> botao HID 4 (bit 3)
+  12.8s TECLA codigo 0x13b -> botao HID 12 (bit 11)
+  13.2s TECLA codigo 0x134 -> botao HID 5 (bit 4)
+  13.6s TECLA codigo 0x133 -> botao HID 4 (bit 3)
+  13.6s TECLA codigo 0x13b -> botao HID 12 (bit 11)
+  14.0s TECLA codigo 0x134 -> botao HID 5 (bit 4)
+  14.2s TECLA codigo 0x13b -> botao HID 12 (bit 11)
+  14.9s EIXO ABS_X = 65
+  15.0s EIXO ABS_Y = 198
+  15.1s EIXO ABS_Y = 132
+  15.3s TECLA codigo 0x136 -> botao HID 7 (bit 6)
+  15.6s TECLA codigo 0x137 -> botao HID 8 (bit 7)
+  16.5s EIXO ABS_BRAKE = 1
+  16.6s TECLA codigo 0x138 -> botao HID 9 (bit 8)
+  16.6s EIXO ABS_BRAKE = 77
+  16.7s EIXO ABS_BRAKE = 154
+  16.7s EIXO ABS_GAS = 1
+  16.7s EIXO ABS_BRAKE = 255
+  16.7s TECLA codigo 0x139 -> botao HID 10 (bit 9)
+  16.8s EIXO ABS_GAS = 73
+  16.8s EIXO ABS_GAS = 145
+  17.1s EIXO ABS_BRAKE = 188
+  17.1s EIXO ABS_BRAKE = 99
+  17.2s EIXO ABS_BRAKE = 0
+  17.2s EIXO ABS_Y = 211
+  17.2s EIXO ABS_GAS = 77
+  17.2s EIXO ABS_GAS = 0
+  17.3s EIXO ABS_Y = 133
+  70.7s EIXO ABS_X = 130
+  70.7s EIXO ABS_Y = 68
+  80.3s TECLA codigo 0x130 -> botao HID 1 (bit 0)
+  81.2s TECLA codigo 0x131 -> botao HID 2 (bit 1)
+  82.0s TECLA codigo 0x133 -> botao HID 4 (bit 3)
+  82.8s TECLA codigo 0x134 -> botao HID 5 (bit 4)
+  83.9s TECLA codigo 0x136 -> botao HID 7 (bit 6)
+  84.5s TECLA codigo 0x137 -> botao HID 8 (bit 7)
+  85.4s TECLA codigo 0x138 -> botao HID 9 (bit 8)
+  85.4s EIXO ABS_BRAKE = 73
+  85.4s EIXO ABS_BRAKE = 156
+  85.4s EIXO ABS_BRAKE = 255
+  86.0s EIXO ABS_BRAKE = 155
+  86.0s EIXO ABS_BRAKE = 86
+  86.0s EIXO ABS_BRAKE = 13
+  86.6s TECLA codigo 0x139 -> botao HID 10 (bit 9)
+  86.6s EIXO ABS_GAS = 99
+  86.6s EIXO ABS_GAS = 184
+  87.1s EIXO ABS_GAS = 99
+  87.1s EIXO ABS_GAS = 31
+  87.7s TECLA codigo 0x13a -> botao HID 11 (bit 10)
+  89.4s TECLA codigo 0x13b -> botao HID 12 (bit 11)
+  90.4s TECLA codigo 0x13c -> botao HID 13 (bit 12)
+  91.1s EIXO ABS_Y = 135
+  91.5s TECLA codigo 0x13d -> botao HID 14 (bit 13)
+  92.5s TECLA codigo 0x13e -> botao HID 15 (bit 14)
+  94.1s EIXO ABS_HAT0Y = -1
+  94.3s EIXO ABS_HAT0Y = 0
+  94.7s EIXO ABS_HAT0X = -1
+  94.9s EIXO ABS_HAT0X = 0
+  95.1s EIXO ABS_HAT0X = 1
+  95.4s EIXO ABS_HAT0X = 0
+  95.6s EIXO ABS_HAT0Y = 1
+  95.8s EIXO ABS_HAT0Y = 0
+fim
