@@ -379,6 +379,7 @@ struct RawLayout {
 	uint16_t vendorId;
 	uint16_t productId;
 	uint8_t iface;          // USB interface that carries the gamepad (others go to the original driver)
+	uint16_t bcdDevice;     // device release that is the gamepad, 0 = any (the 8BitDo receiver reuses its VID/PID while IDLE)
 	int16_t reportId;       // -1 if the device sends no report ID
 	uint8_t lx, ly, rx, ry; // 8 bit axes, 0x80 = center
 	uint8_t lt, rt;         // 8 bit analog triggers, RAW_NONE if digital (then RAW_LT/RAW_RT buttons are used)
@@ -394,13 +395,24 @@ static const RawLayout kRawLayouts[] = {
 	// EasySMX X05 in DInput mode. Interface 0, report ID 7, 11 bytes:
 	// X Y Z Rz | hat (low nibble, 8 = neutral) | 16 buttons | accelerator | brake | pad.
 	// HOME is not reported in DInput mode (nothing changed on either interface).
-	{ "EasySMX X05 (DInput)", 0x2345, 0xE037, 0, 7,
+	{ "EasySMX X05 (DInput)", 0x2345, 0xE037, 0, 0, 7,
 		1, 2, 3, 4,      // lx ly rx ry
 		9, 8,            // lt = brake, rt = accelerator
 		5, 0,            // hat byte, low nibble
 		6,               // buttons start at byte 6
 		//A B  X  Y  LB RB LT RT BACK START L3  R3  GUIDE
 		{ 1, 0, 4, 3, 6, 7, 8, 9, 10,  11,   13, 14, RAW_NONE } },
+
+	// 8BitDo Ultimate C 2.4G receiver in DInput, once a controller is connected (bcdDevice 0.01;
+	// while IDLE it is 2.00 with only a vendor interface). Interface 0, report ID 1, 10 bytes:
+	// 15 buttons | hat (low nibble) | X Y Z Rz | accelerator | brake. Button order checked on the PC.
+	{ "8BitDo Ultimate C 2.4G (DInput)", 0x2DC8, 0x3016, 0, 0x0001, 1,
+		4, 5, 6, 7,      // lx ly rx ry
+		9, 8,            // lt = brake, rt = accelerator
+		3, 0,            // hat byte, low nibble
+		1,               // buttons start at byte 1
+		//A B  X  Y  LB RB LT RT BACK START L3  R3  GUIDE
+		{ 0, 1, 3, 4, 6, 7, 8, 9, 10,  11,   13, 14, 12 } },
 
 	{ nullptr } // end marker
 };
@@ -694,6 +706,11 @@ int HidAddDeviceHook(deviceHandle* deviceHandle) {
 
 	ControllerType controllerType = UNKNOWN_DEVICE;
 	const RawLayout* rawLayout = FindRawLayout(vendorId, productId);
+	uint16_t bcdDevice = swap_endianness_16(device_descriptor->bcdDevice);
+	if (rawLayout && rawLayout->bcdDevice && bcdDevice != rawLayout->bcdDevice) {
+		DbgPrint("EINTIM: %s: bcdDevice %04X is not the gamepad one (%04X), passing it on\n", rawLayout->name, bcdDevice, rawLayout->bcdDevice);
+		rawLayout = nullptr;
+	}
 	if (rawLayout && interface_descriptor->bInterfaceNumber != rawLayout->iface) {
 		DbgPrint("EINTIM: %s: interface %d is not the gamepad one, passing it on\n", rawLayout->name, interface_descriptor->bInterfaceNumber);
 		rawLayout = nullptr;

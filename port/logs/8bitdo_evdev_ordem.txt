@@ -1,0 +1,42 @@
+lendo /dev/input/by-id/usb-8BitDo_Ultimate_C_2.4G_Wireless_Controller_2DDC23209D-event-joystick por 600 s
+  46.3s EIXO ABS_X = 125
+  46.3s EIXO ABS_Y = 126
+  46.5s EIXO ABS_Y = 57
+  46.5s EIXO ABS_X = 189
+  46.5s EIXO ABS_Y = 127
+  55.5s EIXO ABS_BRAKE = 4
+  55.7s EIXO ABS_GAS = 11
+  56.0s TECLA codigo 0x130 -> botao HID 1 (bit 0)
+  56.9s TECLA codigo 0x131 -> botao HID 2 (bit 1)
+  57.7s TECLA codigo 0x133 -> botao HID 4 (bit 3)
+  58.6s TECLA codigo 0x134 -> botao HID 5 (bit 4)
+  59.7s TECLA codigo 0x136 -> botao HID 7 (bit 6)
+  60.2s TECLA codigo 0x137 -> botao HID 8 (bit 7)
+  61.1s TECLA codigo 0x138 -> botao HID 9 (bit 8)
+  61.1s EIXO ABS_BRAKE = 73
+  61.2s EIXO ABS_BRAKE = 156
+  61.2s EIXO ABS_BRAKE = 255
+  61.8s EIXO ABS_BRAKE = 155
+  61.8s EIXO ABS_BRAKE = 86
+  61.8s EIXO ABS_BRAKE = 13
+  62.3s TECLA codigo 0x139 -> botao HID 10 (bit 9)
+  62.3s EIXO ABS_GAS = 99
+  62.4s EIXO ABS_GAS = 184
+  62.8s EIXO ABS_GAS = 99
+  62.8s EIXO ABS_GAS = 31
+  63.5s TECLA codigo 0x13a -> botao HID 11 (bit 10)
+  65.2s TECLA codigo 0x13b -> botao HID 12 (bit 11)
+  66.2s TECLA codigo 0x13c -> botao HID 13 (bit 12)
+  66.8s EIXO ABS_X = 125
+  67.3s TECLA codigo 0x13d -> botao HID 14 (bit 13)
+  68.2s EIXO ABS_Z = 128
+  68.2s EIXO ABS_RZ = 128
+  68.3s TECLA codigo 0x13e -> botao HID 15 (bit 14)
+  69.9s EIXO ABS_HAT0Y = -1
+  70.1s EIXO ABS_HAT0Y = 0
+  70.4s EIXO ABS_HAT0X = -1
+  70.6s EIXO ABS_HAT0X = 0
+  70.9s EIXO ABS_HAT0X = 1
+  71.1s EIXO ABS_HAT0X = 0
+  71.4s EIXO ABS_HAT0Y = 1
+  71.5s EIXO ABS_HAT0Y = 0

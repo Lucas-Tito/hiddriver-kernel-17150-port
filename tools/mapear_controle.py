@@ -154,6 +154,20 @@ def main():
         except Reconnected:
             reopen()
     base = {node: most_common(r) for node, r in repouso.items()}
+    if any(b is None for b in base.values()):
+        # Controllers like the 8BitDo only report on change: no reports while idle means no
+        # rest state to compare with. A press and release ends on a report of the rest state.
+        while True:
+            input("\nEste controle so manda dados quando algo muda. Aperte ENTER e, em seguida,\n"
+                  "aperte e SOLTE o botao A uma vez (sem mexer nos analogicos)...")
+            try:
+                toque = record(fds, 3)
+                break
+            except Reconnected:
+                reopen()
+        for node, reports in toque.items():
+            if base[node] is None and reports:
+                base[node] = reports[-1]
     resultado["repouso"] = {node: {"report": base[node], "quantidade": len(r)} for node, r in repouso.items()}
     for node in fds:
         print(f"  {node}: {len(repouso[node])} reports em repouso, tipico {base[node]}")
