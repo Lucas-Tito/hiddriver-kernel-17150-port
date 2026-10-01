@@ -1,0 +1,1094 @@
+EINTIM: alive t=914 write=248 read=248 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=106878 set=4 caps=106838
+EINTIM: alive t=919 write=249 read=249 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=107478 set=4 caps=107438
+EINTIM: first call: XamInactivityDetectRecentActivity
+EINTIM: alive t=924 write=251 read=251 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=175 get=108078 set=4 caps=108038
+EINTIM: alive t=929 write=252 read=252 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=475 get=108678 set=4 caps=108638
+EINTIM: alive t=934 write=253 read=253 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=775 get=109278 set=4 caps=109238
+EINTIM: alive t=939 write=254 read=254 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=1075 get=109878 set=4 caps=109838
+EINTIM: alive t=944 write=255 read=255 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=1376 get=110478 set=4 caps=110438
+EINTIM: alive t=949 write=256 read=256 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=1676 get=111078 set=4 caps=111038
+EINTIM: alive t=954 write=257 read=257 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=1976 get=111680 set=4 caps=111640
+EINTIM: alive t=959 write=258 read=258 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=2276 get=112278 set=4 caps=112238
+EINTIM: alive t=964 write=259 read=259 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=2575 get=112878 set=4 caps=112838
+EINTIM: alive t=969 write=260 read=260 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=2875 get=113478 set=4 caps=113438
+EINTIM: alive t=974 write=261 read=261 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=114078 set=4 caps=114038
+EINTIM: alive t=979 write=262 read=262 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=114678 set=4 caps=114638
+EINTIM: alive t=984 write=263 read=263 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=115278 set=4 caps=115238
+EINTIM: alive t=989 write=264 read=264 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=115878 set=4 caps=115838
+EINTIM: alive t=994 write=265 read=265 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=116478 set=4 caps=116438
+EINTIM: alive t=999 write=266 read=266 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=117078 set=4 caps=117038
+EINTIM: alive t=1004 write=267 read=267 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=117678 set=4 caps=117638
+EINTIM: alive t=1009 write=268 read=268 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=118276 set=4 caps=118236
+EINTIM: alive t=1014 write=269 read=269 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=118876 set=4 caps=118836
+EINTIM: alive t=1019 write=270 read=270 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=119477 set=4 caps=119437
+EINTIM: alive t=1024 write=271 read=271 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=120078 set=4 caps=120038
+EINTIM: alive t=1029 write=272 read=272 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=120678 set=4 caps=120638
+EINTIM: alive t=1034 write=273 read=273 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=121278 set=4 caps=121238
+EINTIM: alive t=1039 write=274 read=274 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=121878 set=4 caps=121838
+EINTIM: alive t=1044 write=275 read=275 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=122478 set=4 caps=122438
+EINTIM: alive t=1049 write=276 read=276 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=123078 set=4 caps=123038
+EINTIM: alive t=1054 write=277 read=277 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=123678 set=4 caps=123638
+EINTIM: alive t=1059 write=278 read=278 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=124278 set=4 caps=124238
+EINTIM: alive t=1064 write=279 read=279 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=124878 set=4 caps=124838
+EINTIM: alive t=1069 write=280 read=280 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=125478 set=4 caps=125438
+EINTIM: alive t=1074 write=281 read=281 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=126078 set=4 caps=126038
+EINTIM: alive t=1079 write=282 read=282 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=126677 set=4 caps=126637
+EINTIM: alive t=1084 write=283 read=283 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=127278 set=4 caps=127238
+EINTIM: alive t=1089 write=284 read=284 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=127878 set=4 caps=127838
+EINTIM: alive t=1094 write=285 read=285 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=128478 set=4 caps=128438
+EINTIM: alive t=1099 write=286 read=286 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=129078 set=4 caps=129038
+EINTIM: alive t=1104 write=287 read=287 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=129678 set=4 caps=129638
+EINTIM: alive t=1109 write=288 read=288 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=130278 set=4 caps=130238
+EINTIM: alive t=1114 write=289 read=289 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=130878 set=4 caps=130838
+EINTIM: alive t=1119 write=290 read=290 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=131478 set=4 caps=131438
+EINTIM: alive t=1124 write=291 read=291 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=132078 set=4 caps=132038
+EINTIM: alive t=1129 write=292 read=292 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=132678 set=4 caps=132638
+EINTIM: alive t=1134 write=293 read=293 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=133278 set=4 caps=133238
+EINTIM: alive t=1139 write=294 read=294 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=133878 set=4 caps=133838
+EINTIM: alive t=1144 write=295 read=295 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=134478 set=4 caps=134438
+EINTIM: alive t=1149 write=296 read=296 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=135078 set=4 caps=135038
+EINTIM: alive t=1154 write=297 read=297 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=135678 set=4 caps=135638
+EINTIM: alive t=1159 write=298 read=298 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=136278 set=4 caps=136238
+EINTIM: alive t=1164 write=299 read=299 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=136878 set=4 caps=136838
+EINTIM: alive t=1169 write=300 read=300 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=137478 set=4 caps=137438
+EINTIM: alive t=1174 write=301 read=301 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=138080 set=4 caps=138040
+EINTIM: alive t=1179 write=302 read=302 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=138680 set=4 caps=138640
+EINTIM: alive t=1184 write=303 read=303 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=139280 set=4 caps=139240
+EINTIM: alive t=1189 write=304 read=304 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=139880 set=4 caps=139840
+EINTIM: alive t=1194 write=305 read=305 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=140478 set=4 caps=140438
+EINTIM: alive t=1199 write=306 read=306 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=141078 set=4 caps=141038
+EINTIM: alive t=1204 write=307 read=307 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=141678 set=4 caps=141638
+EINTIM: alive t=1209 write=308 read=308 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=142278 set=4 caps=142238
+EINTIM: alive t=1214 write=309 read=309 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=142878 set=4 caps=142838
+EINTIM: alive t=1219 write=310 read=310 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=143478 set=4 caps=143438
+EINTIM: alive t=1224 write=311 read=311 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=144078 set=4 caps=144038
+EINTIM: alive t=1229 write=312 read=312 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=144678 set=4 caps=144638
+EINTIM: alive t=1234 write=313 read=313 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=145278 set=4 caps=145238
+EINTIM: alive t=1239 write=314 read=314 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=145877 set=4 caps=145837
+EINTIM: alive t=1244 write=315 read=315 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=146476 set=4 caps=146436
+EINTIM: alive t=1249 write=316 read=316 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=147076 set=4 caps=147036
+EINTIM: alive t=1254 write=317 read=317 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=147676 set=4 caps=147636
+EINTIM: alive t=1259 write=318 read=318 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=148276 set=4 caps=148236
+EINTIM: alive t=1264 write=319 read=319 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=148876 set=4 caps=148836
+EINTIM: alive t=1269 write=320 read=320 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=149476 set=4 caps=149436
+EINTIM: alive t=1274 write=321 read=321 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=150076 set=4 caps=150036
+EINTIM: alive t=1279 write=322 read=322 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=150676 set=4 caps=150636
+EINTIM: alive t=1284 write=323 read=323 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=151276 set=4 caps=151236
+EINTIM: alive t=1289 write=324 read=324 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=151876 set=4 caps=151836
+EINTIM: alive t=1294 write=325 read=325 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=152476 set=4 caps=152436
+EINTIM: alive t=1299 write=326 read=326 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=153076 set=4 caps=153036
+EINTIM: alive t=1304 write=327 read=327 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=153676 set=4 caps=153636
+EINTIM: alive t=1309 write=328 read=328 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=154276 set=4 caps=154236
+EINTIM: alive t=1314 write=329 read=329 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=154876 set=4 caps=154836
+EINTIM: alive t=1319 write=330 read=330 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=155476 set=4 caps=155436
+EINTIM: alive t=1324 write=331 read=331 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=156076 set=4 caps=156036
+EINTIM: alive t=1329 write=332 read=332 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=156676 set=4 caps=156636
+EINTIM: alive t=1334 write=333 read=333 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=157276 set=4 caps=157236
+EINTIM: alive t=1339 write=334 read=334 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=157876 set=4 caps=157836
+EINTIM: alive t=1344 write=335 read=335 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=158478 set=4 caps=158438
+EINTIM: alive t=1349 write=336 read=336 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=159077 set=4 caps=159037
+EINTIM: alive t=1354 write=337 read=337 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=159678 set=4 caps=159638
+EINTIM: alive t=1359 write=338 read=338 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=160277 set=4 caps=160237
+EINTIM: alive t=1364 write=339 read=339 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=160876 set=4 caps=160836
+EINTIM: alive t=1369 write=340 read=340 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=161476 set=4 caps=161436
+EINTIM: alive t=1374 write=341 read=341 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=162076 set=4 caps=162036
+EINTIM: alive t=1379 write=342 read=342 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=3147 get=162723 set=4 caps=162683
+
+==== boot, log via hidlogh:\ ====
+EINTIM: HELLO from xbox 360 HID controller driver version 0.5 (port 17150), kernel 17150, stage 2, skip "am", log root hidlogh:\
+EINTIM: notify patch: ordinal 1183 at 816A2450, +48 = 409A
+EINTIM: notify patch applied, readback 4800
+EINTIM: Running on retail kernel 17150
+EINTIM: check UsbdGetInterfaceDescriptor   800D9418 = 8943000B (esperado 8943000B) ok
+EINTIM: check XamUserBindDeviceCallback    816D83A8 = 7C8B2378 (esperado 7C8B2378) ok
+EINTIM: check UsbdPowerDownNotification    800D9EF8 = 3D60800E (esperado 3D60800E) ok
+EINTIM: check UsbdDriverEntry              800D9C38 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbPhysicalPage (lis)        800D9C94 = 3F80801A (esperado 3F80801A) ok
+EINTIM: check UsbPhysicalPage (stw)        800D9C98 = 93FCC8D8 (esperado 93FCC8D8) ok
+EINTIM: check RoutedToSysapp (lis)         816F0804 = 3D6081AB (esperado 3D6081AB) ok
+EINTIM: check RoutedToSysapp (addi)        816F080C = 396BC6E8 (esperado 396BC6E8) ok
+EINTIM: check bugcheck 1                   800E1514 = 40820018 (esperado 40820018) ok
+EINTIM: check bugcheck 2                   800DE810 = 40820018 (esperado 40820018) ok
+EINTIM: check registro duplo 1             800D9E30 = 4BF8DC29 (esperado 4BF8DC29) ok
+EINTIM: check registro duplo 2             800D9E20 = 4BF97189 (esperado 4BF97189) ok
+EINTIM: check HidAddDevice                 800E5CD0 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check HidRemoveDevice              800E5C90 = 81630000 (esperado 81630000) ok
+EINTIM: check XamInactivityDetect          81695268 = 3D6081AA (esperado 3D6081AA) ok
+EINTIM: hook on: XamInputGetState
+EINTIM: hook on: XamInputSetState
+EINTIM: hook on: XamInputGetCapabilitiesEx
+EINTIM: hook on: XamInactivityDetectRecentActivity
+EINTIM: readback HidAddDevice                 800E5CD0 = 7D8802A6
+EINTIM: readback HidRemoveDevice              800E5C90 = 81630000
+EINTIM: readback XamInactivityDetect          81695268 = 3C0081F1
+EINTIM: readback XamInputGetState             816F07A8 = 3C0081F1
+EINTIM: Hooks installed (skipped: "am")
+EINTIM: Stage 2: USB reset skipped
+EINTIM: GetState user 0 -> status 0
+EINTIM: GetState user 1 -> status 48F
+EINTIM: GetState user 2 -> status 48F
+EINTIM: GetState user 3 -> status 48F
+EINTIM: alive t=13 write=33 read=33 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=32 set=0 caps=0
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: first call: XamInputSetState
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 2 -> status 48F
+EINTIM: GetCapabilitiesEx user 3 -> status 48F
+EINTIM: alive t=18 write=39 read=39 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=86 set=4 caps=26
+EINTIM: notify: calling XNotifyQueueUI "hiddriver: etapa 2 ativa (ganchos, sem reset USB)"
+EINTIM: alive t=23 write=41 read=40 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=686 set=4 caps=626
+EINTIM: notify: XNotifyQueueUI returned
+EINTIM: alive t=28 write=43 read=43 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=1286 set=4 caps=1226
+EINTIM: alive t=33 write=44 read=44 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=1886 set=4 caps=1826
+EINTIM: alive t=38 write=45 read=45 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=2486 set=4 caps=2426
+EINTIM: alive t=43 write=46 read=46 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=3086 set=4 caps=3026
+EINTIM: alive t=48 write=47 read=47 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=3686 set=4 caps=3626
+EINTIM: alive t=53 write=48 read=48 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=4286 set=4 caps=4226
+EINTIM: alive t=58 write=49 read=49 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=4586 set=4 caps=4526
+EINTIM: alive t=63 write=50 read=50 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=5186 set=4 caps=5126
+EINTIM: alive t=68 write=51 read=51 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=5786 set=4 caps=5726
+EINTIM: alive t=73 write=52 read=52 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=6387 set=4 caps=6327
+EINTIM: alive t=78 write=53 read=53 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=6988 set=4 caps=6928
+EINTIM: alive t=83 write=54 read=54 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=7588 set=4 caps=7528
+EINTIM: alive t=88 write=55 read=55 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=8188 set=4 caps=8128
+EINTIM: alive t=93 write=56 read=56 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=8788 set=4 caps=8728
+EINTIM: alive t=98 write=57 read=57 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=9388 set=4 caps=9328
+EINTIM: alive t=103 write=58 read=58 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=9988 set=4 caps=9928
+EINTIM: alive t=108 write=59 read=59 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=10588 set=4 caps=10528
+EINTIM: alive t=113 write=60 read=60 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=11189 set=4 caps=11129
+EINTIM: alive t=118 write=61 read=61 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=11788 set=4 caps=11728
+EINTIM: alive t=123 write=62 read=62 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=12390 set=4 caps=12330
+EINTIM: alive t=128 write=63 read=63 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=12990 set=4 caps=12930
+EINTIM: alive t=133 write=64 read=64 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=13590 set=4 caps=13530
+EINTIM: alive t=138 write=65 read=65 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=14189 set=4 caps=14129
+EINTIM: alive t=143 write=66 read=66 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=14788 set=4 caps=14728
+EINTIM: alive t=148 write=67 read=67 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=15389 set=4 caps=15329
+EINTIM: alive t=153 write=68 read=68 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=15990 set=4 caps=15930
+EINTIM: alive t=158 write=69 read=69 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=16590 set=4 caps=16530
+EINTIM: alive t=163 write=70 read=70 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=17190 set=4 caps=17130
+EINTIM: alive t=168 write=71 read=71 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=17790 set=4 caps=17730
+EINTIM: alive t=173 write=72 read=72 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=18390 set=4 caps=18330
+EINTIM: alive t=178 write=73 read=73 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=18990 set=4 caps=18930
+EINTIM: alive t=183 write=74 read=74 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=19590 set=4 caps=19530
+EINTIM: alive t=188 write=75 read=75 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=20190 set=4 caps=20130
+EINTIM: alive t=193 write=76 read=76 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=20790 set=4 caps=20730
+EINTIM: alive t=198 write=77 read=77 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=21390 set=4 caps=21330
+EINTIM: alive t=203 write=78 read=78 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=21991 set=4 caps=21931
+EINTIM: alive t=208 write=79 read=79 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=22590 set=4 caps=22530
+EINTIM: alive t=213 write=80 read=80 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=23190 set=4 caps=23130
+EINTIM: alive t=218 write=81 read=81 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=23790 set=4 caps=23730
+EINTIM: alive t=223 write=82 read=82 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=24390 set=4 caps=24330
+EINTIM: alive t=228 write=83 read=83 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=24989 set=4 caps=24929
+EINTIM: alive t=233 write=84 read=84 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=25590 set=4 caps=25530
+EINTIM: alive t=238 write=85 read=85 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=26188 set=4 caps=26128
+EINTIM: alive t=243 write=86 read=86 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=26790 set=4 caps=26730
+EINTIM: alive t=248 write=87 read=87 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=27390 set=4 caps=27330
+EINTIM: alive t=253 write=88 read=88 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=27990 set=4 caps=27930
+EINTIM: alive t=258 write=89 read=89 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=28590 set=4 caps=28530
+EINTIM: alive t=263 write=90 read=90 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=29190 set=4 caps=29130
+EINTIM: alive t=268 write=91 read=91 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=29790 set=4 caps=29730
+EINTIM: alive t=273 write=92 read=92 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=30390 set=4 caps=30330
+EINTIM: alive t=278 write=93 read=93 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=30990 set=4 caps=30930
+EINTIM: alive t=283 write=94 read=94 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=31590 set=4 caps=31530
+EINTIM: alive t=288 write=95 read=95 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=32190 set=4 caps=32130
+EINTIM: alive t=293 write=96 read=96 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=32790 set=4 caps=32730
+EINTIM: alive t=298 write=97 read=97 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=33390 set=4 caps=33330
+EINTIM: alive t=303 write=98 read=98 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=33990 set=4 caps=33930
+EINTIM: alive t=308 write=99 read=99 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=34591 set=4 caps=34531
+EINTIM: alive t=313 write=100 read=100 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=35192 set=4 caps=35132
+EINTIM: alive t=318 write=101 read=101 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=35790 set=4 caps=35730
+EINTIM: alive t=323 write=102 read=102 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=36391 set=4 caps=36331
+EINTIM: alive t=328 write=103 read=103 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=36992 set=4 caps=36932
+EINTIM: alive t=333 write=104 read=104 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=37592 set=4 caps=37532
+EINTIM: alive t=338 write=105 read=105 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=38192 set=4 caps=38132
+EINTIM: alive t=343 write=106 read=106 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=38792 set=4 caps=38732
+EINTIM: alive t=348 write=107 read=107 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=39392 set=4 caps=39332
+EINTIM: alive t=353 write=108 read=108 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=39992 set=4 caps=39932
+EINTIM: alive t=358 write=109 read=109 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=40590 set=4 caps=40530
+EINTIM: alive t=363 write=110 read=110 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=41190 set=4 caps=41130
+EINTIM: alive t=368 write=111 read=111 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=41790 set=4 caps=41730
+EINTIM: alive t=373 write=112 read=112 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=42390 set=4 caps=42330
+EINTIM: alive t=378 write=113 read=113 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=42990 set=4 caps=42930
+EINTIM: alive t=383 write=114 read=114 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=43591 set=4 caps=43531
+EINTIM: alive t=388 write=115 read=115 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=44191 set=4 caps=44131
+EINTIM: alive t=393 write=116 read=116 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=44790 set=4 caps=44730
+EINTIM: alive t=398 write=117 read=117 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=45507 set=4 caps=45447
+
+==== boot, log via hidlogh:\ ====
+EINTIM: HELLO from xbox 360 HID controller driver version 0.5 (port 17150), kernel 17150, stage 2, skip "mgsci", log root hidlogh:\
+EINTIM: notify patch: ordinal 1183 at 816A2450, +48 = 409A
+EINTIM: notify patch applied, readback 4800
+EINTIM: Running on retail kernel 17150
+EINTIM: check UsbdGetInterfaceDescriptor   800D9418 = 8943000B (esperado 8943000B) ok
+EINTIM: check XamUserBindDeviceCallback    816D83A8 = 7C8B2378 (esperado 7C8B2378) ok
+EINTIM: check UsbdPowerDownNotification    800D9EF8 = 3D60800E (esperado 3D60800E) ok
+EINTIM: check UsbdDriverEntry              800D9C38 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbPhysicalPage (lis)        800D9C94 = 3F80801A (esperado 3F80801A) ok
+EINTIM: check UsbPhysicalPage (stw)        800D9C98 = 93FCC8D8 (esperado 93FCC8D8) ok
+EINTIM: check RoutedToSysapp (lis)         816F0804 = 3D6081AB (esperado 3D6081AB) ok
+EINTIM: check RoutedToSysapp (addi)        816F080C = 396BC6E8 (esperado 396BC6E8) ok
+EINTIM: check bugcheck 1                   800E1514 = 40820018 (esperado 40820018) ok
+EINTIM: check bugcheck 2                   800DE810 = 40820018 (esperado 40820018) ok
+EINTIM: check registro duplo 1             800D9E30 = 4BF8DC29 (esperado 4BF8DC29) ok
+EINTIM: check registro duplo 2             800D9E20 = 4BF97189 (esperado 4BF97189) ok
+EINTIM: check HidAddDevice                 800E5CD0 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check HidRemoveDevice              800E5C90 = 81630000 (esperado 81630000) ok
+EINTIM: check XamInactivityDetect          81695268 = 3D6081AA (esperado 3D6081AA) ok
+EINTIM: hook on: HidAddDevice/HidRemoveDevice
+EINTIM: readback HidAddDevice                 800E5CD0 = 3C0081F1
+EINTIM: readback HidRemoveDevice              800E5C90 = 3C0081F1
+EINTIM: readback XamInactivityDetect          81695268 = 3D6081AA
+EINTIM: readback XamInputGetState             816F07A8 = 7D8802A6
+EINTIM: Hooks installed (skipped: "mgsci")
+EINTIM: Stage 2: USB reset skipped
+EINTIM: alive t=15 write=26 read=26 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=20 write=27 read=27 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: notify: calling XNotifyQueueUI "hiddriver: etapa 2 ativa (ganchos, sem reset USB)"
+EINTIM: alive t=25 write=29 read=29 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: notify: XNotifyQueueUI returned
+EINTIM: alive t=30 write=31 read=31 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=35 write=32 read=32 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=40 write=33 read=33 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=45 write=34 read=34 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=50 write=35 read=35 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=55 write=36 read=36 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=60 write=37 read=37 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=65 write=38 read=38 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=70 write=39 read=39 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=75 write=40 read=40 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=80 write=41 read=41 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=85 write=42 read=42 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=90 write=43 read=43 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=95 write=44 read=44 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=100 write=45 read=45 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=105 write=46 read=46 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=110 write=47 read=47 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=115 write=48 read=48 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=120 write=49 read=49 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=125 write=50 read=50 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=130 write=51 read=51 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=135 write=52 read=52 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=140 write=53 read=53 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=145 write=54 read=54 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=150 write=55 read=55 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=155 write=56 read=56 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=160 write=57 read=57 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=165 write=58 read=58 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=170 write=59 read=59 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=175 write=60 read=60 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=180 write=61 read=61 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=185 write=62 read=62 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=190 write=63 read=63 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=195 write=64 read=64 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=200 write=65 read=65 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=205 write=66 read=66 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=210 write=67 read=67 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=215 write=68 read=68 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=220 write=69 read=69 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=225 write=70 read=70 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=230 write=71 read=71 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=235 write=72 read=72 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=240 write=73 read=73 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=245 write=74 read=74 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=250 write=75 read=75 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=255 write=76 read=76 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=260 write=77 read=77 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=265 write=78 read=78 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=270 write=79 read=79 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=275 write=80 read=80 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=280 write=81 read=81 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=285 write=82 read=82 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=290 write=83 read=83 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=295 write=84 read=84 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=300 write=85 read=85 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=305 write=86 read=86 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=310 write=87 read=87 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=315 write=88 read=88 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=320 write=89 read=89 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=325 write=90 read=90 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=330 write=91 read=91 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=335 write=92 read=92 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=340 write=93 read=93 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=345 write=94 read=94 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=350 write=95 read=95 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=355 write=96 read=96 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=360 write=97 read=97 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=365 write=98 read=98 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=370 write=99 read=99 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=375 write=100 read=100 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=380 write=101 read=101 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=385 write=102 read=102 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=390 write=103 read=103 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=395 write=104 read=104 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=400 write=105 read=105 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=405 write=106 read=106 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=410 write=107 read=107 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=415 write=108 read=108 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=420 write=109 read=109 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=425 write=110 read=110 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=430 write=111 read=111 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=435 write=112 read=112 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=440 write=113 read=113 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=445 write=114 read=114 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=450 write=115 read=115 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=455 write=116 read=116 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=460 write=117 read=117 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=465 write=118 read=118 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=470 write=119 read=119 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=475 write=120 read=120 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=480 write=121 read=121 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=485 write=122 read=122 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=490 write=123 read=123 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=495 write=124 read=124 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=500 write=125 read=125 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=505 write=126 read=126 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=510 write=127 read=127 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=515 write=128 read=128 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=520 write=129 read=129 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=525 write=130 read=130 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=530 write=131 read=131 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=535 write=132 read=132 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=540 write=133 read=133 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=545 write=134 read=134 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=550 write=135 read=135 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=555 write=136 read=136 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=560 write=137 read=137 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=565 write=138 read=138 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=570 write=139 read=139 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=575 write=140 read=140 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=580 write=141 read=141 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=585 write=142 read=142 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=590 write=143 read=143 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=595 write=144 read=144 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=600 write=145 read=145 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=605 write=146 read=146 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=610 write=147 read=147 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=615 write=148 read=148 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=620 write=149 read=149 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=626 write=150 read=150 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=631 write=151 read=151 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=636 write=152 read=152 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=641 write=153 read=153 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=646 write=154 read=154 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=651 write=155 read=155 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=656 write=156 read=156 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=661 write=157 read=157 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=666 write=158 read=158 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=671 write=159 read=159 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=676 write=160 read=160 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=681 write=161 read=161 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=686 write=162 read=162 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=691 write=163 read=163 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=696 write=164 read=164 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=701 write=165 read=165 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=706 write=166 read=166 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=711 write=167 read=167 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=716 write=168 read=168 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=721 write=169 read=169 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=726 write=170 read=170 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=731 write=171 read=171 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=736 write=172 read=172 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=741 write=173 read=173 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=746 write=174 read=174 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=751 write=175 read=175 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=756 write=176 read=176 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=761 write=177 read=177 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=766 write=178 read=178 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=771 write=179 read=179 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=776 write=180 read=180 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=781 write=181 read=181 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=786 write=182 read=182 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=791 write=183 read=183 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=796 write=184 read=184 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=801 write=185 read=185 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=806 write=186 read=186 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=811 write=187 read=187 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=816 write=188 read=188 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=821 write=189 read=189 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=826 write=190 read=190 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=831 write=191 read=191 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=836 write=192 read=192 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=841 write=193 read=193 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=846 write=194 read=194 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=851 write=195 read=195 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=856 write=196 read=196 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=861 write=197 read=197 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=866 write=198 read=198 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=871 write=199 read=199 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=876 write=200 read=200 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=881 write=201 read=201 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=886 write=202 read=202 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=891 write=203 read=203 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=896 write=204 read=204 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=901 write=205 read=205 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=906 write=206 read=206 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=911 write=207 read=207 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=916 write=208 read=208 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=921 write=209 read=209 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=926 write=210 read=210 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=931 write=211 read=211 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=936 write=212 read=212 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=941 write=213 read=213 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=946 write=214 read=214 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=951 write=215 read=215 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=956 write=216 read=216 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=961 write=217 read=217 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=966 write=218 read=218 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=971 write=219 read=219 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=976 write=220 read=220 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=981 write=221 read=221 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=986 write=222 read=222 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=991 write=223 read=223 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=996 write=224 read=224 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1001 write=225 read=225 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1006 write=226 read=226 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1011 write=227 read=227 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1016 write=228 read=228 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1021 write=229 read=229 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1026 write=230 read=230 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1031 write=231 read=231 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1036 write=232 read=232 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1041 write=233 read=233 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1046 write=234 read=234 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1051 write=235 read=235 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1056 write=236 read=236 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1061 write=237 read=237 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1066 write=238 read=238 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1071 write=239 read=239 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1076 write=240 read=240 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1081 write=241 read=241 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1086 write=242 read=242 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1091 write=243 read=243 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1096 write=244 read=244 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1101 write=245 read=245 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1106 write=246 read=246 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1111 write=247 read=247 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1116 write=248 read=248 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1121 write=249 read=249 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1126 write=250 read=250 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1131 write=251 read=251 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1136 write=252 read=252 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1141 write=253 read=253 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1146 write=254 read=254 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1151 write=255 read=255 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1156 write=256 read=256 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1161 write=257 read=257 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1166 write=258 read=258 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1171 write=259 read=259 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1176 write=260 read=260 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1181 write=261 read=261 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1186 write=262 read=262 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1191 write=263 read=263 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1196 write=264 read=264 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1201 write=265 read=265 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1206 write=266 read=266 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1211 write=267 read=267 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1216 write=268 read=268 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1221 write=269 read=269 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1226 write=270 read=270 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1231 write=271 read=271 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1236 write=272 read=272 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1241 write=273 read=273 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1246 write=274 read=274 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1251 write=275 read=275 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1256 write=276 read=276 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1261 write=277 read=277 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1266 write=278 read=278 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1271 write=279 read=279 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1276 write=280 read=280 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1281 write=281 read=281 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1286 write=282 read=282 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1291 write=283 read=283 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1296 write=284 read=284 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1301 write=285 read=285 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1306 write=286 read=286 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1311 write=287 read=287 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1316 write=288 read=288 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1321 write=289 read=289 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1326 write=290 read=290 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1331 write=291 read=291 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1336 write=292 read=292 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1341 write=293 read=293 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1346 write=294 read=294 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1351 write=295 read=295 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1356 write=296 read=296 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1361 write=297 read=297 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1366 write=298 read=298 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1371 write=299 read=299 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1376 write=300 read=300 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1381 write=301 read=301 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1386 write=302 read=302 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1391 write=303 read=303 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1396 write=304 read=304 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1401 write=305 read=305 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1406 write=306 read=306 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1411 write=307 read=307 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1416 write=308 read=308 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1421 write=309 read=309 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1426 write=310 read=310 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1431 write=311 read=311 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1436 write=312 read=312 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1441 write=313 read=313 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1446 write=314 read=314 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1451 write=315 read=315 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1456 write=316 read=316 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1461 write=317 read=317 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1466 write=318 read=318 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1471 write=319 read=319 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1476 write=320 read=320 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1481 write=321 read=321 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1486 write=322 read=322 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1491 write=323 read=323 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1496 write=324 read=324 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1501 write=325 read=325 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1506 write=326 read=326 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1511 write=327 read=327 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1516 write=328 read=328 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1521 write=329 read=329 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1526 write=330 read=330 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1531 write=331 read=331 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1536 write=332 read=332 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1541 write=333 read=333 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1546 write=334 read=334 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1551 write=335 read=335 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1556 write=336 read=336 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1561 write=337 read=337 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1566 write=338 read=338 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1571 write=339 read=339 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1576 write=340 read=340 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1581 write=341 read=341 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1586 write=342 read=342 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1591 write=343 read=343 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1596 write=344 read=344 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1602 write=345 read=345 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1607 write=346 read=346 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1612 write=347 read=347 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1617 write=348 read=348 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1622 write=349 read=349 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1627 write=350 read=350 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1632 write=351 read=351 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1637 write=352 read=352 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1642 write=353 read=353 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1647 write=354 read=354 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1652 write=355 read=355 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1657 write=356 read=356 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1662 write=357 read=357 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1667 write=358 read=358 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1672 write=359 read=359 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1677 write=360 read=360 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1682 write=361 read=361 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1687 write=362 read=362 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1692 write=363 read=363 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1697 write=364 read=364 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1702 write=365 read=365 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1707 write=366 read=366 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1712 write=367 read=367 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1717 write=368 read=368 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1722 write=369 read=369 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1727 write=370 read=370 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1732 write=371 read=371 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1737 write=372 read=372 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1742 write=373 read=373 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1747 write=374 read=374 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1752 write=375 read=375 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1757 write=376 read=376 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1762 write=377 read=377 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1767 write=378 read=378 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1772 write=379 read=379 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1777 write=380 read=380 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1782 write=381 read=381 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1787 write=382 read=382 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1792 write=383 read=383 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1797 write=384 read=384 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1802 write=385 read=385 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1807 write=386 read=386 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1812 write=387 read=387 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1817 write=388 read=388 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1822 write=389 read=389 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1827 write=390 read=390 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1832 write=391 read=391 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1837 write=392 read=392 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1842 write=393 read=393 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1847 write=394 read=394 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1852 write=395 read=395 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1857 write=396 read=396 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1862 write=397 read=397 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1867 write=398 read=398 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1872 write=399 read=399 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1877 write=400 read=400 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1882 write=401 read=401 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1887 write=402 read=402 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1892 write=403 read=403 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1897 write=404 read=404 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1902 write=405 read=405 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1907 write=406 read=406 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1912 write=407 read=407 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1917 write=408 read=408 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1922 write=409 read=409 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1927 write=410 read=410 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1932 write=411 read=411 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1937 write=412 read=412 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1942 write=413 read=413 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1947 write=414 read=414 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1952 write=415 read=415 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1957 write=416 read=416 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1962 write=417 read=417 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1967 write=418 read=418 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1972 write=419 read=419 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1977 write=420 read=420 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1982 write=421 read=421 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1987 write=422 read=422 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1992 write=423 read=423 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=1997 write=424 read=424 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2002 write=425 read=425 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2007 write=426 read=426 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2012 write=427 read=427 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2017 write=428 read=428 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2022 write=429 read=429 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2027 write=430 read=430 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2032 write=431 read=431 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2037 write=432 read=432 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2042 write=433 read=433 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2047 write=434 read=434 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2052 write=435 read=435 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2057 write=436 read=436 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2062 write=437 read=437 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2067 write=438 read=438 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2072 write=439 read=439 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2077 write=440 read=440 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2082 write=441 read=441 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2087 write=442 read=442 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2092 write=443 read=443 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2097 write=444 read=444 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2102 write=445 read=445 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2107 write=446 read=446 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2112 write=447 read=447 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2117 write=448 read=448 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2122 write=449 read=449 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2127 write=450 read=450 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2132 write=451 read=451 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2137 write=452 read=452 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2142 write=453 read=453 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2147 write=454 read=454 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2152 write=455 read=455 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2157 write=456 read=456 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2162 write=457 read=457 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2167 write=458 read=458 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2172 write=459 read=459 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2177 write=460 read=460 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2182 write=461 read=461 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2187 write=462 read=462 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2192 write=463 read=463 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2197 write=464 read=464 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2202 write=465 read=465 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2207 write=466 read=466 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2212 write=467 read=467 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2217 write=468 read=468 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2222 write=469 read=469 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2227 write=470 read=470 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2232 write=471 read=471 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2237 write=472 read=472 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2242 write=473 read=473 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2247 write=474 read=474 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2252 write=475 read=475 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2257 write=476 read=476 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2262 write=477 read=477 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2267 write=478 read=478 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2272 write=479 read=479 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2277 write=480 read=480 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2282 write=481 read=481 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2287 write=482 read=482 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2292 write=483 read=483 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2297 write=484 read=484 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2302 write=485 read=485 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2307 write=486 read=486 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2312 write=487 read=487 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2317 write=488 read=488 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2322 write=489 read=489 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2327 write=490 read=490 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2332 write=491 read=491 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2337 write=492 read=492 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2342 write=493 read=493 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2347 write=494 read=494 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2352 write=495 read=495 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2357 write=496 read=496 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2362 write=497 read=497 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2367 write=498 read=498 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2372 write=499 read=499 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2377 write=500 read=500 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2382 write=501 read=501 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2387 write=502 read=502 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2392 write=503 read=503 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2397 write=504 read=504 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2402 write=505 read=505 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2407 write=506 read=506 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2412 write=507 read=507 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2417 write=508 read=508 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2422 write=509 read=509 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2427 write=510 read=510 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2432 write=511 read=511 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2437 write=512 read=512 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2442 write=513 read=513 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2447 write=514 read=514 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2452 write=515 read=515 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2457 write=516 read=516 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2462 write=517 read=517 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2467 write=518 read=518 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2472 write=519 read=519 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2477 write=520 read=520 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2482 write=521 read=521 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2487 write=522 read=522 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2492 write=523 read=523 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2497 write=524 read=524 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2502 write=525 read=525 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2507 write=526 read=526 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2512 write=527 read=527 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2517 write=528 read=528 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2522 write=529 read=529 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2527 write=530 read=530 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2532 write=531 read=531 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2537 write=532 read=532 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2542 write=533 read=533 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2547 write=534 read=534 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2552 write=535 read=535 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2557 write=536 read=536 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2562 write=537 read=537 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2567 write=538 read=538 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2572 write=539 read=539 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2577 write=540 read=540 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2582 write=541 read=541 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2587 write=542 read=542 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2592 write=543 read=543 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2597 write=544 read=544 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2602 write=545 read=545 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2607 write=546 read=546 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2612 write=547 read=547 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2617 write=548 read=548 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2622 write=549 read=549 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2627 write=550 read=550 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2632 write=551 read=551 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2637 write=552 read=552 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2642 write=553 read=553 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2647 write=554 read=554 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2652 write=555 read=555 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2657 write=556 read=556 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2662 write=557 read=557 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2667 write=558 read=558 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2672 write=559 read=559 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2677 write=560 read=560 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2682 write=561 read=561 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2688 write=562 read=562 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2693 write=563 read=563 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2698 write=564 read=564 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2703 write=565 read=565 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2708 write=566 read=566 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2713 write=567 read=567 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2718 write=568 read=568 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2723 write=569 read=569 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2728 write=570 read=570 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2733 write=571 read=571 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2738 write=572 read=572 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2743 write=573 read=573 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2748 write=574 read=574 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2753 write=575 read=575 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2758 write=576 read=576 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2763 write=577 read=577 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2768 write=578 read=578 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2773 write=579 read=579 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2778 write=580 read=580 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2783 write=581 read=581 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2788 write=582 read=582 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2793 write=583 read=583 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2798 write=584 read=584 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2803 write=585 read=585 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2808 write=586 read=586 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2813 write=587 read=587 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2818 write=588 read=588 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2823 write=589 read=589 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2828 write=590 read=590 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2833 write=591 read=591 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2838 write=592 read=592 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2843 write=593 read=593 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2848 write=594 read=594 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2853 write=595 read=595 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2858 write=596 read=596 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2863 write=597 read=597 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2868 write=598 read=598 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2873 write=599 read=599 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2878 write=600 read=600 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2883 write=601 read=601 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2888 write=602 read=602 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2893 write=603 read=603 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2898 write=604 read=604 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2903 write=605 read=605 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2908 write=606 read=606 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2913 write=607 read=607 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2918 write=608 read=608 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2923 write=609 read=609 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2928 write=610 read=610 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2933 write=611 read=611 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2938 write=612 read=612 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2943 write=613 read=613 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2948 write=614 read=614 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2953 write=615 read=615 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2958 write=616 read=616 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2963 write=617 read=617 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2968 write=618 read=618 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2973 write=619 read=619 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2978 write=620 read=620 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2983 write=621 read=621 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2988 write=622 read=622 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2993 write=623 read=623 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=2998 write=624 read=624 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3003 write=625 read=625 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3008 write=626 read=626 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3013 write=627 read=627 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3018 write=628 read=628 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3023 write=629 read=629 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3028 write=630 read=630 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3033 write=631 read=631 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3038 write=632 read=632 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3043 write=633 read=633 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3048 write=634 read=634 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3053 write=635 read=635 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3058 write=636 read=636 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3063 write=637 read=637 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3068 write=638 read=638 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3073 write=639 read=639 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3078 write=640 read=640 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3083 write=641 read=641 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3088 write=642 read=642 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3093 write=643 read=643 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3098 write=644 read=644 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3103 write=645 read=645 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3108 write=646 read=646 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3113 write=647 read=647 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3118 write=648 read=648 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3123 write=649 read=649 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3128 write=650 read=650 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3133 write=651 read=651 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3138 write=652 read=652 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3143 write=653 read=653 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3148 write=654 read=654 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3153 write=655 read=655 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3158 write=656 read=656 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3163 write=657 read=657 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3168 write=658 read=658 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3173 write=659 read=659 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3178 write=660 read=660 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3183 write=661 read=661 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3188 write=662 read=662 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3193 write=663 read=663 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3198 write=664 read=664 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3203 write=665 read=665 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3208 write=666 read=666 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3213 write=667 read=667 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3218 write=668 read=668 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3223 write=669 read=669 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3228 write=670 read=670 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3233 write=671 read=671 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3238 write=672 read=672 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3243 write=673 read=673 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3248 write=674 read=674 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3253 write=675 read=675 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3258 write=676 read=676 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3263 write=677 read=677 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3268 write=678 read=678 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3273 write=679 read=679 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3278 write=680 read=680 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3283 write=681 read=681 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3288 write=682 read=682 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3293 write=683 read=683 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3298 write=684 read=684 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3303 write=685 read=685 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3308 write=686 read=686 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3313 write=687 read=687 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3318 write=688 read=688 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3323 write=689 read=689 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3328 write=690 read=690 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3333 write=691 read=691 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3338 write=692 read=692 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3343 write=693 read=693 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3348 write=694 read=694 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3353 write=695 read=695 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3358 write=696 read=696 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3363 write=697 read=697 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3368 write=698 read=698 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3373 write=699 read=699 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3378 write=700 read=700 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3383 write=701 read=701 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3388 write=702 read=702 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3393 write=703 read=703 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3398 write=704 read=704 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3403 write=705 read=705 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3408 write=706 read=706 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3413 write=707 read=707 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3418 write=708 read=708 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3423 write=709 read=709 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3428 write=710 read=710 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3433 write=711 read=711 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3438 write=712 read=712 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3443 write=713 read=713 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3448 write=714 read=714 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3453 write=715 read=715 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3458 write=716 read=716 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3463 write=717 read=717 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3468 write=718 read=718 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3473 write=719 read=719 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3478 write=720 read=720 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3483 write=721 read=721 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3488 write=722 read=722 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3493 write=723 read=723 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3498 write=724 read=724 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3503 write=725 read=725 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3508 write=726 read=726 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3513 write=727 read=727 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3518 write=728 read=728 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3523 write=729 read=729 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3528 write=730 read=730 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3533 write=731 read=731 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3538 write=732 read=732 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3543 write=733 read=733 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3548 write=734 read=734 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3553 write=735 read=735 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3558 write=736 read=736 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3563 write=737 read=737 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3568 write=738 read=738 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3573 write=739 read=739 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3578 write=740 read=740 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3583 write=741 read=741 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3588 write=742 read=742 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3593 write=743 read=743 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3598 write=744 read=744 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3603 write=745 read=745 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3608 write=746 read=746 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3613 write=747 read=747 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3618 write=748 read=748 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3623 write=749 read=749 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3628 write=750 read=750 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3633 write=751 read=751 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3638 write=752 read=752 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3643 write=753 read=753 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3648 write=754 read=754 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3653 write=755 read=755 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3658 write=756 read=756 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3663 write=757 read=757 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3668 write=758 read=758 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3673 write=759 read=759 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3678 write=760 read=760 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3683 write=761 read=761 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3688 write=762 read=762 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3693 write=763 read=763 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3698 write=764 read=764 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3703 write=765 read=765 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3708 write=766 read=766 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3713 write=767 read=767 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3718 write=768 read=768 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3723 write=769 read=769 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3728 write=770 read=770 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3733 write=771 read=771 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3738 write=772 read=772 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3743 write=773 read=773 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3748 write=774 read=774 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3754 write=775 read=775 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3759 write=776 read=776 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3764 write=777 read=777 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+EINTIM: alive t=3769 write=778 read=778 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=0 set=0 caps=0
+
+==== boot, log via hidlogh:\ ====
+EINTIM: HELLO from xbox 360 HID controller driver version 0.5 (port 17150), kernel 17150, stage 2, skip "", log root hidlogh:\
+EINTIM: notify patch: ordinal 1183 at 816A2450, +48 = 409A
+EINTIM: notify patch applied, readback 4800
+EINTIM: Running on retail kernel 17150
+EINTIM: check UsbdGetInterfaceDescriptor   800D9418 = 8943000B (esperado 8943000B) ok
+EINTIM: check XamUserBindDeviceCallback    816D83A8 = 7C8B2378 (esperado 7C8B2378) ok
+EINTIM: check UsbdPowerDownNotification    800D9EF8 = 3D60800E (esperado 3D60800E) ok
+EINTIM: check UsbdDriverEntry              800D9C38 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbPhysicalPage (lis)        800D9C94 = 3F80801A (esperado 3F80801A) ok
+EINTIM: check UsbPhysicalPage (stw)        800D9C98 = 93FCC8D8 (esperado 93FCC8D8) ok
+EINTIM: check RoutedToSysapp (lis)         816F0804 = 3D6081AB (esperado 3D6081AB) ok
+EINTIM: check RoutedToSysapp (addi)        816F080C = 396BC6E8 (esperado 396BC6E8) ok
+EINTIM: check bugcheck 1                   800E1514 = 40820018 (esperado 40820018) ok
+EINTIM: check bugcheck 2                   800DE810 = 40820018 (esperado 40820018) ok
+EINTIM: check registro duplo 1             800D9E30 = 4BF8DC29 (esperado 4BF8DC29) ok
+EINTIM: check registro duplo 2             800D9E20 = 4BF97189 (esperado 4BF97189) ok
+EINTIM: check HidAddDevice                 800E5CD0 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check HidRemoveDevice              800E5C90 = 81630000 (esperado 81630000) ok
+EINTIM: check XamInactivityDetect          81695268 = 3D6081AA (esperado 3D6081AA) ok
+EINTIM: check UsbMatch (prologo)           800D7170 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbMatch (lbz class)         800D7190 = 8B7E0005 (esperado 8B7E0005) ok
+EINTIM: readback UsbMatch                     800D7170 = 3C0081F1
+EINTIM: hook on: USB match logger
+EINTIM: check UsbDeviceMatch (prologo)     800D70D8 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbDeviceMatch (hub)         800D7110 = 2B0A0009 (esperado 2B0A0009) ok
+EINTIM: readback UsbDeviceMatch               800D70D8 = 3C0081F1
+EINTIM: hook on: USB device match logger
+EINTIM: check UsbdAddDeviceComplete        800D78F0 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: readback UsbdAddDeviceComplete        800D78F0 = 3C0081F1
+EINTIM: hook on: UsbdAddDeviceComplete logger
+EINTIM: hook on: HidAddDevice/HidRemoveDevice
+EINTIM: hook on: XamInputGetState
+EINTIM: hook on: XamInputSetState
+EINTIM: hook on: XamInputGetCapabilitiesEx
+EINTIM: hook on: XamInactivityDetectRecentActivity
+EINTIM: readback HidAddDevice                 800E5CD0 = 3C0081F1
+EINTIM: readback HidRemoveDevice              800E5C90 = 3C0081F1
+EINTIM: readback XamInactivityDetect          81695268 = 3C0081F1
+EINTIM: readback XamInputGetState             816F07A8 = 3C0081F1
+EINTIM: Hooks installed (skipped: "")
+EINTIM: Stage 2: USB reset skipped
+EINTIM: GetState user 0 -> status 0
+EINTIM: GetState user 1 -> status 48F
+EINTIM: GetState user 2 -> status 48F
+EINTIM: GetState user 3 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: first call: XamInputSetState
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 2 -> status 48F
+EINTIM: GetCapabilitiesEx user 3 -> status 48F
+EINTIM: alive t=14 write=50 read=50 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=64 set=4 caps=4
+EINTIM: alive t=19 write=51 read=51 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=222 set=4 caps=162
+EINTIM: notify: calling XNotifyQueueUI "hiddriver: etapa 2 ativa (ganchos, sem reset USB)"
+EINTIM: notify: XNotifyQueueUI returned
+EINTIM: alive t=24 write=54 read=54 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=514 set=4 caps=454
+EINTIM: alive t=29 write=55 read=55 hits dev=0 if=0 addc=0 hidadd=0 hidrem=0 inact=0 get=1114 set=4 caps=1054
+EINTIM: USB match: VID 058F PID 6387 if 0 class 08/06/50 -> 80162238 mass storage
+EINTIM: alive t=34 write=57 read=57 hits dev=0 if=1 addc=1 hidadd=0 hidrem=0 inact=0 get=1714 set=4 caps=1654
+EINTIM: alive t=39 write=58 read=58 hits dev=0 if=1 addc=1 hidadd=0 hidrem=0 inact=0 get=2314 set=4 caps=2254
+EINTIM: alive t=44 write=59 read=59 hits dev=0 if=1 addc=1 hidadd=0 hidrem=0 inact=0 get=2914 set=4 caps=2854
+EINTIM: USB match: VID 045E PID 028E if 0 class FF/5D/01 -> 801626C8 XInput (FF/5D)
+EINTIM: USB add complete: handle E1EBF3B0 status C0051012 (rejeitado) VID 045E PID 028E
+EINTIM: alive t=49 write=62 read=62 hits dev=0 if=2 addc=2 hidadd=0 hidrem=0 inact=0 get=3515 set=4 caps=3455
+EINTIM: alive t=54 write=63 read=63 hits dev=0 if=2 addc=2 hidadd=0 hidrem=0 inact=0 get=4116 set=4 caps=4056
+EINTIM: alive t=59 write=64 read=64 hits dev=0 if=2 addc=2 hidadd=0 hidrem=0 inact=0 get=4716 set=4 caps=4656
+EINTIM: USB match: VID 2345 PID E037 if 0 class 03/00/00 -> 80162254 HID (HidAddDevice)
+EINTIM: HID add device E1EBF3D0
+EINTIM: IS USB1.0: 1
+EINTIM: USB device descriptor Pointer: E1EBEEC4
+EINTIM: USB interface descriptor Pointer: E1EBEEE1
+EINTIM: USB endpoint interrupt in descriptor Pointer: E1EBEEF3
+EINTIM: HID device vendor id: 2345, product id: e037
+EINTIM: Interface 0 class 3 subclass 0 protocol 0
+EINTIM: Unrelated USB Device. Calling original...
+EINTIM: USB add complete: handle E1EBF3D0 status C0000001 (rejeitado) VID 2345 PID E037
+EINTIM: USB match: VID 2345 PID E037 if 1 class 03/00/00 -> 80162254 HID (HidAddDevice)
+EINTIM: HID add device E1EBF3C0
+EINTIM: IS USB1.0: 1
+EINTIM: USB device descriptor Pointer: E1EBEEC4
+EINTIM: USB interface descriptor Pointer: E1EBEF01
+EINTIM: USB endpoint interrupt in descriptor Pointer: E1EBEF13
+EINTIM: HID device vendor id: 2345, product id: e037
+EINTIM: Interface 1 class 3 subclass 0 protocol 0
+EINTIM: Unrelated USB Device. Calling original...
+EINTIM: USB add complete: handle E1EBF3C0 status C0000001 (rejeitado) VID 2345 PID E037
+EINTIM: alive t=64 write=85 read=85 hits dev=0 if=4 addc=4 hidadd=2 hidrem=0 inact=0 get=5316 set=4 caps=5256
+EINTIM: alive t=69 write=86 read=86 hits dev=0 if=4 addc=4 hidadd=2 hidrem=0 inact=0 get=5914 set=4 caps=5854
+EINTIM: alive t=74 write=87 read=87 hits dev=0 if=4 addc=4 hidadd=2 hidrem=0 inact=0 get=6514 set=4 caps=6454
+EINTIM: alive t=79 write=88 read=88 hits dev=0 if=4 addc=4 hidadd=2 hidrem=0 inact=0 get=7114 set=4 caps=7054
+EINTIM: alive t=84 write=89 read=89 hits dev=0 if=4 addc=4 hidadd=2 hidrem=0 inact=0 get=7714 set=4 caps=7654
+EINTIM: alive t=89 write=90 read=90 hits dev=0 if=4 addc=4 hidadd=2 hidrem=0 inact=0 get=8314 set=4 caps=8254
+EINTIM: alive t=94 write=91 read=91 hits dev=0 if=4 addc=4 hidadd=2 hidrem=0 inact=0 get=8914 set=4 caps=8854
+EINTIM: alive t=99 write=92 read=92 hits dev=0 if=4 addc=4 hidadd=2 hidrem=0 inact=0 get=9514 set=4 caps=9454
+EINTIM: alive t=104 write=93 read=93 hits dev=0 if=4 addc=4 hidadd=2 hidrem=0 inact=0 get=10114 set=4 caps=10054
+EINTIM: alive t=109 write=94 read=94 hits dev=0 if=4 addc=4 hidadd=2 hidrem=0 inact=0 get=10715 set=4 caps=10655
+EINTIM: alive t=114 write=95 read=95 hits dev=0 if=4 addc=4 hidadd=2 hidrem=0 inact=0 get=11314 set=4 caps=11254
