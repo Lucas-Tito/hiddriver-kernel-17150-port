@@ -1,0 +1,1060 @@
+{
+ "nome": "easysmx",
+ "vid": "2345",
+ "pid": "E037",
+ "interfaces": [
+  {
+   "node": "/dev/hidraw1",
+   "interface": "0",
+   "descriptor": "05010905a10185070901a1000930093109320935150026ff00750895048102c00939150025073500463b016514750495018142750495018101050919012910150025017501951081020502150026ff0009c409c5950275088102750895018101c0"
+  },
+  {
+   "node": "/dev/hidraw2",
+   "interface": "1",
+   "descriptor": "05010980a10185011981298315002501950375018102950175058101c0050c0901a10185021500250109e909ea094009cd19b529b87501950881020a8a010a21020a2a021a23022a270281020a83010a96010a92010a9e010a94010a060209b209b48102c0"
+  }
+ ],
+ "controles": {
+  "A": {
+   "/dev/hidraw1": {
+    "reports": 439,
+    "mudancas": [
+     {
+      "byte": 3,
+      "repouso": "81",
+      "bits_mudaram": "00000001",
+      "min": "80",
+      "max": "80"
+     },
+     {
+      "byte": 4,
+      "repouso": "79",
+      "bits_mudaram": "00000011",
+      "min": "7A",
+      "max": "7A"
+     },
+     {
+      "byte": 6,
+      "repouso": "00",
+      "bits_mudaram": "00000010",
+      "min": "02",
+      "max": "02"
+     }
+    ]
+   },
+   "/dev/hidraw2": {
+    "reports": 0,
+    "mudancas": []
+   }
+  },
+  "B": {
+   "/dev/hidraw1": {
+    "reports": 439,
+    "mudancas": [
+     {
+      "byte": 3,
+      "repouso": "81",
+      "bits_mudaram": "00000001",
+      "min": "80",
+      "max": "80"
+     },
+     {
+      "byte": 6,
+      "repouso": "00",
+      "bits_mudaram": "00000011",
+      "min": "01",
+      "max": "02"
+     }
+    ]
+   },
+   "/dev/hidraw2": {
+    "reports": 0,
+    "mudancas": []
+   }
+  },
+  "X": {
+   "/dev/hidraw1": {
+    "reports": 439,
+    "mudancas": [
+     {
+      "byte": 3,
+      "repouso": "81",
+      "bits_mudaram": "11111111",
+      "min": "7F",
+      "max": "80"
+     },
+     {
+      "byte": 4,
+      "repouso": "79",
+      "bits_mudaram": "00000011",
+      "min": "7A",
+      "max": "7B"
+     },
+     {
+      "byte": 6,
+      "repouso": "00",
+      "bits_mudaram": "00010001",
+      "min": "01",
+      "max": "10"
+     }
+    ]
+   },
+   "/dev/hidraw2": {
+    "reports": 0,
+    "mudancas": []
+   }
+  },
+  "Y": {
+   "/dev/hidraw1": {
+    "reports": 438,
+    "mudancas": [
+     {
+      "byte": 3,
+      "repouso": "81",
+      "bits_mudaram": "11111111",
+      "min": "7F",
+      "max": "80"
+     },
+     {
+      "byte": 4,
+      "repouso": "79",
+      "bits_mudaram": "00000011",
+      "min": "7A",
+      "max": "7B"
+     },
+     {
+      "byte": 6,
+      "repouso": "00",
+      "bits_mudaram": "00011000",
+      "min": "08",
+      "max": "10"
+     }
+    ]
+   },
+   "/dev/hidraw2": {
+    "reports": 0,
+    "mudancas": []
+   }
+  },
+  "LB": {
+   "/dev/hidraw1": {
+    "reports": 439,
+    "mudancas": [
+     {
+      "byte": 3,
+      "repouso": "81",
+      "bits_mudaram": "11111111",
+      "min": "7F",
+      "max": "80"
+     },
+     {
+      "byte": 4,
+      "repouso": "79",
+      "bits_mudaram": "00000011",
+      "min": "7A",
+      "max": "7B"
+     },
+     {
+      "byte": 6,
+      "repouso": "00",
+      "bits_mudaram": "01001000",
+      "min": "08",
+      "max": "40"
+     }
+    ]
+   },
+   "/dev/hidraw2": {
+    "reports": 0,
+    "mudancas": []
+   }
+  },
+  "RB": {
+   "/dev/hidraw1": {
+    "reports": 439,
+    "mudancas": [
+     {
+      "byte": 3,
+      "repouso": "81",
+      "bits_mudaram": "00000001",
+      "min": "80",
+      "max": "80"
+     },
+     {
+      "byte": 4,
+      "repouso": "79",
+      "bits_mudaram": "00000011",
+      "min": "7A",
+      "max": "7A"
+     },
+     {
+      "byte": 6,
+      "repouso": "00",
+      "bits_mudaram": "11000000",
+      "min": "40",
+      "max": "80"
+     }
+    ]
+   },
+   "/dev/hidraw2": {
+    "reports": 0,
+    "mudancas": []
+   }
+  },
+  "LT": {
+   "/dev/hidraw1": {
+    "reports": 439,
+    "mudancas": [
+     {
+      "byte": 1,
+      "repouso": "80",
+      "bits_mudaram": "11111111",
+      "min": "7F",
+      "max": "7F"
+     },
+     {
+      "byte": 2,
+      "repouso": "7D",
+      "bits_mudaram": "00000111",
+      "min": "7B",
+      "max": "7C"
+     },
+     {
+      "byte": 3,
+      "repouso": "81",
+      "bits_mudaram": "00000001",
+      "min": "80",
+      "max": "80"
+     },
+     {
+      "byte": 4,
+      "repouso": "79",
+      "bits_mudaram": "00000011",
+      "min": "7A",
+      "max": "7B"
+     },
+     {
+      "byte": 6,
+      "repouso": "00",
+      "bits_mudaram": "10000000",
+      "min": "80",
+      "max": "80"
+     },
+     {
+      "byte": 7,
+      "repouso": "00",
+      "bits_mudaram": "00000001",
+      "min": "01",
+      "max": "01"
+     },
+     {
+      "byte": 9,
+      "repouso": "00",
+      "bits_mudaram": "11111111",
+      "min": "12",
+      "max": "FF"
+     }
+    ]
+   },
+   "/dev/hidraw2": {
+    "reports": 0,
+    "mudancas": []
+   }
+  },
+  "RT": {
+   "/dev/hidraw1": {
+    "reports": 439,
+    "mudancas": [
+     {
+      "byte": 1,
+      "repouso": "80",
+      "bits_mudaram": "11111111",
+      "min": "7F",
+      "max": "7F"
+     },
+     {
+      "byte": 2,
+      "repouso": "7D",
+      "bits_mudaram": "00000001",
+      "min": "7C",
+      "max": "7C"
+     },
+     {
+      "byte": 3,
+      "repouso": "81",
+      "bits_mudaram": "00000001",
+      "min": "80",
+      "max": "80"
+     },
+     {
+      "byte": 4,
+      "repouso": "79",
+      "bits_mudaram": "00000011",
+      "min": "7A",
+      "max": "7B"
+     },
+     {
+      "byte": 7,
+      "repouso": "00",
+      "bits_mudaram": "00000011",
+      "min": "01",
+      "max": "02"
+     },
+     {
+      "byte": 8,
+      "repouso": "00",
+      "bits_mudaram": "11111111",
+      "min": "29",
+      "max": "FF"
+     },
+     {
+      "byte": 9,
+      "repouso": "00",
+      "bits_mudaram": "11111111",
+      "min": "14",
+      "max": "FF"
+     }
+    ]
+   },
+   "/dev/hidraw2": {
+    "reports": 0,
+    "mudancas": []
+   }
+  },
+  "BACK": {
+   "/dev/hidraw1": {
+    "reports": 439,
+    "mudancas": [
+     {
+      "byte": 1,
+      "repouso": "80",
+      "bits_mudaram": "11111111",
+      "min": "7E",
+      "max": "7F"
+     },
+     {
+      "byte": 2,
+      "repouso": "7D",
+      "bits_mudaram": "00000011",
+      "min": "7E",
+      "max": "7E"
+     },
+     {
+      "byte": 3,
+      "repouso": "81",
+      "bits_mudaram": "00000001",
+      "min": "80",
+      "max": "80"
+     },
+     {
+      "byte": 4,
+      "repouso": "79",
+      "bits_mudaram": "00000111",
+      "min": "7A",
+      "max": "7D"
+     },
+     {
+      "byte": 7,
+      "repouso": "00",
+      "bits_mudaram": "00000110",
+      "min": "02",
+      "max": "04"
+     },
+     {
+      "byte": 8,
+      "repouso": "00",
+      "bits_mudaram": "11111111",
+      "min": "FF",
+      "max": "FF"
+     }
+    ]
+   },
+   "/dev/hidraw2": {
+    "reports": 0,
+    "mudancas": []
+   }
+  },
+  "START": {
+   "/dev/hidraw1": {
+    "reports": 439,
+    "mudancas": [
+     {
+      "byte": 1,
+      "repouso": "80",
+      "bits_mudaram": "11111110",
+      "min": "7E",
+      "max": "7E"
+     },
+     {
+      "byte": 2,
+      "repouso": "7D",
+      "bits_mudaram": "00000011",
+      "min": "7E",
+      "max": "7E"
+     },
+     {
+      "byte": 3,
+      "repouso": "81",
+      "bits_mudaram": "00000001",
+      "min": "80",
+      "max": "80"
+     },
+     {
+      "byte": 4,
+      "repouso": "79",
+      "bits_mudaram": "00000111",
+      "min": "7A",
+      "max": "7D"
+     },
+     {
+      "byte": 7,
+      "repouso": "00",
+      "bits_mudaram": "00001100",
+      "min": "04",
+      "max": "08"
+     }
+    ]
+   },
+   "/dev/hidraw2": {
+    "reports": 0,
+    "mudancas": []
+   }
+  },
+  "L3": {
+   "/dev/hidraw1": {
+    "reports": 439,
+    "mudancas": [
+     {
+      "byte": 1,
+      "repouso": "80",
+      "bits_mudaram": "11111111",
+      "min": "79",
+      "max": "82"
+     },
+     {
+      "byte": 2,
+      "repouso": "7D",
+      "bits_mudaram": "00001111",
+      "min": "72",
+      "max": "7E"
+     },
+     {
+      "byte": 3,
+      "repouso": "81",
+      "bits_mudaram": "11111111",
+      "min": "7F",
+      "max": "80"
+     },
+     {
+      "byte": 4,
+      "repouso": "79",
+      "bits_mudaram": "00000011",
+      "min": "7A",
+      "max": "7B"
+     },
+     {
+      "byte": 7,
+      "repouso": "00",
+      "bits_mudaram": "00101000",
+      "min": "08",
+      "max": "20"
+     }
+    ]
+   },
+   "/dev/hidraw2": {
+    "reports": 0,
+    "mudancas": []
+   }
+  },
+  "R3": {
+   "/dev/hidraw1": {
+    "reports": 439,
+    "mudancas": [
+     {
+      "byte": 1,
+      "repouso": "80",
+      "bits_mudaram": "11111111",
+      "min": "7F",
+      "max": "97"
+     },
+     {
+      "byte": 2,
+      "repouso": "7D",
+      "bits_mudaram": "11111111",
+      "min": "7E",
+      "max": "86"
+     },
+     {
+      "byte": 3,
+      "repouso": "81",
+      "bits_mudaram": "11111111",
+      "min": "74",
+      "max": "87"
+     },
+     {
+      "byte": 4,
+      "repouso": "79",
+      "bits_mudaram": "11111111",
+      "min": "77",
+      "max": "88"
+     },
+     {
+      "byte": 7,
+      "repouso": "00",
+      "bits_mudaram": "01100000",
+      "min": "20",
+      "max": "40"
+     }
+    ]
+   },
+   "/dev/hidraw2": {
+    "reports": 0,
+    "mudancas": []
+   }
+  },
+  "HOME": {
+   "/dev/hidraw1": {
+    "reports": 439,
+    "mudancas": [
+     {
+      "byte": 1,
+      "repouso": "80",
+      "bits_mudaram": "11111111",
+      "min": "7F",
+      "max": "7F"
+     },
+     {
+      "byte": 2,
+      "repouso": "7D",
+      "bits_mudaram": "11111101",
+      "min": "80",
+      "max": "80"
+     },
+     {
+      "byte": 3,
+      "repouso": "81",
+      "bits_mudaram": "11111111",
+      "min": "74",
+      "max": "80"
+     },
+     {
+      "byte": 4,
+      "repouso": "79",
+      "bits_mudaram": "11111111",
+      "min": "7D",
+      "max": "86"
+     },
+     {
+      "byte": 7,
+      "repouso": "00",
+      "bits_mudaram": "01000000",
+      "min": "40",
+      "max": "40"
+     }
+    ]
+   },
+   "/dev/hidraw2": {
+    "reports": 1,
+    "mudancas": []
+   }
+  },
+  "DPAD_CIMA": {
+   "/dev/hidraw1": {
+    "reports": 439,
+    "mudancas": [
+     {
+      "byte": 1,
+      "repouso": "80",
+      "bits_mudaram": "11111111",
+      "min": "7F",
+      "max": "7F"
+     },
+     {
+      "byte": 2,
+      "repouso": "7D",
+      "bits_mudaram": "11111101",
+      "min": "7C",
+      "max": "80"
+     },
+     {
+      "byte": 3,
+      "repouso": "81",
+      "bits_mudaram": "00000001",
+      "min": "80",
+      "max": "80"
+     },
+     {
+      "byte": 4,
+      "repouso": "79",
+      "bits_mudaram": "00000111",
+      "min": "7E",
+      "max": "7E"
+     },
+     {
+      "byte": 5,
+      "repouso": "08",
+      "bits_mudaram": "00001000",
+      "min": "00",
+      "max": "00"
+     }
+    ]
+   },
+   "/dev/hidraw2": {
+    "reports": 1,
+    "mudancas": []
+   }
+  },
+  "DPAD_BAIXO": {
+   "/dev/hidraw1": {
+    "reports": 439,
+    "mudancas": [
+     {
+      "byte": 1,
+      "repouso": "80",
+      "bits_mudaram": "11111111",
+      "min": "7F",
+      "max": "7F"
+     },
+     {
+      "byte": 2,
+      "repouso": "7D",
+      "bits_mudaram": "00000001",
+      "min": "7C",
+      "max": "7C"
+     },
+     {
+      "byte": 3,
+      "repouso": "81",
+      "bits_mudaram": "00000001",
+      "min": "80",
+      "max": "80"
+     },
+     {
+      "byte": 4,
+      "repouso": "79",
+      "bits_mudaram": "00000111",
+      "min": "7D",
+      "max": "7E"
+     },
+     {
+      "byte": 5,
+      "repouso": "08",
+      "bits_mudaram": "00001100",
+      "min": "00",
+      "max": "04"
+     }
+    ]
+   },
+   "/dev/hidraw2": {
+    "reports": 0,
+    "mudancas": []
+   }
+  },
+  "DPAD_ESQUERDA": {
+   "/dev/hidraw1": {
+    "reports": 439,
+    "mudancas": [
+     {
+      "byte": 1,
+      "repouso": "80",
+      "bits_mudaram": "11111111",
+      "min": "7F",
+      "max": "7F"
+     },
+     {
+      "byte": 3,
+      "repouso": "81",
+      "bits_mudaram": "00000001",
+      "min": "80",
+      "max": "80"
+     },
+     {
+      "byte": 4,
+      "repouso": "79",
+      "bits_mudaram": "00000111",
+      "min": "7D",
+      "max": "7E"
+     },
+     {
+      "byte": 5,
+      "repouso": "08",
+      "bits_mudaram": "00001110",
+      "min": "04",
+      "max": "06"
+     }
+    ]
+   },
+   "/dev/hidraw2": {
+    "reports": 0,
+    "mudancas": []
+   }
+  },
+  "DPAD_DIREITA": {
+   "/dev/hidraw1": {
+    "reports": 439,
+    "mudancas": [
+     {
+      "byte": 1,
+      "repouso": "80",
+      "bits_mudaram": "11111111",
+      "min": "7F",
+      "max": "7F"
+     },
+     {
+      "byte": 3,
+      "repouso": "81",
+      "bits_mudaram": "00000001",
+      "min": "80",
+      "max": "80"
+     },
+     {
+      "byte": 4,
+      "repouso": "79",
+      "bits_mudaram": "00000111",
+      "min": "7D",
+      "max": "7E"
+     },
+     {
+      "byte": 5,
+      "repouso": "08",
+      "bits_mudaram": "00001110",
+      "min": "02",
+      "max": "06"
+     }
+    ]
+   },
+   "/dev/hidraw2": {
+    "reports": 0,
+    "mudancas": []
+   }
+  },
+  "ANALOGICO_ESQ_ESQUERDA": {
+   "/dev/hidraw1": {
+    "reports": 439,
+    "mudancas": [
+     {
+      "byte": 1,
+      "repouso": "80",
+      "bits_mudaram": "11111111",
+      "min": "00",
+      "max": "7F"
+     },
+     {
+      "byte": 2,
+      "repouso": "7D",
+      "bits_mudaram": "11111111",
+      "min": "80",
+      "max": "83"
+     },
+     {
+      "byte": 3,
+      "repouso": "81",
+      "bits_mudaram": "00000001",
+      "min": "80",
+      "max": "80"
+     },
+     {
+      "byte": 4,
+      "repouso": "79",
+      "bits_mudaram": "00000111",
+      "min": "7E",
+      "max": "7E"
+     },
+     {
+      "byte": 5,
+      "repouso": "08",
+      "bits_mudaram": "00001010",
+      "min": "02",
+      "max": "02"
+     }
+    ]
+   },
+   "/dev/hidraw2": {
+    "reports": 0,
+    "mudancas": []
+   }
+  },
+  "ANALOGICO_ESQ_DIREITA": {
+   "/dev/hidraw1": {
+    "reports": 439,
+    "mudancas": [
+     {
+      "byte": 1,
+      "repouso": "80",
+      "bits_mudaram": "11111111",
+      "min": "00",
+      "max": "FF"
+     },
+     {
+      "byte": 2,
+      "repouso": "7D",
+      "bits_mudaram": "11111111",
+      "min": "7A",
+      "max": "83"
+     },
+     {
+      "byte": 3,
+      "repouso": "81",
+      "bits_mudaram": "00000001",
+      "min": "80",
+      "max": "80"
+     },
+     {
+      "byte": 4,
+      "repouso": "79",
+      "bits_mudaram": "00000111",
+      "min": "7E",
+      "max": "7E"
+     }
+    ]
+   },
+   "/dev/hidraw2": {
+    "reports": 0,
+    "mudancas": []
+   }
+  },
+  "ANALOGICO_ESQ_CIMA": {
+   "/dev/hidraw1": {
+    "reports": 439,
+    "mudancas": [
+     {
+      "byte": 1,
+      "repouso": "80",
+      "bits_mudaram": "11111111",
+      "min": "71",
+      "max": "FF"
+     },
+     {
+      "byte": 2,
+      "repouso": "7D",
+      "bits_mudaram": "11111111",
+      "min": "00",
+      "max": "84"
+     },
+     {
+      "byte": 3,
+      "repouso": "81",
+      "bits_mudaram": "00000001",
+      "min": "80",
+      "max": "80"
+     },
+     {
+      "byte": 4,
+      "repouso": "79",
+      "bits_mudaram": "00000111",
+      "min": "7D",
+      "max": "7E"
+     }
+    ]
+   },
+   "/dev/hidraw2": {
+    "reports": 0,
+    "mudancas": []
+   }
+  },
+  "ANALOGICO_ESQ_BAIXO": {
+   "/dev/hidraw1": {
+    "reports": 439,
+    "mudancas": [
+     {
+      "byte": 1,
+      "repouso": "80",
+      "bits_mudaram": "11111111",
+      "min": "71",
+      "max": "94"
+     },
+     {
+      "byte": 2,
+      "repouso": "7D",
+      "bits_mudaram": "11111111",
+      "min": "00",
+      "max": "FF"
+     },
+     {
+      "byte": 3,
+      "repouso": "81",
+      "bits_mudaram": "00000001",
+      "min": "80",
+      "max": "80"
+     },
+     {
+      "byte": 4,
+      "repouso": "79",
+      "bits_mudaram": "00000111",
+      "min": "7D",
+      "max": "7E"
+     }
+    ]
+   },
+   "/dev/hidraw2": {
+    "reports": 0,
+    "mudancas": []
+   }
+  },
+  "ANALOGICO_DIR_ESQUERDA": {
+   "/dev/hidraw1": {
+    "reports": 439,
+    "mudancas": [
+     {
+      "byte": 1,
+      "repouso": "80",
+      "bits_mudaram": "11111111",
+      "min": "7F",
+      "max": "8E"
+     },
+     {
+      "byte": 2,
+      "repouso": "7D",
+      "bits_mudaram": "11111111",
+      "min": "7E",
+      "max": "FF"
+     },
+     {
+      "byte": 3,
+      "repouso": "81",
+      "bits_mudaram": "11111111",
+      "min": "00",
+      "max": "84"
+     },
+     {
+      "byte": 4,
+      "repouso": "79",
+      "bits_mudaram": "11111111",
+      "min": "77",
+      "max": "80"
+     }
+    ]
+   },
+   "/dev/hidraw2": {
+    "reports": 0,
+    "mudancas": []
+   }
+  },
+  "ANALOGICO_DIR_DIREITA": {
+   "/dev/hidraw1": {
+    "reports": 439,
+    "mudancas": [
+     {
+      "byte": 1,
+      "repouso": "80",
+      "bits_mudaram": "11111111",
+      "min": "7F",
+      "max": "7F"
+     },
+     {
+      "byte": 2,
+      "repouso": "7D",
+      "bits_mudaram": "00000011",
+      "min": "7E",
+      "max": "7E"
+     },
+     {
+      "byte": 3,
+      "repouso": "81",
+      "bits_mudaram": "11111111",
+      "min": "00",
+      "max": "FF"
+     },
+     {
+      "byte": 4,
+      "repouso": "79",
+      "bits_mudaram": "00011111",
+      "min": "6E",
+      "max": "7E"
+     }
+    ]
+   },
+   "/dev/hidraw2": {
+    "reports": 0,
+    "mudancas": []
+   }
+  },
+  "ANALOGICO_DIR_CIMA": {
+   "/dev/hidraw1": {
+    "reports": 439,
+    "mudancas": [
+     {
+      "byte": 1,
+      "repouso": "80",
+      "bits_mudaram": "11111111",
+      "min": "7F",
+      "max": "7F"
+     },
+     {
+      "byte": 2,
+      "repouso": "7D",
+      "bits_mudaram": "00000011",
+      "min": "7E",
+      "max": "7E"
+     },
+     {
+      "byte": 3,
+      "repouso": "81",
+      "bits_mudaram": "01111111",
+      "min": "83",
+      "max": "FF"
+     },
+     {
+      "byte": 4,
+      "repouso": "79",
+      "bits_mudaram": "01111111",
+      "min": "00",
+      "max": "78"
+     }
+    ]
+   },
+   "/dev/hidraw2": {
+    "reports": 0,
+    "mudancas": []
+   }
+  },
+  "ANALOGICO_DIR_BAIXO": {
+   "/dev/hidraw1": {
+    "reports": 439,
+    "mudancas": [
+     {
+      "byte": 1,
+      "repouso": "80",
+      "bits_mudaram": "11111111",
+      "min": "7F",
+      "max": "7F"
+     },
+     {
+      "byte": 2,
+      "repouso": "7D",
+      "bits_mudaram": "00000011",
+      "min": "7E",
+      "max": "7E"
+     },
+     {
+      "byte": 3,
+      "repouso": "81",
+      "bits_mudaram": "11111111",
+      "min": "76",
+      "max": "93"
+     },
+     {
+      "byte": 4,
+      "repouso": "79",
+      "bits_mudaram": "11111111",
+      "min": "00",
+      "max": "FF"
+     }
+    ]
+   },
+   "/dev/hidraw2": {
+    "reports": 0,
+    "mudancas": []
+   }
+  }
+ },
+ "repouso": {
+  "/dev/hidraw1": {
+   "report": "07807d8179080000000000",
+   "quantidade": 439
+  },
+  "/dev/hidraw2": {
+   "report": null,
+   "quantidade": 0
+  }
+ }
+}
