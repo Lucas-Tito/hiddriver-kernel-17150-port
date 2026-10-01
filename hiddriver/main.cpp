@@ -414,6 +414,15 @@ static const RawLayout kRawLayouts[] = {
 		//A B  X  Y  LB RB LT RT BACK START L3  R3  GUIDE
 		{ 0, 1, 3, 4, 6, 7, 8, 9, 10,  11,   13, 14, 12 } },
 
+	// Same receiver as seen by the Xbox after a few failed enumerations (PID 3106, never seen on
+	// the PC). Layout assumed to be the same; any bcdDevice until the log tells which phase it is.
+	{ "8BitDo Ultimate C 2.4G (PID 3106, layout presumido)", 0x2DC8, 0x3106, 0, 0, 1,
+		4, 5, 6, 7,
+		9, 8,
+		3, 0,
+		1,
+		{ 0, 1, 3, 4, 6, 7, 8, 9, 10,  11,   13, 14, 12 } },
+
 	{ nullptr } // end marker
 };
 
@@ -707,6 +716,7 @@ int HidAddDeviceHook(deviceHandle* deviceHandle) {
 	ControllerType controllerType = UNKNOWN_DEVICE;
 	const RawLayout* rawLayout = FindRawLayout(vendorId, productId);
 	uint16_t bcdDevice = swap_endianness_16(device_descriptor->bcdDevice);
+	DbgPrint("EINTIM: HID device bcdDevice %04X\n", bcdDevice);
 	if (rawLayout && rawLayout->bcdDevice && bcdDevice != rawLayout->bcdDevice) {
 		DbgPrint("EINTIM: %s: bcdDevice %04X is not the gamepad one (%04X), passing it on\n", rawLayout->name, bcdDevice, rawLayout->bcdDevice);
 		rawLayout = nullptr;
@@ -1324,6 +1334,16 @@ void UsbSetConfigDoneHook(BYTE* nodePlusC, DWORD status) {
 	NodeIds(node, &vid, &pid);
 	DWORD ms = g_setConfigSentNode == node ? (now - g_setConfigSentTb) / TB_TICKS_PER_MS : 0xFFFFFFFF;
 	DbgPrintSync("EINTIM: USB SET_CONFIGURATION done: VID %04X PID %04X config %d status %08X after %d ms\n", vid, pid, node[0x65], status, ms);
+
+	// Experiment for the 8BitDo receiver only: its SET_CONFIGURATION always comes back cancelled
+	// (C0000120) in under 1 ms, so enumeration never reaches driver selection. Report success
+	// instead and see whether the device is still there. The original also checks the "removed"
+	// flag (bit 0x80 at byte 8 of the structure at node+4) and discards if it is set.
+	if (vid == 0x2DC8 && status == 0xC0000120) {
+		const BYTE* info = *(const BYTE**)(node + 4);
+		DbgPrintSync("EINTIM: 8BitDo: treating cancelled SET_CONFIGURATION as success (removed flag %02X)\n", info ? (info[8] & 0x80) : 0xFF);
+		status = 0;
+	}
 	UsbSetConfigDoneDetour.GetOriginal<usb_reply_func_t>()(nodePlusC, status);
 }
 
