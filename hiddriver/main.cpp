@@ -1274,6 +1274,46 @@ int UsbdAddDeviceCompleteHook(deviceHandle* handle, int status) {
 	return UsbdAddDeviceCompleteDetour.GetOriginal<decltype(&UsbdAddDeviceCompleteHook)>()(handle, status);
 }
 
+// Enumeration steps before driver selection, to see where a device that never reaches
+// "USB match" (the 8BitDo receiver) is dropped. The callbacks get node+0xC and the status of the
+// request; the discard routine gets the node. The device descriptor is inline at node+0x4C.
+extern "C" void* _ReturnAddress(void);
+#pragma intrinsic(_ReturnAddress)
+
+static void NodeIds(const BYTE* node, DWORD* vid, DWORD* pid) {
+	const BYTE* dd = node + 0x4C;
+	*vid = dd[8] | (dd[9] << 8);
+	*pid = dd[10] | (dd[11] << 8);
+}
+
+Detour UsbMsOsReplyDetour;      // 0x800D8148: reply to the string 0xEE ("MSFT100") request
+Detour UsbCompatReplyDetour;    // 0x800D80A0: reply to the Extended Compat ID request
+Detour UsbDiscardDetour;        // 0x800D7D00: drops (or retries) a device
+typedef void (*usb_reply_func_t)(BYTE* nodePlusC, DWORD status);
+typedef void (*usb_discard_func_t)(BYTE* node);
+
+void UsbMsOsReplyHook(BYTE* nodePlusC, DWORD status) {
+	DWORD vid, pid;
+	NodeIds(nodePlusC - 0xC, &vid, &pid);
+	DbgPrintSync("EINTIM: USB 0xEE reply: VID %04X PID %04X status %08X\n", vid, pid, status);
+	UsbMsOsReplyDetour.GetOriginal<usb_reply_func_t>()(nodePlusC, status);
+}
+
+void UsbCompatReplyHook(BYTE* nodePlusC, DWORD status) {
+	DWORD vid, pid;
+	NodeIds(nodePlusC - 0xC, &vid, &pid);
+	DbgPrintSync("EINTIM: USB compat ID reply: VID %04X PID %04X status %08X\n", vid, pid, status);
+	UsbCompatReplyDetour.GetOriginal<usb_reply_func_t>()(nodePlusC, status);
+}
+
+void UsbDiscardHook(BYTE* node) {
+	DWORD vid, pid;
+	NodeIds(node, &vid, &pid);
+	DbgPrintSync("EINTIM: USB discard: node %p VID %04X PID %04X retry flag %d, called from %p\n",
+		node, vid, pid, node[0x27F], _ReturnAddress());
+	UsbDiscardDetour.GetOriginal<usb_discard_func_t>()(node);
+}
+
 // Letters after the stage number in hiddriver_etapa.txt skip hooks, to bisect a freeze:
 // a = HidAddDevice/HidRemoveDevice, m = USB match logger, i = XamInactivityDetect,
 // g = XamInputGetState, s = XamInputSetState, c = XamInputGetCapabilitiesEx
@@ -1296,6 +1336,21 @@ bool InitDriver(bool resetUsb) {
 			UsbDeviceMatchDetour.Install();
 			LogReadback("UsbDeviceMatch", (void*)0x800D70D8);
 			DbgPrint("EINTIM: hook on: USB device match logger\n");
+		}
+		if (Expect(0x800D8148, 0x7D8802A6, 0, "UsbMsOsReply") && Expect(0x800D8154, 0x3BE3FFF4, 0, "UsbMsOsReply (node)")) {
+			UsbMsOsReplyDetour = Detour((void*)0x800D8148, (void*)UsbMsOsReplyHook);
+			UsbMsOsReplyDetour.Install();
+			LogReadback("UsbMsOsReply", (void*)0x800D8148);
+		}
+		if (Expect(0x800D80A0, 0x7D8802A6, 0, "UsbCompatReply") && Expect(0x800D80AC, 0x3BE3FFF4, 0, "UsbCompatReply (node)")) {
+			UsbCompatReplyDetour = Detour((void*)0x800D80A0, (void*)UsbCompatReplyHook);
+			UsbCompatReplyDetour.Install();
+			LogReadback("UsbCompatReply", (void*)0x800D80A0);
+		}
+		if (Expect(0x800D7D00, 0x7D8802A6, 0, "UsbDiscard") && Expect(0x800D7D20, 0x897F027F, 0, "UsbDiscard (retry flag)")) {
+			UsbDiscardDetour = Detour((void*)0x800D7D00, (void*)UsbDiscardHook);
+			UsbDiscardDetour.Install();
+			LogReadback("UsbDiscard", (void*)0x800D7D00);
 		}
 		if (Expect((DWORD)UsbdAddDeviceComplete, 0x7D8802A6, 0, "UsbdAddDeviceComplete")) {
 			UsbdAddDeviceCompleteDetour = Detour((void*)UsbdAddDeviceComplete, (void*)UsbdAddDeviceCompleteHook);
