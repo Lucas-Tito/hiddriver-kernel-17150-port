@@ -1311,11 +1311,19 @@ void UsbCompatReplyHook(BYTE* nodePlusC, DWORD status) {
 Detour UsbSetConfigDoneDetour;    // 0x800D83F8: SET_CONFIGURATION (request set up at 0x800D84F0)
 Detour UsbConfigDescDoneDetour;   // 0x800D8468: GET_DESCRIPTOR(configuration)
 
+// Time base ticks at the end of the config descriptor callback, which is where the original
+// sends SET_CONFIGURATION. The Xbox 360 time base runs at about 50 MHz (50000 ticks per ms).
+#define TB_TICKS_PER_MS 50000
+volatile DWORD g_setConfigSentTb = 0;
+volatile BYTE* g_setConfigSentNode = nullptr;
+
 void UsbSetConfigDoneHook(BYTE* nodePlusC, DWORD status) {
+	DWORD now = __mftb32();
 	DWORD vid, pid;
 	BYTE* node = nodePlusC - 0xC;
 	NodeIds(node, &vid, &pid);
-	DbgPrintSync("EINTIM: USB SET_CONFIGURATION done: VID %04X PID %04X config %d status %08X\n", vid, pid, node[0x65], status);
+	DWORD ms = g_setConfigSentNode == node ? (now - g_setConfigSentTb) / TB_TICKS_PER_MS : 0xFFFFFFFF;
+	DbgPrintSync("EINTIM: USB SET_CONFIGURATION done: VID %04X PID %04X config %d status %08X after %d ms\n", vid, pid, node[0x65], status, ms);
 	UsbSetConfigDoneDetour.GetOriginal<usb_reply_func_t>()(nodePlusC, status);
 }
 
@@ -1324,6 +1332,9 @@ void UsbConfigDescDoneHook(BYTE* nodePlusC, DWORD status) {
 	NodeIds(nodePlusC - 0xC, &vid, &pid);
 	DbgPrintSync("EINTIM: USB config descriptor done: VID %04X PID %04X status %08X\n", vid, pid, status);
 	UsbConfigDescDoneDetour.GetOriginal<usb_reply_func_t>()(nodePlusC, status);
+	// the original has just queued SET_CONFIGURATION (0x800D84F0-0x800D8528) if status was ok
+	g_setConfigSentNode = nodePlusC - 0xC;
+	g_setConfigSentTb = __mftb32();
 }
 
 void UsbDiscardHook(BYTE* node) {
