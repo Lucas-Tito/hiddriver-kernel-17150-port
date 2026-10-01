@@ -1,0 +1,205 @@
+EINTIM: alive t=229 write=149 read=149 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=65498 set=4 caps=45152
+EINTIM: alive t=234 write=150 read=150 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=67298 set=4 caps=46352
+EINTIM: alive t=239 write=151 read=151 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=69104 set=4 caps=47556
+EINTIM: alive t=244 write=152 read=152 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=70904 set=4 caps=48756
+EINTIM: alive t=249 write=153 read=153 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=72704 set=4 caps=49956
+EINTIM: alive t=254 write=154 read=154 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=74504 set=4 caps=51156
+EINTIM: alive t=259 write=155 read=155 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=76304 set=4 caps=52356
+EINTIM: alive t=264 write=156 read=156 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=78110 set=4 caps=53560
+EINTIM: alive t=269 write=157 read=157 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=79904 set=4 caps=54756
+EINTIM: alive t=274 write=158 read=158 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=81704 set=4 caps=55956
+EINTIM: alive t=279 write=159 read=159 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=83504 set=4 caps=57156
+EINTIM: alive t=284 write=160 read=160 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=85307 set=4 caps=58358
+EINTIM: alive t=289 write=161 read=161 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=87104 set=4 caps=59556
+EINTIM: alive t=294 write=162 read=162 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=88904 set=4 caps=60756
+EINTIM: alive t=299 write=163 read=163 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=90704 set=4 caps=61956
+EINTIM: alive t=304 write=164 read=164 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=92504 set=4 caps=63156
+EINTIM: alive t=309 write=165 read=165 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=94304 set=4 caps=64356
+EINTIM: alive t=314 write=166 read=166 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=96104 set=4 caps=65556
+EINTIM: alive t=319 write=167 read=167 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=97904 set=4 caps=66756
+EINTIM: alive t=324 write=168 read=168 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=99710 set=4 caps=67960
+EINTIM: alive t=329 write=169 read=169 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=101504 set=4 caps=69156
+EINTIM: alive t=334 write=170 read=170 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=103304 set=4 caps=70356
+EINTIM: alive t=339 write=171 read=171 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=105107 set=4 caps=71558
+EINTIM: alive t=344 write=172 read=172 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=106907 set=4 caps=72758
+EINTIM: alive t=349 write=173 read=173 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=108707 set=4 caps=73958
+EINTIM: alive t=354 write=174 read=174 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=110510 set=4 caps=75160
+EINTIM: alive t=359 write=175 read=175 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=112310 set=4 caps=76360
+EINTIM: alive t=364 write=176 read=176 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=114110 set=4 caps=77560
+EINTIM: alive t=369 write=177 read=177 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=115910 set=4 caps=78760
+EINTIM: alive t=374 write=178 read=178 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=117710 set=4 caps=79960
+EINTIM: alive t=379 write=179 read=179 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=119510 set=4 caps=81160
+EINTIM: alive t=384 write=180 read=180 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=121310 set=4 caps=82360
+EINTIM: alive t=389 write=181 read=181 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=123110 set=4 caps=83560
+EINTIM: alive t=394 write=182 read=182 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=124916 set=4 caps=84764
+EINTIM: alive t=399 write=183 read=183 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=126716 set=4 caps=85964
+EINTIM: alive t=404 write=184 read=184 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=128516 set=4 caps=87164
+EINTIM: alive t=409 write=185 read=185 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=130316 set=4 caps=88364
+EINTIM: alive t=414 write=186 read=186 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=132116 set=4 caps=89564
+EINTIM: alive t=419 write=187 read=187 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=133916 set=4 caps=90764
+EINTIM: alive t=424 write=188 read=188 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=135716 set=4 caps=91964
+EINTIM: alive t=429 write=189 read=189 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=137516 set=4 caps=93164
+EINTIM: alive t=434 write=190 read=190 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=139316 set=4 caps=94364
+EINTIM: alive t=439 write=191 read=191 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=141116 set=4 caps=95564
+EINTIM: alive t=444 write=192 read=192 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=142916 set=4 caps=96764
+EINTIM: alive t=449 write=193 read=193 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=144716 set=4 caps=97964
+EINTIM: alive t=454 write=194 read=194 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=146516 set=4 caps=99164
+EINTIM: alive t=460 write=195 read=195 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=148316 set=4 caps=100364
+EINTIM: alive t=465 write=196 read=196 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=150116 set=4 caps=101564
+EINTIM: alive t=470 write=197 read=197 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=151916 set=4 caps=102764
+EINTIM: alive t=475 write=198 read=198 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=153716 set=4 caps=103964
+EINTIM: alive t=480 write=199 read=199 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=155516 set=4 caps=105164
+EINTIM: alive t=485 write=200 read=200 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=157316 set=4 caps=106364
+EINTIM: alive t=490 write=201 read=201 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=159116 set=4 caps=107564
+EINTIM: alive t=495 write=202 read=202 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=160916 set=4 caps=108764
+EINTIM: alive t=500 write=203 read=203 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=162716 set=4 caps=109964
+EINTIM: alive t=505 write=204 read=204 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=164516 set=4 caps=111164
+EINTIM: alive t=510 write=205 read=205 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=166316 set=4 caps=112364
+EINTIM: alive t=515 write=206 read=206 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=168116 set=4 caps=113564
+EINTIM: alive t=520 write=207 read=207 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=169916 set=4 caps=114764
+EINTIM: alive t=525 write=208 read=208 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=171719 set=4 caps=115966
+EINTIM: alive t=530 write=209 read=209 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=173516 set=4 caps=117164
+EINTIM: alive t=535 write=210 read=210 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=175319 set=4 caps=118366
+EINTIM: alive t=540 write=211 read=211 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=177122 set=4 caps=119568
+EINTIM: alive t=545 write=212 read=212 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=178916 set=4 caps=120764
+EINTIM: alive t=550 write=213 read=213 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=180716 set=4 caps=121964
+EINTIM: alive t=555 write=214 read=214 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=182516 set=4 caps=123164
+EINTIM: alive t=560 write=215 read=215 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=184316 set=4 caps=124364
+EINTIM: alive t=565 write=216 read=216 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=186116 set=4 caps=125564
+EINTIM: alive t=570 write=217 read=217 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=187916 set=4 caps=126764
+EINTIM: alive t=575 write=218 read=218 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=189716 set=4 caps=127964
+EINTIM: alive t=580 write=219 read=219 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=191522 set=4 caps=129168
+EINTIM: alive t=585 write=220 read=220 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=193316 set=4 caps=130364
+EINTIM: alive t=590 write=221 read=221 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=195122 set=4 caps=131568
+EINTIM: alive t=595 write=222 read=222 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=196916 set=4 caps=132764
+EINTIM: alive t=600 write=223 read=223 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=198716 set=4 caps=133964
+EINTIM: alive t=605 write=224 read=224 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=200519 set=4 caps=135166
+EINTIM: alive t=610 write=225 read=225 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=202316 set=4 caps=136364
+EINTIM: alive t=615 write=226 read=226 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=0 get=204116 set=4 caps=137564
+EINTIM: first call: XamInactivityDetectRecentActivity
+EINTIM: alive t=620 write=228 read=228 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=1 get=205916 set=4 caps=138764
+EINTIM: alive t=625 write=229 read=229 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=1 get=207716 set=4 caps=139964
+EINTIM: alive t=630 write=230 read=230 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=1 get=209516 set=4 caps=141164
+EINTIM: alive t=635 write=231 read=231 hits dev=0 if=6 addc=6 hidadd=4 hidrem=1 inact=1 get=211316 set=4 caps=142364
+
+==== boot, log via hidlogh:\ ====
+EINTIM: HELLO from xbox 360 HID controller driver version 0.5 (port 17150), kernel 17150, stage 2, skip "", log root hidlogh:\
+EINTIM: notify patch: ordinal 1183 at 816A2450, +48 = 409A
+EINTIM: notify patch applied, readback 4800
+EINTIM: Running on retail kernel 17150
+EINTIM: check UsbdGetInterfaceDescriptor   800D9418 = 8943000B (esperado 8943000B) ok
+EINTIM: check XamUserBindDeviceCallback    816D83A8 = 7C8B2378 (esperado 7C8B2378) ok
+EINTIM: check UsbdPowerDownNotification    800D9EF8 = 3D60800E (esperado 3D60800E) ok
+EINTIM: check UsbdDriverEntry              800D9C38 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbPhysicalPage (lis)        800D9C94 = 3F80801A (esperado 3F80801A) ok
+EINTIM: check UsbPhysicalPage (stw)        800D9C98 = 93FCC8D8 (esperado 93FCC8D8) ok
+EINTIM: check RoutedToSysapp (lis)         816F0804 = 3D6081AB (esperado 3D6081AB) ok
+EINTIM: check RoutedToSysapp (addi)        816F080C = 396BC6E8 (esperado 396BC6E8) ok
+EINTIM: check bugcheck 1                   800E1514 = 40820018 (esperado 40820018) ok
+EINTIM: check bugcheck 2                   800DE810 = 40820018 (esperado 40820018) ok
+EINTIM: check registro duplo 1             800D9E30 = 4BF8DC29 (esperado 4BF8DC29) ok
+EINTIM: check registro duplo 2             800D9E20 = 4BF97189 (esperado 4BF97189) ok
+EINTIM: check HidAddDevice                 800E5CD0 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check HidRemoveDevice              800E5C90 = 81630000 (esperado 81630000) ok
+EINTIM: check XamInactivityDetect          81695268 = 3D6081AA (esperado 3D6081AA) ok
+EINTIM: check UsbMatch (prologo)           800D7170 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbMatch (lbz class)         800D7190 = 8B7E0005 (esperado 8B7E0005) ok
+EINTIM: readback UsbMatch                     800D7170 = 3C0081F1
+EINTIM: hook on: USB match logger
+EINTIM: check UsbDeviceMatch (prologo)     800D70D8 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbDeviceMatch (hub)         800D7110 = 2B0A0009 (esperado 2B0A0009) ok
+EINTIM: readback UsbDeviceMatch               800D70D8 = 3C0081F1
+EINTIM: hook on: USB device match logger
+EINTIM: check UsbMsOsReply                 800D8148 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbMsOsReply (node)          800D8154 = 3BE3FFF4 (esperado 3BE3FFF4) ok
+EINTIM: readback UsbMsOsReply                 800D8148 = 3C0081F1
+EINTIM: check UsbCompatReply               800D80A0 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbCompatReply (node)        800D80AC = 3BE3FFF4 (esperado 3BE3FFF4) ok
+EINTIM: readback UsbCompatReply               800D80A0 = 3C0081F1
+EINTIM: check UsbDiscard                   800D7D00 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbDiscard (retry flag)      800D7D20 = 897F027F (esperado 897F027F) ok
+EINTIM: readback UsbDiscard                   800D7D00 = 3C0081F1
+EINTIM: check UsbdAddDeviceComplete        800D78F0 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: readback UsbdAddDeviceComplete        800D78F0 = 3C0081F1
+EINTIM: hook on: UsbdAddDeviceComplete logger
+EINTIM: hook on: HidAddDevice/HidRemoveDevice
+EINTIM: hook on: XamInputGetState
+EINTIM: hook on: XamInputSetState
+EINTIM: hook on: XamInputGetCapabilitiesEx
+EINTIM: hook on: XamInactivityDetectRecentActivity
+EINTIM: readback HidAddDevice                 800E5CD0 = 3C0081F1
+EINTIM: readback HidRemoveDevice              800E5C90 = 3C0081F1
+EINTIM: readback XamInactivityDetect          81695268 = 3C0081F1
+EINTIM: readback XamInputGetState             816F07A8 = 3C0081F1
+EINTIM: Hooks installed (skipped: "")
+EINTIM: Stage 2: USB reset skipped
+EINTIM: USB match: VID 045E PID 02BC if 0 class FF/00/00 -> 910CBC24 lista dinamica (outro modulo)
+EINTIM: GetState user 0 -> status 0
+EINTIM: GetState user 1 -> status 48F
+EINTIM: GetState user 2 -> status 48F
+EINTIM: GetState user 3 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: first call: XamInputSetState
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 2 -> status 48F
+EINTIM: GetCapabilitiesEx user 3 -> status 48F
+EINTIM: alive t=14 write=60 read=60 hits dev=0 if=1 addc=1 hidadd=0 hidrem=0 inact=0 get=64 set=4 caps=4
+EINTIM: alive t=19 write=61 read=61 hits dev=0 if=1 addc=1 hidadd=0 hidrem=0 inact=0 get=226 set=4 caps=166
+EINTIM: notify: calling XNotifyQueueUI "hiddriver: etapa 2 ativa (ganchos, sem reset USB)"
+EINTIM: notify: XNotifyQueueUI returned
+EINTIM: alive t=24 write=64 read=64 hits dev=0 if=1 addc=1 hidadd=0 hidrem=0 inact=0 get=516 set=4 caps=456
+EINTIM: alive t=29 write=65 read=65 hits dev=0 if=1 addc=1 hidadd=0 hidrem=0 inact=0 get=1118 set=4 caps=1058
+EINTIM: alive t=34 write=66 read=66 hits dev=0 if=1 addc=1 hidadd=0 hidrem=0 inact=0 get=1718 set=4 caps=1658
+EINTIM: USB discard: node E1EBEBF4 VID 045E PID 02BC retry flag 0, called from 800DF2AC
+EINTIM: USB discard: node E1EBF0FC VID 2DC8 PID 3016 retry flag 1, called from 800D8460
+EINTIM: USB discard: node E1EBF0FC VID 2DC8 PID 3016 retry flag 0, called from 800DE290
+EINTIM: alive t=39 write=70 read=70 hits dev=0 if=1 addc=1 hidadd=0 hidrem=0 inact=0 get=2318 set=4 caps=2258
+EINTIM: USB discard: node E1EBEBF4 VID 045E PID 02BC retry flag 0, called from 800DF2AC
+EINTIM: USB discard: node E1EBF0FC VID 2DC8 PID 3016 retry flag 1, called from 800D8460
+EINTIM: USB discard: node E1EBF0FC VID 2DC8 PID 3016 retry flag 0, called from 800DE290
+EINTIM: alive t=44 write=74 read=74 hits dev=0 if=1 addc=1 hidadd=0 hidrem=0 inact=0 get=2918 set=4 caps=2858
+EINTIM: USB discard: node E1EBEBF4 VID 045E PID 02BC retry flag 0, called from 800DF2AC
+EINTIM: USB discard: node E1EBF0FC VID 2DC8 PID 3106 retry flag 1, called from 800D8460
+EINTIM: USB discard: node E1EBF0FC VID 2DC8 PID 3106 retry flag 0, called from 800DE290
+EINTIM: alive t=49 write=78 read=78 hits dev=0 if=1 addc=1 hidadd=0 hidrem=0 inact=0 get=3518 set=4 caps=3458
+EINTIM: USB discard: node E1EBEBF4 VID 045E PID 02BC retry flag 0, called from 800DF2AC
+EINTIM: USB discard: node E1EBF0FC VID 2DC8 PID 3106 retry flag 1, called from 800D8460
+EINTIM: USB discard: node E1EBF0FC VID 2DC8 PID 3106 retry flag 0, called from 800DE290
+EINTIM: alive t=54 write=82 read=82 hits dev=0 if=1 addc=1 hidadd=0 hidrem=0 inact=0 get=4118 set=4 caps=4058
+EINTIM: USB discard: node E1EBEBF4 VID 045E PID 02BC retry flag 0, called from 800DF2AC
+EINTIM: USB discard: node E1EBF0FC VID 2DC8 PID 3106 retry flag 1, called from 800D8460
+EINTIM: USB discard: node E1EBF0FC VID 2DC8 PID 3106 retry flag 0, called from 800DE290
+EINTIM: USB discard: node E1EBEBF4 VID 045E PID 02BC retry flag 0, called from 800DF2AC
+EINTIM: USB discard: node E1EBF0FC VID 2DC8 PID 3106 retry flag 1, called from 800D8460
+EINTIM: USB discard: node E1EBF0FC VID 2DC8 PID 3106 retry flag 0, called from 800DE290
+EINTIM: alive t=59 write=89 read=89 hits dev=0 if=1 addc=1 hidadd=0 hidrem=0 inact=0 get=4718 set=4 caps=4658
+EINTIM: USB discard: node E1EBEBF4 VID 045E PID 02BC retry flag 0, called from 800DF2AC
+EINTIM: USB discard: node E1EBF0FC VID 2DC8 PID 3106 retry flag 1, called from 800D8460
+EINTIM: USB discard: node E1EBF0FC VID 2DC8 PID 3106 retry flag 0, called from 800DE290
+EINTIM: alive t=64 write=93 read=93 hits dev=0 if=1 addc=1 hidadd=0 hidrem=0 inact=0 get=5318 set=4 caps=5258
+EINTIM: USB discard: node E1EBEBF4 VID 045E PID 02BC retry flag 0, called from 800DF2AC
+EINTIM: USB discard: node E1EBF0FC VID 2DC8 PID 3106 retry flag 1, called from 800D8460
+EINTIM: USB discard: node E1EBF0FC VID 2DC8 PID 3106 retry flag 0, called from 800DE290
+EINTIM: alive t=69 write=97 read=97 hits dev=0 if=1 addc=1 hidadd=0 hidrem=0 inact=0 get=5918 set=4 caps=5858
+EINTIM: USB discard: node E1EBEBF4 VID 045E PID 02BC retry flag 0, called from 800DF2AC
+EINTIM: USB discard: node E1EBF0FC VID 2DC8 PID 3106 retry flag 1, called from 800D8460
+EINTIM: USB discard: node E1EBF0FC VID 2DC8 PID 3106 retry flag 0, called from 800DE290
+EINTIM: alive t=74 write=101 read=101 hits dev=0 if=1 addc=1 hidadd=0 hidrem=0 inact=0 get=6518 set=4 caps=6458
+EINTIM: USB discard: node E1EBEBF4 VID 045E PID 02BC retry flag 0, called from 800DF2AC
+EINTIM: USB discard: node E1EBF0FC VID 2DC8 PID 3106 retry flag 1, called from 800D8460
+EINTIM: USB discard: node E1EBF0FC VID 2DC8 PID 3106 retry flag 0, called from 800DE290
+EINTIM: alive t=79 write=105 read=105 hits dev=0 if=1 addc=1 hidadd=0 hidrem=0 inact=0 get=7118 set=4 caps=7058
+EINTIM: USB discard: node E1EBEBF4 VID 045E PID 02BC retry flag 0, called from 800DF2AC
+EINTIM: USB discard: node E1EBF0FC VID 2DC8 PID 3106 retry flag 1, called from 800D8460
+EINTIM: USB discard: node E1EBF0FC VID 2DC8 PID 3106 retry flag 0, called from 800DE290
+EINTIM: USB discard: node E1EBEBF4 VID 045E PID 02BC retry flag 0, called from 800DF2AC
+EINTIM: USB discard: node E1EBF0FC VID 2DC8 PID 3106 retry flag 1, called from 800D8460
+EINTIM: USB discard: node E1EBF0FC VID 2DC8 PID 3106 retry flag 0, called from 800DE290
+EINTIM: alive t=84 write=112 read=112 hits dev=0 if=1 addc=1 hidadd=0 hidrem=0 inact=0 get=7717 set=4 caps=7657
+EINTIM: USB discard: node E1EBEBF4 VID 045E PID 02BC retry flag 0, called from 800DF2AC
+EINTIM: USB discard: node E1EBF0FC VID 2DC8 PID 3106 retry flag 1, called from 800D8460
+EINTIM: USB discard: node E1EBF0FC VID 2DC8 PID 3106 retry flag 0, called from 800DE290
+EINTIM: alive t=89 write=116 read=116 hits dev=0 if=1 addc=1 hidadd=0 hidrem=0 inact=0 get=8317 set=4 caps=8257
+EINTIM: USB discard: node E1EBEBF4 VID 045E PID 02BC retry flag 0, called from 800DF2AC
+EINTIM: USB discard: node E1EBF0FC VID 2DC8 PID 3106 retry flag 1, called from 800D8460
+EINTIM: USB discard: node E1EBF0FC VID 2DC8 PID 3106 retry flag 0, called from 800DE290
