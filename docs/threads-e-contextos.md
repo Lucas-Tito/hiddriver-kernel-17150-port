@@ -99,9 +99,6 @@ não era a causa do travamento: as releituras depois do patch mostram o salto gr
 
 - **Dispositivo plugado no boot é enumerado antes dos ganchos.** Para trazer o log sem travar,
   ligue o console com o pendrive já plugado.
-- **FTP da FreeStyle:** usuário e senha `xbox`/`xbox`.
-  - Aceita uma conexão por vez e não responde ao `QUIT`: feche o socket direto.
-  - Não aceita caminho absoluto no `RETR` (entre na pasta com `CWD`) nem retomada (`REST`).
-  - Trava ao ler um arquivo que o plugin está gravando: **renomeie o log antes de baixar**.
+- **FTP da FreeStyle:** ver [`ftp-no-xbox.md`](ftp-no-xbox.md).
 - **Formato do `.xex`:** `<dvdxgd2/>` no `xex.xml` liga o bit `0x8` das image flags ("só disco
   XGD2") e o console recusa o arquivo. O `tools/build.sh` barra isso.
