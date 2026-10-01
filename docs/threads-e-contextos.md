@@ -38,6 +38,16 @@ Bisseção que isolou a causa (etapa 2, pendrive plugado com o console ligado):
 O primeiro build da etapa 2, que não tinha os registros `m`, travava com o EasySMX, que é HID e
 passa pelo `HidAddDevice`. Esse gancho também logava pelo `_vsnprintf`.
 
+**Validado em 30/09/2026:** com a formatação adiada, a etapa `2` completa não trava nem com o
+pendrive nem com o EasySMX plugados com o console ligado, e o log mostra o caminho de cada
+dispositivo (`port/logs/teste_correcao.txt`):
+
+| Dispositivo | Escolha de driver | Resultado |
+|---|---|---|
+| pendrive `058F:6387` | classe 08, mass storage | aceito |
+| EasySMX em XInput `045E:028E` | classe FF/5D, XInput | rejeitado `C0051012` (autenticação; é o que o UsbdSecPatch remove) |
+| EasySMX em DInput `2345:E037`, interfaces 0 e 1 | classe 03, `HidAddDevice` | passa pelo nosso gancho; fora da tabela, vai ao original e é rejeitado `C0000001` |
+
 ### 2. Não esperar dentro de gancho do USB
 
 Uma espera limitada (100 ms, `GetTickCount` + `YieldProcessor`) dentro dos ganchos, para dar tempo
