@@ -40,3 +40,4 @@ lendo /dev/input/by-id/usb-8BitDo_Ultimate_C_2.4G_Wireless_Controller_2DDC23209D
   71.1s EIXO ABS_HAT0X = 0
   71.4s EIXO ABS_HAT0Y = 1
   71.5s EIXO ABS_HAT0Y = 0
+fim
