@@ -7,13 +7,20 @@ testado no console do projeto (Xbox 360 E, kernel 17150, FreeStyle 3).
 ## Ligar e conectar
 
 - **Na FreeStyle:** Configurações → rede → "Enable FTP server". O IP aparece na mesma tela.
-  No console do projeto foi `192.168.0.4`, por DHCP, então pode mudar.
+- **O IP muda entre boots** (DHCP): no console do projeto já foi `192.168.0.4` e `192.168.0.3`.
+  "No route to host" no IP antigo é o sinal. Para achar o novo sem ir até a TV, procure a porta 21
+  na rede e confira o MAC do console (`4c:0b:be:…`, prefixo da Microsoft):
+
+  ```bash
+  for i in $(seq 1 254); do (timeout 1 bash -c "</dev/tcp/192.168.0.$i/21" 2>/dev/null && echo 192.168.0.$i) & done; wait
+  ip neigh | grep -i 4c:0b:be
+  ```
 - **Login:** usuário `xbox`, senha `xbox`. O campo de senha aparece vazio na tela de
   configuração, mas a senha existe: com senha vazia o servidor responde `530 Incorrect Password`.
 - **O console precisa estar na FreeStyle.** Travado ou desligado, a placa de rede ainda responde
   na rede local (o MAC aparece no `ip neigh`), mas nenhum serviço responde.
 - **Ping não serve de teste.** O console não respondeu ICMP. Teste a porta direto:
-  `bash -c "</dev/tcp/192.168.0.4/21"`. As portas 80 e 9999 (HTTP da FreeStyle) também ficam
+  `bash -c "</dev/tcp/192.168.0.3/21"`. As portas 80 e 9999 (HTTP da FreeStyle) também ficam
   abertas.
 
 ## O servidor (F3 FTPD) e as manias dele
@@ -41,7 +48,7 @@ def conectar():
     for _ in range(5):
         try:
             f = ftplib.FTP()
-            f.connect("192.168.0.4", 21, timeout=25)
+            f.connect("192.168.0.3", 21, timeout=25)  # IP atual do console
             f.login("xbox", "xbox")
             return f
         except Exception:
@@ -57,7 +64,7 @@ f.close()  # sem QUIT
 
 ```bash
 curl -s --connect-timeout 20 --max-time 180 --user xbox:xbox \
-     -o port/logs/teste.txt "ftp://192.168.0.4/Hdd1/hiddriver_log_teste.txt"
+     -o port/logs/teste.txt "ftp://192.168.0.3/Hdd1/hiddriver_log_teste.txt"
 ```
 
 Subir um build e a etapa, e conferir pelo md5:
