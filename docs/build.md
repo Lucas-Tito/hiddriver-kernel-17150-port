@@ -8,7 +8,7 @@ uma chave de compilação.
 |---|---|---|
 | `./tools/build.sh` | `build/uso/bin/hiddriver.xex` | **uso**: como o original, sem log nem notificação |
 | `./tools/build.sh DIAG=1` | `build/diag/bin/hiddriver.xex` | **diagnóstico**: log no HD, batimento, notificação, arquivo de etapa |
-| `./tools/build.sh STAGE=3` | `build/uso/bin/hiddriver.xex` | uso, com reinício do USB ao carregar (ver abaixo) |
+| `./tools/build.sh STAGE=2` | `build/uso/bin/hiddriver.xex` | uso, sem reiniciar o USB (ver abaixo) |
 
 Cada variante tem a sua pasta de objetos, então trocar de uma para a outra não mistura nada.
 
@@ -28,11 +28,11 @@ notificação, nem leitura do `hiddriver_etapa.txt`.
 
 ### Etapa fixa (`STAGE`)
 
-- `STAGE=2` (padrão): ganchos sem reiniciar o USB. É a validada no 17150. **Os controles precisam ser
-  plugados depois de o console ligar**, porque os que já estão plugados no boot são detectados antes
-  de o plugin carregar.
-- `STAGE=3`: reinicia o USB ao carregar, como o original, para pegar controles já plugados. **Nunca
-  foi testada no 17150**; o reinício mexe em toda a pilha USB, inclusive no Wi-Fi interno do Xbox E.
+- `STAGE=3` (padrão): reinicia o USB ao carregar, como o original, e pega controles já plugados no
+  boot. Validada no 17150 em 02/10/2026 (`port/logs/teste_etapa3.txt`). Efeito colateral conhecido:
+  depois do reinício, um dispositivo interno (provavelmente o Wi-Fi) fica sem driver; ver a issue #2.
+- `STAGE=2`: só os ganchos, sem reiniciar o USB. **Os controles precisam ser plugados depois de o
+  console ligar**, porque os que já estão plugados no boot são detectados antes de o plugin carregar.
 
 ## O build de diagnóstico (`DIAG=1`)
 

@@ -7,9 +7,10 @@ PROJECT_NAME ?= hiddriver
 WINDOWS_SHIM := wine
 
 # DIAG=1: diagnostic build (log, heartbeat, notification, stage file). STAGE: stage of the use
-# build (2 = no USB reset, validated; 3 = USB reset like upstream). Each variant has its own folder.
+# build (3 = USB reset like upstream, picks up controllers plugged at boot; 2 = no USB reset).
+# Each variant has its own folder.
 DIAG ?= 0
-STAGE ?= 2
+STAGE ?= 3
 VARIANT := $(if $(filter 1,$(DIAG)),diag,uso)
 BUILD_DIR ?= build/$(VARIANT)
 OUT_DIR := $(BUILD_DIR)/bin
