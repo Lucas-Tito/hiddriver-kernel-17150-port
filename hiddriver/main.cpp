@@ -13,13 +13,14 @@
 //   HIDDRIVER_DIAG  0 = use build, like upstream: no log, no notification, no stage file and only
 //                       the hooks the controllers need. 1 = diagnostic build (log on the HDD,
 //                       heartbeat, notification, hiddriver_etapa.txt, read-only USB loggers).
-//   HIDDRIVER_STAGE stage of the use build: 2 = hooks without the USB reset (validated on 17150;
-//                   controllers must be plugged after boot), 3 = with the USB reset, like upstream.
+//   HIDDRIVER_STAGE stage of the use build: 3 = with the USB reset, like upstream (picks up
+//                   controllers plugged at boot); 2 = hooks only, controllers plugged after boot.
+//                   Both validated on 17150; see issue #2 about the reset and the internal Wi-Fi.
 #ifndef HIDDRIVER_DIAG
 #define HIDDRIVER_DIAG 0
 #endif
 #ifndef HIDDRIVER_STAGE
-#define HIDDRIVER_STAGE 2
+#define HIDDRIVER_STAGE 3
 #endif
 Detour HidAddDeviceDetour;
 Detour HidRemoveDeviceDetour;
