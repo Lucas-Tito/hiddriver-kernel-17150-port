@@ -6,7 +6,12 @@ PROJECT_NAME ?= hiddriver
 
 WINDOWS_SHIM := wine
 
-BUILD_DIR ?= build
+# DIAG=1: diagnostic build (log, heartbeat, notification, stage file). STAGE: stage of the use
+# build (2 = no USB reset, validated; 3 = USB reset like upstream). Each variant has its own folder.
+DIAG ?= 0
+STAGE ?= 2
+VARIANT := $(if $(filter 1,$(DIAG)),diag,uso)
+BUILD_DIR ?= build/$(VARIANT)
 OUT_DIR := $(BUILD_DIR)/bin
 INT_DIR := $(BUILD_DIR)/obj
 
@@ -28,7 +33,8 @@ INCLUDES := -I"$(XKELIB_DIR)" -I"$(SRC_DIR)"
 CXX_FLAGS := -c -Zi -nologo -W0 -D NDEBUG -D _XBOX -D LTCG -D _MBCS \
              -Ox -Ob2 -Oi -Ot -GL -GF -Gy -GS- -MT -Gm- -GR- -TP \
              -fp:fast -fp:except- -Zc:wchar_t -Zc:forScope -openmp- \
-             -Fd"$(INT_DIR)/vc100.pdb" $(INCLUDES)
+             -Fd"$(INT_DIR)/vc100.pdb" $(INCLUDES) \
+             -D HIDDRIVER_DIAG=$(DIAG) -D HIDDRIVER_STAGE=$(STAGE)
 
 LD_FLAGS := -NOLOGO -DLL -LTCG -DEBUG -RELEASE -OPT:REF -OPT:ICF \
             -PDB:"$(OUT_DIR)/$(PROJECT_NAME).pdb" -XEX:NO

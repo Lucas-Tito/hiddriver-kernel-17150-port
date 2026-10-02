@@ -73,7 +73,7 @@ Subir um build e a etapa, e conferir pelo md5:
 import hashlib, io
 f = conectar()
 f.cwd("/Hdd1")
-with open("build/bin/hiddriver.xex", "rb") as src:
+with open("build/uso/bin/hiddriver.xex", "rb") as src:  # ou build/diag/bin, ver build.md
     f.storbinary("STOR hiddriver.xex", src)
 f.storbinary("STOR hiddriver_etapa.txt", io.BytesIO(b"2"))
 buf = io.BytesIO()

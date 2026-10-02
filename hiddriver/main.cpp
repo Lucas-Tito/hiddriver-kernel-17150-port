@@ -8,6 +8,19 @@
 #include <sstream>
 #include <vector>
 #include "Detours.h"
+
+// Build switches, set by the Makefile (make DIAG=1 STAGE=3):
+//   HIDDRIVER_DIAG  0 = use build, like upstream: no log, no notification, no stage file and only
+//                       the hooks the controllers need. 1 = diagnostic build (log on the HDD,
+//                       heartbeat, notification, hiddriver_etapa.txt, read-only USB loggers).
+//   HIDDRIVER_STAGE stage of the use build: 2 = hooks without the USB reset (validated on 17150;
+//                   controllers must be plugged after boot), 3 = with the USB reset, like upstream.
+#ifndef HIDDRIVER_DIAG
+#define HIDDRIVER_DIAG 0
+#endif
+#ifndef HIDDRIVER_STAGE
+#define HIDDRIVER_STAGE 2
+#endif
 Detour HidAddDeviceDetour;
 Detour HidRemoveDeviceDetour;
 Detour XamInputGetStateDetour;
@@ -36,6 +49,7 @@ HANDLE MakeThread(LPTHREAD_START_ROUTINE Address, PVOID arg) {
 	return Handle;
 }
 
+#if HIDDRIVER_DIAG
 void Notify(const wchar_t* msg) {
 	XNotifyQueueUI(XNOTIFYUI_TYPE_PREFERRED_REVIEW, XUSER_INDEX_ANY, XNOTIFYUI_PRIORITY_HIGH, (PWCHAR)msg, 0);
 }
@@ -194,6 +208,11 @@ void DiagFlush() {
 
 #define DbgPrint DiagLog
 #define DbgPrintSync(...) DiagLog(__VA_ARGS__) // no waiting: spinning inside USB callbacks holds the node lock
+#else
+// Use build: logging compiles to nothing, so no format strings or log code end up in the binary
+#define DbgPrint(...) ((void)0)
+#define DbgPrintSync(...) ((void)0)
+#endif // HIDDRIVER_DIAG
 
 // Re-reads a patched or hooked address, to prove the write to kernel/xam code took effect.
 // A hook starts with "lis r0, target@hi" (0x3C00xxxx) once installed.
@@ -1610,6 +1629,7 @@ bool InitDriver(bool resetUsb) {
 		return false;
 
 	if (isKernel17150 && HookEnabled('m')) {
+#if HIDDRIVER_DIAG
 		if (Expect(0x800D7170, 0x7D8802A6, 0, "UsbMatch (prologo)") && Expect(0x800D7190, 0x8B7E0005, 0, "UsbMatch (lbz class)")) {
 			UsbMatchDetour = Detour((void*)0x800D7170, (void*)UsbMatchHook);
 			UsbMatchDetour.Install();
@@ -1632,6 +1652,8 @@ bool InitDriver(bool resetUsb) {
 			UsbCompatReplyDetour.Install();
 			LogReadback("UsbCompatReply", (void*)0x800D80A0);
 		}
+#endif // HIDDRIVER_DIAG
+		// these three carry the 8BitDo fix (strings, SET_IDLE + report descriptor) in every build
 		if (Expect(0x800D83F8, 0x7D8802A6, 0, "UsbSetConfigDone") && Expect(0x800D8404, 0x3BE3FFF4, 0, "UsbSetConfigDone (node)")) {
 			UsbSetConfigDoneDetour = Detour((void*)0x800D83F8, (void*)UsbSetConfigDoneHook);
 			UsbSetConfigDoneDetour.Install();
@@ -1654,12 +1676,14 @@ bool InitDriver(bool resetUsb) {
 			UsbDiscardDetour.Install();
 			LogReadback("UsbDiscard", (void*)0x800D7D00);
 		}
+#if HIDDRIVER_DIAG
 		if (Expect((DWORD)UsbdAddDeviceComplete, 0x7D8802A6, 0, "UsbdAddDeviceComplete")) {
 			UsbdAddDeviceCompleteDetour = Detour((void*)UsbdAddDeviceComplete, (void*)UsbdAddDeviceCompleteHook);
 			UsbdAddDeviceCompleteDetour.Install();
 			LogReadback("UsbdAddDeviceComplete", (void*)UsbdAddDeviceComplete);
 			DbgPrint("EINTIM: hook on: UsbdAddDeviceComplete logger\n");
 		}
+#endif
 	}
 
 	if (isKernel17150) {
@@ -1704,7 +1728,9 @@ bool InitDriver(bool resetUsb) {
 		ApplyUsbResetPatches17150();
 
 	DbgPrint("EINTIM: Resetting USB driver!\n");
+#if HIDDRIVER_DIAG
 	DiagFlush();
+#endif
 	UsbdPowerDownNotification();
 	//For some reason microsoft doesnt clean up this page by themselves in the shutdown notification, so ill do it for them, call me mr nice guy :)
 	MmFreePhysicalMemory(0, *(DWORD*)UsbPhysicalPage);
@@ -1714,6 +1740,7 @@ bool InitDriver(bool resetUsb) {
 	return true;
 }
 
+#if HIDDRIVER_DIAG
 // Shows the result once the dashboard is up. Runs on its own thread: in every earlier log,
 // nothing was ever written after XNotifyQueueUI, so it may never return here.
 unsigned int __stdcall NotifyThread(void*) {
@@ -1743,6 +1770,8 @@ unsigned int __stdcall FlushThread(void*) {
 	return 0;
 }
 
+#endif // HIDDRIVER_DIAG
+
 BOOL APIENTRY DllMain(HANDLE Handle, DWORD Reason, PVOID Reserved)
 {
 	if (Reason == DLL_PROCESS_ATTACH)
@@ -1750,6 +1779,15 @@ BOOL APIENTRY DllMain(HANDLE Handle, DWORD Reason, PVOID Reserved)
 		if (XboxKrnlVersion->Build != 17559 && XboxKrnlVersion->Build != 17489 && XboxKrnlVersion->Build != 17150)
 			return FALSE;
 
+#if !HIDDRIVER_DIAG
+		// Use build, as upstream: open disc tray = don't start; otherwise install and go
+		if (IsTrayOpen())
+			return FALSE;
+		g_stage = HIDDRIVER_STAGE;
+		if (g_stage >= 2)
+			InitDriver(g_stage >= 3);
+		return TRUE;
+#else
 		MountDiagDrives();
 		char stageText[16];
 		ReadHddFileText(STAGE_FILE, stageText, sizeof(stageText));
@@ -1779,6 +1817,7 @@ BOOL APIENTRY DllMain(HANDLE Handle, DWORD Reason, PVOID Reserved)
 		DiagFlush();
 		MakeThread((LPTHREAD_START_ROUTINE)FlushThread, nullptr);
 		MakeThread((LPTHREAD_START_ROUTINE)NotifyThread, nullptr);
+#endif // HIDDRIVER_DIAG
 	}
 	return TRUE;
 }
