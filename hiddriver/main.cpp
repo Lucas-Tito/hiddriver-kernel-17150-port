@@ -204,7 +204,7 @@ void LogReadback(const char* what, void* address) {
 // Per-hook call counters, printed by the heartbeat: they tell "hook never runs" apart from
 // "hook runs but its log line is lost"
 enum HookCounter { HIT_DEVMATCH, HIT_IFMATCH, HIT_ADDCOMPLETE, HIT_HIDADD, HIT_HIDREMOVE,
-	HIT_INACTIVITY, HIT_GETSTATE, HIT_SETSTATE, HIT_CAPS, HIT_COUNT };
+	HIT_INACTIVITY, HIT_GETSTATE, HIT_SETSTATE, HIT_CAPS, HIT_REPORT, HIT_COUNT };
 volatile LONG g_hits[HIT_COUNT];
 #define COUNT_HIT(which) InterlockedIncrement(&g_hits[which])
 
@@ -606,6 +606,11 @@ int interruptHandler(DWORD deviceHandle, int32_t a2) {
 	if (connectedControllers[index].controllerType == GENERIC_RAW) {
 		const RawLayout* l = connectedControllers[index].rawLayout;
 		const uint8_t* p = (const uint8_t*)report;
+		// first reports of each hardcoded controller, to see whether data arrives and in what shape
+		LONG n = InterlockedIncrement(&g_hits[HIT_REPORT]);
+		if (n <= 8)
+			DbgPrintSync("EINTIM: report %d from %s: status %X bytes %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X\n",
+				n, l->name, a2, p[0], p[1], p[2], p[3], p[4], p[5], p[6], p[7], p[8], p[9]);
 		if (l->reportId < 0 || p[0] == l->reportId) {
 			connectedControllers[index].currentState = DecodeRawReport(l, p);
 		}
@@ -813,7 +818,10 @@ int HidAddDeviceHook(deviceHandle* deviceHandle) {
 		connectedControllers[index] = c;
 
 		DbgPrint("EINTIM: Registered virtual controller inside XAM with index: %d.\n", userIndex);
-		return UsbdQueueAsyncTransfer(deviceHandle, &controllerDriver->interruptEndpoint);
+		int queued = UsbdQueueAsyncTransfer(deviceHandle, &controllerDriver->interruptEndpoint);
+		DbgPrintSync("EINTIM: first interrupt transfer queued: %X (endpoint %02X, packet %d)\n",
+			queued, endpoint_descriptor->bEndpointAddress, controllerDriver->packetSize);
+		return queued;
 	}
 
 	DbgPrint("EINTIM: Unrelated USB Device. Calling original...\n");
@@ -1606,10 +1614,10 @@ unsigned int __stdcall FlushThread(void*) {
 		DWORD now = GetTickCount();
 		if (now - lastBeat >= 5000) {
 			lastBeat = now;
-			DbgPrint("EINTIM: alive t=%u write=%d read=%d hits dev=%d if=%d addc=%d hidadd=%d hidrem=%d inact=%d get=%d set=%d caps=%d\n",
+			DbgPrint("EINTIM: alive t=%u write=%d read=%d hits dev=%d if=%d addc=%d hidadd=%d hidrem=%d inact=%d get=%d set=%d caps=%d reports=%d\n",
 				now / 1000, g_diagWrite, g_diagRead, g_hits[HIT_DEVMATCH], g_hits[HIT_IFMATCH], g_hits[HIT_ADDCOMPLETE],
 				g_hits[HIT_HIDADD], g_hits[HIT_HIDREMOVE], g_hits[HIT_INACTIVITY], g_hits[HIT_GETSTATE],
-				g_hits[HIT_SETSTATE], g_hits[HIT_CAPS]);
+				g_hits[HIT_SETSTATE], g_hits[HIT_CAPS], g_hits[HIT_REPORT]);
 		}
 		DiagFlush();
 		Sleep(10);
