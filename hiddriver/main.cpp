@@ -1335,22 +1335,128 @@ void UsbSetConfigDoneHook(BYTE* nodePlusC, DWORD status) {
 	DWORD ms = g_setConfigSentNode == node ? (now - g_setConfigSentTb) / TB_TICKS_PER_MS : 0xFFFFFFFF;
 	DbgPrintSync("EINTIM: USB SET_CONFIGURATION done: VID %04X PID %04X config %d status %08X after %d ms\n", vid, pid, node[0x65], status, ms);
 
-	// Experiment for the 8BitDo receiver only: its SET_CONFIGURATION always comes back cancelled
-	// (C0000120) in under 1 ms, so enumeration never reaches driver selection. Report success
-	// instead and see whether the device is still there. The original also checks the "removed"
-	// flag (bit 0x80 at byte 8 of the structure at node+4) and discards if it is set.
-	if (vid == 0x2DC8 && status == 0xC0000120) {
-		const BYTE* info = *(const BYTE**)(node + 4);
-		DbgPrintSync("EINTIM: 8BitDo: treating cancelled SET_CONFIGURATION as success (removed flag %02X)\n", info ? (info[8] & 0x80) : 0xFF);
-		status = 0;
-	}
 	UsbSetConfigDoneDetour.GetOriginal<usb_reply_func_t>()(nodePlusC, status);
+}
+
+// The 8BitDo drops off the bus when it gets SET_CONFIGURATION from the Xbox (issue #1). Linux,
+// where it works, asks for the string descriptors between the configuration descriptor and
+// SET_CONFIGURATION; the Xbox does not. For VID 2DC8 only, ask for them the way Linux does
+// (language list, product, manufacturer, serial, wLength 255) and only then let the original
+// callback send SET_CONFIGURATION.
+//
+// Each request follows the kernel's own pattern (0x800D84F0, 0x800D85AC, 0x800D8318): setup packet
+// at node+0x2C, completion callback at node+0x10, data pointer/size at node+0x20/0x24, direction at
+// node+0x1C, submit with 0x800D9190(info, node+0xC), then arm the 5 s timer at node+0x34. Every
+// completion first cancels that timer. The data goes to the node's scratch buffer at node+0x1B4
+// (0xC4 bytes before the node fields at 0x278); the configuration itself is kept at node+0x60.
+typedef void (*usb_submit_func_t)(BYTE* info, BYTE* request);
+typedef DWORD (*usb_timer_cancel_func_t)(BYTE* timer);
+typedef void (*usb_timer_arm_func_t)(BYTE* timer, DWORD ms);
+static const usb_submit_func_t UsbSubmitRequest = (usb_submit_func_t)0x800D9190;
+static const usb_timer_cancel_func_t UsbTimerCancel = (usb_timer_cancel_func_t)0x800DA170;
+static const usb_timer_arm_func_t UsbTimerArm = (usb_timer_arm_func_t)0x800DA2B8;
+static const usb_discard_func_t UsbDiscardOriginal = (usb_discard_func_t)0x800D7D00; // goes through our logging hook
+
+#define STRING_BUFFER_OFFSET 0x1B4
+// wLength 255 is what Linux asks for. The host controller sizes the transfer from the buffer
+// size (node+0x24), not from wLength, so the buffer is capped at the 0xC4 free bytes before the
+// node fields at 0x278: a longer reply becomes a transfer error instead of corrupting the node.
+// The longest 8BitDo string ("Ultimate C 2.4G Wireless Controller ") is 74 bytes.
+#define STRING_REQUEST_LENGTH 0xFF
+#define STRING_BUFFER_SIZE 0xC4
+bool g_stringRequestsReady = false; // set once the addresses above were checked
+
+struct StringSequence {
+	BYTE* node;      // node being handled, nullptr when idle
+	int step;
+	WORD langid;
+	// node fields touched by the string requests, restored before SET_CONFIGURATION
+	BYTE dir;
+	DWORD data, size, length;
+};
+StringSequence g_strings;
+
+// Linux order: language list first (usb_get_langid), then product, manufacturer, serial
+static const BYTE kStringIndexes[] = { 0, 2, 1, 3 };
+
+void UsbStringDoneCallback(BYTE* nodePlusC, DWORD status);
+
+void SubmitStringRequest(BYTE* node, BYTE index, WORD langid) {
+	node[0x2C] = 0x80;                 // device to host, standard, device
+	node[0x2D] = 6;                    // GET_DESCRIPTOR
+	node[0x2E] = index;                // wValue (little endian): index, type 3 = string
+	node[0x2F] = 3;
+	node[0x30] = (BYTE)(langid & 0xFF); // wIndex = language
+	node[0x31] = (BYTE)(langid >> 8);
+	node[0x32] = STRING_REQUEST_LENGTH; // wLength (little endian)
+	node[0x33] = 0;
+	*(DWORD*)(node + 0x10) = (DWORD)UsbStringDoneCallback;
+	*(DWORD*)(node + 0x20) = (DWORD)(node + STRING_BUFFER_OFFSET);
+	*(DWORD*)(node + 0x24) = STRING_BUFFER_SIZE;
+	node[0x1C] = 1;
+	UsbSubmitRequest(*(BYTE**)(node + 4), node + 0xC);
+	UsbTimerArm(node + 0x34, 5000);
+}
+
+void UsbStringDoneCallback(BYTE* nodePlusC, DWORD status) {
+	BYTE* node = nodePlusC - 0xC;
+	UsbTimerCancel(node + 0x34);
+	const BYTE* info = *(const BYTE**)(node + 4);
+	const BYTE* buf = node + STRING_BUFFER_OFFSET;
+	DWORD got = *(DWORD*)(node + 0x28);
+	BYTE index = kStringIndexes[g_strings.step];
+	DbgPrintSync("EINTIM: 8BitDo: string %d done status %08X, %d bytes (bLength %02X type %02X), removed %02X\n",
+		index, status, got, buf[0], buf[1], info[8] & 0x80);
+
+	if (info[8] & 0x80) {
+		DbgPrintSync("EINTIM: 8BitDo: device gone during the string requests\n");
+		g_strings.node = nullptr;
+		UsbDiscardOriginal(node);
+		return;
+	}
+	if (index == 0 && status == 0 && got >= 4 && buf[1] == 3)
+		g_strings.langid = buf[2] | (buf[3] << 8);
+
+	g_strings.step++;
+	if (g_strings.step < (int)sizeof(kStringIndexes)) {
+		SubmitStringRequest(node, kStringIndexes[g_strings.step], g_strings.langid);
+		return;
+	}
+
+	// done: put back what the original expects and let it send SET_CONFIGURATION
+	node[0x1C] = g_strings.dir;
+	*(DWORD*)(node + 0x20) = g_strings.data;
+	*(DWORD*)(node + 0x24) = g_strings.size;
+	*(DWORD*)(node + 0x28) = g_strings.length;
+	g_strings.node = nullptr;
+	DbgPrintSync("EINTIM: 8BitDo: strings done, handing over to SET_CONFIGURATION\n");
+	UsbConfigDescDoneDetour.GetOriginal<usb_reply_func_t>()(nodePlusC, 0);
+	g_setConfigSentNode = node;
+	g_setConfigSentTb = __mftb32();
 }
 
 void UsbConfigDescDoneHook(BYTE* nodePlusC, DWORD status) {
 	DWORD vid, pid;
-	NodeIds(nodePlusC - 0xC, &vid, &pid);
+	BYTE* node = nodePlusC - 0xC;
+	NodeIds(node, &vid, &pid);
 	DbgPrintSync("EINTIM: USB config descriptor done: VID %04X PID %04X status %08X\n", vid, pid, status);
+
+	const BYTE* info = *(const BYTE**)(node + 4);
+	// A new configuration completion on the node we were handling is a new enumeration: start over
+	if (vid == 0x2DC8 && status == 0 && g_stringRequestsReady && (!g_strings.node || g_strings.node == node) && !(info[8] & 0x80)) {
+		UsbTimerCancel(node + 0x34); // the original would do this first thing
+		g_strings.node = node;
+		g_strings.step = 0;
+		g_strings.langid = 0x0409;
+		g_strings.dir = node[0x1C];
+		g_strings.data = *(DWORD*)(node + 0x20);
+		g_strings.size = *(DWORD*)(node + 0x24);
+		g_strings.length = *(DWORD*)(node + 0x28);
+		DbgPrintSync("EINTIM: 8BitDo: asking for the strings before SET_CONFIGURATION (config length %d)\n", g_strings.length);
+		SubmitStringRequest(node, kStringIndexes[0], 0);
+		return;
+	}
+
 	UsbConfigDescDoneDetour.GetOriginal<usb_reply_func_t>()(nodePlusC, status);
 	// the original has just queued SET_CONFIGURATION (0x800D84F0-0x800D8528) if status was ok
 	g_setConfigSentNode = nodePlusC - 0xC;
@@ -1360,6 +1466,8 @@ void UsbConfigDescDoneHook(BYTE* nodePlusC, DWORD status) {
 void UsbDiscardHook(BYTE* node) {
 	DWORD vid, pid;
 	NodeIds(node, &vid, &pid);
+	if (node == g_strings.node)
+		g_strings.node = nullptr; // discarded by a path that never reached our string callback
 	DbgPrintSync("EINTIM: USB discard: node %p VID %04X PID %04X retry flag %d, called from %p\n",
 		node, vid, pid, node[0x27F], _ReturnAddress());
 	UsbDiscardDetour.GetOriginal<usb_discard_func_t>()(node);
@@ -1408,6 +1516,13 @@ bool InitDriver(bool resetUsb) {
 			UsbConfigDescDoneDetour.Install();
 			LogReadback("UsbConfigDescDone", (void*)0x800D8468);
 		}
+		g_stringRequestsReady = Expect(0x800D9190, 0x3D60801A, 0, "UsbSubmitRequest") &&
+			Expect(0x800D9194, 0x89230008, 0, "UsbSubmitRequest (lbz)") &&
+			Expect(0x800DA170, 0x7D8802A6, 0, "UsbTimerCancel") &&
+			Expect(0x800DA180, 0xE9630010, 0, "UsbTimerCancel (ld)") &&
+			Expect(0x800DA2B8, 0x3D60800E, 0, "UsbTimerArm") &&
+			Expect(0x800DA2C0, 0x91630004, 0, "UsbTimerArm (stw)");
+		DbgPrint("EINTIM: 8BitDo string requests %s\n", g_stringRequestsReady ? "enabled" : "DISABLED (addresses differ)");
 		if (Expect(0x800D7D00, 0x7D8802A6, 0, "UsbDiscard") && Expect(0x800D7D20, 0x897F027F, 0, "UsbDiscard (retry flag)")) {
 			UsbDiscardDetour = Detour((void*)0x800D7D00, (void*)UsbDiscardHook);
 			UsbDiscardDetour.Install();
