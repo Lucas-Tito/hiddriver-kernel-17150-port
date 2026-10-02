@@ -614,7 +614,15 @@ int interruptHandler(DWORD deviceHandle, int32_t a2) {
 		if (l->reportId < 0 || p[0] == l->reportId) {
 			connectedControllers[index].currentState = DecodeRawReport(l, p);
 		}
-		return UsbdQueueAsyncTransfer(driverExtension->deviceHandle, &driverExtension->interruptEndpoint);
+		int requeued = UsbdQueueAsyncTransfer(driverExtension->deviceHandle, &driverExtension->interruptEndpoint);
+		if (n <= 8) {
+			// the transfer block starts at interruptEndpoint (+4): endpoint, handler, +0xC, +0x10, flag +0x14,
+			// buffer +0x18, size +0x1C; the received length should be one of these words
+			const DWORD* t = (const DWORD*)&driverExtension->interruptEndpoint;
+			DbgPrintSync("EINTIM: report %d requeue %X block %08X %08X %08X %08X %08X %08X %08X\n",
+				n, requeued, t[0], t[1], t[2], t[3], t[4], t[5], t[6]);
+		}
+		return requeued;
 	}
 
 	if (report->reportId == 1) {
