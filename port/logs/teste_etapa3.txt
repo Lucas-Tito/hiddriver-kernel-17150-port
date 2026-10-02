@@ -1,0 +1,3060 @@
+EINTIM: alive t=64 write=152 read=152 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=12342 set=4 caps=8784 reports=158
+EINTIM: alive t=69 write=153 read=153 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=14142 set=4 caps=9984 reports=158
+EINTIM: alive t=74 write=154 read=154 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=15942 set=4 caps=11184 reports=158
+EINTIM: alive t=79 write=155 read=155 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=17742 set=4 caps=12384 reports=158
+EINTIM: alive t=84 write=156 read=156 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=19542 set=4 caps=13584 reports=158
+EINTIM: alive t=89 write=157 read=157 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=21342 set=4 caps=14784 reports=158
+EINTIM: alive t=94 write=158 read=158 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=23145 set=4 caps=15986 reports=158
+EINTIM: alive t=99 write=159 read=159 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=24942 set=4 caps=17184 reports=158
+EINTIM: alive t=104 write=160 read=160 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=26742 set=4 caps=18384 reports=158
+EINTIM: alive t=109 write=161 read=161 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=28542 set=4 caps=19584 reports=158
+EINTIM: alive t=114 write=162 read=162 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=30342 set=4 caps=20784 reports=158
+EINTIM: alive t=119 write=163 read=163 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=32142 set=4 caps=21984 reports=158
+EINTIM: alive t=124 write=164 read=164 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=33939 set=4 caps=23182 reports=158
+EINTIM: alive t=129 write=165 read=165 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=35736 set=4 caps=24380 reports=158
+EINTIM: alive t=134 write=166 read=166 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=37536 set=4 caps=25580 reports=158
+EINTIM: alive t=139 write=167 read=167 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=39336 set=4 caps=26780 reports=158
+EINTIM: alive t=144 write=168 read=168 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=41136 set=4 caps=27980 reports=158
+EINTIM: alive t=149 write=169 read=169 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=42936 set=4 caps=29180 reports=158
+EINTIM: alive t=154 write=170 read=170 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=44736 set=4 caps=30380 reports=158
+EINTIM: alive t=159 write=171 read=171 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=46536 set=4 caps=31580 reports=158
+EINTIM: alive t=164 write=172 read=172 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=48336 set=4 caps=32780 reports=158
+EINTIM: alive t=169 write=173 read=173 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=50136 set=4 caps=33980 reports=158
+EINTIM: alive t=174 write=174 read=174 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=51930 set=4 caps=35176 reports=160
+EINTIM: alive t=179 write=175 read=175 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=53733 set=4 caps=36378 reports=160
+EINTIM: alive t=184 write=176 read=176 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=55530 set=4 caps=37576 reports=160
+EINTIM: alive t=189 write=177 read=177 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=57330 set=4 caps=38776 reports=160
+EINTIM: alive t=194 write=178 read=178 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=59136 set=4 caps=39980 reports=160
+EINTIM: alive t=199 write=179 read=179 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=60936 set=4 caps=41180 reports=160
+EINTIM: alive t=204 write=180 read=180 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=62736 set=4 caps=42380 reports=160
+EINTIM: alive t=209 write=181 read=181 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=64536 set=4 caps=43580 reports=160
+EINTIM: alive t=214 write=182 read=182 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=66336 set=4 caps=44780 reports=160
+EINTIM: alive t=219 write=183 read=183 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=68130 set=4 caps=45976 reports=160
+EINTIM: alive t=224 write=184 read=184 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=69930 set=4 caps=47176 reports=160
+EINTIM: alive t=229 write=185 read=185 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=71730 set=4 caps=48376 reports=160
+EINTIM: alive t=234 write=186 read=186 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=73530 set=4 caps=49576 reports=160
+EINTIM: alive t=239 write=187 read=187 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=75330 set=4 caps=50776 reports=160
+EINTIM: alive t=244 write=188 read=188 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=77130 set=4 caps=51976 reports=160
+EINTIM: alive t=249 write=189 read=189 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=78930 set=4 caps=53176 reports=160
+EINTIM: alive t=254 write=190 read=190 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=80730 set=4 caps=54376 reports=160
+EINTIM: alive t=259 write=191 read=191 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=82530 set=4 caps=55576 reports=160
+EINTIM: alive t=264 write=192 read=192 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=84330 set=4 caps=56776 reports=160
+EINTIM: alive t=269 write=193 read=193 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=86130 set=4 caps=57976 reports=160
+EINTIM: alive t=274 write=194 read=194 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=87930 set=4 caps=59176 reports=160
+EINTIM: alive t=279 write=195 read=195 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=89730 set=4 caps=60376 reports=160
+EINTIM: alive t=284 write=196 read=196 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=91536 set=4 caps=61580 reports=160
+EINTIM: alive t=289 write=197 read=197 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=93336 set=4 caps=62780 reports=160
+EINTIM: alive t=294 write=198 read=198 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=95136 set=4 caps=63980 reports=160
+EINTIM: alive t=299 write=199 read=199 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=96936 set=4 caps=65180 reports=160
+EINTIM: alive t=304 write=200 read=200 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=98736 set=4 caps=66380 reports=160
+EINTIM: alive t=309 write=201 read=201 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=100536 set=4 caps=67580 reports=160
+EINTIM: alive t=314 write=202 read=202 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=102336 set=4 caps=68780 reports=160
+EINTIM: alive t=319 write=203 read=203 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=104136 set=4 caps=69980 reports=160
+EINTIM: alive t=324 write=204 read=204 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=105930 set=4 caps=71176 reports=160
+EINTIM: alive t=329 write=205 read=205 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=107730 set=4 caps=72376 reports=160
+EINTIM: alive t=334 write=206 read=206 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=109530 set=4 caps=73576 reports=160
+EINTIM: alive t=339 write=207 read=207 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=111330 set=4 caps=74776 reports=160
+EINTIM: alive t=344 write=208 read=208 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=113130 set=4 caps=75976 reports=160
+EINTIM: alive t=349 write=209 read=209 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=114930 set=4 caps=77176 reports=160
+EINTIM: alive t=354 write=210 read=210 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=116730 set=4 caps=78376 reports=160
+EINTIM: alive t=359 write=211 read=211 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=118530 set=4 caps=79576 reports=160
+EINTIM: alive t=364 write=212 read=212 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=120330 set=4 caps=80776 reports=160
+EINTIM: alive t=369 write=213 read=213 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=122130 set=4 caps=81976 reports=160
+EINTIM: alive t=374 write=214 read=214 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=123930 set=4 caps=83176 reports=160
+EINTIM: alive t=379 write=215 read=215 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=125730 set=4 caps=84376 reports=160
+EINTIM: alive t=384 write=216 read=216 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=127530 set=4 caps=85576 reports=160
+EINTIM: alive t=389 write=217 read=217 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=129330 set=4 caps=86776 reports=160
+EINTIM: alive t=394 write=218 read=218 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=131124 set=4 caps=87972 reports=160
+EINTIM: alive t=399 write=219 read=219 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=132924 set=4 caps=89172 reports=160
+EINTIM: alive t=404 write=220 read=220 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=134724 set=4 caps=90372 reports=160
+EINTIM: alive t=409 write=221 read=221 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=136524 set=4 caps=91572 reports=160
+EINTIM: alive t=414 write=222 read=222 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=138324 set=4 caps=92772 reports=160
+EINTIM: alive t=419 write=223 read=223 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=140124 set=4 caps=93972 reports=160
+EINTIM: alive t=424 write=224 read=224 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=141930 set=4 caps=95176 reports=160
+EINTIM: alive t=429 write=225 read=225 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=143730 set=4 caps=96376 reports=160
+EINTIM: alive t=434 write=226 read=226 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=145530 set=4 caps=97576 reports=160
+EINTIM: alive t=440 write=227 read=227 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=147330 set=4 caps=98776 reports=160
+EINTIM: alive t=445 write=228 read=228 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=149130 set=4 caps=99976 reports=160
+EINTIM: alive t=450 write=229 read=229 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=150930 set=4 caps=101176 reports=160
+EINTIM: alive t=455 write=230 read=230 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=152730 set=4 caps=102376 reports=160
+EINTIM: alive t=460 write=231 read=231 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=154530 set=4 caps=103576 reports=160
+EINTIM: alive t=465 write=232 read=232 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=156330 set=4 caps=104776 reports=160
+EINTIM: alive t=470 write=233 read=233 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=158130 set=4 caps=105976 reports=160
+EINTIM: alive t=475 write=234 read=234 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=159930 set=4 caps=107176 reports=160
+EINTIM: alive t=480 write=235 read=235 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=161730 set=4 caps=108376 reports=160
+EINTIM: alive t=485 write=236 read=236 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=163530 set=4 caps=109576 reports=160
+EINTIM: alive t=490 write=237 read=237 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=165330 set=4 caps=110776 reports=160
+EINTIM: alive t=495 write=238 read=238 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=167130 set=4 caps=111976 reports=160
+EINTIM: alive t=500 write=239 read=239 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=168930 set=4 caps=113176 reports=160
+EINTIM: alive t=505 write=240 read=240 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=170730 set=4 caps=114376 reports=160
+EINTIM: alive t=510 write=241 read=241 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=172533 set=4 caps=115578 reports=160
+EINTIM: alive t=515 write=242 read=242 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=174336 set=4 caps=116780 reports=160
+EINTIM: alive t=520 write=243 read=243 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=176130 set=4 caps=117976 reports=160
+EINTIM: alive t=525 write=244 read=244 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=177936 set=4 caps=119180 reports=160
+EINTIM: alive t=530 write=245 read=245 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=179736 set=4 caps=120380 reports=160
+EINTIM: alive t=535 write=246 read=246 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=181533 set=4 caps=121578 reports=160
+EINTIM: alive t=540 write=247 read=247 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=183333 set=4 caps=122778 reports=160
+EINTIM: alive t=545 write=248 read=248 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=185136 set=4 caps=123980 reports=160
+EINTIM: alive t=550 write=249 read=249 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=186930 set=4 caps=125176 reports=160
+EINTIM: alive t=555 write=250 read=250 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=188730 set=4 caps=126376 reports=160
+EINTIM: alive t=560 write=251 read=251 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=190530 set=4 caps=127576 reports=160
+EINTIM: alive t=565 write=252 read=252 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=192126 set=4 caps=128640 reports=167
+EINTIM: alive t=570 write=253 read=253 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=193926 set=4 caps=129840 reports=182
+EINTIM: alive t=575 write=254 read=254 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=194506 set=8 caps=130230 reports=188
+EINTIM: alive t=580 write=255 read=255 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=194506 set=12 caps=130230 reports=188
+EINTIM: alive t=585 write=256 read=256 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=194506 set=12 caps=130230 reports=188
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: alive t=590 write=267 read=267 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=194608 set=28 caps=130366 reports=188
+EINTIM: (111 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=595 write=323 read=323 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=196408 set=328 caps=132766 reports=188
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=600 write=379 read=379 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=198202 set=627 caps=135158 reports=188
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=605 write=435 read=435 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=200002 set=927 caps=137558 reports=188
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=610 write=491 read=491 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=201802 set=1227 caps=139958 reports=188
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=615 write=547 read=547 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=203608 set=1528 caps=142366 reports=188
+EINTIM: (86 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (82 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=620 write=592 read=592 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=204778 set=1722 caps=143926 reports=188
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (74 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=625 write=648 read=648 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=206050 set=1935 caps=145622 reports=188
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (80 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (80 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=630 write=704 read=704 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=207370 set=2154 caps=147382 reports=195
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=635 write=760 read=760 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=208678 set=2372 caps=149126 reports=195
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=640 write=816 read=816 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=209992 set=2591 caps=150878 reports=195
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=645 write=872 read=872 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=211300 set=2809 caps=152622 reports=195
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=650 write=928 read=928 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=212608 set=3027 caps=154366 reports=195
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=655 write=984 read=984 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=213916 set=3245 caps=156110 reports=195
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=660 write=1040 read=1040 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=215212 set=3462 caps=157838 reports=195
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=665 write=1096 read=1096 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=216514 set=3678 caps=159574 reports=195
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (78 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=670 write=1152 read=1152 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=217810 set=3894 caps=161302 reports=195
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=675 write=1208 read=1208 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=219100 set=4109 caps=163022 reports=195
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=680 write=1264 read=1264 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=220384 set=4323 caps=164734 reports=195
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=685 write=1320 read=1320 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=221680 set=4539 caps=166462 reports=195
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (76 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (70 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: alive t=690 write=1356 read=1356 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=222605 set=4698 caps=167698 reports=207
+EINTIM: alive t=695 write=1357 read=1357 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=222605 set=4702 caps=167698 reports=207
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: (97 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=700 write=1412 read=1412 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=224135 set=5974 caps=169738 reports=213
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=705 write=1468 read=1468 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=226766 set=7474 caps=172692 reports=219
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (101 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: alive t=710 write=1524 read=1524 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=229376 set=8950 caps=175608 reports=229
+EINTIM: (113 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=715 write=1536 read=1536 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=229736 set=9283 caps=176088 reports=233
+EINTIM: (26 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=720 write=1592 read=1592 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=231488 set=10741 caps=178424 reports=241
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (112 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (104 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=725 write=1648 read=1648 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=233270 set=12226 caps=180800 reports=253
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=730 write=1704 read=1704 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=234914 set=13601 caps=182992 reports=253
+EINTIM: (40 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (112 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=735 write=1738 read=1738 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=235910 set=14263 caps=184320 reports=253
+EINTIM: (80 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (8 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (102 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=740 write=1772 read=1772 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=236540 set=14679 caps=185160 reports=255
+EINTIM: (112 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (112 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=745 write=1828 read=1828 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=238340 set=15883 caps=187560 reports=270
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (112 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (112 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (112 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=750 write=1884 read=1884 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=240146 set=17083 caps=189968 reports=606
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (112 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=755 write=1940 read=1940 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=241946 set=18283 caps=192368 reports=971
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=760 write=1996 read=1996 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=243740 set=19483 caps=194760 reports=1180
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=765 write=2052 read=2052 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=245540 set=20679 caps=197160 reports=1516
+EINTIM: (112 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=770 write=2108 read=2108 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=247340 set=21883 caps=199560 reports=1924
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (112 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=775 write=2164 read=2164 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=249140 set=23083 caps=201960 reports=2405
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (112 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (112 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=780 write=2220 read=2220 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=250940 set=24279 caps=204360 reports=2790
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (112 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (112 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=785 write=2276 read=2276 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=252740 set=25483 caps=206760 reports=3157
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (112 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=790 write=2332 read=2332 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=254540 set=26679 caps=209160 reports=3483
+EINTIM: (112 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (112 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (112 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (112 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=795 write=2388 read=2388 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=256340 set=27883 caps=211560 reports=3856
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=800 write=2444 read=2444 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=258140 set=29083 caps=213960 reports=4214
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (112 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=805 write=2500 read=2500 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=259940 set=30283 caps=216360 reports=4562
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (112 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=810 write=2556 read=2556 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=261740 set=31479 caps=218760 reports=4891
+EINTIM: (112 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (112 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=815 write=2612 read=2612 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=263540 set=32683 caps=221160 reports=5219
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=820 write=2668 read=2668 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=265340 set=33879 caps=223560 reports=5509
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (112 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=825 write=2724 read=2724 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=267140 set=35083 caps=225960 reports=5877
+EINTIM: (112 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (112 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=830 write=2780 read=2780 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=268940 set=36283 caps=228360 reports=6276
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (112 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (112 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=835 write=2836 read=2836 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=270734 set=37479 caps=230752 reports=6416
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (112 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: alive t=840 write=2892 read=2892 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=272577 set=38679 caps=233196 reports=6418
+EINTIM: (111 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: (109 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: (111 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: alive t=845 write=2948 read=2948 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=274806 set=39879 caps=236001 reports=6447
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: alive t=850 write=2960 read=2960 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=275379 set=40191 caps=236725 reports=6453
+EINTIM: alive t=855 write=2961 read=2961 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=276591 set=40191 caps=237533 reports=6453
+EINTIM: alive t=860 write=2962 read=2962 hits dev=0 if=2 addc=2 hidadd=2 hidrem=0 inact=0 get=277874 set=40191 caps=238389 reports=6454
+EINTIM: HID remove device E1EBFA80
+EINTIM: Removing controller with handle E1EBFA80
+EINTIM: Removed controller with handle E1EBFA80
+EINTIM: Removed virtual controller from XAM.
+EINTIM: USB discard: node E1EBEBF4 VID 045E PID 02BC retry flag 0, called from 800DF2AC
+EINTIM: USB config descriptor done: VID 2DC8 PID 3016 status 00000000
+EINTIM: 8BitDo: asking for the strings before SET_CONFIGURATION (config length 41)
+EINTIM: 8BitDo: string 0 done status 00000000, 4 bytes (bLength 04 type 03), removed 00
+EINTIM: 8BitDo: string 2 done status 00000000, 10 bytes (bLength 0A type 03), removed 00
+EINTIM: 8BitDo: string 1 done status 00000000, 14 bytes (bLength 0E type 03), removed 00
+EINTIM: 8BitDo: string 3 done status 00000000, 22 bytes (bLength 16 type 03), removed 00
+EINTIM: 8BitDo: strings done, handing over to SET_CONFIGURATION
+EINTIM: USB SET_CONFIGURATION done: VID 2DC8 PID 3016 config 1 status 00000000 after 0 ms
+EINTIM: 8BitDo: SET_IDLE and report descriptor (42 bytes) on interface 0 before driver selection
+EINTIM: 8BitDo: SET_IDLE done status 00000000, 0 bytes (16 03 32 00), removed 00
+EINTIM: 8BitDo: report descriptor done status 00000000, 42 bytes (06 A0 FF 09), removed 00
+EINTIM: 8BitDo: HID init done, handing over to driver selection
+EINTIM: USB match: VID 2DC8 PID 3016 if 0 class 03/00/00 -> 80162254 HID (HidAddDevice)
+EINTIM: HID add device E1EBFA90
+EINTIM: IS USB1.0: 1
+EINTIM: USB device descriptor Pointer: E1EBF148
+EINTIM: USB interface descriptor Pointer: E1EBF165
+EINTIM: USB endpoint interrupt in descriptor Pointer: E1EBF177
+EINTIM: HID device vendor id: 2dc8, product id: 3016
+EINTIM: Interface 0 class 3 subclass 0 protocol 0
+EINTIM: HID device bcdDevice 0200
+EINTIM: 8BitDo Ultimate C 2.4G (DInput): bcdDevice 0200 is not the gamepad one (0001), passing it on
+EINTIM: Unrelated USB Device. Calling original...
+EINTIM: USB add complete: handle E1EBFA90 status C0000001 (rejeitado) VID 2DC8 PID 3016
+EINTIM: alive t=865 write=2992 read=2992 hits dev=0 if=3 addc=3 hidadd=3 hidrem=1 inact=0 get=278969 set=40191 caps=239243 reports=6454
+EINTIM: alive t=870 write=2993 read=2993 hits dev=0 if=3 addc=3 hidadd=3 hidrem=1 inact=0 get=279567 set=40191 caps=239841 reports=6454
+EINTIM: alive t=875 write=2994 read=2994 hits dev=0 if=3 addc=3 hidadd=3 hidrem=1 inact=0 get=280167 set=40191 caps=240441 reports=6454
+EINTIM: alive t=880 write=2995 read=2995 hits dev=0 if=3 addc=3 hidadd=3 hidrem=1 inact=0 get=280768 set=40191 caps=241042 reports=6454
+EINTIM: alive t=885 write=2996 read=2996 hits dev=0 if=3 addc=3 hidadd=3 hidrem=1 inact=0 get=281369 set=40191 caps=241643 reports=6454
+EINTIM: alive t=890 write=2997 read=2997 hits dev=0 if=3 addc=3 hidadd=3 hidrem=1 inact=0 get=281969 set=40191 caps=242243 reports=6454
+EINTIM: alive t=895 write=2998 read=2998 hits dev=0 if=3 addc=3 hidadd=3 hidrem=1 inact=0 get=282569 set=40191 caps=242843 reports=6454
+EINTIM: alive t=900 write=2999 read=2999 hits dev=0 if=3 addc=3 hidadd=3 hidrem=1 inact=0 get=283169 set=40191 caps=243443 reports=6454
+EINTIM: alive t=905 write=3000 read=3000 hits dev=0 if=3 addc=3 hidadd=3 hidrem=1 inact=0 get=283769 set=40191 caps=244043 reports=6454
+EINTIM: alive t=910 write=3001 read=3001 hits dev=0 if=3 addc=3 hidadd=3 hidrem=1 inact=0 get=284369 set=40191 caps=244643 reports=6454
+EINTIM: alive t=915 write=3002 read=3002 hits dev=0 if=3 addc=3 hidadd=3 hidrem=1 inact=0 get=284969 set=40191 caps=245243 reports=6454
+EINTIM: alive t=920 write=3003 read=3003 hits dev=0 if=3 addc=3 hidadd=3 hidrem=1 inact=0 get=285569 set=40191 caps=245843 reports=6454
+EINTIM: alive t=925 write=3004 read=3004 hits dev=0 if=3 addc=3 hidadd=3 hidrem=1 inact=0 get=286171 set=40191 caps=246445 reports=6454
+EINTIM: alive t=930 write=3005 read=3005 hits dev=0 if=3 addc=3 hidadd=3 hidrem=1 inact=0 get=286769 set=40191 caps=247043 reports=6454
+EINTIM: alive t=935 write=3006 read=3006 hits dev=0 if=3 addc=3 hidadd=3 hidrem=1 inact=0 get=287369 set=40191 caps=247643 reports=6454
+EINTIM: alive t=940 write=3007 read=3007 hits dev=0 if=3 addc=3 hidadd=3 hidrem=1 inact=0 get=287969 set=40191 caps=248243 reports=6454
+EINTIM: alive t=945 write=3008 read=3008 hits dev=0 if=3 addc=3 hidadd=3 hidrem=1 inact=0 get=288569 set=40191 caps=248843 reports=6454
+EINTIM: USB discard: node E1EBE970 VID 0000 PID 0000 retry flag 0, called from 800DF2AC
+EINTIM: USB config descriptor done: VID 045E PID 028E status 00000000
+EINTIM: USB SET_CONFIGURATION done: VID 045E PID 028E config 1 status 00000000 after 0 ms
+EINTIM: USB match: VID 045E PID 028E if 0 class FF/5D/01 -> 801626C8 XInput (FF/5D)
+EINTIM: USB add complete: handle E1EBF3A0 status C0051012 (rejeitado) VID 045E PID 028E
+EINTIM: alive t=950 write=3014 read=3014 hits dev=0 if=4 addc=4 hidadd=3 hidrem=1 inact=0 get=289169 set=40191 caps=249443 reports=6454
+EINTIM: alive t=955 write=3015 read=3015 hits dev=0 if=4 addc=4 hidadd=3 hidrem=1 inact=0 get=289848 set=40191 caps=250122 reports=6454
+
+==== boot, log via hidlogh:\ ====
+EINTIM: HELLO from xbox 360 HID controller driver version 0.5 (port 17150), kernel 17150, stage 3, skip "", log root hidlogh:\
+EINTIM: notify patch: ordinal 1183 at 816A2450, +48 = 409A
+EINTIM: notify patch applied, readback 4800
+EINTIM: Running on retail kernel 17150
+EINTIM: check UsbdGetInterfaceDescriptor   800D9418 = 8943000B (esperado 8943000B) ok
+EINTIM: check XamUserBindDeviceCallback    816D83A8 = 7C8B2378 (esperado 7C8B2378) ok
+EINTIM: check UsbdPowerDownNotification    800D9EF8 = 3D60800E (esperado 3D60800E) ok
+EINTIM: check UsbdDriverEntry              800D9C38 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbPhysicalPage (lis)        800D9C94 = 3F80801A (esperado 3F80801A) ok
+EINTIM: check UsbPhysicalPage (stw)        800D9C98 = 93FCC8D8 (esperado 93FCC8D8) ok
+EINTIM: check RoutedToSysapp (lis)         816F0804 = 3D6081AB (esperado 3D6081AB) ok
+EINTIM: check RoutedToSysapp (addi)        816F080C = 396BC6E8 (esperado 396BC6E8) ok
+EINTIM: check bugcheck 1                   800E1514 = 40820018 (esperado 40820018) ok
+EINTIM: check bugcheck 2                   800DE810 = 40820018 (esperado 40820018) ok
+EINTIM: check registro duplo 1             800D9E30 = 4BF8DC29 (esperado 4BF8DC29) ok
+EINTIM: check registro duplo 2             800D9E20 = 4BF97189 (esperado 4BF97189) ok
+EINTIM: check HidAddDevice                 800E5CD0 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check HidRemoveDevice              800E5C90 = 81630000 (esperado 81630000) ok
+EINTIM: check XamInactivityDetect          81695268 = 3D6081AA (esperado 3D6081AA) ok
+EINTIM: check UsbMatch (prologo)           800D7170 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbMatch (lbz class)         800D7190 = 8B7E0005 (esperado 8B7E0005) ok
+EINTIM: readback UsbMatch                     800D7170 = 3C0081F1
+EINTIM: hook on: USB match logger
+EINTIM: check UsbDeviceMatch (prologo)     800D70D8 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbDeviceMatch (hub)         800D7110 = 2B0A0009 (esperado 2B0A0009) ok
+EINTIM: readback UsbDeviceMatch               800D70D8 = 3C0081F1
+EINTIM: hook on: USB device match logger
+EINTIM: check UsbMsOsReply                 800D8148 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbMsOsReply (node)          800D8154 = 3BE3FFF4 (esperado 3BE3FFF4) ok
+EINTIM: readback UsbMsOsReply                 800D8148 = 3C0081F1
+EINTIM: check UsbCompatReply               800D80A0 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbCompatReply (node)        800D80AC = 3BE3FFF4 (esperado 3BE3FFF4) ok
+EINTIM: readback UsbCompatReply               800D80A0 = 3C0081F1
+EINTIM: check UsbSetConfigDone             800D83F8 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbSetConfigDone (node)      800D8404 = 3BE3FFF4 (esperado 3BE3FFF4) ok
+EINTIM: readback UsbSetConfigDone             800D83F8 = 3C0081F1
+EINTIM: check UsbConfigDescDone            800D8468 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbConfigDescDone (node)     800D8474 = 3BE3FFF4 (esperado 3BE3FFF4) ok
+EINTIM: readback UsbConfigDescDone            800D8468 = 3C0081F1
+EINTIM: check UsbSubmitRequest             800D9190 = 3D60801A (esperado 3D60801A) ok
+EINTIM: check UsbSubmitRequest (lbz)       800D9194 = 89230008 (esperado 89230008) ok
+EINTIM: check UsbTimerCancel               800DA170 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbTimerCancel (ld)          800DA180 = E9630010 (esperado E9630010) ok
+EINTIM: check UsbTimerArm                  800DA2B8 = 3D60800E (esperado 3D60800E) ok
+EINTIM: check UsbTimerArm (stw)            800DA2C0 = 91630004 (esperado 91630004) ok
+EINTIM: 8BitDo string requests enabled
+EINTIM: check UsbDiscard                   800D7D00 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbDiscard (retry flag)      800D7D20 = 897F027F (esperado 897F027F) ok
+EINTIM: readback UsbDiscard                   800D7D00 = 3C0081F1
+EINTIM: check UsbdAddDeviceComplete        800D78F0 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: readback UsbdAddDeviceComplete        800D78F0 = 3C0081F1
+EINTIM: hook on: UsbdAddDeviceComplete logger
+EINTIM: hook on: HidAddDevice/HidRemoveDevice
+EINTIM: hook on: XamInputGetState
+EINTIM: hook on: XamInputSetState
+EINTIM: hook on: XamInputGetCapabilitiesEx
+EINTIM: hook on: XamInactivityDetectRecentActivity
+EINTIM: readback HidAddDevice                 800E5CD0 = 3C0081F1
+EINTIM: readback HidRemoveDevice              800E5C90 = 3C0081F1
+EINTIM: readback XamInactivityDetect          81695268 = 3C0081F1
+EINTIM: readback XamInputGetState             816F07A8 = 3C0081F1
+EINTIM: Hooks installed (skipped: "")
+EINTIM: readback bugcheck 1                   800E1514 = 48000018
+EINTIM: readback bugcheck 2                   800DE810 = 48000018
+EINTIM: readback registro duplo 1             800D9E30 = 60000000
+EINTIM: readback registro duplo 2             800D9E20 = 60000000
+EINTIM: Resetting USB driver!
+EINTIM: USB driver shutdown complete.
+EINTIM: USB driver reset complete.
+EINTIM: USB discard: node E1EBE970 VID 0000 PID 0000 retry flag 0, called from 800DF2AC
+EINTIM: USB discard: node E1EBEBF4 VID 0000 PID 0000 retry flag 0, called from 800DF2AC
+EINTIM: USB config descriptor done: VID 2345 PID E037 status 00000000
+EINTIM: USB SET_CONFIGURATION done: VID 2345 PID E037 config 1 status 00000000 after 0 ms
+EINTIM: USB match: VID 2345 PID E037 if 0 class 03/00/00 -> 80162254 HID (HidAddDevice)
+EINTIM: HID add device E1EBF3C0
+EINTIM: IS USB1.0: 1
+EINTIM: USB device descriptor Pointer: E1EBEEC4
+EINTIM: USB interface descriptor Pointer: E1EBEEE1
+EINTIM: USB endpoint interrupt in descriptor Pointer: E1EBEEF3
+EINTIM: HID device vendor id: 2345, product id: e037
+EINTIM: Interface 0 class 3 subclass 0 protocol 0
+EINTIM: HID device bcdDevice 0100
+EINTIM: Hardcoded layout: EasySMX X05 (DInput) (interface 0)
+EINTIM: Controller detected. Initialising custom handler.
+Assigning controller to index 0
+EINTIM: Registered virtual controller inside XAM with index: 0.
+EINTIM: first interrupt transfer queued: ABEF70 (endpoint 81, packet 32)
+EINTIM: USB match: VID 2345 PID E037 if 1 class 03/00/00 -> 80162254 HID (HidAddDevice)
+EINTIM: HID add device E1EBF3B0
+EINTIM: IS USB1.0: 1
+EINTIM: USB device descriptor Pointer: E1EBEEC4
+EINTIM: USB interface descriptor Pointer: E1EBEF01
+EINTIM: USB endpoint interrupt in descriptor Pointer: E1EBEF13
+EINTIM: HID device vendor id: 2345, product id: e037
+EINTIM: Interface 1 class 3 subclass 0 protocol 0
+EINTIM: HID device bcdDevice 0100
+EINTIM: EasySMX X05 (DInput): interface 1 is not the gamepad one, passing it on
+EINTIM: Unrelated USB Device. Calling original...
+EINTIM: USB add complete: handle E1EBF3B0 status C0000001 (rejeitado) VID 2345 PID E037
+EINTIM: USB config descriptor done: VID 045E PID 028E status 00000000
+EINTIM: USB SET_CONFIGURATION done: VID 045E PID 028E config 1 status 00000000 after 1 ms
+EINTIM: report 1 from EasySMX X05 (DInput): status 0 bytes 07 81 7D 7D 77 08 00 00 00 00
+EINTIM: report 1 requeue ABEF70 block E1EC7300 81F10E90 E1EC7300 00000000 01000204 781CEF50 00000020
+EINTIM: report 2 from EasySMX X05 (DInput): status 0 bytes 07 81 7D 7D 77 08 00 00 00 00
+EINTIM: report 2 requeue ABEF70 block E1EC7300 81F10E90 E1EC7300 00000000 01000204 781CEF50 00000020
+EINTIM: report 3 from EasySMX X05 (DInput): status 0 bytes 07 81 7D 7D 77 08 00 00 00 00
+EINTIM: report 3 requeue ABEF70 block E1EC7300 81F10E90 E1EC7300 00000000 01000204 781CEF50 00000020
+EINTIM: report 4 from EasySMX X05 (DInput): status 0 bytes 07 81 7D 7D 77 08 00 00 00 00
+EINTIM: report 4 requeue ABEF70 block E1EC7300 81F10E90 E1EC7300 00000000 01000204 781CEF50 00000020
+EINTIM: report 5 from EasySMX X05 (DInput): status 0 bytes 07 81 7D 7D 77 08 00 00 00 00
+EINTIM: report 5 requeue ABEF70 block E1EC7300 81F10E90 E1EC7300 00000000 01000204 781CEF50 00000020
+EINTIM: report 6 from EasySMX X05 (DInput): status 0 bytes 07 81 7D 7D 77 08 00 00 00 00
+EINTIM: report 6 requeue ABEF70 block E1EC7300 81F10E90 E1EC7300 00000000 01000204 781CEF50 00000020
+EINTIM: report 7 from EasySMX X05 (DInput): status 0 bytes 07 81 7D 7D 77 08 00 00 00 00
+EINTIM: report 7 requeue ABEF70 block E1EC7300 81F10E90 E1EC7300 00000000 01000204 781CEF50 00000020
+EINTIM: report 8 from EasySMX X05 (DInput): status 0 bytes 07 81 7D 7D 77 08 00 00 00 00
+EINTIM: report 8 requeue ABEF70 block E1EC7300 81F10E90 E1EC7300 00000000 01000204 781CEF50 00000020
+EINTIM: USB discard: node E1EBEBF4 VID 0000 PID 0000 retry flag 1, called from 800D88F4
+EINTIM: USB discard: node E1EBEBF4 VID 0000 PID 0000 retry flag 0, called from 800E12A4
+EINTIM: USB discard: node E1EBEBF4 VID 0000 PID 0000 retry flag 0, called from 800D8BA0
+EINTIM: USB discard: node E1EBEBF4 VID 0000 PID 0000 retry flag 0, called from 800DF2AC
+EINTIM: USB match: VID 045E PID 028E if 0 class FF/5D/01 -> 801626C8 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 028E if 1 class FF/5D/03 -> 80162960 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 028E if 2 class FF/5D/02 -> 801625D0 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 028E if 3 class FF/FD/13 -> 00000000 nenhum driver
+EINTIM: USB add complete: handle E1EBF9E0 status C0000001 (rejeitado) VID 045E PID 028E
+EINTIM: USB config descriptor done: VID 045E PID 02AB status 00000000
+EINTIM: USB SET_CONFIGURATION done: VID 045E PID 02AB config 1 status 00000000 after 0 ms
+EINTIM: USB match: VID 045E PID 02AB if 0 class FF/00/00 -> 8016C550 outro
+EINTIM: USB config descriptor done: VID 045E PID 02A9 status 00000000
+EINTIM: USB SET_CONFIGURATION done: VID 045E PID 02A9 config 1 status 00000000 after 0 ms
+EINTIM: USB match: VID 045E PID 02A9 if 0 class FF/5D/81 -> 80162578 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 1 class FF/5D/82 -> 80162934 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 2 class FF/5D/81 -> 80162578 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 3 class FF/5D/82 -> 80162934 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 4 class FF/5D/81 -> 80162578 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 5 class FF/5D/82 -> 80162934 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 6 class FF/5D/81 -> 80162578 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 7 class FF/5D/82 -> 80162934 XInput (FF/5D)
+EINTIM: USB discard: node E1EBEBF4 VID 045E PID 02AB retry flag 0, called from 800DF2AC
+EINTIM: USB config descriptor done: VID 2DC8 PID 3016 status 00000000
+EINTIM: 8BitDo: asking for the strings before SET_CONFIGURATION (config length 41)
+EINTIM: 8BitDo: string 0 done status 00000000, 4 bytes (bLength 04 type 03), removed 00
+EINTIM: 8BitDo: string 2 done status 00000000, 74 bytes (bLength 4A type 03), removed 00
+EINTIM: 8BitDo: string 1 done status 00000000, 14 bytes (bLength 0E type 03), removed 00
+EINTIM: 8BitDo: string 3 done status 00000000, 22 bytes (bLength 16 type 03), removed 00
+EINTIM: 8BitDo: strings done, handing over to SET_CONFIGURATION
+EINTIM: USB SET_CONFIGURATION done: VID 2DC8 PID 3016 config 1 status 00000000 after 0 ms
+EINTIM: 8BitDo: SET_IDLE and report descriptor (145 bytes) on interface 0 before driver selection
+EINTIM: 8BitDo: SET_IDLE done status 00000000, 0 bytes (16 03 32 00), removed 00
+EINTIM: 8BitDo: report descriptor done status 00000000, 145 bytes (05 01 09 05), removed 00
+EINTIM: 8BitDo: HID init done, handing over to driver selection
+EINTIM: USB match: VID 2DC8 PID 3016 if 0 class 03/00/00 -> 80162254 HID (HidAddDevice)
+EINTIM: HID add device E1EBF9A0
+EINTIM: IS USB1.0: 1
+EINTIM: USB device descriptor Pointer: E1EBF148
+EINTIM: USB interface descriptor Pointer: E1EBF165
+EINTIM: USB endpoint interrupt in descriptor Pointer: E1EBF177
+EINTIM: HID device vendor id: 2dc8, product id: 3016
+EINTIM: Interface 0 class 3 subclass 0 protocol 0
+EINTIM: HID device bcdDevice 0001
+EINTIM: Hardcoded layout: 8BitDo Ultimate C 2.4G (DInput) (interface 0)
+EINTIM: Controller detected. Initialising custom handler.
+Assigning controller to index 1
+EINTIM: Registered virtual controller inside XAM with index: 1.
+EINTIM: first interrupt transfer queued: ABF070 (endpoint 84, packet 64)
+EINTIM: GetState user 0 -> status 48F
+EINTIM: GetState user 1 -> status 48F
+EINTIM: GetState user 2 -> status 0
+EINTIM: GetState user 3 -> status 48F
+EINTIM: USB config descriptor done: VID 045E PID 02BC status 00000000
+EINTIM: USB SET_CONFIGURATION done: VID 045E PID 02BC config 1 status 00000000 after 0 ms
+EINTIM: USB match: VID 045E PID 02BC if 0 class FF/00/00 -> 00000000 nenhum driver
+EINTIM: USB add complete: handle E1EBF9D0 status C0000001 (rejeitado) VID 045E PID 02BC
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: first call: XamInputSetState
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 2 -> status 0
+EINTIM: GetCapabilitiesEx user 3 -> status 48F
+EINTIM: alive t=14 write=179 read=179 hits dev=0 if=17 addc=17 hidadd=3 hidrem=0 inact=0 get=66 set=4 caps=4 reports=577
+EINTIM: alive t=19 write=180 read=180 hits dev=0 if=17 addc=17 hidadd=3 hidrem=0 inact=0 get=1106 set=4 caps=628 reports=1203
+EINTIM: notify: calling XNotifyQueueUI "hiddriver: etapa 3 ativa (ganchos + reset USB)"
+EINTIM: notify: XNotifyQueueUI returned
+EINTIM: alive t=24 write=183 read=183 hits dev=0 if=17 addc=17 hidadd=3 hidrem=0 inact=0 get=2606 set=4 caps=1528 reports=1829
+EINTIM: alive t=29 write=184 read=184 hits dev=0 if=17 addc=17 hidadd=3 hidrem=0 inact=0 get=5600 set=4 caps=3322 reports=2486
+EINTIM: alive t=34 write=185 read=185 hits dev=0 if=17 addc=17 hidadd=3 hidrem=0 inact=0 get=8531 set=4 caps=5073 reports=3166
+EINTIM: alive t=39 write=186 read=186 hits dev=0 if=17 addc=17 hidadd=3 hidrem=0 inact=0 get=11450 set=4 caps=6818 reports=3811
+EINTIM: alive t=44 write=187 read=187 hits dev=0 if=17 addc=17 hidadd=3 hidrem=0 inact=0 get=14455 set=4 caps=8621 reports=4437
+EINTIM: alive t=49 write=188 read=188 hits dev=0 if=17 addc=17 hidadd=3 hidrem=0 inact=0 get=17450 set=4 caps=10418 reports=5062
+EINTIM: alive t=54 write=189 read=189 hits dev=0 if=17 addc=17 hidadd=3 hidrem=0 inact=0 get=20450 set=4 caps=12218 reports=5688
+EINTIM: alive t=59 write=190 read=190 hits dev=0 if=17 addc=17 hidadd=3 hidrem=0 inact=0 get=23455 set=4 caps=14021 reports=6314
+EINTIM: alive t=64 write=191 read=191 hits dev=0 if=17 addc=17 hidadd=3 hidrem=0 inact=0 get=26455 set=4 caps=15821 reports=6940
+EINTIM: alive t=69 write=192 read=192 hits dev=0 if=17 addc=17 hidadd=3 hidrem=0 inact=0 get=29460 set=4 caps=17624 reports=7566
+EINTIM: alive t=74 write=193 read=193 hits dev=0 if=17 addc=17 hidadd=3 hidrem=0 inact=0 get=32460 set=4 caps=19424 reports=8192
