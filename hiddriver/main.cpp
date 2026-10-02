@@ -1343,6 +1343,8 @@ Detour UsbConfigDescDoneDetour;   // 0x800D8468: GET_DESCRIPTOR(configuration)
 volatile DWORD g_setConfigSentTb = 0;
 volatile BYTE* g_setConfigSentNode = nullptr;
 
+bool StartHidInit(BYTE* node); // 8BitDo: SET_IDLE + report descriptor after SET_CONFIGURATION
+
 void UsbSetConfigDoneHook(BYTE* nodePlusC, DWORD status) {
 	DWORD now = __mftb32();
 	DWORD vid, pid;
@@ -1350,6 +1352,8 @@ void UsbSetConfigDoneHook(BYTE* nodePlusC, DWORD status) {
 	NodeIds(node, &vid, &pid);
 	DWORD ms = g_setConfigSentNode == node ? (now - g_setConfigSentTb) / TB_TICKS_PER_MS : 0xFFFFFFFF;
 	DbgPrintSync("EINTIM: USB SET_CONFIGURATION done: VID %04X PID %04X config %d status %08X after %d ms\n", vid, pid, node[0x65], status, ms);
+	if (vid == 0x2DC8 && status == 0 && StartHidInit(node))
+		return;
 
 	UsbSetConfigDoneDetour.GetOriginal<usb_reply_func_t>()(nodePlusC, status);
 }
@@ -1451,6 +1455,110 @@ void UsbStringDoneCallback(BYTE* nodePlusC, DWORD status) {
 	g_setConfigSentTb = __mftb32();
 }
 
+// After SET_CONFIGURATION the 8BitDo is configured but sends no input on the Xbox (one empty
+// completion, then nothing). Linux's usbhid_parse, where it works, sends SET_IDLE(0) to the
+// interface and reads the HID report descriptor before polling the interrupt endpoint. For VID
+// 2DC8 only, do the same right after SET_CONFIGURATION succeeds, then let the original
+// SET_CONFIGURATION callback carry on to driver selection. Same request mechanism as the strings.
+struct HidInitSequence {
+	BYTE* node;      // node being handled, nullptr when idle
+	int step;        // 0 = SET_IDLE, 1 = GET_DESCRIPTOR(report)
+	BYTE iface;
+	WORD reportLength;
+	BYTE dir;
+	DWORD data, size, length;
+};
+HidInitSequence g_hidInit;
+
+void UsbHidInitDoneCallback(BYTE* nodePlusC, DWORD status);
+
+void SubmitHidInitRequest(BYTE* node) {
+	BYTE iface = g_hidInit.iface;
+	if (g_hidInit.step == 0) {
+		// SET_IDLE: class request to the interface, duration 0 (only report on change), all reports
+		node[0x2C] = 0x21; node[0x2D] = 0x0A;
+		node[0x2E] = 0; node[0x2F] = 0;
+		node[0x30] = iface; node[0x31] = 0;
+		node[0x32] = 0; node[0x33] = 0;
+		*(DWORD*)(node + 0x20) = 0;
+		*(DWORD*)(node + 0x24) = 0;
+		node[0x1C] = 0;
+	} else {
+		// GET_DESCRIPTOR(report) from the interface, into the scratch buffer
+		WORD len = g_hidInit.reportLength;
+		node[0x2C] = 0x81; node[0x2D] = 6;
+		node[0x2E] = 0; node[0x2F] = 0x22;
+		node[0x30] = iface; node[0x31] = 0;
+		node[0x32] = (BYTE)(len & 0xFF); node[0x33] = (BYTE)(len >> 8);
+		*(DWORD*)(node + 0x20) = (DWORD)(node + STRING_BUFFER_OFFSET);
+		*(DWORD*)(node + 0x24) = len;
+		node[0x1C] = 1;
+	}
+	*(DWORD*)(node + 0x10) = (DWORD)UsbHidInitDoneCallback;
+	UsbSubmitRequest(*(BYTE**)(node + 4), node + 0xC);
+	UsbTimerArm(node + 0x34, 5000);
+}
+
+void UsbHidInitDoneCallback(BYTE* nodePlusC, DWORD status) {
+	BYTE* node = nodePlusC - 0xC;
+	UsbTimerCancel(node + 0x34);
+	const BYTE* info = *(const BYTE**)(node + 4);
+	const BYTE* buf = node + STRING_BUFFER_OFFSET;
+	DbgPrintSync("EINTIM: 8BitDo: %s done status %08X, %d bytes (%02X %02X %02X %02X), removed %02X\n",
+		g_hidInit.step == 0 ? "SET_IDLE" : "report descriptor", status, *(DWORD*)(node + 0x28),
+		buf[0], buf[1], buf[2], buf[3], info[8] & 0x80);
+
+	if (info[8] & 0x80) {
+		DbgPrintSync("EINTIM: 8BitDo: device gone during the HID init\n");
+		g_hidInit.node = nullptr;
+		UsbDiscardOriginal(node);
+		return;
+	}
+
+	g_hidInit.step++;
+	if (g_hidInit.step < 2) {
+		SubmitHidInitRequest(node);
+		return;
+	}
+
+	node[0x1C] = g_hidInit.dir;
+	*(DWORD*)(node + 0x20) = g_hidInit.data;
+	*(DWORD*)(node + 0x24) = g_hidInit.size;
+	*(DWORD*)(node + 0x28) = g_hidInit.length;
+	g_hidInit.node = nullptr;
+	DbgPrintSync("EINTIM: 8BitDo: HID init done, handing over to driver selection\n");
+	UsbSetConfigDoneDetour.GetOriginal<usb_reply_func_t>()(nodePlusC, 0);
+}
+
+// Called from UsbSetConfigDoneHook. Returns true when it took over (the original runs later).
+bool StartHidInit(BYTE* node) {
+	const BYTE* info = *(const BYTE**)(node + 4);
+	if (!g_stringRequestsReady || (g_hidInit.node && g_hidInit.node != node) || (info[8] & 0x80))
+		return false;
+	// configuration copy at node+0x60: config (9) + interface (9) + HID descriptor (9)
+	const BYTE* iface = node + 0x60 + 9;
+	const BYTE* hid = iface + 9;
+	if (iface[1] != 4 || iface[5] != 3 || hid[1] != 0x21) {
+		DbgPrintSync("EINTIM: 8BitDo: no HID descriptor right after the interface (%02X %02X %02X), skipping HID init\n", iface[1], iface[5], hid[1]);
+		return false;
+	}
+	WORD len = hid[7] | (hid[8] << 8);
+	if (len == 0 || len > STRING_BUFFER_SIZE)
+		len = STRING_BUFFER_SIZE;
+	UsbTimerCancel(node + 0x34);
+	g_hidInit.node = node;
+	g_hidInit.step = 0;
+	g_hidInit.iface = iface[2];
+	g_hidInit.reportLength = len;
+	g_hidInit.dir = node[0x1C];
+	g_hidInit.data = *(DWORD*)(node + 0x20);
+	g_hidInit.size = *(DWORD*)(node + 0x24);
+	g_hidInit.length = *(DWORD*)(node + 0x28);
+	DbgPrintSync("EINTIM: 8BitDo: SET_IDLE and report descriptor (%d bytes) on interface %d before driver selection\n", len, iface[2]);
+	SubmitHidInitRequest(node);
+	return true;
+}
+
 void UsbConfigDescDoneHook(BYTE* nodePlusC, DWORD status) {
 	DWORD vid, pid;
 	BYTE* node = nodePlusC - 0xC;
@@ -1484,6 +1592,8 @@ void UsbDiscardHook(BYTE* node) {
 	NodeIds(node, &vid, &pid);
 	if (node == g_strings.node)
 		g_strings.node = nullptr; // discarded by a path that never reached our string callback
+	if (node == g_hidInit.node)
+		g_hidInit.node = nullptr;
 	DbgPrintSync("EINTIM: USB discard: node %p VID %04X PID %04X retry flag %d, called from %p\n",
 		node, vid, pid, node[0x27F], _ReturnAddress());
 	UsbDiscardDetour.GetOriginal<usb_discard_func_t>()(node);
