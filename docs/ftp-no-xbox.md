@@ -17,8 +17,9 @@ testado no console do projeto (Xbox 360 E, kernel 17150, FreeStyle 3).
   ```
 - **Login:** usuário `xbox`, senha `xbox`. O campo de senha aparece vazio na tela de
   configuração, mas a senha existe: com senha vazia o servidor responde `530 Incorrect Password`.
-- **O console precisa estar na FreeStyle.** Travado ou desligado, a placa de rede ainda responde
-  na rede local (o MAC aparece no `ip neigh`), mas nenhum serviço responde.
+- **O console precisa estar na FreeStyle.** O FTP é dela: com um jogo rodando, ou com o console
+  travado, a placa de rede ainda responde na rede local (o MAC aparece no `ip neigh`), mas o FTP
+  não.
 - **Ping não serve de teste.** O console não respondeu ICMP. Teste a porta direto:
   `bash -c "</dev/tcp/192.168.0.3/21"`. As portas 80 e 9999 (HTTP da FreeStyle) também ficam
   abertas.
