@@ -1,0 +1,25 @@
+[07:18:37] antes: bus 3 addr 70 PID 3016 bcd 0001 "Ultimate C 2.4G Wireless Controller "
+[07:18:37] usbmon indisponivel ([Errno 1] Operation not permitted: '/sys/kernel/debug/usb/usbmon/3u'); sigo sem ele
+[07:18:38] resetando bus 3 addr 70 PID 3016 bcd 0001 "Ultimate C 2.4G Wireless Controller " (o Linux vai reler os descritores e configurar sem pedir strings)
+[07:18:39] reset concluido
+[07:18:59] depois: bus 3 addr 70 PID 3016 bcd 0001 "Ultimate C 2.4G Wireless Controller "
+[07:18:59] RESULTADO: continuou conectado depois de ser configurado sem strings.
+
+--- log do kernel (ultimo minuto) ---
+out 02 07:18:28 lucas-tito-Dell-Pro-16-PC16250 kernel: usb 3-3: new full-speed USB device number 69 using xhci_hcd
+out 02 07:18:28 lucas-tito-Dell-Pro-16-PC16250 kernel: usb 3-3: New USB device found, idVendor=2dc8, idProduct=3016, bcdDevice= 2.00
+out 02 07:18:28 lucas-tito-Dell-Pro-16-PC16250 kernel: usb 3-3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+out 02 07:18:28 lucas-tito-Dell-Pro-16-PC16250 kernel: usb 3-3: Product: IDLE
+out 02 07:18:28 lucas-tito-Dell-Pro-16-PC16250 kernel: usb 3-3: Manufacturer: 8BitDo
+out 02 07:18:28 lucas-tito-Dell-Pro-16-PC16250 kernel: usb 3-3: SerialNumber: 2DDC23209D
+out 02 07:18:28 lucas-tito-Dell-Pro-16-PC16250 kernel: hid-generic 0003:2DC8:3016.001D: hiddev0,hidraw1: USB HID v1.10 Device [8BitDo IDLE] on usb-0000:00:14.0-3/input0
+out 02 07:18:29 lucas-tito-Dell-Pro-16-PC16250 kernel: usb 3-3: USB disconnect, device number 69
+out 02 07:18:30 lucas-tito-Dell-Pro-16-PC16250 kernel: usb 3-3: new full-speed USB device number 70 using xhci_hcd
+out 02 07:18:30 lucas-tito-Dell-Pro-16-PC16250 kernel: usb 3-3: New USB device found, idVendor=2dc8, idProduct=3016, bcdDevice= 0.01
+out 02 07:18:30 lucas-tito-Dell-Pro-16-PC16250 kernel: usb 3-3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+out 02 07:18:30 lucas-tito-Dell-Pro-16-PC16250 kernel: usb 3-3: Product: Ultimate C 2.4G Wireless Controller 
+out 02 07:18:30 lucas-tito-Dell-Pro-16-PC16250 kernel: usb 3-3: Manufacturer: 8BitDo
+out 02 07:18:30 lucas-tito-Dell-Pro-16-PC16250 kernel: usb 3-3: SerialNumber: 2DDC23209D
+out 02 07:18:30 lucas-tito-Dell-Pro-16-PC16250 kernel: input: 8BitDo Ultimate C 2.4G Wireless Controller  as /devices/pci0000:00/0000:00:14.0/usb3/3-3/3-3:1.0/0003:2DC8:3016.001E/input/input99
+out 02 07:18:30 lucas-tito-Dell-Pro-16-PC16250 kernel: hid-generic 0003:2DC8:3016.001E: input,hidraw1: USB HID v1.11 Gamepad [8BitDo Ultimate C 2.4G Wireless Controller ] on usb-0000:00:14.0-3/input0
+out 02 07:18:39 lucas-tito-Dell-Pro-16-PC16250 kernel: usb 3-3: reset full-speed USB device number 70 using xhci_hcd
