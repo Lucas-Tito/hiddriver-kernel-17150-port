@@ -359,7 +359,14 @@ private:
 	//
 	// Shared
 	//
+#if !defined(HIDDRIVER_INPUTD) || HIDDRIVER_INPUTD
+	// From upstream v0.6+: the original Xbox emulator only runs code from a section the
+	// hypervisor trusts, so the trampolines live in .text instead of .data.
+	#pragma section(".text", read, execute)
+	__declspec(allocate(".text")) static BYTE TrampolineBuffer[200 * 20];
+#else
 	static BYTE   TrampolineBuffer[200 * 20];
+#endif
 	static SIZE_T TrampolineSize;
 };
 

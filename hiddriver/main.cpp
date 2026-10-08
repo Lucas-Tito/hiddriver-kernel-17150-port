@@ -16,11 +16,17 @@
 //   HIDDRIVER_STAGE stage of the use build: 3 = with the USB reset, like upstream (picks up
 //                   controllers plugged at boot); 2 = hooks only, controllers plugged after boot.
 //                   Both validated on 17150; see issue #2 about the reset and the internal Wi-Fi.
+//   HIDDRIVER_INPUTD 1 = input reaches the system through the kernel's XInputdReadState, like
+//                    upstream v0.6+; this is what makes original Xbox games see the controller.
+//                    0 = the v0.5 way, hooking xam's XamInputGetState (360 games and dashboard only).
 #ifndef HIDDRIVER_DIAG
 #define HIDDRIVER_DIAG 0
 #endif
 #ifndef HIDDRIVER_STAGE
 #define HIDDRIVER_STAGE 3
+#endif
+#ifndef HIDDRIVER_INPUTD
+#define HIDDRIVER_INPUTD 1
 #endif
 Detour HidAddDeviceDetour;
 Detour HidRemoveDeviceDetour;
@@ -28,6 +34,7 @@ Detour XamInputGetStateDetour;
 Detour XamInputSetStateDetour;
 Detour XamInputGetCapabilitiesDetour;
 Detour XamInactivityDetectRecentActivityDetour;
+Detour XInputdReadStateDetour;
 
 uint16_t swap_endianness_16(uint16_t val) {
 	return (val >> 8) | (val << 8);
@@ -562,6 +569,7 @@ struct Controller {
 	ButtonsReport currentState;
 	uint8_t userIndex;
 	uint32_t packetNumber;
+	uint32_t deviceContext; // the XInputd device context this controller was bound to in xam
 	ControllerType controllerType;
 	const RawLayout* rawLayout;
 	void* reportData;
@@ -841,7 +849,8 @@ int HidAddDeviceHook(deviceHandle* deviceHandle) {
 		c.controllerDriver = controllerDriver;
 
 		uint8_t userIndex = -1;
-		XamUserBindDeviceCallback(0xa7553952 + index, 0x0000000010000005 + index, 0, false, &userIndex);
+		c.deviceContext = 0x10000005 + index;
+		XamUserBindDeviceCallback(0xa7553952 + index, c.deviceContext, 0, false, &userIndex);
 		c.userIndex = userIndex;
 		connectedControllers[index] = c;
 
@@ -864,6 +873,138 @@ int16_t ConvertToFullRange(uint8_t input, bool invert_y = false) {
 		return static_cast<int16_t>((~(input)-128) * 256);
 }
 
+// Fills the gamepad from the last report of a controller. Shared by both input paths.
+void FillGamepad(const ButtonsReport& b, XINPUT_GAMEPAD* g) {
+	if (b.cross)
+		g->wButtons |= XINPUT_GAMEPAD_A;
+
+	if (b.circle)
+		g->wButtons |= XINPUT_GAMEPAD_B;
+
+	if (b.triangle)
+		g->wButtons |= XINPUT_GAMEPAD_Y;
+
+	if (b.square)
+		g->wButtons |= XINPUT_GAMEPAD_X;
+
+	if (b.options)
+		g->wButtons |= XINPUT_GAMEPAD_START;
+
+	if (b.create)
+		g->wButtons |= XINPUT_GAMEPAD_BACK;
+
+	if (b.r3)
+		g->wButtons |= XINPUT_GAMEPAD_RIGHT_THUMB;
+
+	if (b.l3)
+		g->wButtons |= XINPUT_GAMEPAD_LEFT_THUMB;
+
+	if (b.l1)
+		g->wButtons |= XINPUT_GAMEPAD_LEFT_SHOULDER;
+
+	if (b.r1)
+		g->wButtons |= XINPUT_GAMEPAD_RIGHT_SHOULDER;
+
+
+	switch (b.hatSwitch) {
+	case HatSwitch::HAT_UP:
+		g->wButtons |= XINPUT_GAMEPAD_DPAD_UP;
+		break;
+	case HatSwitch::HAT_UP_RIGHT:
+		g->wButtons |= XINPUT_GAMEPAD_DPAD_UP;
+		g->wButtons |= XINPUT_GAMEPAD_DPAD_RIGHT;
+		break;
+	case HatSwitch::HAT_RIGHT:
+		g->wButtons |= XINPUT_GAMEPAD_DPAD_RIGHT;
+		break;
+	case HatSwitch::HAT_DOWN_RIGHT:
+		g->wButtons |= XINPUT_GAMEPAD_DPAD_DOWN;
+		g->wButtons |= XINPUT_GAMEPAD_DPAD_RIGHT;
+		break;
+	case HatSwitch::HAT_DOWN:
+		g->wButtons |= XINPUT_GAMEPAD_DPAD_DOWN;
+		break;
+	case HatSwitch::HAT_DOWN_LEFT:
+		g->wButtons |= XINPUT_GAMEPAD_DPAD_DOWN;
+		g->wButtons |= XINPUT_GAMEPAD_DPAD_LEFT;
+		break;
+	case HatSwitch::HAT_LEFT:
+		g->wButtons |= XINPUT_GAMEPAD_DPAD_LEFT;
+		break;
+	case HatSwitch::HAT_UP_LEFT:
+		g->wButtons |= XINPUT_GAMEPAD_DPAD_UP;
+		g->wButtons |= XINPUT_GAMEPAD_DPAD_LEFT;
+		break;
+	case HatSwitch::HAT_NEUTRAL: // Do nothing
+		break;
+	}
+
+	g->sThumbRX = ConvertToFullRange(b.z);
+	g->sThumbRY = ConvertToFullRange(b.rz, true);
+
+	g->sThumbLX = ConvertToFullRange(b.x);
+	g->sThumbLY = ConvertToFullRange(b.y, true);
+
+	g->bLeftTrigger = b.rx;
+	g->bRightTrigger = b.ry;
+}
+
+// The guide button (PS on the report) opens the guide, at most once a second.
+void HandleGuideButton(const ButtonsReport& b, DWORD user) {
+	static DWORD lastPressTime = 0;
+	static const DWORD cooldownDuration = 1000;
+
+	if (b.ps) {
+		DWORD now = GetTickCount();
+		if (now - lastPressTime >= cooldownDuration) {
+			lastPressTime = now;
+			XamInputSendXenonButtonPress(user);
+		}
+	}
+}
+
+#if HIDDRIVER_INPUTD
+// Upstream v0.6+ input path. Once XamUserBindDeviceCallback binds a controller to a device
+// context, xam reads it through this kernel export like any wired controller, and so does the
+// original Xbox emulator, which never calls XamInputGetState. Only the contexts bound by
+// HidAddDeviceHook (0x10000005..0x10000008) are answered here; upstream took every context from
+// 0x10000005 up, which also covers the 0x2/0x3/0x5 types the kernel dispatches on.
+NTSTATUS XInputdReadStateHook(DWORD dwDeviceContext, PDWORD pdwPacketNumber, PXINPUT_GAMEPAD pInputData, PBOOL unk) {
+	COUNT_HIT(HIT_GETSTATE);
+	if (dwDeviceContext < 0x10000005 || dwDeviceContext > 0x10000008)
+		return XInputdReadStateDetour.GetOriginal<decltype(&XInputdReadStateHook)>()(dwDeviceContext, pdwPacketNumber, pInputData, unk);
+
+	LOG_FIRST_CALL("XInputdReadState (our context)");
+	if (unk)
+		*unk = FALSE;
+
+	Controller* c = nullptr;
+	for (int i = 0; i < (sizeof(connectedControllers) / sizeof(Controller)); i++) {
+		if (connectedControllers[i].controllerDriver && connectedControllers[i].deviceContext == dwDeviceContext) {
+			c = &connectedControllers[i];
+			break;
+		}
+	}
+
+	// Not filled yet, or removed while xam still had it bound. Same status the kernel's wired
+	// handler (0x800EF2E8 on 17150) returns for these contexts, whose port is >= 4: it is what
+	// xam got for them in v0.5 and turns into ERROR_DEVICE_NOT_CONNECTED.
+	if (!c || !pInputData)
+		return 0xC000009D; // STATUS_DEVICE_NOT_CONNECTED
+
+	ButtonsReport b = c->currentState;
+	HandleGuideButton(b, c->userIndex);
+
+	// we are the only source of this device, so start from a clean gamepad
+	memset(pInputData, 0, sizeof(XINPUT_GAMEPAD));
+	FillGamepad(b, pInputData);
+
+	if (pdwPacketNumber)
+		*pdwPacketNumber = ++c->packetNumber;
+
+	return STATUS_SUCCESS;
+}
+#else
 DWORD XamInputGetStateHook(DWORD user, DWORD flags, XINPUT_STATE* input_state) {
 	COUNT_HIT(HIT_GETSTATE);
 	DWORD status = XamInputGetStateDetour.GetOriginal<decltype(&XamInputGetStateHook)>()(user, flags, input_state);
@@ -875,9 +1016,6 @@ DWORD XamInputGetStateHook(DWORD user, DWORD flags, XINPUT_STATE* input_state) {
 
 	if (!input_state)
 		return status;
-
-	static DWORD lastPressTime = 0;
-	static const DWORD cooldownDuration = 1000;
 
 	if (status == ERROR_DEVICE_NOT_CONNECTED) {
 		ButtonsReport b;
@@ -903,93 +1041,15 @@ DWORD XamInputGetStateHook(DWORD user, DWORD flags, XINPUT_STATE* input_state) {
 			}
 		}
 
-
-		if (b.ps) {
-			DWORD now = GetTickCount();
-			if (now - lastPressTime >= cooldownDuration) {
-				lastPressTime = now;
-				XamInputSendXenonButtonPress(user);
-			}
-		}
-
-		if (b.cross)
-			input_state->Gamepad.wButtons |= XINPUT_GAMEPAD_A;
-
-		if (b.circle)
-			input_state->Gamepad.wButtons |= XINPUT_GAMEPAD_B;
-
-		if (b.triangle)
-			input_state->Gamepad.wButtons |= XINPUT_GAMEPAD_Y;
-
-		if (b.square)
-			input_state->Gamepad.wButtons |= XINPUT_GAMEPAD_X;
-
-		if (b.options)
-			input_state->Gamepad.wButtons |= XINPUT_GAMEPAD_START;
-
-		if (b.create)
-			input_state->Gamepad.wButtons |= XINPUT_GAMEPAD_BACK;
-
-		if (b.r3)
-			input_state->Gamepad.wButtons |= XINPUT_GAMEPAD_RIGHT_THUMB;
-
-		if (b.l3)
-			input_state->Gamepad.wButtons |= XINPUT_GAMEPAD_LEFT_THUMB;
-
-		if (b.l1)
-			input_state->Gamepad.wButtons |= XINPUT_GAMEPAD_LEFT_SHOULDER;
-
-		if (b.r1)
-			input_state->Gamepad.wButtons |= XINPUT_GAMEPAD_RIGHT_SHOULDER;
-
-
-		switch (b.hatSwitch) {
-		case HatSwitch::HAT_UP:
-			input_state->Gamepad.wButtons |= XINPUT_GAMEPAD_DPAD_UP;
-			break;
-		case HatSwitch::HAT_UP_RIGHT:
-			input_state->Gamepad.wButtons |= XINPUT_GAMEPAD_DPAD_UP;
-			input_state->Gamepad.wButtons |= XINPUT_GAMEPAD_DPAD_RIGHT;
-			break;
-		case HatSwitch::HAT_RIGHT:
-			input_state->Gamepad.wButtons |= XINPUT_GAMEPAD_DPAD_RIGHT;
-			break;
-		case HatSwitch::HAT_DOWN_RIGHT:
-			input_state->Gamepad.wButtons |= XINPUT_GAMEPAD_DPAD_DOWN;
-			input_state->Gamepad.wButtons |= XINPUT_GAMEPAD_DPAD_RIGHT;
-			break;
-		case HatSwitch::HAT_DOWN:
-			input_state->Gamepad.wButtons |= XINPUT_GAMEPAD_DPAD_DOWN;
-			break;
-		case HatSwitch::HAT_DOWN_LEFT:
-			input_state->Gamepad.wButtons |= XINPUT_GAMEPAD_DPAD_DOWN;
-			input_state->Gamepad.wButtons |= XINPUT_GAMEPAD_DPAD_LEFT;
-			break;
-		case HatSwitch::HAT_LEFT:
-			input_state->Gamepad.wButtons |= XINPUT_GAMEPAD_DPAD_LEFT;
-			break;
-		case HatSwitch::HAT_UP_LEFT:
-			input_state->Gamepad.wButtons |= XINPUT_GAMEPAD_DPAD_UP;
-			input_state->Gamepad.wButtons |= XINPUT_GAMEPAD_DPAD_LEFT;
-			break;
-		case HatSwitch::HAT_NEUTRAL: // Do nothing
-			break;
-		}
-
-		input_state->Gamepad.sThumbRX = ConvertToFullRange(b.z);
-		input_state->Gamepad.sThumbRY = ConvertToFullRange(b.rz, true);
-
-		input_state->Gamepad.sThumbLX = ConvertToFullRange(b.x);
-		input_state->Gamepad.sThumbLY = ConvertToFullRange(b.y, true);
-
-		input_state->Gamepad.bLeftTrigger = b.rx;
-		input_state->Gamepad.bRightTrigger = b.ry;
+		HandleGuideButton(b, user);
+		FillGamepad(b, &input_state->Gamepad);
 		input_state->dwPacketNumber = ++c->packetNumber;
 
 		return ERROR_SUCCESS;
 	}
 	return status;
 }
+#endif
 
 DWORD XamInputSetStateHook(DWORD user, DWORD flags, XINPUT_STATE* pInputState, BYTE bAmplitude, BYTE bFrequency, BYTE bOffset) {
 	COUNT_HIT(HIT_SETSTATE);
@@ -1050,10 +1110,8 @@ DWORD XamInputGetCapabilitiesExHook(DWORD unk, DWORD user, DWORD flags, XINPUT_C
 		capabilities->SubType = XINPUT_DEVSUBTYPE_GAMEPAD;
 		capabilities->Flags = 0;
 
-		XINPUT_STATE state;
-		memset(&state, 0, sizeof(XINPUT_STATE));
-		XamInputGetStateHook(user, 0, &state);
-		capabilities->Gamepad = state.Gamepad;
+		memset(&capabilities->Gamepad, 0, sizeof(XINPUT_GAMEPAD));
+		FillGamepad(c->currentState, &capabilities->Gamepad);
 		capabilities->Vibration.wLeftMotorSpeed = 0;
 		capabilities->Vibration.wRightMotorSpeed = 0;
 		return ERROR_SUCCESS;
@@ -1061,6 +1119,7 @@ DWORD XamInputGetCapabilitiesExHook(DWORD unk, DWORD user, DWORD flags, XINPUT_C
 	return status; // upstream fell off the end here for real controllers
 }
 
+#if !HIDDRIVER_INPUTD
 // fix for inactivity (screen dimming)
 int XamInactivityDetectRecentActivityHook(DWORD r3) {
 	COUNT_HIT(HIT_INACTIVITY);
@@ -1075,8 +1134,10 @@ int XamInactivityDetectRecentActivityHook(DWORD r3) {
 
 	return XamInactivityDetectRecentActivityDetour.GetOriginal<decltype(&XamInactivityDetectRecentActivityHook)>()(r3);
 }
+#endif
 
 void* XamInputGetState = nullptr;
+void* XInputdReadStatePtr = nullptr;
 void* XamInputSetState = nullptr;
 void* XamInputGetCapabilitiesEx = nullptr;
 bool isDevkit = true;
@@ -1103,15 +1164,22 @@ bool check17150() {
 	ok &= Expect(0x800D9C38, 0x7D8802A6, 0, "UsbdDriverEntry");
 	ok &= Expect(0x800D9C94, 0x3F80801A, 0, "UsbPhysicalPage (lis)");
 	ok &= Expect(0x800D9C98, 0x93FCC8D8, 0, "UsbPhysicalPage (stw)");
+#if !HIDDRIVER_INPUTD
 	ok &= Expect(0x816F0804, 0x3D6081AB, 0, "RoutedToSysapp (lis)");
 	ok &= Expect(0x816F080C, 0x396BC6E8, 0, "RoutedToSysapp (addi)");
+#endif
 	ok &= Expect(0x800E1514, 0x40820018, 0x48000018, "bugcheck 1");
 	ok &= Expect(0x800DE810, 0x40820018, 0x48000018, "bugcheck 2");
 	ok &= Expect(0x800D9E30, 0x4BF8DC29, 0x60000000, "registro duplo 1");
 	ok &= Expect(0x800D9E20, 0x4BF97189, 0x60000000, "registro duplo 2");
 	ok &= Expect(0x800E5CD0, 0x7D8802A6, 0, "HidAddDevice");
 	ok &= Expect(0x800E5C90, 0x81630000, 0, "HidRemoveDevice");
+#if HIDDRIVER_INPUTD
+	// kernel export 486; the first instruction splits the context type (rlwinm r11, r3, 0, 0, 3)
+	ok &= Expect(0x800F7B88, 0x546B0006, 0, "XInputdReadState");
+#else
 	ok &= Expect(0x81695268, 0x3D6081AA, 0, "XamInactivityDetect");
+#endif
 	return ok;
 }
 
@@ -1138,7 +1206,13 @@ bool initFunctionPointers() {
 	XexGetProcedureAddress(kernelHandle, 749, &UsbdQueueCloseDefaultEndpoint);
 	XexGetProcedureAddress(kernelHandle, 751, &UsbdRemoveDeviceComplete);
 	XexGetProcedureAddress(kernelHandle, 189, &MmFreePhysicalMemory);
-
+#if HIDDRIVER_INPUTD
+	XexGetProcedureAddress(kernelHandle, 486, &XInputdReadStatePtr);
+	if (!XInputdReadStatePtr) {
+		DbgPrint("EINTIM: kernel doesn't export XInputdReadState (486)!\n");
+		return false;
+	}
+#endif
 
 	XexGetProcedureAddress(xamHandle, 685, &XamInputGetCapabilitiesEx);
 	XexGetProcedureAddress(xamHandle, 401, &XamInputGetState);
@@ -1156,6 +1230,7 @@ bool initFunctionPointers() {
 		UsbdDriverEntry = (usbd_powerdown_notification_func_t)0x800D9C38;
 
 		// read right before the call to XamShouldSuppressSystemInput inside XamInputGetState
+		// (only used by the old input path)
 		XampInputRoutedToSysapp = (DWORD*)0x81AAC6E8;
 
 		UsbPhysicalPage = 0x8019C8D8;
@@ -1620,8 +1695,9 @@ void UsbDiscardHook(BYTE* node) {
 }
 
 // Letters after the stage number in hiddriver_etapa.txt skip hooks, to bisect a freeze:
-// a = HidAddDevice/HidRemoveDevice, m = USB match logger, i = XamInactivityDetect,
-// g = XamInputGetState, s = XamInputSetState, c = XamInputGetCapabilitiesEx
+// a = HidAddDevice/HidRemoveDevice, m = USB match logger, i = XamInactivityDetect (old input path),
+// g = XInputdReadState (XamInputGetState on the old path), s = XamInputSetState,
+// c = XamInputGetCapabilitiesEx
 char g_skipHooks[16] = "";
 bool HookEnabled(char letter) { return strchr(g_skipHooks, letter) == nullptr; }
 
@@ -1690,34 +1766,56 @@ bool InitDriver(bool resetUsb) {
 	if (isKernel17150) {
 		HidAddDeviceDetour = Detour((void*)0x800E5CD0, (void*)HidAddDeviceHook);
 		HidRemoveDeviceDetour = Detour((void*)0x800E5C90, (void*)HidRemoveDeviceHook);
+#if !HIDDRIVER_INPUTD
 		XamInactivityDetectRecentActivityDetour = Detour((void*)0x81695268, (void*)XamInactivityDetectRecentActivityHook);
+#endif
 	}
 	else if (isDevkit) {
 		HidAddDeviceDetour = Detour((void*)0x8011AE38, (void*)HidAddDeviceHook); // 7D 88 02 A6 ? ? ? ? 94 21 ? ? 7C 7C 1B 78 ? ? ? ? 7C 7F 1B 79
 		HidRemoveDeviceDetour = Detour((void*)0x8011ADF8, (void*)HidRemoveDeviceHook); // 81 63 ? ? 39 40 ? ? 39 20 ? ? 99 4B
+#if !HIDDRIVER_INPUTD
 		XamInactivityDetectRecentActivityDetour = Detour((void*)0x81750588, (void*)XamInactivityDetectRecentActivityHook); // 3D 60 81 ?? 3D 40 81 ?? E8 6B ?? ?? E9 6A ?? ?? 7F 23 58 40 40 98 00 0C
+#endif
 	}
 	else {
 		HidAddDeviceDetour = Detour((void*)0x800E4D68, (void*)HidAddDeviceHook); // 7D 88 02 A6 ? ? ? ? 94 21 ? ? 7C 7B 1B 78 ? ? ? ? 7C 7F 1B 79
 		HidRemoveDeviceDetour = Detour((void*)0x800E4D28, (void*)HidRemoveDeviceHook); // 81 63 ? ? 39 40 ? ? 39 20 ? ? 99 4B
+#if !HIDDRIVER_INPUTD
 		XamInactivityDetectRecentActivityDetour = Detour((void*)0x81695DE8, (void*)XamInactivityDetectRecentActivityHook); // 3D 60 81 ?? 3D 40 81 ?? E8 6B ?? ?? E9 6A ?? ?? 7F 23 58 40 40 98 00 0C
+#endif
 	}
 
 	XamInputGetCapabilitiesDetour = Detour(XamInputGetCapabilitiesEx, (void*)XamInputGetCapabilitiesExHook);
-	XamInputGetStateDetour = Detour(XamInputGetState, (void*)XamInputGetStateHook);
 	XamInputSetStateDetour = Detour(XamInputSetState, (void*)XamInputSetStateHook);
+#if HIDDRIVER_INPUTD
+	XInputdReadStateDetour = Detour(XInputdReadStatePtr, (void*)XInputdReadStateHook);
+#else
+	XamInputGetStateDetour = Detour(XamInputGetState, (void*)XamInputGetStateHook);
+#endif
 
 	if (HookEnabled('a')) { HidAddDeviceDetour.Install(); HidRemoveDeviceDetour.Install(); DbgPrint("EINTIM: hook on: HidAddDevice/HidRemoveDevice\n"); }
+#if HIDDRIVER_INPUTD
+	if (HookEnabled('g')) { XInputdReadStateDetour.Install(); DbgPrint("EINTIM: hook on: XInputdReadState\n"); }
+#else
 	if (HookEnabled('g')) { XamInputGetStateDetour.Install(); DbgPrint("EINTIM: hook on: XamInputGetState\n"); }
+#endif
 	if (HookEnabled('s')) { XamInputSetStateDetour.Install(); DbgPrint("EINTIM: hook on: XamInputSetState\n"); }
 	if (HookEnabled('c')) { XamInputGetCapabilitiesDetour.Install(); DbgPrint("EINTIM: hook on: XamInputGetCapabilitiesEx\n"); }
+#if !HIDDRIVER_INPUTD
 	if (HookEnabled('i')) { XamInactivityDetectRecentActivityDetour.Install(); DbgPrint("EINTIM: hook on: XamInactivityDetectRecentActivity\n"); }
+#endif
 	if (isKernel17150) {
 		LogReadback("HidAddDevice", (void*)0x800E5CD0);
 		LogReadback("HidRemoveDevice", (void*)0x800E5C90);
+#if !HIDDRIVER_INPUTD
 		LogReadback("XamInactivityDetect", (void*)0x81695268);
+#endif
 	}
+#if HIDDRIVER_INPUTD
+	LogReadback("XInputdReadState", XInputdReadStatePtr);
+#else
 	LogReadback("XamInputGetState", XamInputGetState);
+#endif
 	DbgPrint("EINTIM: Hooks installed (skipped: \"%s\")\n", g_skipHooks);
 
 	if (!resetUsb) {

@@ -9,8 +9,10 @@ uma chave de compilação.
 | `./tools/build.sh` | `build/uso/bin/hiddriver.xex` | **uso**: como o original, sem log nem notificação |
 | `./tools/build.sh DIAG=1` | `build/diag/bin/hiddriver.xex` | **diagnóstico**: log no HD, batimento, notificação, arquivo de etapa |
 | `./tools/build.sh STAGE=2` | `build/uso/bin/hiddriver.xex` | uso, sem reiniciar o USB (ver abaixo) |
+| `./tools/build.sh INPUTD=0` | `build/uso-xam/bin/hiddriver.xex` | uso, com o caminho de input antigo, da v0.5 (ver abaixo) |
 
-Cada variante tem a sua pasta de objetos, então trocar de uma para a outra não mistura nada.
+Cada variante tem a sua pasta de objetos, então trocar de uma para a outra não mistura nada. Os
+objetos dependem também dos headers e do `Makefile`: mudar o `Detours.h` ou uma chave recompila tudo.
 
 ## O build de uso (`DIAG=0`, padrão)
 
@@ -18,8 +20,8 @@ Faz só o que os controles precisam, como o upstream:
 
 - confere o kernel (17559, 17489 ou 17150) e não inicia com a bandeja do disco aberta;
 - no 17150, confere byte a byte os endereços antes de qualquer patch (`check17150`);
-- instala os ganchos do original (`HidAddDevice`, `HidRemoveDevice`, os três de input do xam e o de
-  inatividade) e os três que carregam a correção do 8BitDo: conclusão do GET_DESCRIPTOR de
+- instala os ganchos do original (`HidAddDevice`, `HidRemoveDevice`, o de input escolhido por
+  `INPUTD` e os dois de input do xam que sobram) e os três que carregam a correção do 8BitDo: conclusão do GET_DESCRIPTOR de
   configuração (strings antes do SET_CONFIGURATION), conclusão do SET_CONFIGURATION (SET_IDLE e
   report descriptor) e descarte de dispositivo (limpa o estado dessas sequências).
 
@@ -33,6 +35,17 @@ notificação, nem leitura do `hiddriver_etapa.txt`.
   depois do reinício, um dispositivo interno (provavelmente o Wi-Fi) fica sem driver; ver a issue #2.
 - `STAGE=2`: só os ganchos, sem reiniciar o USB. **Os controles precisam ser plugados depois de o
   console ligar**, porque os que já estão plugados no boot são detectados antes de o plugin carregar.
+
+### Caminho do input (`INPUTD`)
+
+- `INPUTD=1` (padrão): o controle chega ao sistema pelo `XInputdReadState` do kernel (exportado,
+  ordinal 486; no 17150 fica em `0x800F7B88`), como na v0.6 em diante do upstream. Isso faz os
+  **jogos do Xbox original** enxergarem o controle: o emulador deles não chama o `XamInputGetState`.
+  Os trampolins do Detours ficam na `.text`, porque o emulador só executa código de uma seção que o
+  hypervisor aceita. O gancho só responde pelos contextos que o próprio driver registrou
+  (`0x10000005` a `0x10000008`); o resto vai para o kernel.
+- `INPUTD=0`: o caminho da v0.5, pelo `XamInputGetState` do xam, com os ganchos de inatividade e do
+  menu do sistema. Só jogos de 360 e dashboard.
 
 ## O build de diagnóstico (`DIAG=1`)
 

@@ -8,10 +8,12 @@ WINDOWS_SHIM := wine
 
 # DIAG=1: diagnostic build (log, heartbeat, notification, stage file). STAGE: stage of the use
 # build (3 = USB reset like upstream, picks up controllers plugged at boot; 2 = no USB reset).
-# Each variant has its own folder.
+# INPUTD: 1 = input through the kernel's XInputdReadState, like upstream v0.6+ (original Xbox
+# games); 0 = the v0.5 way, through xam's XamInputGetState. Each variant has its own folder.
 DIAG ?= 0
 STAGE ?= 3
-VARIANT := $(if $(filter 1,$(DIAG)),diag,uso)
+INPUTD ?= 1
+VARIANT := $(if $(filter 1,$(DIAG)),diag,uso)$(if $(filter 0,$(INPUTD)),-xam)
 BUILD_DIR ?= build/$(VARIANT)
 OUT_DIR := $(BUILD_DIR)/bin
 INT_DIR := $(BUILD_DIR)/obj
@@ -35,7 +37,8 @@ CXX_FLAGS := -c -Zi -nologo -W0 -D NDEBUG -D _XBOX -D LTCG -D _MBCS \
              -Ox -Ob2 -Oi -Ot -GL -GF -Gy -GS- -MT -Gm- -GR- -TP \
              -fp:fast -fp:except- -Zc:wchar_t -Zc:forScope -openmp- \
              -Fd"$(INT_DIR)/vc100.pdb" $(INCLUDES) \
-             -D HIDDRIVER_DIAG=$(DIAG) -D HIDDRIVER_STAGE=$(STAGE)
+             -D HIDDRIVER_DIAG=$(DIAG) -D HIDDRIVER_STAGE=$(STAGE) \
+             -D HIDDRIVER_INPUTD=$(INPUTD)
 
 LD_FLAGS := -NOLOGO -DLL -LTCG -DEBUG -RELEASE -OPT:REF -OPT:ICF \
             -PDB:"$(OUT_DIR)/$(PROJECT_NAME).pdb" -XEX:NO
@@ -53,7 +56,16 @@ $(OUT_DIR)/$(PROJECT_NAME).dll: $(OBJS)
 	@mkdir -p $(@D)
 	@LIB="$(XDK_LIB_DIR);$(XKELIB_DIR)" $(WINDOWS_SHIM) $(LD) $(LD_FLAGS) -OUT:"$@" $^ $(LIBS)
 
-$(INT_DIR)/%.obj: $(SRC_DIR)/%.cpp
+# Every object also depends on the headers, the Makefile and a stamp named after the switches,
+# so a changed header (Detours.h) or a different STAGE in the same folder rebuilds everything.
+FLAGS_STAMP := $(INT_DIR)/flags-diag$(DIAG)-stage$(STAGE)-inputd$(INPUTD).stamp
+
+$(FLAGS_STAMP):
+	@mkdir -p $(@D)
+	@rm -f $(INT_DIR)/flags-*.stamp
+	@touch $@
+
+$(INT_DIR)/%.obj: $(SRC_DIR)/%.cpp $(wildcard $(SRC_DIR)/*.h) Makefile $(FLAGS_STAMP)
 	@mkdir -p $(@D)
 	@INCLUDE="$(XDK_INC_DIR);$(XDK_CRT_DIR)" $(WINDOWS_SHIM) $(CXX) $(CXX_FLAGS) -Fo"$@" $<
 

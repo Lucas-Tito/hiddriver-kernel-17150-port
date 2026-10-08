@@ -1,0 +1,268 @@
+
+==== boot, log via hidlogh:\ ====
+EINTIM: HELLO from xbox 360 HID controller driver version 0.5 (port 17150), kernel 17150, stage 3, skip "", log root hidlogh:\
+EINTIM: notify patch: ordinal 1183 at 816A2450, +48 = 409A
+EINTIM: notify patch applied, readback 4800
+EINTIM: Running on retail kernel 17150
+EINTIM: check UsbdGetInterfaceDescriptor   800D9418 = 8943000B (esperado 8943000B) ok
+EINTIM: check XamUserBindDeviceCallback    816D83A8 = 7C8B2378 (esperado 7C8B2378) ok
+EINTIM: check UsbdPowerDownNotification    800D9EF8 = 3D60800E (esperado 3D60800E) ok
+EINTIM: check UsbdDriverEntry              800D9C38 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbPhysicalPage (lis)        800D9C94 = 3F80801A (esperado 3F80801A) ok
+EINTIM: check UsbPhysicalPage (stw)        800D9C98 = 93FCC8D8 (esperado 93FCC8D8) ok
+EINTIM: check bugcheck 1                   800E1514 = 40820018 (esperado 40820018) ok
+EINTIM: check bugcheck 2                   800DE810 = 40820018 (esperado 40820018) ok
+EINTIM: check registro duplo 1             800D9E30 = 4BF8DC29 (esperado 4BF8DC29) ok
+EINTIM: check registro duplo 2             800D9E20 = 4BF97189 (esperado 4BF97189) ok
+EINTIM: check HidAddDevice                 800E5CD0 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check HidRemoveDevice              800E5C90 = 81630000 (esperado 81630000) ok
+EINTIM: check XInputdReadState             800F7B88 = 546B0006 (esperado 546B0006) ok
+EINTIM: check UsbMatch (prologo)           800D7170 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbMatch (lbz class)         800D7190 = 8B7E0005 (esperado 8B7E0005) ok
+EINTIM: readback UsbMatch                     800D7170 = 3C0081F1
+EINTIM: hook on: USB match logger
+EINTIM: check UsbDeviceMatch (prologo)     800D70D8 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbDeviceMatch (hub)         800D7110 = 2B0A0009 (esperado 2B0A0009) ok
+EINTIM: readback UsbDeviceMatch               800D70D8 = 3C0081F1
+EINTIM: hook on: USB device match logger
+EINTIM: check UsbMsOsReply                 800D8148 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbMsOsReply (node)          800D8154 = 3BE3FFF4 (esperado 3BE3FFF4) ok
+EINTIM: readback UsbMsOsReply                 800D8148 = 3C0081F1
+EINTIM: check UsbCompatReply               800D80A0 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbCompatReply (node)        800D80AC = 3BE3FFF4 (esperado 3BE3FFF4) ok
+EINTIM: readback UsbCompatReply               800D80A0 = 3C0081F1
+EINTIM: check UsbSetConfigDone             800D83F8 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbSetConfigDone (node)      800D8404 = 3BE3FFF4 (esperado 3BE3FFF4) ok
+EINTIM: readback UsbSetConfigDone             800D83F8 = 3C0081F1
+EINTIM: check UsbConfigDescDone            800D8468 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbConfigDescDone (node)     800D8474 = 3BE3FFF4 (esperado 3BE3FFF4) ok
+EINTIM: readback UsbConfigDescDone            800D8468 = 3C0081F1
+EINTIM: check UsbSubmitRequest             800D9190 = 3D60801A (esperado 3D60801A) ok
+EINTIM: check UsbSubmitRequest (lbz)       800D9194 = 89230008 (esperado 89230008) ok
+EINTIM: check UsbTimerCancel               800DA170 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbTimerCancel (ld)          800DA180 = E9630010 (esperado E9630010) ok
+EINTIM: check UsbTimerArm                  800DA2B8 = 3D60800E (esperado 3D60800E) ok
+EINTIM: check UsbTimerArm (stw)            800DA2C0 = 91630004 (esperado 91630004) ok
+EINTIM: 8BitDo string requests enabled
+EINTIM: check UsbDiscard                   800D7D00 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbDiscard (retry flag)      800D7D20 = 897F027F (esperado 897F027F) ok
+EINTIM: readback UsbDiscard                   800D7D00 = 3C0081F1
+EINTIM: check UsbdAddDeviceComplete        800D78F0 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: readback UsbdAddDeviceComplete        800D78F0 = 3C0081F1
+EINTIM: hook on: UsbdAddDeviceComplete logger
+EINTIM: hook on: HidAddDevice/HidRemoveDevice
+EINTIM: hook on: XInputdReadState
+EINTIM: hook on: XamInputSetState
+EINTIM: hook on: XamInputGetCapabilitiesEx
+EINTIM: readback HidAddDevice                 800E5CD0 = 3C0081F1
+EINTIM: readback HidRemoveDevice              800E5C90 = 3C0081F1
+EINTIM: readback XInputdReadState             800F7B88 = 3C0081F1
+EINTIM: Hooks installed (skipped: "")
+EINTIM: readback bugcheck 1                   800E1514 = 48000018
+EINTIM: readback bugcheck 2                   800DE810 = 48000018
+EINTIM: readback registro duplo 1             800D9E30 = 60000000
+EINTIM: readback registro duplo 2             800D9E20 = 60000000
+EINTIM: Resetting USB driver!
+EINTIM: USB discard: node E1EBEBF4 VID 045E PID 02AB retry flag 0, called from 800DF2AC
+EINTIM: USB driver shutdown complete.
+EINTIM: USB driver reset complete.
+EINTIM: USB discard: node E1EBE970 VID 0000 PID 0000 retry flag 0, called from 800DF2AC
+EINTIM: USB discard: node E1EBEBF4 VID 0000 PID 0000 retry flag 0, called from 800DF2AC
+EINTIM: USB config descriptor done: VID 045E PID 028E status 00000000
+EINTIM: USB SET_CONFIGURATION done: VID 045E PID 028E config 1 status 00000000 after 0 ms
+EINTIM: USB match: VID 045E PID 028E if 0 class FF/5D/01 -> 801626C8 XInput (FF/5D)
+EINTIM: USB add complete: handle E1EBF990 status C0051012 (rejeitado) VID 045E PID 028E
+EINTIM: USB config descriptor done: VID 045E PID 028E status 00000000
+EINTIM: USB SET_CONFIGURATION done: VID 045E PID 028E config 1 status 00000000 after 1 ms
+EINTIM: USB discard: node E1EBEBF4 VID 0000 PID 0000 retry flag 1, called from 800D88F4
+EINTIM: USB discard: node E1EBEBF4 VID 0000 PID 0000 retry flag 0, called from 800E12A4
+EINTIM: USB discard: node E1EBEBF4 VID 0000 PID 0000 retry flag 0, called from 800D8BA0
+EINTIM: USB discard: node E1EBEBF4 VID 0000 PID 0000 retry flag 0, called from 800DF2AC
+EINTIM: USB match: VID 045E PID 028E if 0 class FF/5D/01 -> 801626C8 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 028E if 1 class FF/5D/03 -> 80162960 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 028E if 2 class FF/5D/02 -> 801625D0 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 028E if 3 class FF/FD/13 -> 00000000 nenhum driver
+EINTIM: USB add complete: handle E1EBF3B0 status C0000001 (rejeitado) VID 045E PID 028E
+EINTIM: USB config descriptor done: VID 045E PID 02AB status 00000000
+EINTIM: USB SET_CONFIGURATION done: VID 045E PID 02AB config 1 status 00000000 after 0 ms
+EINTIM: USB match: VID 045E PID 02AB if 0 class FF/00/00 -> 8016C550 outro
+EINTIM: USB config descriptor done: VID 045E PID 02A9 status 00000000
+EINTIM: USB SET_CONFIGURATION done: VID 045E PID 02A9 config 1 status 00000000 after 0 ms
+EINTIM: USB match: VID 045E PID 02A9 if 0 class FF/5D/81 -> 80162578 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 1 class FF/5D/82 -> 80162934 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 2 class FF/5D/81 -> 80162578 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 3 class FF/5D/82 -> 80162934 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 4 class FF/5D/81 -> 80162578 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 5 class FF/5D/82 -> 80162934 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 6 class FF/5D/81 -> 80162578 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 7 class FF/5D/82 -> 80162934 XInput (FF/5D)
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: first call: XamInputSetState
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 2 -> status 48F
+EINTIM: GetCapabilitiesEx user 3 -> status 48F
+EINTIM: USB discard: node E1EBEBF4 VID 045E PID 02AB retry flag 0, called from 800DF2AC
+EINTIM: USB config descriptor done: VID 2DC8 PID 3106 status 00000000
+EINTIM: 8BitDo: asking for the strings before SET_CONFIGURATION (config length 49)
+EINTIM: 8BitDo: string 0 done status 00000000, 4 bytes (bLength 04 type 03), removed 00
+EINTIM: 8BitDo: string 2 done status 00000000, 74 bytes (bLength 4A type 03), removed 00
+EINTIM: 8BitDo: string 1 done status 00000000, 14 bytes (bLength 0E type 03), removed 00
+EINTIM: 8BitDo: string 3 done status 00000000, 22 bytes (bLength 16 type 03), removed 00
+EINTIM: 8BitDo: strings done, handing over to SET_CONFIGURATION
+EINTIM: USB SET_CONFIGURATION done: VID 2DC8 PID 3106 config 1 status 00000000 after 0 ms
+EINTIM: 8BitDo: no HID descriptor right after the interface (04 FF 21), skipping HID init
+EINTIM: USB match: VID 2DC8 PID 3106 if 0 class FF/5D/01 -> 801626C8 XInput (FF/5D)
+EINTIM: USB add complete: handle E1EBFA50 status C0051012 (rejeitado) VID 2DC8 PID 3106
+EINTIM: alive t=48 write=113 read=113 hits dev=0 if=15 addc=15 hidadd=0 hidrem=0 inact=0 get=4 set=4 caps=4 reports=0
+EINTIM: alive t=53 write=114 read=114 hits dev=0 if=15 addc=15 hidadd=0 hidrem=0 inact=0 get=499 set=4 caps=496 reports=0
+EINTIM: notify: calling XNotifyQueueUI "hiddriver: etapa 3 ativa (ganchos + reset USB)"
+EINTIM: notify: XNotifyQueueUI returned
+EINTIM: alive t=58 write=117 read=117 hits dev=0 if=15 addc=15 hidadd=0 hidrem=0 inact=0 get=1017 set=4 caps=1012 reports=0
+EINTIM: alive t=63 write=118 read=118 hits dev=0 if=15 addc=15 hidadd=0 hidrem=0 inact=0 get=1618 set=4 caps=1610 reports=0
+EINTIM: alive t=68 write=119 read=119 hits dev=0 if=15 addc=15 hidadd=0 hidrem=0 inact=0 get=2222 set=4 caps=2212 reports=0
+EINTIM: alive t=73 write=120 read=120 hits dev=0 if=15 addc=15 hidadd=0 hidrem=0 inact=0 get=2823 set=4 caps=2810 reports=0
+EINTIM: alive t=78 write=121 read=121 hits dev=0 if=15 addc=15 hidadd=0 hidrem=0 inact=0 get=3425 set=4 caps=3410 reports=0
+EINTIM: alive t=83 write=122 read=122 hits dev=0 if=15 addc=15 hidadd=0 hidrem=0 inact=0 get=4028 set=4 caps=4010 reports=0
+EINTIM: alive t=88 write=123 read=123 hits dev=0 if=15 addc=15 hidadd=0 hidrem=0 inact=0 get=4630 set=4 caps=4610 reports=0
+EINTIM: alive t=93 write=124 read=124 hits dev=0 if=15 addc=15 hidadd=0 hidrem=0 inact=0 get=5233 set=4 caps=5210 reports=0
+EINTIM: USB discard: node E1EBEBF4 VID 045E PID 02AB retry flag 0, called from 800DF2AC
+EINTIM: USB config descriptor done: VID 2DC8 PID 3016 status 00000000
+EINTIM: 8BitDo: asking for the strings before SET_CONFIGURATION (config length 41)
+EINTIM: 8BitDo: string 0 done status 00000000, 4 bytes (bLength 04 type 03), removed 00
+EINTIM: 8BitDo: string 2 done status 00000000, 10 bytes (bLength 0A type 03), removed 00
+EINTIM: 8BitDo: string 1 done status 00000000, 14 bytes (bLength 0E type 03), removed 00
+EINTIM: 8BitDo: string 3 done status 00000000, 22 bytes (bLength 16 type 03), removed 00
+EINTIM: 8BitDo: strings done, handing over to SET_CONFIGURATION
+EINTIM: USB SET_CONFIGURATION done: VID 2DC8 PID 3016 config 1 status 00000000 after 0 ms
+EINTIM: 8BitDo: SET_IDLE and report descriptor (42 bytes) on interface 0 before driver selection
+EINTIM: 8BitDo: SET_IDLE done status 00000000, 0 bytes (16 03 32 00), removed 00
+EINTIM: 8BitDo: report descriptor done status 00000000, 42 bytes (06 A0 FF 09), removed 00
+EINTIM: 8BitDo: HID init done, handing over to driver selection
+EINTIM: USB match: VID 2DC8 PID 3016 if 0 class 03/00/00 -> 80162254 HID (HidAddDevice)
+EINTIM: HID add device E1EBFA50
+EINTIM: IS USB1.0: 1
+EINTIM: USB device descriptor Pointer: E1EBF148
+EINTIM: USB interface descriptor Pointer: E1EBF165
+EINTIM: USB endpoint interrupt in descriptor Pointer: E1EBF177
+EINTIM: HID device vendor id: 2dc8, product id: 3016
+EINTIM: Interface 0 class 3 subclass 0 protocol 0
+EINTIM: HID device bcdDevice 0200
+EINTIM: 8BitDo Ultimate C 2.4G (DInput): bcdDevice 0200 is not the gamepad one (0001), passing it on
+EINTIM: Unrelated USB Device. Calling original...
+EINTIM: USB add complete: handle E1EBFA50 status C0000001 (rejeitado) VID 2DC8 PID 3016
+EINTIM: USB discard: node E1EBEBF4 VID 045E PID 02AB retry flag 0, called from 800DF2AC
+EINTIM: USB config descriptor done: VID 2DC8 PID 3016 status 00000000
+EINTIM: 8BitDo: asking for the strings before SET_CONFIGURATION (config length 41)
+EINTIM: 8BitDo: string 0 done status 00000000, 4 bytes (bLength 04 type 03), removed 00
+EINTIM: 8BitDo: string 2 done status 00000000, 74 bytes (bLength 4A type 03), removed 00
+EINTIM: 8BitDo: string 1 done status 00000000, 14 bytes (bLength 0E type 03), removed 00
+EINTIM: 8BitDo: string 3 done status 00000000, 22 bytes (bLength 16 type 03), removed 00
+EINTIM: 8BitDo: strings done, handing over to SET_CONFIGURATION
+EINTIM: USB SET_CONFIGURATION done: VID 2DC8 PID 3016 config 1 status 00000000 after 0 ms
+EINTIM: 8BitDo: SET_IDLE and report descriptor (145 bytes) on interface 0 before driver selection
+EINTIM: 8BitDo: SET_IDLE done status 00000000, 0 bytes (16 03 32 00), removed 00
+EINTIM: 8BitDo: report descriptor done status 00000000, 145 bytes (05 01 09 05), removed 00
+EINTIM: 8BitDo: HID init done, handing over to driver selection
+EINTIM: USB match: VID 2DC8 PID 3016 if 0 class 03/00/00 -> 80162254 HID (HidAddDevice)
+EINTIM: HID add device E1EBFA50
+EINTIM: IS USB1.0: 1
+EINTIM: USB device descriptor Pointer: E1EBF148
+EINTIM: USB interface descriptor Pointer: E1EBF165
+EINTIM: USB endpoint interrupt in descriptor Pointer: E1EBF177
+EINTIM: HID device vendor id: 2dc8, product id: 3016
+EINTIM: Interface 0 class 3 subclass 0 protocol 0
+EINTIM: HID device bcdDevice 0001
+EINTIM: Hardcoded layout: 8BitDo Ultimate C 2.4G (DInput) (interface 0)
+EINTIM: Controller detected. Initialising custom handler.
+Assigning controller to index 0
+EINTIM: Registered virtual controller inside XAM with index: 1.
+EINTIM: first interrupt transfer queued: AB5790 (endpoint 84, packet 64)
+EINTIM: first call: XInputdReadState (our context)
+EINTIM: report 1 from 8BitDo Ultimate C 2.4G (DInput): status 0 bytes 00 00 00 00 00 00 00 00 00 00
+EINTIM: report 1 requeue AB5790 block E1EC7640 81F10E98 E1EC7640 00000000 0100030D 781C5750 00000040
+EINTIM: alive t=99 write=180 read=180 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=5851 set=4 caps=5826 reports=1
+EINTIM: report 2 from 8BitDo Ultimate C 2.4G (DInput): status 0 bytes 01 00 00 0F 80 80 7F 7F 00 00
+EINTIM: report 2 requeue AB5790 block E1EC7640 81F10E98 E1EC7640 00000000 0100030D 781C5750 00000040
+EINTIM: report 3 from 8BitDo Ultimate C 2.4G (DInput): status 0 bytes 01 00 00 0F 85 80 7F 7F 00 00
+EINTIM: report 3 requeue AB5790 block E1EC7640 81F10E98 E1EC7640 00000000 0100030D 781C5750 00000040
+EINTIM: report 4 from 8BitDo Ultimate C 2.4G (DInput): status 0 bytes 01 00 00 0F 91 7F 7F 7F 00 00
+EINTIM: report 4 requeue AB5790 block E1EC7640 81F10E98 E1EC7640 00000000 0100030D 781C5750 00000040
+EINTIM: report 5 from 8BitDo Ultimate C 2.4G (DInput): status 0 bytes 01 00 00 0F AB 7D 7F 7F 00 00
+EINTIM: report 5 requeue AB5790 block E1EC7640 81F10E98 E1EC7640 00000000 0100030D 781C5750 00000040
+EINTIM: report 6 from 8BitDo Ultimate C 2.4G (DInput): status 0 bytes 01 00 00 0F D0 7C 7F 7F 00 00
+EINTIM: report 6 requeue AB5790 block E1EC7640 81F10E98 E1EC7640 00000000 0100030D 781C5750 00000040
+EINTIM: report 7 from 8BitDo Ultimate C 2.4G (DInput): status 0 bytes 01 00 00 0F FF 7B 7F 7F 00 00
+EINTIM: report 7 requeue AB5790 block E1EC7640 81F10E98 E1EC7640 00000000 0100030D 781C5750 00000040
+EINTIM: report 8 from 8BitDo Ultimate C 2.4G (DInput): status 0 bytes 01 00 00 0F FF 79 7F 7F 00 00
+EINTIM: report 8 requeue AB5790 block E1EC7640 81F10E98 E1EC7640 00000000 0100030D 781C5750 00000040
+EINTIM: alive t=104 write=195 read=195 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=7057 set=4 caps=7026 reports=55
+EINTIM: alive t=109 write=196 read=196 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=7940 set=4 caps=8264 reports=61
+EINTIM: alive t=114 write=197 read=197 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=8916 set=4 caps=9508 reports=65
+EINTIM: alive t=119 write=198 read=198 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=10120 set=4 caps=10708 reports=65
+EINTIM: alive t=124 write=199 read=199 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=11326 set=4 caps=11908 reports=65
+EINTIM: alive t=129 write=200 read=200 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=12530 set=4 caps=13108 reports=65
+EINTIM: alive t=134 write=201 read=201 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=13736 set=4 caps=14308 reports=65
+EINTIM: alive t=139 write=202 read=202 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=14940 set=4 caps=15508 reports=65
+EINTIM: alive t=144 write=203 read=203 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=16142 set=4 caps=16704 reports=65
+EINTIM: alive t=149 write=204 read=204 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=17346 set=4 caps=17904 reports=65
+EINTIM: alive t=154 write=205 read=205 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=18552 set=4 caps=19104 reports=65
+EINTIM: alive t=159 write=206 read=206 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=19756 set=4 caps=20304 reports=91
+EINTIM: alive t=164 write=207 read=207 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=20806 set=4 caps=21348 reports=161
+EINTIM: alive t=169 write=208 read=208 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=22010 set=4 caps=22548 reports=251
+EINTIM: alive t=174 write=209 read=209 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=23190 set=4 caps=23722 reports=416
+EINTIM: alive t=179 write=210 read=210 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=23648 set=8 caps=24051 reports=419
+EINTIM: alive t=184 write=211 read=211 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=24226 set=8 caps=24337 reports=419
+EINTIM: alive t=189 write=212 read=212 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=24828 set=8 caps=24636 reports=419
+EINTIM: alive t=194 write=213 read=213 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=25432 set=8 caps=24935 reports=419
+EINTIM: alive t=199 write=214 read=214 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=26018 set=8 caps=25226 reports=419
+EINTIM: alive t=204 write=215 read=215 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=26463 set=8 caps=25572 reports=421
+EINTIM: alive t=209 write=216 read=216 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=26862 set=8 caps=26240 reports=433
+EINTIM: alive t=214 write=217 read=217 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=27225 set=8 caps=26728 reports=435
+EINTIM: alive t=219 write=218 read=218 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=27827 set=8 caps=27027 reports=437
+EINTIM: alive t=224 write=219 read=219 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=28423 set=8 caps=27322 reports=475
+EINTIM: alive t=229 write=220 read=220 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=28863 set=8 caps=27540 reports=477
+EINTIM: alive t=234 write=221 read=221 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=29417 set=8 caps=27814 reports=481
+EINTIM: alive t=239 write=222 read=222 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=30011 set=8 caps=28109 reports=565
+EINTIM: alive t=244 write=223 read=223 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=30615 set=8 caps=28408 reports=628
+EINTIM: alive t=249 write=224 read=224 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=31209 set=8 caps=28703 reports=663
+EINTIM: alive t=254 write=225 read=225 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=31713 set=8 caps=28952 reports=670
+EINTIM: alive t=259 write=226 read=226 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=32317 set=8 caps=29252 reports=683
+EINTIM: alive t=264 write=227 read=227 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=32539 set=8 caps=29885 reports=695
+EINTIM: alive t=269 write=228 read=228 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=33103 set=12 caps=30449 reports=695
+EINTIM: alive t=274 write=229 read=229 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=34007 set=12 caps=31349 reports=695
+EINTIM: alive t=279 write=230 read=230 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=35125 set=12 caps=32461 reports=717
+EINTIM: alive t=284 write=231 read=231 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=36281 set=12 caps=33613 reports=723
+EINTIM: alive t=289 write=232 read=232 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=37487 set=12 caps=34813 reports=729
+EINTIM: alive t=294 write=233 read=233 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=38647 set=12 caps=35969 reports=745
+EINTIM: alive t=299 write=234 read=234 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=38935 set=20 caps=36041 reports=747
+EINTIM: alive t=304 write=235 read=235 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=40191 set=20 caps=36041 reports=747
+EINTIM: alive t=309 write=236 read=236 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=41449 set=20 caps=36041 reports=748
+EINTIM: alive t=314 write=237 read=237 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=42705 set=20 caps=36041 reports=785
+EINTIM: alive t=319 write=238 read=238 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=43963 set=22 caps=36041 reports=785
+EINTIM: alive t=324 write=239 read=239 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=45217 set=128 caps=36041 reports=819
+EINTIM: alive t=329 write=240 read=240 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=46475 set=278 caps=36041 reports=1104
+EINTIM: alive t=334 write=241 read=241 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=47731 set=331 caps=36041 reports=1112
+EINTIM: alive t=339 write=242 read=242 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=48989 set=481 caps=36041 reports=1321
+EINTIM: alive t=344 write=243 read=243 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=50243 set=631 caps=36041 reports=1467
+EINTIM: alive t=349 write=244 read=244 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=51501 set=781 caps=36041 reports=1617
+EINTIM: alive t=354 write=245 read=245 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=52735 set=931 caps=36041 reports=1727
+EINTIM: alive t=359 write=246 read=246 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=52821 set=1022 caps=36177 reports=1734
+EINTIM: alive t=364 write=247 read=247 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=53775 set=1022 caps=37129 reports=1734
+EINTIM: alive t=369 write=248 read=248 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=54681 set=1022 caps=38029 reports=1734
+EINTIM: alive t=374 write=249 read=249 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=55885 set=1022 caps=39229 reports=1734
+EINTIM: alive t=379 write=250 read=250 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=57091 set=1022 caps=40429 reports=1734
+EINTIM: alive t=384 write=251 read=251 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=58295 set=1022 caps=41629 reports=1734
+EINTIM: alive t=389 write=252 read=252 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=59501 set=1022 caps=42829 reports=1734
+EINTIM: alive t=394 write=253 read=253 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=60701 set=1022 caps=44025 reports=1734
+EINTIM: alive t=399 write=254 read=254 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=61911 set=1022 caps=45229 reports=1734
+EINTIM: alive t=404 write=255 read=255 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=63115 set=1022 caps=46429 reports=1734
+EINTIM: alive t=409 write=256 read=256 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=64321 set=1022 caps=47629 reports=1734
+EINTIM: alive t=414 write=257 read=257 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=65525 set=1022 caps=48829 reports=1734
+EINTIM: alive t=419 write=258 read=258 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=66731 set=1022 caps=50029 reports=1734
+EINTIM: alive t=424 write=259 read=259 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=67935 set=1022 caps=51229 reports=1734
+EINTIM: alive t=429 write=260 read=260 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=69141 set=1022 caps=52429 reports=1734
+EINTIM: alive t=434 write=261 read=261 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=70345 set=1022 caps=53629 reports=1734
+EINTIM: alive t=439 write=262 read=262 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=71549 set=1022 caps=54829 reports=1734
+EINTIM: alive t=444 write=263 read=263 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=72755 set=1022 caps=56029 reports=1734
+EINTIM: alive t=449 write=264 read=264 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=73959 set=1022 caps=57229 reports=1734
+EINTIM: alive t=454 write=265 read=265 hits dev=0 if=17 addc=17 hidadd=2 hidrem=0 inact=0 get=75165 set=1022 caps=58429 reports=1734
