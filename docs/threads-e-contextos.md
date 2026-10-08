@@ -95,6 +95,26 @@ sequência que o kernel usa, provavelmente no `KeSweepIcacheRange` (ordinal 171)
 não era a causa do travamento: as releituras depois do patch mostram o salto gravado
 (`3C0081F1`).
 
+### 8. Nada de disco numa thread nova durante o boot
+
+A primeira versão do mapeador criava a sua thread no `DllMain` e, logo de cara, criava o apelido
+`\System??\hidmap:` e procurava o `hiddriver.json`. Em três boots seguidos, a FreeStyle travou
+logo depois da primeira notificação. O plugin continuava vivo (o batimento seguia), mas a
+interface parava de ler os controles e depois girava em falso (`port/logs/teste_mapeador_trava*.txt`):
+
+- com a thread desligada, não travou;
+- com a thread fazendo as mesmas duas coisas depois de a FreeStyle subir, não travou.
+
+Não se sabe qual das duas causa o problema: o apelido aparecendo enquanto a FreeStyle procura os
+discos, ou o acesso ao arquivo naquele momento. A regra ficou: a thread do mapeador espera
+30 s antes de tocar no disco (`MAPPER_BOOT_DELAY_MS`). O `\Device\Harddisk0\Partition1\` não é
+aceito como caminho pelo XAPI, e o `hdd:` do DashLaunch não existe para o plugin, então o
+apelido próprio continua necessário.
+
+Para testar sem abrir a bandeja a cada travamento, o build de diagnóstico tem uma trava de boot:
+cria `hiddriver_guarda.txt` ao iniciar e só apaga depois de a FreeStyle ler os controles num ritmo
+normal por 60 s. Se o arquivo sobrar, o boot seguinte não inicia o plugin (e apaga o arquivo).
+
 ## Testes no console
 
 - **Dispositivo plugado no boot é enumerado antes dos ganchos.** Para trazer o log sem travar,

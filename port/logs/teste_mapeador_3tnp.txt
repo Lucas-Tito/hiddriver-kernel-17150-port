@@ -1,0 +1,123 @@
+
+==== boot, log via hidlogh:\ ====
+EINTIM: HELLO from xbox 360 HID controller driver version 0.5 (port 17150), kernel 17150, stage 3, skip "tnp", log root hidlogh:\
+EINTIM: notify patch: ordinal 1183 at 816A2450, +48 = 409A
+EINTIM: notify patch applied, readback 4800
+EINTIM: Running on retail kernel 17150
+EINTIM: check UsbdGetInterfaceDescriptor   800D9418 = 8943000B (esperado 8943000B) ok
+EINTIM: check XamUserBindDeviceCallback    816D83A8 = 7C8B2378 (esperado 7C8B2378) ok
+EINTIM: check UsbdPowerDownNotification    800D9EF8 = 3D60800E (esperado 3D60800E) ok
+EINTIM: check UsbdDriverEntry              800D9C38 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbPhysicalPage (lis)        800D9C94 = 3F80801A (esperado 3F80801A) ok
+EINTIM: check UsbPhysicalPage (stw)        800D9C98 = 93FCC8D8 (esperado 93FCC8D8) ok
+EINTIM: check bugcheck 1                   800E1514 = 40820018 (esperado 40820018) ok
+EINTIM: check bugcheck 2                   800DE810 = 40820018 (esperado 40820018) ok
+EINTIM: check registro duplo 1             800D9E30 = 4BF8DC29 (esperado 4BF8DC29) ok
+EINTIM: check registro duplo 2             800D9E20 = 4BF97189 (esperado 4BF97189) ok
+EINTIM: check HidAddDevice                 800E5CD0 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check HidRemoveDevice              800E5C90 = 81630000 (esperado 81630000) ok
+EINTIM: check XInputdReadState             800F7B88 = 546B0006 (esperado 546B0006) ok
+EINTIM: check UsbMatch (prologo)           800D7170 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbMatch (lbz class)         800D7190 = 8B7E0005 (esperado 8B7E0005) ok
+EINTIM: readback UsbMatch                     800D7170 = 3C0081F1
+EINTIM: hook on: USB match logger
+EINTIM: check UsbDeviceMatch (prologo)     800D70D8 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbDeviceMatch (hub)         800D7110 = 2B0A0009 (esperado 2B0A0009) ok
+EINTIM: readback UsbDeviceMatch               800D70D8 = 3C0081F1
+EINTIM: hook on: USB device match logger
+EINTIM: check UsbMsOsReply                 800D8148 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbMsOsReply (node)          800D8154 = 3BE3FFF4 (esperado 3BE3FFF4) ok
+EINTIM: readback UsbMsOsReply                 800D8148 = 3C0081F1
+EINTIM: check UsbCompatReply               800D80A0 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbCompatReply (node)        800D80AC = 3BE3FFF4 (esperado 3BE3FFF4) ok
+EINTIM: readback UsbCompatReply               800D80A0 = 3C0081F1
+EINTIM: check UsbSetConfigDone             800D83F8 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbSetConfigDone (node)      800D8404 = 3BE3FFF4 (esperado 3BE3FFF4) ok
+EINTIM: readback UsbSetConfigDone             800D83F8 = 3C0081F1
+EINTIM: check UsbConfigDescDone            800D8468 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbConfigDescDone (node)     800D8474 = 3BE3FFF4 (esperado 3BE3FFF4) ok
+EINTIM: readback UsbConfigDescDone            800D8468 = 3C0081F1
+EINTIM: check UsbSubmitRequest             800D9190 = 3D60801A (esperado 3D60801A) ok
+EINTIM: check UsbSubmitRequest (lbz)       800D9194 = 89230008 (esperado 89230008) ok
+EINTIM: check UsbTimerCancel               800DA170 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbTimerCancel (ld)          800DA180 = E9630010 (esperado E9630010) ok
+EINTIM: check UsbTimerArm                  800DA2B8 = 3D60800E (esperado 3D60800E) ok
+EINTIM: check UsbTimerArm (stw)            800DA2C0 = 91630004 (esperado 91630004) ok
+EINTIM: 8BitDo string requests enabled
+EINTIM: check UsbDiscard                   800D7D00 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbDiscard (retry flag)      800D7D20 = 897F027F (esperado 897F027F) ok
+EINTIM: readback UsbDiscard                   800D7D00 = 3C0081F1
+EINTIM: check UsbdAddDeviceComplete        800D78F0 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: readback UsbdAddDeviceComplete        800D78F0 = 3C0081F1
+EINTIM: hook on: UsbdAddDeviceComplete logger
+EINTIM: hook on: HidAddDevice/HidRemoveDevice
+EINTIM: hook on: XInputdReadState
+EINTIM: hook on: XamInputSetState
+EINTIM: hook on: XamInputGetCapabilitiesEx
+EINTIM: readback HidAddDevice                 800E5CD0 = 3C0081F1
+EINTIM: readback HidRemoveDevice              800E5C90 = 3C0081F1
+EINTIM: readback XInputdReadState             800F7B88 = 3C0081F1
+EINTIM: Hooks installed (skipped: "tnp")
+EINTIM: readback bugcheck 1                   800E1514 = 48000018
+EINTIM: readback bugcheck 2                   800DE810 = 48000018
+EINTIM: readback registro duplo 1             800D9E30 = 60000000
+EINTIM: readback registro duplo 2             800D9E20 = 60000000
+EINTIM: Resetting USB driver!
+EINTIM: USB discard: node E1EBEBF4 VID 045E PID 02AB retry flag 0, called from 800DF2AC
+EINTIM: USB driver shutdown complete.
+EINTIM: USB driver reset complete.
+EINTIM: mapper thread not started ('p')
+EINTIM: USB discard: node E1EBE970 VID 0000 PID 0000 retry flag 0, called from 800DF2AC
+EINTIM: USB discard: node E1EBEBF4 VID 0000 PID 0000 retry flag 0, called from 800DF2AC
+EINTIM: USB config descriptor done: VID 045E PID 02A9 status 00000000
+EINTIM: USB SET_CONFIGURATION done: VID 045E PID 02A9 config 1 status 00000000 after 0 ms
+EINTIM: HID init: no 03/00/00 interface with a HID descriptor (first: 04 FF 22), skipping
+EINTIM: USB match: VID 045E PID 02A9 if 0 class FF/5D/81 -> 80162578 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 1 class FF/5D/82 -> 80162934 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 2 class FF/5D/81 -> 80162578 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 3 class FF/5D/82 -> 80162934 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 4 class FF/5D/81 -> 80162578 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 5 class FF/5D/82 -> 80162934 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 6 class FF/5D/81 -> 80162578 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 7 class FF/5D/82 -> 80162934 XInput (FF/5D)
+EINTIM: USB config descriptor done: VID 045E PID 028E status 00000000
+EINTIM: USB SET_CONFIGURATION done: VID 045E PID 028E config 1 status 00000000 after 1 ms
+EINTIM: HID init: no 03/00/00 interface with a HID descriptor (first: 04 FF 21), skipping
+EINTIM: USB discard: node E1EBEBF4 VID 0000 PID 0000 retry flag 1, called from 800D88F4
+EINTIM: USB discard: node E1EBEBF4 VID 0000 PID 0000 retry flag 0, called from 800E12A4
+EINTIM: USB discard: node E1EBEBF4 VID 0000 PID 0000 retry flag 0, called from 800D8BA0
+EINTIM: USB match: VID 045E PID 028E if 0 class FF/5D/01 -> 801626C8 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 028E if 1 class FF/5D/03 -> 80162960 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 028E if 2 class FF/5D/02 -> 801625D0 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 028E if 3 class FF/FD/13 -> 00000000 nenhum driver
+EINTIM: USB add complete: handle E1EBF3B0 status C0000001 (rejeitado) VID 045E PID 028E
+EINTIM: USB config descriptor done: VID 045E PID 02AB status 00000000
+EINTIM: USB SET_CONFIGURATION done: VID 045E PID 02AB config 1 status 00000000 after 0 ms
+EINTIM: HID init: no 03/00/00 interface with a HID descriptor (first: 04 FF 05), skipping
+EINTIM: USB match: VID 045E PID 02AB if 0 class FF/00/00 -> 8016C550 outro
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: first call: XamInputSetState
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 2 -> status 48F
+EINTIM: GetCapabilitiesEx user 3 -> status 48F
+EINTIM: alive t=18 write=100 read=100 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=5 set=4 caps=4 reports=0
+EINTIM: alive t=23 write=101 read=101 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=494 set=4 caps=490 reports=0
+EINTIM: notify: calling XNotifyQueueUI "hiddriver: etapa 3 ativa (ganchos + reset USB)"
+EINTIM: notify: XNotifyQueueUI returned
+EINTIM: alive t=28 write=104 read=103 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=1010 set=4 caps=1004 reports=0
+EINTIM: alive t=33 write=105 read=105 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=1613 set=4 caps=1604 reports=0
+EINTIM: alive t=38 write=106 read=106 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=2215 set=4 caps=2204 reports=0
+EINTIM: alive t=43 write=107 read=107 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=2818 set=4 caps=2804 reports=0
+EINTIM: alive t=48 write=108 read=108 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=3420 set=4 caps=3404 reports=0
+EINTIM: alive t=53 write=109 read=109 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=4023 set=4 caps=4004 reports=0
+EINTIM: alive t=58 write=110 read=110 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=4625 set=4 caps=4604 reports=0
+EINTIM: alive t=63 write=111 read=111 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=5228 set=4 caps=5204 reports=0
+EINTIM: alive t=68 write=112 read=112 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=5830 set=4 caps=5804 reports=0
+EINTIM: alive t=73 write=113 read=113 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=6433 set=4 caps=6404 reports=0
+EINTIM: UI healthy for 60 s, boot guard removed
+EINTIM: alive t=78 write=115 read=114 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=7035 set=4 caps=7004 reports=0
+EINTIM: alive t=83 write=116 read=116 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=7638 set=4 caps=7604 reports=0
+EINTIM: alive t=88 write=117 read=117 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=8240 set=4 caps=8204 reports=0
+EINTIM: alive t=93 write=118 read=118 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=8845 set=4 caps=8806 reports=0
+EINTIM: alive t=98 write=119 read=119 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=9447 set=4 caps=9406 reports=0
+EINTIM: alive t=103 write=120 read=120 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=10050 set=4 caps=10006 reports=0

@@ -1,0 +1,2576 @@
+EINTIM: mapper thread loops=1633 phase=0
+EINTIM: alive t=254 write=274 read=273 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=49871 set=4 caps=50218 reports=343
+EINTIM: mapper thread loops=1683 phase=0
+EINTIM: alive t=259 write=276 read=275 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=51081 set=4 caps=51422 reports=343
+EINTIM: mapper thread loops=1732 phase=0
+EINTIM: alive t=264 write=278 read=277 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=52281 set=4 caps=52618 reports=343
+EINTIM: mapper thread loops=1782 phase=0
+EINTIM: alive t=269 write=280 read=279 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=53485 set=4 caps=53818 reports=343
+EINTIM: mapper thread loops=1831 phase=0
+EINTIM: alive t=274 write=282 read=281 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=54691 set=4 caps=55018 reports=343
+EINTIM: mapper thread loops=1881 phase=0
+EINTIM: alive t=279 write=284 read=283 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=55895 set=4 caps=56218 reports=343
+EINTIM: mapper thread loops=1931 phase=0
+EINTIM: alive t=284 write=286 read=285 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=57101 set=4 caps=57418 reports=343
+EINTIM: mapper thread loops=1980 phase=0
+EINTIM: alive t=289 write=288 read=287 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=58309 set=4 caps=58622 reports=343
+EINTIM: mapper thread loops=2030 phase=0
+EINTIM: alive t=294 write=290 read=289 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=59511 set=4 caps=59818 reports=343
+EINTIM: mapper thread loops=2080 phase=0
+EINTIM: alive t=299 write=292 read=291 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=60715 set=4 caps=61018 reports=343
+EINTIM: mapper thread loops=2129 phase=0
+EINTIM: alive t=304 write=294 read=293 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=61921 set=4 caps=62218 reports=343
+EINTIM: mapper thread loops=2179 phase=0
+EINTIM: alive t=309 write=296 read=295 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=63125 set=4 caps=63418 reports=343
+EINTIM: mapper thread loops=2229 phase=0
+EINTIM: alive t=314 write=298 read=297 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=64331 set=4 caps=64618 reports=343
+EINTIM: mapper thread loops=2278 phase=0
+EINTIM: alive t=319 write=300 read=299 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=65535 set=4 caps=65818 reports=343
+EINTIM: mapper thread loops=2328 phase=0
+EINTIM: alive t=324 write=302 read=301 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=66741 set=4 caps=67018 reports=343
+EINTIM: mapper thread loops=2378 phase=0
+EINTIM: alive t=329 write=304 read=303 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=67945 set=4 caps=68218 reports=343
+EINTIM: mapper thread loops=2427 phase=0
+EINTIM: alive t=334 write=306 read=305 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=69151 set=4 caps=69418 reports=343
+EINTIM: mapper thread loops=2477 phase=0
+EINTIM: alive t=339 write=308 read=307 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=70355 set=4 caps=70618 reports=343
+EINTIM: mapper thread loops=2526 phase=0
+EINTIM: alive t=344 write=310 read=309 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=71561 set=4 caps=71818 reports=343
+EINTIM: mapper thread loops=2576 phase=0
+EINTIM: alive t=349 write=312 read=311 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=72765 set=4 caps=73018 reports=343
+EINTIM: mapper thread loops=2626 phase=0
+EINTIM: alive t=354 write=314 read=313 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=73971 set=4 caps=74218 reports=343
+EINTIM: mapper thread loops=2675 phase=0
+EINTIM: alive t=359 write=316 read=315 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=75175 set=4 caps=75418 reports=343
+EINTIM: mapper thread loops=2725 phase=0
+EINTIM: alive t=364 write=318 read=317 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=76381 set=4 caps=76618 reports=343
+EINTIM: mapper thread loops=2775 phase=0
+EINTIM: alive t=369 write=320 read=319 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=77589 set=4 caps=77822 reports=343
+EINTIM: mapper thread loops=2825 phase=0
+EINTIM: alive t=374 write=322 read=321 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=78791 set=4 caps=79018 reports=343
+EINTIM: mapper thread loops=2874 phase=0
+EINTIM: alive t=379 write=324 read=323 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=79995 set=4 caps=80218 reports=343
+EINTIM: mapper thread loops=2924 phase=0
+EINTIM: alive t=384 write=326 read=325 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=81201 set=4 caps=81418 reports=343
+EINTIM: mapper thread loops=2973 phase=0
+EINTIM: alive t=389 write=328 read=327 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=82409 set=4 caps=82622 reports=343
+EINTIM: mapper thread loops=3023 phase=0
+EINTIM: alive t=394 write=330 read=329 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=83615 set=4 caps=83822 reports=343
+EINTIM: mapper thread loops=3073 phase=0
+EINTIM: alive t=399 write=332 read=331 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=84819 set=4 caps=85022 reports=343
+EINTIM: mapper thread loops=3122 phase=0
+EINTIM: alive t=404 write=334 read=333 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=86021 set=4 caps=86218 reports=343
+EINTIM: mapper thread loops=3172 phase=0
+EINTIM: alive t=409 write=336 read=335 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=87225 set=4 caps=87418 reports=343
+EINTIM: mapper thread loops=3222 phase=0
+EINTIM: alive t=414 write=338 read=337 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=88431 set=4 caps=88618 reports=343
+EINTIM: mapper thread loops=3271 phase=0
+EINTIM: alive t=419 write=340 read=339 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=89635 set=4 caps=89818 reports=343
+EINTIM: mapper thread loops=3321 phase=0
+EINTIM: alive t=424 write=342 read=341 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=90841 set=4 caps=91018 reports=343
+EINTIM: mapper thread loops=3371 phase=0
+EINTIM: alive t=429 write=344 read=343 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=92045 set=4 caps=92218 reports=343
+EINTIM: mapper thread loops=3420 phase=0
+EINTIM: alive t=434 write=346 read=345 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=93251 set=4 caps=93418 reports=343
+EINTIM: mapper thread loops=3470 phase=0
+EINTIM: alive t=439 write=348 read=347 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=94455 set=4 caps=94618 reports=343
+EINTIM: mapper thread loops=3519 phase=0
+EINTIM: alive t=444 write=350 read=349 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=95661 set=4 caps=95818 reports=343
+EINTIM: mapper thread loops=3569 phase=0
+EINTIM: alive t=449 write=352 read=351 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=96865 set=4 caps=97018 reports=343
+EINTIM: mapper thread loops=3619 phase=0
+EINTIM: alive t=454 write=354 read=353 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=98071 set=4 caps=98218 reports=343
+EINTIM: mapper thread loops=3669 phase=0
+EINTIM: alive t=459 write=356 read=355 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=99275 set=4 caps=99418 reports=343
+EINTIM: mapper thread loops=3718 phase=0
+EINTIM: alive t=464 write=358 read=357 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=100481 set=4 caps=100618 reports=343
+EINTIM: mapper thread loops=3768 phase=0
+EINTIM: alive t=469 write=360 read=359 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=101685 set=4 caps=101818 reports=343
+EINTIM: mapper thread loops=3818 phase=0
+EINTIM: alive t=474 write=362 read=361 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=102891 set=4 caps=103018 reports=343
+EINTIM: mapper thread loops=3867 phase=0
+EINTIM: alive t=479 write=364 read=363 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=104095 set=4 caps=104218 reports=343
+EINTIM: mapper thread loops=3917 phase=0
+EINTIM: alive t=484 write=366 read=365 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=105299 set=4 caps=105418 reports=343
+EINTIM: mapper thread loops=3967 phase=0
+EINTIM: alive t=489 write=368 read=367 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=106505 set=4 caps=106618 reports=343
+EINTIM: mapper thread loops=4016 phase=0
+EINTIM: alive t=494 write=370 read=369 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=107709 set=4 caps=107818 reports=343
+EINTIM: mapper thread loops=4066 phase=0
+EINTIM: alive t=499 write=372 read=371 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=108915 set=4 caps=109018 reports=343
+EINTIM: mapper thread loops=4116 phase=0
+EINTIM: alive t=504 write=374 read=373 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=110119 set=4 caps=110218 reports=343
+EINTIM: mapper thread loops=4165 phase=0
+EINTIM: alive t=509 write=376 read=375 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=111329 set=4 caps=111422 reports=343
+EINTIM: mapper thread loops=4215 phase=0
+EINTIM: alive t=514 write=378 read=377 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=112529 set=4 caps=112618 reports=343
+EINTIM: mapper thread loops=4265 phase=0
+EINTIM: alive t=519 write=380 read=379 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=113735 set=4 caps=113818 reports=343
+EINTIM: mapper thread loops=4314 phase=0
+EINTIM: alive t=524 write=382 read=381 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=114943 set=4 caps=115022 reports=343
+EINTIM: mapper thread loops=4364 phase=0
+EINTIM: alive t=529 write=384 read=383 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=116149 set=4 caps=116222 reports=343
+EINTIM: mapper thread loops=4413 phase=0
+EINTIM: alive t=534 write=386 read=385 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=117353 set=4 caps=117422 reports=343
+EINTIM: mapper thread loops=4463 phase=0
+EINTIM: alive t=539 write=388 read=387 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=118559 set=4 caps=118622 reports=343
+EINTIM: mapper thread loops=4513 phase=0
+EINTIM: alive t=544 write=390 read=389 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=119759 set=4 caps=119818 reports=343
+EINTIM: mapper thread loops=4563 phase=0
+EINTIM: alive t=549 write=392 read=391 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=120969 set=4 caps=121022 reports=369
+EINTIM: mapper thread loops=4612 phase=0
+EINTIM: alive t=554 write=394 read=393 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=122169 set=4 caps=122218 reports=369
+EINTIM: mapper thread loops=4662 phase=0
+EINTIM: alive t=559 write=396 read=395 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=123375 set=4 caps=123418 reports=388
+EINTIM: mapper thread loops=4711 phase=0
+EINTIM: alive t=564 write=398 read=397 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=124583 set=4 caps=124622 reports=388
+EINTIM: mapper thread loops=4761 phase=0
+EINTIM: alive t=569 write=400 read=399 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=125785 set=4 caps=125818 reports=388
+EINTIM: mapper thread loops=4811 phase=0
+EINTIM: alive t=574 write=402 read=401 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=126993 set=4 caps=127022 reports=388
+EINTIM: mapper thread loops=4860 phase=0
+EINTIM: alive t=579 write=404 read=403 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=128195 set=4 caps=128218 reports=388
+EINTIM: mapper thread loops=4910 phase=0
+EINTIM: alive t=584 write=406 read=405 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=129403 set=4 caps=129422 reports=388
+EINTIM: mapper thread loops=4960 phase=0
+EINTIM: alive t=589 write=408 read=407 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=130609 set=4 caps=130622 reports=388
+EINTIM: mapper thread loops=5009 phase=0
+EINTIM: alive t=594 write=410 read=409 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=131813 set=4 caps=131822 reports=388
+EINTIM: mapper thread loops=5059 phase=0
+EINTIM: alive t=599 write=412 read=411 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=133012 set=4 caps=133016 reports=388
+EINTIM: mapper thread loops=5108 phase=0
+EINTIM: alive t=604 write=414 read=413 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=134216 set=4 caps=134216 reports=388
+EINTIM: mapper thread loops=5158 phase=0
+EINTIM: alive t=609 write=416 read=415 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=135422 set=4 caps=135416 reports=388
+EINTIM: mapper thread loops=5208 phase=0
+EINTIM: alive t=614 write=418 read=417 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=136626 set=4 caps=136616 reports=388
+EINTIM: mapper thread loops=5257 phase=0
+EINTIM: alive t=619 write=420 read=419 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=136997 set=4 caps=138040 reports=388
+
+==== boot, log via hidlogh:\ ====
+EINTIM: HELLO from xbox 360 HID controller driver version 0.5 (port 17150), kernel 17150, stage 3, skip "t", log root hidlogh:\
+EINTIM: notify patch: ordinal 1183 at 816A2450, +48 = 409A
+EINTIM: notify patch applied, readback 4800
+EINTIM: Running on retail kernel 17150
+EINTIM: check UsbdGetInterfaceDescriptor   800D9418 = 8943000B (esperado 8943000B) ok
+EINTIM: check XamUserBindDeviceCallback    816D83A8 = 7C8B2378 (esperado 7C8B2378) ok
+EINTIM: check UsbdPowerDownNotification    800D9EF8 = 3D60800E (esperado 3D60800E) ok
+EINTIM: check UsbdDriverEntry              800D9C38 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbPhysicalPage (lis)        800D9C94 = 3F80801A (esperado 3F80801A) ok
+EINTIM: check UsbPhysicalPage (stw)        800D9C98 = 93FCC8D8 (esperado 93FCC8D8) ok
+EINTIM: check bugcheck 1                   800E1514 = 40820018 (esperado 40820018) ok
+EINTIM: check bugcheck 2                   800DE810 = 40820018 (esperado 40820018) ok
+EINTIM: check registro duplo 1             800D9E30 = 4BF8DC29 (esperado 4BF8DC29) ok
+EINTIM: check registro duplo 2             800D9E20 = 4BF97189 (esperado 4BF97189) ok
+EINTIM: check HidAddDevice                 800E5CD0 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check HidRemoveDevice              800E5C90 = 81630000 (esperado 81630000) ok
+EINTIM: check XInputdReadState             800F7B88 = 546B0006 (esperado 546B0006) ok
+EINTIM: check XNotify tipo (cmplwi)        816AAA0C = 2B0A002F (esperado 2B0A002F) ok
+EINTIM: check XNotify tempo (li)           816AAA10 = 39402710 (esperado 39402710) ok
+EINTIM: readback XNotify tipo                 816AAA0C = 2B0A0050
+EINTIM: readback XNotify tempo                816AAA10 = 394005DC
+EINTIM: check UsbMatch (prologo)           800D7170 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbMatch (lbz class)         800D7190 = 8B7E0005 (esperado 8B7E0005) ok
+EINTIM: readback UsbMatch                     800D7170 = 3C0081F1
+EINTIM: hook on: USB match logger
+EINTIM: check UsbDeviceMatch (prologo)     800D70D8 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbDeviceMatch (hub)         800D7110 = 2B0A0009 (esperado 2B0A0009) ok
+EINTIM: readback UsbDeviceMatch               800D70D8 = 3C0081F1
+EINTIM: hook on: USB device match logger
+EINTIM: check UsbMsOsReply                 800D8148 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbMsOsReply (node)          800D8154 = 3BE3FFF4 (esperado 3BE3FFF4) ok
+EINTIM: readback UsbMsOsReply                 800D8148 = 3C0081F1
+EINTIM: check UsbCompatReply               800D80A0 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbCompatReply (node)        800D80AC = 3BE3FFF4 (esperado 3BE3FFF4) ok
+EINTIM: readback UsbCompatReply               800D80A0 = 3C0081F1
+EINTIM: check UsbSetConfigDone             800D83F8 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbSetConfigDone (node)      800D8404 = 3BE3FFF4 (esperado 3BE3FFF4) ok
+EINTIM: readback UsbSetConfigDone             800D83F8 = 3C0081F1
+EINTIM: check UsbConfigDescDone            800D8468 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbConfigDescDone (node)     800D8474 = 3BE3FFF4 (esperado 3BE3FFF4) ok
+EINTIM: readback UsbConfigDescDone            800D8468 = 3C0081F1
+EINTIM: check UsbSubmitRequest             800D9190 = 3D60801A (esperado 3D60801A) ok
+EINTIM: check UsbSubmitRequest (lbz)       800D9194 = 89230008 (esperado 89230008) ok
+EINTIM: check UsbTimerCancel               800DA170 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbTimerCancel (ld)          800DA180 = E9630010 (esperado E9630010) ok
+EINTIM: check UsbTimerArm                  800DA2B8 = 3D60800E (esperado 3D60800E) ok
+EINTIM: check UsbTimerArm (stw)            800DA2C0 = 91630004 (esperado 91630004) ok
+EINTIM: 8BitDo string requests enabled
+EINTIM: check UsbDiscard                   800D7D00 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbDiscard (retry flag)      800D7D20 = 897F027F (esperado 897F027F) ok
+EINTIM: readback UsbDiscard                   800D7D00 = 3C0081F1
+EINTIM: check UsbdAddDeviceComplete        800D78F0 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: readback UsbdAddDeviceComplete        800D78F0 = 3C0081F1
+EINTIM: hook on: UsbdAddDeviceComplete logger
+EINTIM: hook on: HidAddDevice/HidRemoveDevice
+EINTIM: hook on: XInputdReadState
+EINTIM: hook on: XamInputSetState
+EINTIM: hook on: XamInputGetCapabilitiesEx
+EINTIM: readback HidAddDevice                 800E5CD0 = 3C0081F1
+EINTIM: readback HidRemoveDevice              800E5C90 = 3C0081F1
+EINTIM: readback XInputdReadState             800F7B88 = 3C0081F1
+EINTIM: Hooks installed (skipped: "t")
+EINTIM: readback bugcheck 1                   800E1514 = 48000018
+EINTIM: readback bugcheck 2                   800DE810 = 48000018
+EINTIM: readback registro duplo 1             800D9E30 = 60000000
+EINTIM: readback registro duplo 2             800D9E20 = 60000000
+EINTIM: Resetting USB driver!
+EINTIM: USB discard: node E1EBEBF4 VID 045E PID 02AB retry flag 0, called from 800DF2AC
+EINTIM: USB driver shutdown complete.
+EINTIM: USB driver reset complete.
+EINTIM: USB discard: node E1EBE970 VID 0000 PID 0000 retry flag 0, called from 800DF2AC
+EINTIM: USB discard: node E1EBEBF4 VID 0000 PID 0000 retry flag 0, called from 800DF2AC
+EINTIM: USB config descriptor done: VID 2DC8 PID 3016 status 00000000
+EINTIM: 8BitDo: asking for the strings before SET_CONFIGURATION (config length 41)
+EINTIM: 8BitDo: string 0 done status 00000000, 4 bytes (bLength 04 type 03), removed 00
+EINTIM: 8BitDo: string 2 done status 00000000, 74 bytes (bLength 4A type 03), removed 00
+EINTIM: 8BitDo: string 1 done status 00000000, 14 bytes (bLength 0E type 03), removed 00
+EINTIM: 8BitDo: string 3 done status 00000000, 22 bytes (bLength 16 type 03), removed 00
+EINTIM: 8BitDo: strings done, handing over to SET_CONFIGURATION
+EINTIM: USB SET_CONFIGURATION done: VID 2DC8 PID 3016 config 1 status 00000000 after 0 ms
+EINTIM: HID init: SET_IDLE and report descriptor (145 bytes) on interface 0 before driver selection
+EINTIM: HID init: SET_IDLE done status 00000000, 0 bytes (16 03 32 00), removed 00
+EINTIM: HID init: report descriptor done status 00000000, 145 bytes (05 01 09 05), removed 00
+EINTIM: HID init: done, handing over to driver selection
+EINTIM: USB match: VID 2DC8 PID 3016 if 0 class 03/00/00 -> 80162254 HID (HidAddDevice)
+EINTIM: HID add device E1EBF990
+EINTIM: IS USB1.0: 1
+EINTIM: USB device descriptor Pointer: E1EBF148
+EINTIM: USB interface descriptor Pointer: E1EBF165
+EINTIM: USB endpoint interrupt in descriptor Pointer: E1EBF177
+EINTIM: HID device vendor id: 2dc8, product id: 3016
+EINTIM: Interface 0 class 3 subclass 0 protocol 0
+EINTIM: HID device bcdDevice 0001
+EINTIM: 8BitDo Ultimate C 2.4G (DInput): hardcoded table off ('t'), trying the generic HID path
+EINTIM: Generic HID gamepad (report descriptor 145 bytes)
+EINTIM: Controller detected. Initialising custom handler.
+Assigning controller to index 0
+EINTIM: Registered virtual controller inside XAM with index: 0.
+EINTIM: first interrupt transfer queued: AB4F30 (endpoint 84, packet 64)
+EINTIM: report 1 from HID 2DC8:3016: status 0 bytes 00 00 00 00 00 00 00 00 00 00
+EINTIM: USB config descriptor done: VID 045E PID 028E status 00000000
+EINTIM: USB SET_CONFIGURATION done: VID 045E PID 028E config 1 status 00000000 after 1 ms
+EINTIM: HID init: no 03/00/00 interface with a HID descriptor (first: 04 FF 21), skipping
+EINTIM: first call: XInputdReadState (our context)
+EINTIM: USB discard: node E1EBEBF4 VID 0000 PID 0000 retry flag 1, called from 800D88F4
+EINTIM: USB discard: node E1EBEBF4 VID 0000 PID 0000 retry flag 0, called from 800E12A4
+EINTIM: USB discard: node E1EBEBF4 VID 0000 PID 0000 retry flag 0, called from 800D8BA0
+EINTIM: USB discard: node E1EBEBF4 VID 0000 PID 0000 retry flag 0, called from 800DF2AC
+EINTIM: USB match: VID 045E PID 028E if 0 class FF/5D/01 -> 801626C8 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 028E if 1 class FF/5D/03 -> 80162960 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 028E if 2 class FF/5D/02 -> 801625D0 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 028E if 3 class FF/FD/13 -> 00000000 nenhum driver
+EINTIM: USB add complete: handle E1EBF3B0 status C0000001 (rejeitado) VID 045E PID 028E
+EINTIM: USB config descriptor done: VID 045E PID 02AB status 00000000
+EINTIM: USB SET_CONFIGURATION done: VID 045E PID 02AB config 1 status 00000000 after 0 ms
+EINTIM: HID init: no 03/00/00 interface with a HID descriptor (first: 04 FF 05), skipping
+EINTIM: USB match: VID 045E PID 02AB if 0 class FF/00/00 -> 8016C550 outro
+EINTIM: USB config descriptor done: VID 045E PID 02A9 status 00000000
+EINTIM: USB SET_CONFIGURATION done: VID 045E PID 02A9 config 1 status 00000000 after 0 ms
+EINTIM: HID init: no 03/00/00 interface with a HID descriptor (first: 04 FF 22), skipping
+EINTIM: USB match: VID 045E PID 02A9 if 0 class FF/5D/81 -> 80162578 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 1 class FF/5D/82 -> 80162934 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 2 class FF/5D/81 -> 80162578 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 3 class FF/5D/82 -> 80162934 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 4 class FF/5D/81 -> 80162578 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 5 class FF/5D/82 -> 80162934 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 6 class FF/5D/81 -> 80162578 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 7 class FF/5D/82 -> 80162934 XInput (FF/5D)
+EINTIM: GetCapabilitiesEx user 0 -> status 48F
+EINTIM: first call: XamInputSetState
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 2 -> status 48F
+EINTIM: GetCapabilitiesEx user 3 -> status 48F
+EINTIM: mapper thread loops=0 phase=4
+EINTIM: alive t=18 write=134 read=133 hits dev=0 if=14 addc=14 hidadd=1 hidrem=0 inact=0 get=20 set=4 caps=4 reports=1
+EINTIM: mapper thread loops=0 phase=4
+EINTIM: alive t=23 write=136 read=135 hits dev=0 if=14 addc=14 hidadd=1 hidrem=0 inact=0 get=1002 set=4 caps=980 reports=1
+EINTIM: notify: calling XNotifyQueueUI "hiddriver: etapa 3 ativa (ganchos + reset USB)"
+EINTIM: notify: XNotifyQueueUI returned
+EINTIM: mapper thread loops=0 phase=4
+EINTIM: alive t=28 write=140 read=139 hits dev=0 if=14 addc=14 hidadd=1 hidrem=0 inact=0 get=1978 set=4 caps=1952 reports=1
+EINTIM: report 2 from HID 2DC8:3016: status 0 bytes 01 80 00 0F 7F 7F 7F 7F 00 00
+EINTIM: report 3 from HID 2DC8:3016: status 0 bytes 01 00 00 0F 7F 7F 7F 7F 00 00
+EINTIM: mapper thread loops=0 phase=4
+EINTIM: alive t=33 write=144 read=143 hits dev=0 if=14 addc=14 hidadd=1 hidrem=0 inact=0 get=3180 set=4 caps=3148 reports=3
+EINTIM: mapper: system settled after 21 s (input polled normally)
+EINTIM: mapper: hidmap:\hiddriver.json loaded, 1 mappings
+EINTIM: mapper: report ID 1 (used), 15 buttons, axes 111001, hat 1, accel/brake 11
+EINTIM: mapper: slot 0 (2DC8:3016) uses its saved mapping
+EINTIM: report 4 from HID 2DC8:3016: status 0 bytes 01 00 00 0F 88 81 7F 7F 00 00
+EINTIM: report 5 from HID 2DC8:3016: status 0 bytes 01 00 00 0F 94 81 7F 7F 00 00
+EINTIM: report 6 from HID 2DC8:3016: status 0 bytes 01 00 00 0F 7F 7F 7F 7F 00 00
+EINTIM: report 7 from HID 2DC8:3016: status 0 bytes 01 00 00 0F 7F 7F 81 81 00 00
+EINTIM: report 8 from HID 2DC8:3016: status 0 bytes 01 00 00 0F 7F 7F 86 85 00 00
+EINTIM: mapper thread loops=39 phase=0
+EINTIM: alive t=38 write=155 read=154 hits dev=0 if=14 addc=14 hidadd=1 hidrem=0 inact=0 get=4371 set=4 caps=4336 reports=111
+EINTIM: mapper thread loops=89 phase=0
+EINTIM: alive t=43 write=157 read=156 hits dev=0 if=14 addc=14 hidadd=1 hidrem=0 inact=0 get=5577 set=4 caps=5536 reports=111
+EINTIM: mapper thread loops=139 phase=0
+EINTIM: alive t=48 write=159 read=158 hits dev=0 if=14 addc=14 hidadd=1 hidrem=0 inact=0 get=6781 set=4 caps=6736 reports=111
+EINTIM: mapper thread loops=188 phase=0
+EINTIM: alive t=53 write=161 read=160 hits dev=0 if=14 addc=14 hidadd=1 hidrem=0 inact=0 get=7983 set=4 caps=7932 reports=111
+EINTIM: USB discard: node E1EBEBF4 VID 045E PID 02AB retry flag 0, called from 800DF2AC
+EINTIM: USB config descriptor done: VID 045E PID 028E status 00000000
+EINTIM: USB SET_CONFIGURATION done: VID 045E PID 028E config 1 status 00000000 after 0 ms
+EINTIM: HID init: no 03/00/00 interface with a HID descriptor (first: 04 FF 21), skipping
+EINTIM: USB match: VID 045E PID 028E if 0 class FF/5D/01 -> 801626C8 XInput (FF/5D)
+EINTIM: USB add complete: handle E1EBFA50 status C0051012 (rejeitado) VID 045E PID 028E
+EINTIM: mapper thread loops=238 phase=0
+EINTIM: alive t=58 write=169 read=168 hits dev=0 if=15 addc=15 hidadd=1 hidrem=0 inact=0 get=9191 set=4 caps=9136 reports=111
+EINTIM: mapper thread loops=288 phase=0
+EINTIM: alive t=63 write=171 read=170 hits dev=0 if=15 addc=15 hidadd=1 hidrem=0 inact=0 get=10397 set=4 caps=10336 reports=111
+EINTIM: USB discard: node E1EBEBF4 VID 045E PID 02AB retry flag 0, called from 800DF2AC
+EINTIM: USB config descriptor done: VID 2345 PID E037 status 00000000
+EINTIM: USB SET_CONFIGURATION done: VID 2345 PID E037 config 1 status 00000000 after 0 ms
+EINTIM: HID init: SET_IDLE and report descriptor (97 bytes) on interface 0 before driver selection
+EINTIM: HID init: SET_IDLE done status 00000000, 0 bytes (05 01 09 05), removed 00
+EINTIM: HID init: report descriptor done status 00000000, 97 bytes (05 01 09 05), removed 00
+EINTIM: HID init: done, handing over to driver selection
+EINTIM: USB match: VID 2345 PID E037 if 0 class 03/00/00 -> 80162254 HID (HidAddDevice)
+EINTIM: HID add device E1EBFA70
+EINTIM: IS USB1.0: 1
+EINTIM: USB device descriptor Pointer: E1EBF148
+EINTIM: USB interface descriptor Pointer: E1EBF165
+EINTIM: USB endpoint interrupt in descriptor Pointer: E1EBF177
+EINTIM: HID device vendor id: 2345, product id: e037
+EINTIM: Interface 0 class 3 subclass 0 protocol 0
+EINTIM: HID device bcdDevice 0100
+EINTIM: EasySMX X05 (DInput): hardcoded table off ('t'), trying the generic HID path
+EINTIM: Generic HID gamepad (report descriptor 97 bytes)
+EINTIM: Controller detected. Initialising custom handler.
+Assigning controller to index 1
+EINTIM: Registered virtual controller inside XAM with index: 2.
+EINTIM: first interrupt transfer queued: ABAC40 (endpoint 81, packet 32)
+EINTIM: USB match: VID 2345 PID E037 if 1 class 03/00/00 -> 80162254 HID (HidAddDevice)
+EINTIM: HID add device E1EBFA60
+EINTIM: IS USB1.0: 1
+EINTIM: USB device descriptor Pointer: E1EBF148
+EINTIM: USB interface descriptor Pointer: E1EBF185
+EINTIM: USB endpoint interrupt in descriptor Pointer: E1EBF197
+EINTIM: HID device vendor id: 2345, product id: e037
+EINTIM: Interface 1 class 3 subclass 0 protocol 0
+EINTIM: HID device bcdDevice 0100
+EINTIM: EasySMX X05 (DInput): hardcoded table off ('t'), trying the generic HID path
+EINTIM: No report descriptor read for this interface, passing it on
+EINTIM: Unrelated USB Device. Calling original...
+EINTIM: USB add complete: handle E1EBFA60 status C0000001 (rejeitado) VID 2345 PID E037
+EINTIM: mapper: report ID 7 (used), 16 buttons, axes 111001, hat 1, accel/brake 11
+EINTIM: mapper: assistant for slot 1 (2345:E037), analog triggers 1
+EINTIM: mapper thread loops=332 phase=3
+EINTIM: alive t=68 write=210 read=209 hits dev=0 if=17 addc=17 hidadd=3 hidrem=0 inact=0 get=11683 set=4 caps=11618 reports=181
+EINTIM: mapper: step 0 -> button 2
+EINTIM: mapper thread loops=332 phase=3
+EINTIM: alive t=73 write=213 read=212 hits dev=0 if=17 addc=17 hidadd=3 hidrem=0 inact=0 get=13492 set=4 caps=13418 reports=807
+EINTIM: mapper: step 1 -> button 1
+EINTIM: mapper thread loops=332 phase=3
+EINTIM: UI healthy for 60 s, boot guard removed
+EINTIM: alive t=78 write=217 read=215 hits dev=0 if=17 addc=17 hidadd=3 hidrem=0 inact=0 get=15298 set=4 caps=15218 reports=1432
+EINTIM: mapper: step 2 -> button 5
+EINTIM: mapper: step 3 -> button 4
+EINTIM: mapper thread loops=332 phase=3
+EINTIM: alive t=83 write=221 read=220 hits dev=0 if=17 addc=17 hidadd=3 hidrem=0 inact=0 get=17101 set=4 caps=17012 reports=2057
+EINTIM: mapper: step 4 -> button 7
+EINTIM: mapper: step 5 -> button 8
+EINTIM: mapper thread loops=332 phase=3
+EINTIM: alive t=88 write=225 read=224 hits dev=0 if=17 addc=17 hidadd=3 hidrem=0 inact=0 get=18907 set=4 caps=18812 reports=2682
+EINTIM: mapper: step 8 -> button 11
+EINTIM: mapper thread loops=332 phase=3
+EINTIM: alive t=93 write=228 read=227 hits dev=0 if=17 addc=17 hidadd=3 hidrem=0 inact=0 get=20716 set=4 caps=20612 reports=3308
+EINTIM: mapper: step 9 -> button 12
+EINTIM: mapper: step 10 -> button 14
+EINTIM: mapper thread loops=332 phase=3
+EINTIM: alive t=98 write=232 read=231 hits dev=0 if=17 addc=17 hidadd=3 hidrem=0 inact=0 get=22522 set=4 caps=22412 reports=3934
+EINTIM: mapper: step 11 -> button 15
+EINTIM: mapper thread loops=332 phase=3
+EINTIM: alive t=103 write=235 read=234 hits dev=0 if=17 addc=17 hidadd=3 hidrem=0 inact=0 get=24331 set=4 caps=24212 reports=4559
+EINTIM: HID remove device E1EBFA70
+EINTIM: Removing controller with handle E1EBFA70
+EINTIM: Removed controller with handle E1EBFA70
+EINTIM: Removed virtual controller from XAM.
+EINTIM: mapper: slot 1 removed during the assistant
+EINTIM: USB discard: node E1EBEBF4 VID 045E PID 02AB retry flag 0, called from 800DF2AC
+EINTIM: mapper thread loops=340 phase=0
+EINTIM: alive t=108 write=243 read=242 hits dev=0 if=17 addc=17 hidadd=3 hidrem=1 inact=0 get=26033 set=4 caps=25908 reports=4592
+EINTIM: USB config descriptor done: VID 045E PID 028E status 00000000
+EINTIM: USB SET_CONFIGURATION done: VID 045E PID 028E config 1 status 00000000 after 0 ms
+EINTIM: HID init: no 03/00/00 interface with a HID descriptor (first: 04 FF 21), skipping
+EINTIM: USB match: VID 045E PID 028E if 0 class FF/5D/01 -> 801626C8 XInput (FF/5D)
+EINTIM: USB add complete: handle E1EBFA60 status C0051012 (rejeitado) VID 045E PID 028E
+EINTIM: mapper thread loops=389 phase=0
+EINTIM: alive t=113 write=250 read=249 hits dev=0 if=18 addc=18 hidadd=3 hidrem=1 inact=0 get=27239 set=4 caps=27108 reports=4592
+EINTIM: mapper thread loops=439 phase=0
+EINTIM: alive t=118 write=252 read=251 hits dev=0 if=18 addc=18 hidadd=3 hidrem=1 inact=0 get=28443 set=4 caps=28308 reports=4592
+EINTIM: mapper thread loops=489 phase=0
+EINTIM: alive t=123 write=254 read=253 hits dev=0 if=18 addc=18 hidadd=3 hidrem=1 inact=0 get=29649 set=4 caps=29508 reports=4592
+EINTIM: USB discard: node E1EBEBF4 VID 045E PID 02AB retry flag 0, called from 800DF2AC
+EINTIM: USB config descriptor done: VID 2345 PID E037 status 00000000
+EINTIM: USB SET_CONFIGURATION done: VID 2345 PID E037 config 1 status 00000000 after 0 ms
+EINTIM: HID init: SET_IDLE and report descriptor (97 bytes) on interface 0 before driver selection
+EINTIM: HID init: SET_IDLE done status 00000000, 0 bytes (05 01 09 05), removed 00
+EINTIM: HID init: report descriptor done status 00000000, 97 bytes (05 01 09 05), removed 00
+EINTIM: HID init: done, handing over to driver selection
+EINTIM: USB match: VID 2345 PID E037 if 0 class 03/00/00 -> 80162254 HID (HidAddDevice)
+EINTIM: HID add device E1EBFA90
+EINTIM: IS USB1.0: 1
+EINTIM: USB device descriptor Pointer: E1EBF148
+EINTIM: USB interface descriptor Pointer: E1EBF165
+EINTIM: USB endpoint interrupt in descriptor Pointer: E1EBF177
+EINTIM: HID device vendor id: 2345, product id: e037
+EINTIM: Interface 0 class 3 subclass 0 protocol 0
+EINTIM: HID device bcdDevice 0100
+EINTIM: EasySMX X05 (DInput): hardcoded table off ('t'), trying the generic HID path
+EINTIM: Generic HID gamepad (report descriptor 97 bytes)
+EINTIM: Controller detected. Initialising custom handler.
+Assigning controller to index 1
+EINTIM: Registered virtual controller inside XAM with index: 2.
+EINTIM: first interrupt transfer queued: ABAC40 (endpoint 81, packet 32)
+EINTIM: USB match: VID 2345 PID E037 if 1 class 03/00/00 -> 80162254 HID (HidAddDevice)
+EINTIM: HID add device E1EBFA80
+EINTIM: IS USB1.0: 1
+EINTIM: USB device descriptor Pointer: E1EBF148
+EINTIM: USB interface descriptor Pointer: E1EBF185
+EINTIM: USB endpoint interrupt in descriptor Pointer: E1EBF197
+EINTIM: HID device vendor id: 2345, product id: e037
+EINTIM: Interface 1 class 3 subclass 0 protocol 0
+EINTIM: HID device bcdDevice 0100
+EINTIM: EasySMX X05 (DInput): hardcoded table off ('t'), trying the generic HID path
+EINTIM: No report descriptor read for this interface, passing it on
+EINTIM: Unrelated USB Device. Calling original...
+EINTIM: USB add complete: handle E1EBFA80 status C0000001 (rejeitado) VID 2345 PID E037
+EINTIM: mapper: report ID 7 (used), 16 buttons, axes 111001, hat 1, accel/brake 11
+EINTIM: mapper: assistant for slot 1 (2345:E037), analog triggers 1
+EINTIM: mapper thread loops=496 phase=3
+EINTIM: alive t=128 write=293 read=292 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=31379 set=4 caps=31232 reports=5125
+EINTIM: mapper: step 0 -> button 2
+EINTIM: mapper: step 1 -> button 1
+EINTIM: mapper thread loops=496 phase=3
+EINTIM: alive t=133 write=297 read=296 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=33185 set=4 caps=33032 reports=5751
+EINTIM: mapper: step 2 -> button 5
+EINTIM: mapper: step 3 -> button 4
+EINTIM: mapper thread loops=496 phase=3
+EINTIM: alive t=138 write=301 read=300 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=34994 set=4 caps=34832 reports=6376
+EINTIM: mapper: step 4 -> button 7
+EINTIM: mapper thread loops=496 phase=3
+EINTIM: alive t=143 write=304 read=303 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=36800 set=4 caps=36632 reports=7001
+EINTIM: mapper: step 5 -> button 8
+EINTIM: mapper: step 8 -> button 11
+EINTIM: mapper thread loops=496 phase=3
+EINTIM: alive t=148 write=308 read=307 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=38609 set=4 caps=38432 reports=7627
+EINTIM: mapper: step 9 -> button 14
+EINTIM: mapper thread loops=496 phase=3
+EINTIM: alive t=153 write=311 read=310 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=40415 set=4 caps=40232 reports=8253
+EINTIM: mapper: step 10 -> button 15
+EINTIM: mapper: step 11 -> button 15
+EINTIM: mapper thread loops=496 phase=3
+EINTIM: alive t=158 write=315 read=314 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=42224 set=4 caps=42032 reports=8879
+EINTIM: mapper thread loops=496 phase=3
+EINTIM: alive t=163 write=317 read=316 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=44030 set=4 caps=43832 reports=9505
+EINTIM: mapper: step 12 -> skipped 0
+EINTIM: mapper: mapping for 2345:E037 saved
+EINTIM: mapper thread loops=536 phase=0
+EINTIM: alive t=168 write=321 read=320 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=45839 set=4 caps=45632 reports=10130
+EINTIM: mapper thread loops=586 phase=0
+EINTIM: alive t=173 write=323 read=322 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=47645 set=4 caps=47432 reports=10756
+EINTIM: mapper thread loops=636 phase=0
+EINTIM: alive t=178 write=325 read=324 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=49454 set=4 caps=49232 reports=11381
+EINTIM: mapper thread loops=685 phase=0
+EINTIM: alive t=183 write=327 read=326 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=51260 set=4 caps=51032 reports=12007
+EINTIM: mapper thread loops=735 phase=0
+EINTIM: alive t=188 write=329 read=328 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=52973 set=4 caps=52736 reports=12633
+EINTIM: mapper thread loops=785 phase=0
+EINTIM: alive t=193 write=331 read=330 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=54641 set=4 caps=54398 reports=13259
+EINTIM: mapper thread loops=834 phase=0
+EINTIM: alive t=198 write=333 read=332 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=56450 set=4 caps=56198 reports=13885
+EINTIM: mapper thread loops=884 phase=0
+EINTIM: alive t=203 write=335 read=334 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=57851 set=8 caps=57597 reports=14510
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: (105 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (94 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (80 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=934 phase=0
+EINTIM: alive t=208 write=380 read=379 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=58481 set=219 caps=59261 reports=15136
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=984 phase=0
+EINTIM: alive t=213 write=426 read=425 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=59072 set=423 caps=60833 reports=15760
+EINTIM: (9 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: (111 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=1034 phase=0
+EINTIM: alive t=218 write=472 read=471 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=59708 set=1259 caps=62513 reports=16386
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (62 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=1084 phase=0
+EINTIM: alive t=223 write=507 read=506 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=60224 set=1939 caps=63873 reports=17017
+EINTIM: (94 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (110 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (66 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (340 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=1133 phase=0
+EINTIM: alive t=228 write=553 read=552 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=61481 set=2783 caps=67201 reports=17642
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=1183 phase=0
+EINTIM: alive t=233 write=610 read=609 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=64181 set=3979 caps=74385 reports=18267
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=1233 phase=0
+EINTIM: alive t=238 write=667 read=666 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=66890 set=5179 caps=81585 reports=18905
+EINTIM: (354 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=1282 phase=0
+EINTIM: alive t=243 write=724 read=723 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=69593 set=6379 caps=88777 reports=19530
+EINTIM: (348 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (352 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=1332 phase=0
+EINTIM: alive t=248 write=781 read=780 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=72305 set=7579 caps=95985 reports=20156
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=1382 phase=0
+EINTIM: alive t=253 write=838 read=837 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=75011 set=8779 caps=103185 reports=20781
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=1431 phase=0
+EINTIM: alive t=258 write=895 read=894 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=77717 set=9979 caps=110377 reports=21407
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=1481 phase=0
+EINTIM: alive t=263 write=952 read=951 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=80426 set=11179 caps=117585 reports=22033
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=1531 phase=0
+EINTIM: alive t=268 write=1009 read=1008 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=83132 set=12379 caps=124777 reports=22658
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=1581 phase=0
+EINTIM: alive t=273 write=1066 read=1065 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=85841 set=13579 caps=131985 reports=23284
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=1631 phase=0
+EINTIM: alive t=278 write=1123 read=1122 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=88544 set=14779 caps=139177 reports=23909
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=1680 phase=0
+EINTIM: alive t=283 write=1180 read=1179 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=91253 set=15979 caps=146377 reports=24535
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=1730 phase=0
+EINTIM: alive t=288 write=1237 read=1236 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=93959 set=17179 caps=153577 reports=25160
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=1780 phase=0
+EINTIM: alive t=293 write=1294 read=1293 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=96668 set=18379 caps=160777 reports=25825
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=1830 phase=0
+EINTIM: alive t=298 write=1351 read=1350 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=99364 set=19579 caps=167961 reports=26653
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=1879 phase=0
+EINTIM: alive t=303 write=1408 read=1407 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=102070 set=20779 caps=175169 reports=27559
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=1929 phase=0
+EINTIM: alive t=308 write=1465 read=1464 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=104769 set=21975 caps=182361 reports=28480
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=1979 phase=0
+EINTIM: alive t=313 write=1522 read=1521 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=107474 set=23175 caps=189561 reports=29382
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=2029 phase=0
+EINTIM: alive t=318 write=1579 read=1578 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=110176 set=24375 caps=196761 reports=30220
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=2079 phase=0
+EINTIM: alive t=323 write=1636 read=1635 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=112879 set=25575 caps=203961 reports=31252
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=2128 phase=0
+EINTIM: alive t=329 write=1693 read=1692 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=115581 set=26775 caps=211161 reports=32179
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=2178 phase=0
+EINTIM: alive t=334 write=1750 read=1749 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=118284 set=27975 caps=218361 reports=33126
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (346 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (354 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (352 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=2228 phase=0
+EINTIM: alive t=339 write=1807 read=1806 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=120986 set=29179 caps=225561 reports=33967
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (348 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (352 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=2278 phase=0
+EINTIM: alive t=344 write=1864 read=1863 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=123689 set=30379 caps=232761 reports=34867
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=2327 phase=0
+EINTIM: alive t=349 write=1921 read=1920 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=126391 set=31579 caps=239961 reports=35674
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=2377 phase=0
+EINTIM: alive t=354 write=1978 read=1977 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=129096 set=32779 caps=247161 reports=36462
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=2427 phase=0
+EINTIM: alive t=359 write=2035 read=2034 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=131798 set=33979 caps=254361 reports=37236
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=2477 phase=0
+EINTIM: alive t=364 write=2092 read=2091 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=134507 set=35179 caps=261577 reports=37997
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=2526 phase=0
+EINTIM: alive t=369 write=2149 read=2148 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=137208 set=36379 caps=268777 reports=38918
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=2576 phase=0
+EINTIM: alive t=374 write=2206 read=2205 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=139912 set=37579 caps=275977 reports=39765
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=2626 phase=0
+EINTIM: alive t=379 write=2263 read=2262 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=142617 set=38779 caps=283185 reports=40596
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=2675 phase=0
+EINTIM: alive t=384 write=2320 read=2319 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=145317 set=39979 caps=290377 reports=41560
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (326 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (354 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=2725 phase=0
+EINTIM: alive t=389 write=2377 read=2376 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=147176 set=41163 caps=297511 reports=42330
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: (350 status lines suppressed)
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 1 -> status 0
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: mapper thread loops=2775 phase=0
+EINTIM: alive t=394 write=2401 read=2400 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=147278 set=41691 caps=300947 reports=42961
+EINTIM: mapper thread loops=2824 phase=0
+EINTIM: alive t=399 write=2403 read=2402 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=148808 set=41691 caps=302471 reports=43588
+EINTIM: mapper thread loops=2874 phase=0
+EINTIM: alive t=404 write=2405 read=2404 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=150317 set=41691 caps=303971 reports=44214
+EINTIM: mapper thread loops=2923 phase=0
+EINTIM: alive t=409 write=2407 read=2406 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=152123 set=41691 caps=305771 reports=44839
+EINTIM: mapper thread loops=2973 phase=0
+EINTIM: alive t=414 write=2409 read=2408 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=153932 set=41691 caps=307571 reports=45465
+EINTIM: mapper thread loops=3023 phase=0
+EINTIM: alive t=419 write=2411 read=2410 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=155744 set=41691 caps=309377 reports=46091
+EINTIM: mapper thread loops=3072 phase=0
+EINTIM: alive t=424 write=2413 read=2412 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=157547 set=41691 caps=311171 reports=46716
+EINTIM: mapper thread loops=3122 phase=0
+EINTIM: alive t=429 write=2415 read=2414 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=159353 set=41691 caps=312971 reports=47341
+EINTIM: mapper thread loops=3171 phase=0
+EINTIM: alive t=434 write=2417 read=2416 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=161162 set=41691 caps=314771 reports=47967
+EINTIM: mapper thread loops=3221 phase=0
+EINTIM: alive t=439 write=2419 read=2418 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=162968 set=41691 caps=316571 reports=48593
+EINTIM: mapper thread loops=3271 phase=0
+EINTIM: alive t=444 write=2421 read=2420 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=164777 set=41691 caps=318371 reports=49219
+EINTIM: mapper thread loops=3321 phase=0
+EINTIM: alive t=449 write=2423 read=2422 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=166589 set=41691 caps=320177 reports=49845
+EINTIM: mapper thread loops=3370 phase=0
+EINTIM: alive t=454 write=2425 read=2424 hits dev=0 if=20 addc=20 hidadd=5 hidrem=1 inact=0 get=168395 set=41691 caps=321977 reports=50471

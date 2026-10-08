@@ -47,6 +47,34 @@ notificação, nem leitura do `hiddriver_etapa.txt`.
 - `INPUTD=0`: o caminho da v0.5, pelo `XamInputGetState` do xam, com os ganchos de inatividade e do
   menu do sistema. Só jogos de 360 e dashboard.
 
+## Mapeador automático
+
+Vale nos dois builds. Um controle HID sem driver fixo (fora da `kRawLayouts` e dos Sony) é atendido
+se o report descriptor dele declarar um gamepad ou joystick:
+
+1. Na enumeração, logo depois do SET_CONFIGURATION, o driver manda SET_IDLE e lê o report
+   descriptor da primeira interface 03/00/00, como o Linux faz (é o mesmo pedido que o 8BitDo
+   precisa). Descritores de até 0xC4 bytes vão para o buffer do próprio nó; maiores, até 1 KB,
+   para uma página física alocada no início.
+2. O `HidAddDevice` só pega a interface se o descritor tiver uma coleção Generic Desktop
+   Gamepad/Joystick; o resto (teclas de mídia de teclado, a interface de fábrica do receptor do
+   8BitDo) fica com o driver original.
+3. Uma thread de sistema, que não faz nada nos primeiros 30 s depois de o plugin carregar (ver
+   [`threads-e-contextos.md`](threads-e-contextos.md), item 8), interpreta o descritor e aplica o mapeamento salvo em
+   `Hdd:\hiddriver.json` (mesmo formato do upstream). Se não houver, abre o assistente: uma
+   notificação por botão (A, B, X, Y, LB, RB, Back, Start, L3, R3, guia; LT/RT só se o controle
+   não tiver gatilho analógico; direcional só se não tiver hat). Segurar um botão por 3 s pula o
+   passo. No fim, o mapeamento é gravado no JSON.
+
+Os eixos seguem o upstream: X/Y = analógico esquerdo, Z/Rz = direito, Rx/Ry = gatilhos. Sem Rx/Ry,
+os gatilhos vêm do acelerador/freio (página Simulation), que é como o EasySMX e o 8BitDo mandam.
+Para refazer um mapeamento, apague a entrada do controle (ou o arquivo) no `hiddriver.json`. Um
+`hiddriver.json` que não pôde ser lido nunca é sobrescrito.
+
+No 17150, as notificações do assistente usam o tipo 80 do upstream, que fica 1,5 s na tela (patch
+em `0x816AAA0C`/`0x816AAA10` no xam, conferido byte a byte); a notificação do tipo 47 passa de 10 s
+para 5 s, como no upstream.
+
 ## O build de diagnóstico (`DIAG=1`)
 
 É o que foi usado em todos os testes. Grava `Hdd:\hiddriver_log.txt` (regras em
@@ -54,6 +82,11 @@ notificação, nem leitura do `hiddriver_etapa.txt`.
 lê a etapa e as letras de ganchos desligados de `Hdd:\hiddriver_etapa.txt` (sem o arquivo, etapa 1)
 e instala os registros só de leitura da enumeração USB (escolha de driver, string `0xEE`, compat ID,
 `UsbdAddDeviceComplete`).
+
+Letras depois do número da etapa (por exemplo `3t`): `a`, `m`, `g`, `s`, `c`, `i` desligam ganchos
+(ver o comentário de `g_skipHooks`); `t` ignora a tabela fixa, para o EasySMX e o 8BitDo passarem
+pelo mapeador; `n` não aplica o patch do tempo das notificações; `p` não inicia a thread do
+mapeador.
 
 ## Subir para o console
 

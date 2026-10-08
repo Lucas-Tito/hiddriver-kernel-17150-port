@@ -1,0 +1,317 @@
+EINTIM: alive t=108 write=121 read=121 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=10652 set=4 caps=10606 reports=0
+EINTIM: alive t=113 write=122 read=122 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=11253 set=4 caps=11204 reports=0
+EINTIM: alive t=118 write=123 read=123 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=11855 set=4 caps=11804 reports=0
+EINTIM: alive t=123 write=124 read=124 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=12458 set=4 caps=12404 reports=0
+EINTIM: alive t=128 write=125 read=125 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=13062 set=4 caps=13006 reports=0
+EINTIM: alive t=133 write=126 read=126 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=13663 set=4 caps=13604 reports=0
+EINTIM: alive t=138 write=127 read=127 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=14265 set=4 caps=14204 reports=0
+EINTIM: alive t=143 write=128 read=128 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=14868 set=4 caps=14804 reports=0
+EINTIM: alive t=148 write=129 read=129 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=15472 set=4 caps=15406 reports=0
+EINTIM: alive t=153 write=130 read=130 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=16075 set=4 caps=16006 reports=0
+EINTIM: alive t=158 write=131 read=131 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=16677 set=4 caps=16606 reports=0
+EINTIM: alive t=163 write=132 read=132 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=17279 set=4 caps=17206 reports=0
+EINTIM: alive t=168 write=133 read=133 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=17882 set=4 caps=17806 reports=0
+EINTIM: alive t=173 write=134 read=134 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=18484 set=4 caps=18406 reports=0
+EINTIM: alive t=178 write=135 read=135 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=19087 set=4 caps=19006 reports=0
+EINTIM: alive t=183 write=136 read=136 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=19689 set=4 caps=19606 reports=0
+EINTIM: alive t=188 write=137 read=137 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=20292 set=4 caps=20206 reports=0
+EINTIM: alive t=193 write=138 read=138 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=20894 set=4 caps=20806 reports=0
+EINTIM: alive t=199 write=139 read=139 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=21497 set=4 caps=21406 reports=0
+EINTIM: alive t=204 write=140 read=140 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=22099 set=4 caps=22006 reports=0
+EINTIM: alive t=209 write=141 read=141 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=22702 set=4 caps=22606 reports=0
+EINTIM: alive t=214 write=142 read=142 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=23306 set=4 caps=23208 reports=0
+EINTIM: alive t=219 write=143 read=143 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=23909 set=4 caps=23808 reports=0
+EINTIM: alive t=224 write=144 read=144 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=24511 set=4 caps=24408 reports=0
+EINTIM: alive t=229 write=145 read=145 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=25114 set=4 caps=25008 reports=0
+EINTIM: alive t=234 write=146 read=146 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=25716 set=4 caps=25608 reports=0
+EINTIM: alive t=239 write=147 read=147 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=26319 set=4 caps=26208 reports=0
+EINTIM: alive t=244 write=148 read=148 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=26921 set=4 caps=26808 reports=0
+EINTIM: alive t=249 write=149 read=149 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=27524 set=4 caps=27408 reports=0
+EINTIM: alive t=254 write=150 read=150 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=28126 set=4 caps=28008 reports=0
+EINTIM: alive t=259 write=151 read=151 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=28729 set=4 caps=28608 reports=0
+EINTIM: alive t=264 write=152 read=152 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=29331 set=4 caps=29208 reports=0
+EINTIM: alive t=269 write=153 read=153 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=29934 set=4 caps=29808 reports=0
+EINTIM: alive t=274 write=154 read=154 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=30536 set=4 caps=30408 reports=0
+EINTIM: alive t=279 write=155 read=155 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=31139 set=4 caps=31008 reports=0
+EINTIM: alive t=284 write=156 read=156 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=31741 set=4 caps=31608 reports=0
+EINTIM: alive t=289 write=157 read=157 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=32344 set=4 caps=32208 reports=0
+EINTIM: alive t=294 write=158 read=158 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=32946 set=4 caps=32808 reports=0
+EINTIM: alive t=299 write=159 read=159 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=33549 set=4 caps=33408 reports=0
+EINTIM: alive t=304 write=160 read=160 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=34151 set=4 caps=34008 reports=0
+EINTIM: alive t=309 write=161 read=161 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=34754 set=4 caps=34608 reports=0
+EINTIM: alive t=314 write=162 read=162 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=35120 set=4 caps=35256 reports=0
+
+==== boot, log via hidlogh:\ ====
+EINTIM: HELLO from xbox 360 HID controller driver version 0.5 (port 17150), kernel 17150, stage 3, skip "tn", log root hidlogh:\
+EINTIM: notify patch: ordinal 1183 at 816A2450, +48 = 409A
+EINTIM: notify patch applied, readback 4800
+EINTIM: Running on retail kernel 17150
+EINTIM: check UsbdGetInterfaceDescriptor   800D9418 = 8943000B (esperado 8943000B) ok
+EINTIM: check XamUserBindDeviceCallback    816D83A8 = 7C8B2378 (esperado 7C8B2378) ok
+EINTIM: check UsbdPowerDownNotification    800D9EF8 = 3D60800E (esperado 3D60800E) ok
+EINTIM: check UsbdDriverEntry              800D9C38 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbPhysicalPage (lis)        800D9C94 = 3F80801A (esperado 3F80801A) ok
+EINTIM: check UsbPhysicalPage (stw)        800D9C98 = 93FCC8D8 (esperado 93FCC8D8) ok
+EINTIM: check bugcheck 1                   800E1514 = 40820018 (esperado 40820018) ok
+EINTIM: check bugcheck 2                   800DE810 = 40820018 (esperado 40820018) ok
+EINTIM: check registro duplo 1             800D9E30 = 4BF8DC29 (esperado 4BF8DC29) ok
+EINTIM: check registro duplo 2             800D9E20 = 4BF97189 (esperado 4BF97189) ok
+EINTIM: check HidAddDevice                 800E5CD0 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check HidRemoveDevice              800E5C90 = 81630000 (esperado 81630000) ok
+EINTIM: check XInputdReadState             800F7B88 = 546B0006 (esperado 546B0006) ok
+EINTIM: check UsbMatch (prologo)           800D7170 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbMatch (lbz class)         800D7190 = 8B7E0005 (esperado 8B7E0005) ok
+EINTIM: readback UsbMatch                     800D7170 = 3C0081F1
+EINTIM: hook on: USB match logger
+EINTIM: check UsbDeviceMatch (prologo)     800D70D8 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbDeviceMatch (hub)         800D7110 = 2B0A0009 (esperado 2B0A0009) ok
+EINTIM: readback UsbDeviceMatch               800D70D8 = 3C0081F1
+EINTIM: hook on: USB device match logger
+EINTIM: check UsbMsOsReply                 800D8148 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbMsOsReply (node)          800D8154 = 3BE3FFF4 (esperado 3BE3FFF4) ok
+EINTIM: readback UsbMsOsReply                 800D8148 = 3C0081F1
+EINTIM: check UsbCompatReply               800D80A0 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbCompatReply (node)        800D80AC = 3BE3FFF4 (esperado 3BE3FFF4) ok
+EINTIM: readback UsbCompatReply               800D80A0 = 3C0081F1
+EINTIM: check UsbSetConfigDone             800D83F8 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbSetConfigDone (node)      800D8404 = 3BE3FFF4 (esperado 3BE3FFF4) ok
+EINTIM: readback UsbSetConfigDone             800D83F8 = 3C0081F1
+EINTIM: check UsbConfigDescDone            800D8468 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbConfigDescDone (node)     800D8474 = 3BE3FFF4 (esperado 3BE3FFF4) ok
+EINTIM: readback UsbConfigDescDone            800D8468 = 3C0081F1
+EINTIM: check UsbSubmitRequest             800D9190 = 3D60801A (esperado 3D60801A) ok
+EINTIM: check UsbSubmitRequest (lbz)       800D9194 = 89230008 (esperado 89230008) ok
+EINTIM: check UsbTimerCancel               800DA170 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbTimerCancel (ld)          800DA180 = E9630010 (esperado E9630010) ok
+EINTIM: check UsbTimerArm                  800DA2B8 = 3D60800E (esperado 3D60800E) ok
+EINTIM: check UsbTimerArm (stw)            800DA2C0 = 91630004 (esperado 91630004) ok
+EINTIM: 8BitDo string requests enabled
+EINTIM: check UsbDiscard                   800D7D00 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: check UsbDiscard (retry flag)      800D7D20 = 897F027F (esperado 897F027F) ok
+EINTIM: readback UsbDiscard                   800D7D00 = 3C0081F1
+EINTIM: check UsbdAddDeviceComplete        800D78F0 = 7D8802A6 (esperado 7D8802A6) ok
+EINTIM: readback UsbdAddDeviceComplete        800D78F0 = 3C0081F1
+EINTIM: hook on: UsbdAddDeviceComplete logger
+EINTIM: hook on: HidAddDevice/HidRemoveDevice
+EINTIM: hook on: XInputdReadState
+EINTIM: hook on: XamInputSetState
+EINTIM: hook on: XamInputGetCapabilitiesEx
+EINTIM: readback HidAddDevice                 800E5CD0 = 3C0081F1
+EINTIM: readback HidRemoveDevice              800E5C90 = 3C0081F1
+EINTIM: readback XInputdReadState             800F7B88 = 3C0081F1
+EINTIM: Hooks installed (skipped: "tn")
+EINTIM: readback bugcheck 1                   800E1514 = 48000018
+EINTIM: readback bugcheck 2                   800DE810 = 48000018
+EINTIM: readback registro duplo 1             800D9E30 = 60000000
+EINTIM: readback registro duplo 2             800D9E20 = 60000000
+EINTIM: Resetting USB driver!
+EINTIM: USB discard: node E1EBEBF4 VID 045E PID 02AB retry flag 0, called from 800DF2AC
+EINTIM: USB driver shutdown complete.
+EINTIM: USB driver reset complete.
+EINTIM: USB discard: node E1EBE970 VID 0000 PID 0000 retry flag 0, called from 800DF2AC
+EINTIM: USB discard: node E1EBEBF4 VID 0000 PID 0000 retry flag 0, called from 800DF2AC
+EINTIM: USB config descriptor done: VID 045E PID 02A9 status 00000000
+EINTIM: USB SET_CONFIGURATION done: VID 045E PID 02A9 config 1 status 00000000 after 0 ms
+EINTIM: HID init: no 03/00/00 interface with a HID descriptor (first: 04 FF 22), skipping
+EINTIM: USB match: VID 045E PID 02A9 if 0 class FF/5D/81 -> 80162578 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 1 class FF/5D/82 -> 80162934 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 2 class FF/5D/81 -> 80162578 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 3 class FF/5D/82 -> 80162934 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 4 class FF/5D/81 -> 80162578 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 5 class FF/5D/82 -> 80162934 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 6 class FF/5D/81 -> 80162578 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 02A9 if 7 class FF/5D/82 -> 80162934 XInput (FF/5D)
+EINTIM: USB config descriptor done: VID 045E PID 028E status 00000000
+EINTIM: USB SET_CONFIGURATION done: VID 045E PID 028E config 1 status 00000000 after 1 ms
+EINTIM: HID init: no 03/00/00 interface with a HID descriptor (first: 04 FF 21), skipping
+EINTIM: USB discard: node E1EBEBF4 VID 0000 PID 0000 retry flag 1, called from 800D88F4
+EINTIM: USB discard: node E1EBEBF4 VID 0000 PID 0000 retry flag 0, called from 800E12A4
+EINTIM: USB match: VID 045E PID 028E if 0 class FF/5D/01 -> 801626C8 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 028E if 1 class FF/5D/03 -> 80162960 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 028E if 2 class FF/5D/02 -> 801625D0 XInput (FF/5D)
+EINTIM: USB match: VID 045E PID 028E if 3 class FF/FD/13 -> 00000000 nenhum driver
+EINTIM: USB add complete: handle E1EBF3B0 status C0000001 (rejeitado) VID 045E PID 028E
+EINTIM: USB config descriptor done: VID 045E PID 02AB status 00000000
+EINTIM: USB SET_CONFIGURATION done: VID 045E PID 02AB config 1 status 00000000 after 0 ms
+EINTIM: HID init: no 03/00/00 interface with a HID descriptor (first: 04 FF 05), skipping
+EINTIM: USB match: VID 045E PID 02AB if 0 class FF/00/00 -> 8016C550 outro
+EINTIM: GetCapabilitiesEx user 0 -> status 0
+EINTIM: first call: XamInputSetState
+EINTIM: GetCapabilitiesEx user 1 -> status 48F
+EINTIM: GetCapabilitiesEx user 2 -> status 48F
+EINTIM: GetCapabilitiesEx user 3 -> status 48F
+EINTIM: mapper thread loops=50 phase=0
+EINTIM: alive t=19 write=99 read=98 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=5 set=4 caps=4 reports=0
+EINTIM: mapper thread loops=100 phase=0
+EINTIM: alive t=24 write=101 read=100 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=496 set=4 caps=492 reports=0
+EINTIM: notify: calling XNotifyQueueUI "hiddriver: etapa 3 ativa (ganchos + reset USB)"
+EINTIM: notify: XNotifyQueueUI returned
+EINTIM: mapper thread loops=149 phase=0
+EINTIM: alive t=29 write=105 read=104 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=996 set=4 caps=990 reports=0
+EINTIM: mapper thread loops=199 phase=0
+EINTIM: alive t=34 write=107 read=106 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=1599 set=4 caps=1590 reports=0
+EINTIM: mapper thread loops=249 phase=0
+EINTIM: alive t=39 write=109 read=108 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=2201 set=4 caps=2190 reports=0
+EINTIM: mapper thread loops=298 phase=0
+EINTIM: alive t=44 write=111 read=110 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=2804 set=4 caps=2790 reports=0
+EINTIM: mapper thread loops=348 phase=0
+EINTIM: alive t=49 write=113 read=112 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=3406 set=4 caps=3390 reports=0
+EINTIM: mapper thread loops=397 phase=0
+EINTIM: alive t=54 write=115 read=114 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=4011 set=4 caps=3992 reports=0
+EINTIM: mapper thread loops=447 phase=0
+EINTIM: alive t=59 write=117 read=116 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=4613 set=4 caps=4592 reports=0
+EINTIM: mapper thread loops=497 phase=0
+EINTIM: alive t=64 write=119 read=118 hits dev=0 if=13 addc=13 hidadd=0 hidrem=0 inact=0 get=5216 set=4 caps=5192 reports=0
+EINTIM: USB discard: node E1EBEBF4 VID 045E PID 02AB retry flag 0, called from 800DF2AC
+EINTIM: USB config descriptor done: VID 2DC8 PID 3016 status 00000000
+EINTIM: 8BitDo: asking for the strings before SET_CONFIGURATION (config length 41)
+EINTIM: 8BitDo: string 0 done status 00000000, 4 bytes (bLength 04 type 03), removed 00
+EINTIM: 8BitDo: string 2 done status 00000000, 10 bytes (bLength 0A type 03), removed 00
+EINTIM: 8BitDo: string 1 done status 00000000, 14 bytes (bLength 0E type 03), removed 00
+EINTIM: 8BitDo: string 3 done status 00000000, 22 bytes (bLength 16 type 03), removed 00
+EINTIM: 8BitDo: strings done, handing over to SET_CONFIGURATION
+EINTIM: USB SET_CONFIGURATION done: VID 2DC8 PID 3016 config 1 status 00000000 after 0 ms
+EINTIM: HID init: SET_IDLE and report descriptor (42 bytes) on interface 0 before driver selection
+EINTIM: HID init: SET_IDLE done status 00000000, 0 bytes (16 03 32 00), removed 00
+EINTIM: HID init: report descriptor done status 00000000, 42 bytes (06 A0 FF 09), removed 00
+EINTIM: HID init: done, handing over to driver selection
+EINTIM: USB match: VID 2DC8 PID 3016 if 0 class 03/00/00 -> 80162254 HID (HidAddDevice)
+EINTIM: HID add device E1EBFA40
+EINTIM: IS USB1.0: 1
+EINTIM: USB device descriptor Pointer: E1EBF148
+EINTIM: USB interface descriptor Pointer: E1EBF165
+EINTIM: USB endpoint interrupt in descriptor Pointer: E1EBF177
+EINTIM: HID device vendor id: 2dc8, product id: 3016
+EINTIM: Interface 0 class 3 subclass 0 protocol 0
+EINTIM: HID device bcdDevice 0200
+EINTIM: 8BitDo Ultimate C 2.4G (DInput): bcdDevice 0200 is not the gamepad one (0001), passing it on
+EINTIM: Report descriptor is not a gamepad, passing it on
+EINTIM: Unrelated USB Device. Calling original...
+EINTIM: USB add complete: handle E1EBFA40 status C0000001 (rejeitado) VID 2DC8 PID 3016
+EINTIM: mapper thread loops=546 phase=0
+EINTIM: alive t=69 write=147 read=146 hits dev=0 if=14 addc=14 hidadd=1 hidrem=0 inact=0 get=5818 set=4 caps=5792 reports=0
+EINTIM: USB discard: node E1EBEBF4 VID 045E PID 02AB retry flag 0, called from 800DF2AC
+EINTIM: USB config descriptor done: VID 2DC8 PID 3016 status 00000000
+EINTIM: 8BitDo: asking for the strings before SET_CONFIGURATION (config length 41)
+EINTIM: 8BitDo: string 0 done status 00000000, 4 bytes (bLength 04 type 03), removed 00
+EINTIM: 8BitDo: string 2 done status 00000000, 74 bytes (bLength 4A type 03), removed 00
+EINTIM: 8BitDo: string 1 done status 00000000, 14 bytes (bLength 0E type 03), removed 00
+EINTIM: 8BitDo: string 3 done status 00000000, 22 bytes (bLength 16 type 03), removed 00
+EINTIM: 8BitDo: strings done, handing over to SET_CONFIGURATION
+EINTIM: USB SET_CONFIGURATION done: VID 2DC8 PID 3016 config 1 status 00000000 after 0 ms
+EINTIM: HID init: SET_IDLE and report descriptor (145 bytes) on interface 0 before driver selection
+EINTIM: HID init: SET_IDLE done status 00000000, 0 bytes (16 03 32 00), removed 00
+EINTIM: HID init: report descriptor done status 00000000, 145 bytes (05 01 09 05), removed 00
+EINTIM: HID init: done, handing over to driver selection
+EINTIM: USB match: VID 2DC8 PID 3016 if 0 class 03/00/00 -> 80162254 HID (HidAddDevice)
+EINTIM: HID add device E1EBFA40
+EINTIM: IS USB1.0: 1
+EINTIM: USB device descriptor Pointer: E1EBF148
+EINTIM: USB interface descriptor Pointer: E1EBF165
+EINTIM: USB endpoint interrupt in descriptor Pointer: E1EBF177
+EINTIM: HID device vendor id: 2dc8, product id: 3016
+EINTIM: Interface 0 class 3 subclass 0 protocol 0
+EINTIM: HID device bcdDevice 0001
+EINTIM: 8BitDo Ultimate C 2.4G (DInput): hardcoded table off ('t'), trying the generic HID path
+EINTIM: Generic HID gamepad (report descriptor 145 bytes)
+EINTIM: Controller detected. Initialising custom handler.
+Assigning controller to index 0
+EINTIM: Registered virtual controller inside XAM with index: 1.
+EINTIM: first interrupt transfer queued: AB5800 (endpoint 84, packet 64)
+EINTIM: report 1 from HID 2DC8:3016: status 0 bytes 00 00 00 00 00 00 00 00 00 00
+EINTIM: first call: XInputdReadState (our context)
+EINTIM: mapper: hidmap:\hiddriver.json not found, 0 mappings
+EINTIM: mapper: report ID 1 (used), 15 buttons, axes 111001, hat 1, accel/brake 11
+EINTIM: mapper: assistant for slot 0 (2DC8:3016), analog triggers 1
+EINTIM: mapper thread loops=550 phase=3
+EINTIM: alive t=74 write=182 read=181 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=6996 set=4 caps=6964 reports=1
+EINTIM: report 2 from HID 2DC8:3016: status 0 bytes 01 01 00 0F 7F 7F 7F 7F 00 00
+EINTIM: report 3 from HID 2DC8:3016: status 0 bytes 01 00 00 0F 7F 7F 7F 7F 00 00
+EINTIM: mapper: step 0 -> button 1
+EINTIM: mapper thread loops=550 phase=3
+EINTIM: UI healthy for 60 s, boot guard removed
+EINTIM: alive t=79 write=188 read=186 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=8200 set=4 caps=8164 reports=3
+EINTIM: report 4 from HID 2DC8:3016: status 0 bytes 01 02 00 0F 7F 7F 7F 7F 00 00
+EINTIM: mapper thread loops=550 phase=3
+EINTIM: alive t=84 write=191 read=190 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=9406 set=4 caps=9364 reports=4
+EINTIM: report 5 from HID 2DC8:3016: status 0 bytes 01 00 00 0F 7F 7F 7F 7F 00 00
+EINTIM: mapper: step 1 -> button 2
+EINTIM: mapper thread loops=550 phase=3
+EINTIM: alive t=89 write=195 read=194 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=10610 set=4 caps=10564 reports=5
+EINTIM: report 6 from HID 2DC8:3016: status 0 bytes 01 08 00 0F 7F 7F 7F 7F 00 00
+EINTIM: report 7 from HID 2DC8:3016: status 0 bytes 01 00 00 0F 7F 7F 7F 7F 00 00
+EINTIM: mapper: step 2 -> button 4
+EINTIM: mapper thread loops=550 phase=3
+EINTIM: alive t=94 write=200 read=199 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=11816 set=4 caps=11764 reports=7
+EINTIM: report 8 from HID 2DC8:3016: status 0 bytes 01 10 00 0F 7F 7F 7F 7F 00 00
+EINTIM: mapper: step 3 -> button 5
+EINTIM: mapper thread loops=550 phase=3
+EINTIM: alive t=99 write=204 read=203 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=13024 set=4 caps=12968 reports=9
+EINTIM: mapper thread loops=550 phase=3
+EINTIM: alive t=104 write=206 read=205 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=14226 set=4 caps=14164 reports=9
+EINTIM: mapper: step 4 -> button 7
+EINTIM: mapper thread loops=550 phase=3
+EINTIM: alive t=109 write=209 read=208 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=15434 set=4 caps=15368 reports=11
+EINTIM: mapper: step 5 -> button 8
+EINTIM: mapper thread loops=550 phase=3
+EINTIM: alive t=114 write=212 read=211 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=16640 set=4 caps=16568 reports=13
+EINTIM: mapper: step 8 -> button 11
+EINTIM: mapper thread loops=550 phase=3
+EINTIM: alive t=119 write=215 read=214 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=17844 set=4 caps=17768 reports=15
+EINTIM: mapper: step 9 -> button 12
+EINTIM: mapper thread loops=550 phase=3
+EINTIM: alive t=124 write=218 read=217 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=19050 set=4 caps=18968 reports=23
+EINTIM: mapper thread loops=550 phase=3
+EINTIM: alive t=129 write=220 read=219 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=20254 set=4 caps=20168 reports=23
+EINTIM: mapper: step 10 -> button 14
+EINTIM: mapper thread loops=550 phase=3
+EINTIM: alive t=134 write=223 read=222 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=21458 set=4 caps=21368 reports=72
+EINTIM: mapper: step 11 -> button 15
+EINTIM: mapper thread loops=550 phase=3
+EINTIM: alive t=139 write=226 read=225 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=22664 set=4 caps=22568 reports=77
+EINTIM: mapper thread loops=550 phase=3
+EINTIM: alive t=144 write=228 read=227 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=23868 set=4 caps=23768 reports=77
+EINTIM: mapper: step 12 -> button 13
+EINTIM: mapper: mapping for 2DC8:3016 saved
+EINTIM: mapper thread loops=590 phase=0
+EINTIM: alive t=149 write=232 read=231 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=25074 set=4 caps=24968 reports=79
+EINTIM: mapper thread loops=640 phase=0
+EINTIM: alive t=154 write=234 read=233 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=26278 set=4 caps=26168 reports=79
+EINTIM: mapper thread loops=689 phase=0
+EINTIM: alive t=159 write=236 read=235 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=27480 set=4 caps=27364 reports=169
+EINTIM: mapper thread loops=739 phase=0
+EINTIM: alive t=164 write=238 read=237 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=28177 set=4 caps=28614 reports=248
+EINTIM: mapper thread loops=789 phase=0
+EINTIM: alive t=169 write=240 read=239 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=29383 set=4 caps=29814 reports=343
+EINTIM: mapper thread loops=838 phase=0
+EINTIM: alive t=174 write=242 read=241 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=30587 set=4 caps=31014 reports=343
+EINTIM: mapper thread loops=888 phase=0
+EINTIM: alive t=179 write=244 read=243 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=31793 set=4 caps=32214 reports=343
+EINTIM: mapper thread loops=938 phase=0
+EINTIM: alive t=184 write=246 read=245 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=33001 set=4 caps=33418 reports=343
+EINTIM: mapper thread loops=987 phase=0
+EINTIM: alive t=189 write=248 read=247 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=34203 set=4 caps=34614 reports=343
+EINTIM: mapper thread loops=1037 phase=0
+EINTIM: alive t=194 write=250 read=249 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=35407 set=4 caps=35814 reports=343
+EINTIM: mapper thread loops=1086 phase=0
+EINTIM: alive t=199 write=252 read=251 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=36613 set=4 caps=37014 reports=343
+EINTIM: mapper thread loops=1136 phase=0
+EINTIM: alive t=204 write=254 read=253 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=37817 set=4 caps=38214 reports=343
+EINTIM: mapper thread loops=1186 phase=0
+EINTIM: alive t=209 write=256 read=255 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=39023 set=4 caps=39414 reports=343
+EINTIM: mapper thread loops=1236 phase=0
+EINTIM: alive t=214 write=258 read=257 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=40227 set=4 caps=40614 reports=343
+EINTIM: mapper thread loops=1285 phase=0
+EINTIM: alive t=219 write=260 read=259 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=41433 set=4 caps=41814 reports=343
+EINTIM: mapper thread loops=1335 phase=0
+EINTIM: alive t=224 write=262 read=261 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=42637 set=4 caps=43014 reports=343
+EINTIM: mapper thread loops=1384 phase=0
+EINTIM: alive t=229 write=264 read=263 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=43843 set=4 caps=44214 reports=343
+EINTIM: mapper thread loops=1434 phase=0
+EINTIM: alive t=234 write=266 read=265 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=45051 set=4 caps=45418 reports=343
+EINTIM: mapper thread loops=1484 phase=0
+EINTIM: alive t=239 write=268 read=267 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=46257 set=4 caps=46618 reports=343
+EINTIM: mapper thread loops=1533 phase=0
+EINTIM: alive t=244 write=270 read=269 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=47461 set=4 caps=47818 reports=343
+EINTIM: mapper thread loops=1583 phase=0
+EINTIM: alive t=249 write=272 read=271 hits dev=0 if=15 addc=15 hidadd=2 hidrem=0 inact=0 get=48667 set=4 caps=49018 reports=343

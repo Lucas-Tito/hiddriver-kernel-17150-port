@@ -8,6 +8,8 @@
 #include <sstream>
 #include <vector>
 #include "Detours.h"
+#include "hid_parser.h"
+#include "mapping.h"
 
 // Build switches, set by the Makefile (make DIAG=1 STAGE=3):
 //   HIDDRIVER_DIAG  0 = use build, like upstream: no log, no notification, no stage file and only
@@ -28,6 +30,8 @@
 #ifndef HIDDRIVER_INPUTD
 #define HIDDRIVER_INPUTD 1
 #endif
+
+bool HookEnabled(char letter); // diag build: letters in hiddriver_etapa.txt switch things off
 Detour HidAddDeviceDetour;
 Detour HidRemoveDeviceDetour;
 Detour XamInputGetStateDetour;
@@ -140,6 +144,36 @@ static bool FileExistsIn(const DiagDrive* roots, int count, const char* name) {
 bool DiagFileExists(const char* name) {
 	return FileExistsIn(kHddRoots, sizeof(kHddRoots) / sizeof(kHddRoots[0]), name) ||
 		FileExistsIn(kUsbRoots, sizeof(kUsbRoots) / sizeof(kUsbRoots[0]), name);
+}
+
+// Boot guard (diag build): created when the plugin starts, removed by the heartbeat once
+// FreeStyle has been polling input at a normal rate for a minute. If the UI hangs, the file is
+// still there on the next boot and the plugin stays off for that one boot (and removes the file),
+// so the console comes up without opening the tray and the FTP server can fetch the log.
+#define GUARD_FILE "hiddriver_guarda.txt"
+
+static bool GuardPath(char* path, int size) {
+	if (!g_logRoot)
+		return false;
+	_snprintf(path, size, "%s" GUARD_FILE, g_logRoot);
+	return true;
+}
+
+static void CreateGuard() {
+	char path[64];
+	if (!GuardPath(path, sizeof(path)))
+		return;
+	FILE* f = fopen(path, "w");
+	if (f) {
+		fputs("hiddriver: boot em teste; se este arquivo sobrar, o proximo boot nao inicia o plugin\r\n", f);
+		fclose(f);
+	}
+}
+
+static void RemoveGuard() {
+	char path[64];
+	if (GuardPath(path, sizeof(path)))
+		DeleteFileA(path);
 }
 
 // Up to size-1 characters of a text file at the HDD root; empty string if missing
@@ -323,6 +357,7 @@ enum ControllerType {
 	SONY_DUALSHOCK4,
 	SONY_DUALSENSE,
 	GENERIC_RAW, // hardcoded byte layout from kRawLayouts
+	GENERIC_HID, // read through its HID report descriptor, with a mapping from the assistant
 };
 
 const uint16_t SONY_VENDOR_ID = 0x054C;
@@ -577,6 +612,202 @@ struct Controller {
 
 Controller connectedControllers[4];
 
+// ---- Controllers without a hardcoded driver: report descriptor + mapping assistant ----
+//
+// The report descriptor is read before driver selection (StartHidInit) and cached; HidAddDevice
+// copies it into the controller's slot and sets the slot to MAPPER_PARSE. The mapper thread
+// parses it, builds a flat decoder (bit positions only, no pointers), and either applies a saved
+// mapping (MAPPER_READY) or runs the assistant (MAPPER_MAPPING, the interrupt handler then only
+// reports which buttons are held). The USB callbacks never parse, allocate or touch the JSON.
+//
+// stateGen packs a generation (bumped on every add and remove) with the state, so the thread can
+// publish a result with one compare-and-swap that fails if the controller changed meanwhile.
+#define HID_DESC_MAX 1024
+#define HID_MAX_BUTTONS 32
+enum MapperState { MAPPER_NONE, MAPPER_PARSE, MAPPER_MAPPING, MAPPER_READY, MAPPER_FAILED };
+#define SLOT_STATE(sg) ((sg) & 0xF)
+#define SLOT_GEN(sg) ((DWORD)(sg) >> 4)
+#define SLOT_MAKE(gen, st) ((LONG)(((gen) << 4) | (st)))
+
+struct HidField {
+	uint16_t bitOffset; // from the first byte after the report ID
+	uint8_t bitSize;
+	uint8_t present;
+	int32_t logMin, logMax;
+};
+
+struct HidDecoder {
+	uint8_t usingReportIds;
+	uint8_t reportId;
+	HidField gd[MAP_AXIS_COUNT];          // Generic Desktop X, Y, Z, Rx, Ry, Rz
+	HidField hat;                         // Generic Desktop hat switch
+	HidField accel, brake;                // Simulation accelerator/brake: analog triggers on some pads
+	HidField button[HID_MAX_BUTTONS];     // Button page, usage 1..32
+	ControllerMapping map;
+};
+
+struct HidSlot {
+	volatile LONG stateGen;
+	uint16_t vendorId, productId;
+	uint16_t descriptorLength;
+	uint8_t descriptor[HID_DESC_MAX];
+	HidDecoder decoder;
+	volatile uint32_t rawButtons; // while mapping: buttons held in the last report (bit n = button n+1)
+};
+HidSlot g_hidSlots[4];
+
+// Report descriptor read by StartHidInit, waiting for HidAddDevice. Enumeration is one device at
+// a time, so one entry is enough; a stale entry for the same VID/PID/interface is the same data.
+struct ReportDescriptorCache {
+	volatile LONG valid;
+	uint16_t vendorId, productId;
+	uint8_t iface;
+	uint16_t length;
+	uint8_t data[HID_DESC_MAX];
+};
+ReportDescriptorCache g_descCache;
+
+static bool ReadField(const uint8_t* payload, int maxBits, const HidField& f, uint32_t* out) {
+	if (!f.present || f.bitSize == 0 || f.bitSize > 32 || f.bitOffset + f.bitSize > maxBits)
+		return false;
+	uint32_t v = 0;
+	for (int i = 0; i < f.bitSize; i++) {
+		int bit = f.bitOffset + i;
+		if (payload[bit >> 3] & (1 << (bit & 7)))
+			v |= 1u << i;
+	}
+	*out = v;
+	return true;
+}
+
+// Scales a field to 0..255 over its logical range (0x80 = center for a stick)
+static uint8_t ScaleTo8(const HidField& f, uint32_t raw) {
+	int32_t mn = f.logMin, mx = f.logMax;
+	int32_t v = (int32_t)raw;
+	if (mn < 0 && f.bitSize < 32 && (raw & (1u << (f.bitSize - 1))))
+		v = (int32_t)(raw | (0xFFFFFFFFu << f.bitSize)); // signed field
+	if (mx <= mn)
+		return (uint8_t)raw;
+	if (v < mn) v = mn;
+	if (v > mx) v = mx;
+	return (uint8_t)(((int64_t)(v - mn) * 255 + (mx - mn) / 2) / (mx - mn));
+}
+
+static bool MappedButton(const HidDecoder& d, const uint8_t* payload, int maxBits, int target) {
+	uint8_t idx = d.map.button[target];
+	uint32_t v;
+	return idx < HID_MAX_BUTTONS && ReadField(payload, maxBits, d.button[idx], &v) && v;
+}
+
+static uint8_t HatFromDpad(bool up, bool right, bool down, bool left) {
+	if (up && right) return HAT_UP_RIGHT;
+	if (right && down) return HAT_DOWN_RIGHT;
+	if (down && left) return HAT_DOWN_LEFT;
+	if (left && up) return HAT_UP_LEFT;
+	if (up) return HAT_UP;
+	if (right) return HAT_RIGHT;
+	if (down) return HAT_DOWN;
+	if (left) return HAT_LEFT;
+	return HAT_NEUTRAL;
+}
+
+// One report of a mapped controller into ButtonsReport (axes 0..255, HID convention: FillGamepad
+// inverts y and rz). payload starts after the report ID.
+ButtonsReport DecodeHidReport(const HidDecoder& d, const uint8_t* payload, int maxBits) {
+	ButtonsReport b = ButtonsReport();
+	const ControllerMapping& m = d.map;
+	uint8_t axis[MAP_AXIS_COUNT];
+	bool axisOk[MAP_AXIS_COUNT];
+	for (int a = 0; a < MAP_AXIS_COUNT; a++) {
+		axisOk[a] = false;
+		uint8_t usage = m.axisUsage[a];
+		uint32_t raw;
+		if (usage < 0x30 || usage > 0x35 || !ReadField(payload, maxBits, d.gd[usage - 0x30], &raw))
+			continue;
+		uint8_t v = ScaleTo8(d.gd[usage - 0x30], raw);
+		// upstream's invert flags are relative to HID; FillGamepad already inverts y and rz
+		bool fillInverts = a == AXIS_Y || a == AXIS_RZ;
+		axis[a] = m.invert[a] != fillInverts ? (uint8_t)(255 - v) : v;
+		axisOk[a] = true;
+	}
+	b.x = axisOk[AXIS_X] ? axis[AXIS_X] : 0x80;
+	b.y = axisOk[AXIS_Y] ? axis[AXIS_Y] : 0x80;
+	b.z = axisOk[AXIS_Z] ? axis[AXIS_Z] : 0x80;
+	b.rz = axisOk[AXIS_RZ] ? axis[AXIS_RZ] : 0x80;
+	b.rx = axisOk[AXIS_RX] ? axis[AXIS_RX] : 0;
+	b.ry = axisOk[AXIS_RY] ? axis[AXIS_RY] : 0;
+
+	// no Rx/Ry: brake = LT, accelerator = RT (EasySMX and 8BitDo in DInput)
+	uint32_t raw;
+	if (!axisOk[AXIS_RX] && ReadField(payload, maxBits, d.brake, &raw))
+		b.rx = ScaleTo8(d.brake, raw);
+	if (!axisOk[AXIS_RY] && ReadField(payload, maxBits, d.accel, &raw))
+		b.ry = ScaleTo8(d.accel, raw);
+
+	b.cross = MappedButton(d, payload, maxBits, MAP_A);
+	b.circle = MappedButton(d, payload, maxBits, MAP_B);
+	b.square = MappedButton(d, payload, maxBits, MAP_X);
+	b.triangle = MappedButton(d, payload, maxBits, MAP_Y);
+	b.l1 = MappedButton(d, payload, maxBits, MAP_LB);
+	b.r1 = MappedButton(d, payload, maxBits, MAP_RB);
+	b.l2 = MappedButton(d, payload, maxBits, MAP_LT);
+	b.r2 = MappedButton(d, payload, maxBits, MAP_RT);
+	b.create = MappedButton(d, payload, maxBits, MAP_BACK);
+	b.options = MappedButton(d, payload, maxBits, MAP_START);
+	b.l3 = MappedButton(d, payload, maxBits, MAP_L3);
+	b.r3 = MappedButton(d, payload, maxBits, MAP_R3);
+	b.ps = MappedButton(d, payload, maxBits, MAP_GUIDE);
+	if (!b.rx && b.l2) b.rx = 0xFF; // digital triggers
+	if (!b.ry && b.r2) b.ry = 0xFF;
+
+	if (ReadField(payload, maxBits, d.hat, &raw)) {
+		int32_t v = (int32_t)raw - d.hat.logMin;
+		if (d.hat.logMax - d.hat.logMin == 3)
+			v *= 2; // 4-way hat
+		b.hatSwitch = (v >= 0 && v <= 7) ? v : HAT_NEUTRAL;
+	} else {
+		b.hatSwitch = HatFromDpad(MappedButton(d, payload, maxBits, MAP_DPAD_UP), MappedButton(d, payload, maxBits, MAP_DPAD_RIGHT),
+			MappedButton(d, payload, maxBits, MAP_DPAD_DOWN), MappedButton(d, payload, maxBits, MAP_DPAD_LEFT));
+	}
+	return b;
+}
+
+// Whether a report descriptor declares a gamepad or joystick (Generic Desktop 0x05/0x04
+// application collection). Keyboards' media-key interfaces and the 8BitDo receiver's vendor
+// interface are 03/00/00 too, and stay with the original driver.
+bool IsGamepadDescriptor(const uint8_t* d, int len) {
+	uint32_t page = 0, usage = 0;
+	for (int i = 0; i < len;) {
+		uint8_t b = d[i];
+		if (b == 0xFE) { // long item
+			if (i + 1 >= len)
+				break;
+			i += 3 + d[i + 1];
+			continue;
+		}
+		int size = b & 3;
+		if (size == 3)
+			size = 4;
+		if (i + 1 + size > len)
+			break;
+		uint32_t v = 0;
+		for (int k = 0; k < size; k++)
+			v |= (uint32_t)d[i + 1 + k] << (8 * k);
+		int type = (b >> 2) & 3, tag = b >> 4;
+		if (type == 1 && tag == 0) {
+			page = v;
+		} else if (type == 2 && tag == 0) {
+			usage = size == 4 ? v : (page << 16) | v;
+		} else if (type == 0) {
+			if (tag == 0xA && v == 1 && (usage >> 16) == 1 && ((usage & 0xFFFF) == 4 || (usage & 0xFFFF) == 5))
+				return true;
+			usage = 0; // local items end at every main item
+		}
+		i += 1 + size;
+	}
+	return false;
+}
+
 static bool RawBit(const RawLayout* l, const uint8_t* p, RawButton b) {
 	uint8_t bit = l->bit[b];
 	if (bit == RAW_NONE)
@@ -653,6 +884,32 @@ int interruptHandler(DWORD deviceHandle, int32_t a2) {
 		return requeued;
 	}
 
+	if (connectedControllers[index].controllerType == GENERIC_HID) {
+		HidSlot& slot = g_hidSlots[index];
+		const uint8_t* p = (const uint8_t*)report;
+		LONG n = InterlockedIncrement(&g_hits[HIT_REPORT]);
+		if (n <= 8)
+			DbgPrintSync("EINTIM: report %d from HID %04X:%04X: status %X bytes %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X\n",
+				n, slot.vendorId, slot.productId, a2, p[0], p[1], p[2], p[3], p[4], p[5], p[6], p[7], p[8], p[9]);
+		LONG state = SLOT_STATE(slot.stateGen);
+		__lwsync(); // the decoder was written before the state that publishes it
+		const HidDecoder& d = slot.decoder;
+		if ((state == MAPPER_READY || state == MAPPER_MAPPING) && (!d.usingReportIds || p[0] == d.reportId)) {
+			const uint8_t* payload = d.usingReportIds ? p + 1 : p;
+			int maxBits = ((int)driverExtension->packetSize - (d.usingReportIds ? 1 : 0)) * 8;
+			if (state == MAPPER_READY) {
+				connectedControllers[index].currentState = DecodeHidReport(d, payload, maxBits);
+			} else {
+				uint32_t held = 0, v;
+				for (int i = 0; i < HID_MAX_BUTTONS; i++)
+					if (ReadField(payload, maxBits, d.button[i], &v) && v)
+						held |= 1u << i;
+				slot.rawButtons = held;
+			}
+		}
+		return UsbdQueueAsyncTransfer(driverExtension->deviceHandle, &driverExtension->interruptEndpoint);
+	}
+
 	if (report->reportId == 1) {
 		ButtonsReport buttonReport = ButtonsReport();
 
@@ -712,6 +969,9 @@ int HidRemoveDeviceHook(deviceHandle* deviceHandle2) {
 	}
 
 	DbgPrint("EINTIM: Removing controller with handle %p\n", deviceHandle2);
+	// ends a mapping in progress and any result the mapper thread was about to publish
+	LONG sg = g_hidSlots[index].stateGen;
+	InterlockedExchange(&g_hidSlots[index].stateGen, SLOT_MAKE(SLOT_GEN(sg) + 1, MAPPER_NONE));
 
 	if (!deviceHandle2->driver->cleanedUpDone) {
 		deviceHandle2->driver->cleanedUpDone = 1;
@@ -762,6 +1022,10 @@ int HidAddDeviceHook(deviceHandle* deviceHandle) {
 		DbgPrint("EINTIM: %s: bcdDevice %04X is not the gamepad one (%04X), passing it on\n", rawLayout->name, bcdDevice, rawLayout->bcdDevice);
 		rawLayout = nullptr;
 	}
+	if (rawLayout && !HookEnabled('t')) {
+		DbgPrint("EINTIM: %s: hardcoded table off ('t'), trying the generic HID path\n", rawLayout->name);
+		rawLayout = nullptr;
+	}
 	if (rawLayout && interface_descriptor->bInterfaceNumber != rawLayout->iface) {
 		DbgPrint("EINTIM: %s: interface %d is not the gamepad one, passing it on\n", rawLayout->name, interface_descriptor->bInterfaceNumber);
 		rawLayout = nullptr;
@@ -776,6 +1040,24 @@ int HidAddDeviceHook(deviceHandle* deviceHandle) {
 			controllerType = SONY_DUALSENSE;
 		if (productId == DUALSHOCK4_V1_PRODUCT_ID || productId == DUALSHOCK4_V2_PRODUCT_ID || productId == DUALSHOCK4_WIRELESS_ADAPTER_ID)
 			controllerType = SONY_DUALSHOCK4;
+	}
+
+	// Anything else that says it is a gamepad in its report descriptor goes to the mapper
+	const ReportDescriptorCache* cached = nullptr;
+	if (controllerType == UNKNOWN_DEVICE && interface_descriptor->bInterfaceClass == 3 &&
+		interface_descriptor->bInterfaceSubClass == 0 && interface_descriptor->bInterfaceProtocol == 0) {
+		if (g_descCache.valid && g_descCache.vendorId == vendorId && g_descCache.productId == productId &&
+			g_descCache.iface == interface_descriptor->bInterfaceNumber) {
+			cached = &g_descCache;
+			if (IsGamepadDescriptor(cached->data, cached->length)) {
+				DbgPrint("EINTIM: Generic HID gamepad (report descriptor %d bytes)\n", cached->length);
+				controllerType = GENERIC_HID;
+			} else {
+				DbgPrint("EINTIM: Report descriptor is not a gamepad, passing it on\n");
+			}
+		} else {
+			DbgPrint("EINTIM: No report descriptor read for this interface, passing it on\n");
+		}
 	}
 
 	if (controllerType != UNKNOWN_DEVICE) {
@@ -853,6 +1135,21 @@ int HidAddDeviceHook(deviceHandle* deviceHandle) {
 		XamUserBindDeviceCallback(0xa7553952 + index, c.deviceContext, 0, false, &userIndex);
 		c.userIndex = userIndex;
 		connectedControllers[index] = c;
+
+		if (controllerType == GENERIC_HID) {
+			// hand the descriptor to the mapper thread: invalidate, fill, then publish. Only now that
+			// the controller is committed, so HidRemoveDevice can always find and reset the slot.
+			HidSlot& slot = g_hidSlots[index];
+			DWORD gen = SLOT_GEN(slot.stateGen) + 1;
+			InterlockedExchange(&slot.stateGen, SLOT_MAKE(gen, MAPPER_NONE));
+			slot.vendorId = vendorId;
+			slot.productId = productId;
+			slot.descriptorLength = cached->length;
+			memcpy(slot.descriptor, cached->data, cached->length);
+			slot.rawButtons = 0;
+			__lwsync();
+			InterlockedExchange(&slot.stateGen, SLOT_MAKE(gen, MAPPER_PARSE));
+		}
 
 		DbgPrint("EINTIM: Registered virtual controller inside XAM with index: %d.\n", userIndex);
 		int queued = UsbdQueueAsyncTransfer(deviceHandle, &controllerDriver->interruptEndpoint);
@@ -1438,7 +1735,16 @@ Detour UsbConfigDescDoneDetour;   // 0x800D8468: GET_DESCRIPTOR(configuration)
 volatile DWORD g_setConfigSentTb = 0;
 volatile BYTE* g_setConfigSentNode = nullptr;
 
-bool StartHidInit(BYTE* node); // 8BitDo: SET_IDLE + report descriptor after SET_CONFIGURATION
+bool StartHidInit(BYTE* node); // SET_IDLE + report descriptor after SET_CONFIGURATION
+
+// Controllers handled by fixed code don't need their report descriptor read before driver
+// selection; the 8BitDo always does (its firmware needs SET_IDLE, issue #1).
+bool HasHardcodedDriver(DWORD vid, DWORD pid) {
+	if (FindRawLayout((uint16_t)vid, (uint16_t)pid) && HookEnabled('t'))
+		return true;
+	return vid == SONY_VENDOR_ID && (pid == DUALSHOCK4_V1_PRODUCT_ID || pid == DUALSHOCK4_V2_PRODUCT_ID ||
+		pid == DUALSHOCK4_WIRELESS_ADAPTER_ID || pid == DUALSENSE_PRODUCT_ID || pid == DUALSENSE_EDGE_PRODUCT_ID);
+}
 
 void UsbSetConfigDoneHook(BYTE* nodePlusC, DWORD status) {
 	DWORD now = __mftb32();
@@ -1447,7 +1753,7 @@ void UsbSetConfigDoneHook(BYTE* nodePlusC, DWORD status) {
 	NodeIds(node, &vid, &pid);
 	DWORD ms = g_setConfigSentNode == node ? (now - g_setConfigSentTb) / TB_TICKS_PER_MS : 0xFFFFFFFF;
 	DbgPrintSync("EINTIM: USB SET_CONFIGURATION done: VID %04X PID %04X config %d status %08X after %d ms\n", vid, pid, node[0x65], status, ms);
-	if (vid == 0x2DC8 && status == 0 && StartHidInit(node))
+	if (status == 0 && (vid == 0x2DC8 || !HasHardcodedDriver(vid, pid)) && StartHidInit(node))
 		return;
 
 	UsbSetConfigDoneDetour.GetOriginal<usb_reply_func_t>()(nodePlusC, status);
@@ -1552,18 +1858,26 @@ void UsbStringDoneCallback(BYTE* nodePlusC, DWORD status) {
 
 // After SET_CONFIGURATION the 8BitDo is configured but sends no input on the Xbox (one empty
 // completion, then nothing). Linux's usbhid_parse, where it works, sends SET_IDLE(0) to the
-// interface and reads the HID report descriptor before polling the interrupt endpoint. For VID
-// 2DC8 only, do the same right after SET_CONFIGURATION succeeds, then let the original
-// SET_CONFIGURATION callback carry on to driver selection. Same request mechanism as the strings.
+// interface and reads the HID report descriptor before polling the interrupt endpoint. Do the
+// same right after SET_CONFIGURATION succeeds, then let the original SET_CONFIGURATION callback
+// carry on to driver selection. Same request mechanism as the strings. It started for VID 2DC8
+// only; it now also runs for every 03/00/00 interface without a hardcoded driver, and the report
+// descriptor is kept in g_descCache for HidAddDevice and the mapper.
 struct HidInitSequence {
 	BYTE* node;      // node being handled, nullptr when idle
 	int step;        // 0 = SET_IDLE, 1 = GET_DESCRIPTOR(report)
 	BYTE iface;
 	WORD reportLength;
+	BYTE* buffer;    // node scratch buffer, or g_hidDescPage for descriptors longer than it
 	BYTE dir;
 	DWORD data, size, length;
 };
 HidInitSequence g_hidInit;
+// Report descriptors longer than the node's scratch buffer (a DualShock 4 sends about 470 bytes)
+// are read here. Part of the plugin image, so no title owns it. The linker won't align a variable
+// to 1 KB, so the buffer is the 1 KB-aligned block inside twice that: it never crosses a page.
+static BYTE g_hidDescRaw[2 * HID_DESC_MAX];
+#define g_hidDescPage ((BYTE*)(((DWORD)g_hidDescRaw + HID_DESC_MAX - 1) & ~(DWORD)(HID_DESC_MAX - 1)))
 
 void UsbHidInitDoneCallback(BYTE* nodePlusC, DWORD status);
 
@@ -1579,13 +1893,13 @@ void SubmitHidInitRequest(BYTE* node) {
 		*(DWORD*)(node + 0x24) = 0;
 		node[0x1C] = 0;
 	} else {
-		// GET_DESCRIPTOR(report) from the interface, into the scratch buffer
+		// GET_DESCRIPTOR(report) from the interface
 		WORD len = g_hidInit.reportLength;
 		node[0x2C] = 0x81; node[0x2D] = 6;
 		node[0x2E] = 0; node[0x2F] = 0x22;
 		node[0x30] = iface; node[0x31] = 0;
 		node[0x32] = (BYTE)(len & 0xFF); node[0x33] = (BYTE)(len >> 8);
-		*(DWORD*)(node + 0x20) = (DWORD)(node + STRING_BUFFER_OFFSET);
+		*(DWORD*)(node + 0x20) = (DWORD)g_hidInit.buffer;
 		*(DWORD*)(node + 0x24) = len;
 		node[0x1C] = 1;
 	}
@@ -1598,16 +1912,30 @@ void UsbHidInitDoneCallback(BYTE* nodePlusC, DWORD status) {
 	BYTE* node = nodePlusC - 0xC;
 	UsbTimerCancel(node + 0x34);
 	const BYTE* info = *(const BYTE**)(node + 4);
-	const BYTE* buf = node + STRING_BUFFER_OFFSET;
-	DbgPrintSync("EINTIM: 8BitDo: %s done status %08X, %d bytes (%02X %02X %02X %02X), removed %02X\n",
-		g_hidInit.step == 0 ? "SET_IDLE" : "report descriptor", status, *(DWORD*)(node + 0x28),
+	const BYTE* buf = g_hidInit.buffer;
+	DWORD got = *(DWORD*)(node + 0x28);
+	DbgPrintSync("EINTIM: HID init: %s done status %08X, %d bytes (%02X %02X %02X %02X), removed %02X\n",
+		g_hidInit.step == 0 ? "SET_IDLE" : "report descriptor", status, got,
 		buf[0], buf[1], buf[2], buf[3], info[8] & 0x80);
 
 	if (info[8] & 0x80) {
-		DbgPrintSync("EINTIM: 8BitDo: device gone during the HID init\n");
+		DbgPrintSync("EINTIM: HID init: device gone during the HID init\n");
 		g_hidInit.node = nullptr;
 		UsbDiscardOriginal(node);
 		return;
+	}
+
+	if (g_hidInit.step == 1 && status == 0 && got > 0) {
+		DWORD vid, pid;
+		NodeIds(node, &vid, &pid);
+		DWORD len = got < g_hidInit.reportLength ? got : g_hidInit.reportLength;
+		g_descCache.valid = 0;
+		g_descCache.vendorId = (uint16_t)vid;
+		g_descCache.productId = (uint16_t)pid;
+		g_descCache.iface = g_hidInit.iface;
+		g_descCache.length = (uint16_t)len;
+		memcpy(g_descCache.data, buf, len);
+		g_descCache.valid = 1;
 	}
 
 	g_hidInit.step++;
@@ -1621,8 +1949,28 @@ void UsbHidInitDoneCallback(BYTE* nodePlusC, DWORD status) {
 	*(DWORD*)(node + 0x24) = g_hidInit.size;
 	*(DWORD*)(node + 0x28) = g_hidInit.length;
 	g_hidInit.node = nullptr;
-	DbgPrintSync("EINTIM: 8BitDo: HID init done, handing over to driver selection\n");
+	DbgPrintSync("EINTIM: HID init: done, handing over to driver selection\n");
 	UsbSetConfigDoneDetour.GetOriginal<usb_reply_func_t>()(nodePlusC, 0);
+}
+
+// First 03/00/00 interface of the configuration copy at node+0x60 that is followed by its HID
+// descriptor with a report descriptor entry. The copy ends where the scratch buffer begins.
+static const BYTE* FindHidInterface(const BYTE* node) {
+	const BYTE* cfg = node + 0x60;
+	int total = cfg[2] | (cfg[3] << 8);
+	if (total > STRING_BUFFER_OFFSET - 0x60)
+		total = STRING_BUFFER_OFFSET - 0x60;
+	for (int off = cfg[0]; off + 18 <= total; off += cfg[off]) {
+		const BYTE* d = cfg + off;
+		if (d[0] < 2)
+			break;
+		if (d[1] == 4 && d[0] == 9 && d[5] == 3 && d[6] == 0 && d[7] == 0) {
+			const BYTE* hid = d + 9;
+			if (hid[1] == 0x21 && hid[0] >= 9 && hid[6] == 0x22)
+				return d;
+		}
+	}
+	return nullptr;
 }
 
 // Called from UsbSetConfigDoneHook. Returns true when it took over (the original runs later).
@@ -1630,26 +1978,36 @@ bool StartHidInit(BYTE* node) {
 	const BYTE* info = *(const BYTE**)(node + 4);
 	if (!g_stringRequestsReady || (g_hidInit.node && g_hidInit.node != node) || (info[8] & 0x80))
 		return false;
-	// configuration copy at node+0x60: config (9) + interface (9) + HID descriptor (9)
-	const BYTE* iface = node + 0x60 + 9;
-	const BYTE* hid = iface + 9;
-	if (iface[1] != 4 || iface[5] != 3 || hid[1] != 0x21) {
-		DbgPrintSync("EINTIM: 8BitDo: no HID descriptor right after the interface (%02X %02X %02X), skipping HID init\n", iface[1], iface[5], hid[1]);
+	const BYTE* iface = FindHidInterface(node);
+	if (!iface) {
+		const BYTE* first = node + 0x60 + 9;
+		DbgPrintSync("EINTIM: HID init: no 03/00/00 interface with a HID descriptor (first: %02X %02X %02X), skipping\n",
+			first[1], first[5], first[9 + 1]);
 		return false;
 	}
+	const BYTE* hid = iface + 9;
 	WORD len = hid[7] | (hid[8] << 8);
-	if (len == 0 || len > STRING_BUFFER_SIZE)
+	BYTE* buffer = node + STRING_BUFFER_OFFSET;
+	if (len == 0) {
 		len = STRING_BUFFER_SIZE;
+	} else if (len > STRING_BUFFER_SIZE) {
+		if (len > HID_DESC_MAX) {
+			DbgPrintSync("EINTIM: HID init: report descriptor of %d bytes doesn't fit, skipping\n", len);
+			return false;
+		}
+		buffer = g_hidDescPage;
+	}
 	UsbTimerCancel(node + 0x34);
 	g_hidInit.node = node;
 	g_hidInit.step = 0;
 	g_hidInit.iface = iface[2];
 	g_hidInit.reportLength = len;
+	g_hidInit.buffer = buffer;
 	g_hidInit.dir = node[0x1C];
 	g_hidInit.data = *(DWORD*)(node + 0x20);
 	g_hidInit.size = *(DWORD*)(node + 0x24);
 	g_hidInit.length = *(DWORD*)(node + 0x28);
-	DbgPrintSync("EINTIM: 8BitDo: SET_IDLE and report descriptor (%d bytes) on interface %d before driver selection\n", len, iface[2]);
+	DbgPrintSync("EINTIM: HID init: SET_IDLE and report descriptor (%d bytes) on interface %d before driver selection\n", len, iface[2]);
 	SubmitHidInitRequest(node);
 	return true;
 }
@@ -1701,9 +2059,13 @@ void UsbDiscardHook(BYTE* node) {
 char g_skipHooks[16] = "";
 bool HookEnabled(char letter) { return strchr(g_skipHooks, letter) == nullptr; }
 
+void ApplyNotifyTimerPatch(); // with the mapper thread, below
+
 bool InitDriver(bool resetUsb) {
 	if (!initFunctionPointers())
 		return false;
+
+	ApplyNotifyTimerPatch();
 
 	if (isKernel17150 && HookEnabled('m')) {
 #if HIDDRIVER_DIAG
@@ -1839,6 +2201,402 @@ bool InitDriver(bool resetUsb) {
 	return true;
 }
 
+// ---- Mapper thread: parses report descriptors, applies saved mappings, runs the assistant ----
+
+// The mappings live in hiddriver.json at the HDD root. Nothing touches the disk until the first
+// controller without a fixed driver shows up: with the thread doing its disk setup at boot,
+// FreeStyle hung right after the first notification (port/logs/teste_mapeador_trava*.txt).
+// DashLaunch's hdd: link is used when it exists (upstream uses HDD: too); otherwise a link of
+// our own, since a system thread resolves drive names under \System??\ (threads-e-contextos.md).
+#define MAPPING_LINK "\\System??\\hidmap:"
+static const char* g_mappingFile = nullptr; // set by EnsureMappingsLoaded
+static bool g_mappingFileBroken = false;    // a file we couldn't read is never overwritten
+volatile LONG g_mapperLoops = 0;            // diag heartbeat: proof the thread is alive
+volatile LONG g_mapperPhase = 0;            // 0 idle, 1 disk setup, 2 parsing, 3 assistant
+
+// Upstream's notification type 80, shown for 1.5 s, once ApplyNotifyTimerPatch made xam accept
+// it; otherwise a stock type, shown for 5 s.
+XNOTIFYQUEUEUI_TYPE g_mapperNotifyType = XNOTIFYUI_TYPE_PREFERRED_REVIEW;
+
+void MapperNotify(const wchar_t* msg) {
+	XNotifyQueueUI(g_mapperNotifyType, XUSER_INDEX_ANY, XNOTIFYUI_PRIORITY_HIGH, (PWCHAR)msg, 0);
+}
+
+// The xam function that sets how long a notification stays up (17150: 0x816AA9C8) shows type 47
+// for 10 s and every other type for 5 s. Upstream turns that into "type 80 for 1.5 s" (17559:
+// 0x816AB7A6/0x816AB7AA); these are the same two instructions on 17150, found from the dump by
+// the signature 2B ? 00 2F 39 ? 27 10 41 9A 00 08 39 ? 13 88 (one match). Type 47 drops to 5 s.
+void ApplyNotifyTimerPatch() {
+	if (!isKernel17150 || !HookEnabled('n'))
+		return;
+	if (Expect(0x816AAA0C, 0x2B0A002F, 0x2B0A0050, "XNotify tipo (cmplwi)") &&
+		Expect(0x816AAA10, 0x39402710, 0x394005DC, "XNotify tempo (li)")) {
+		*(uint16_t*)0x816AAA0E = 80;
+		*(uint16_t*)0x816AAA12 = 1500;
+		FlushCodeRange((void*)0x816AAA0C, 8);
+		g_mapperNotifyType = (XNOTIFYQUEUEUI_TYPE)80;
+		LogReadback("XNotify tipo", (void*)0x816AAA0C);
+		LogReadback("XNotify tempo", (void*)0x816AAA10);
+	}
+}
+
+static void MountMappingDrive() {
+	STRING link, device;
+	RtlInitAnsiString(&link, MAPPING_LINK);
+	RtlInitAnsiString(&device, "\\Device\\Harddisk0\\Partition1");
+	ObCreateSymbolicLink(&link, &device); // fails harmlessly if it already exists
+}
+
+// The parser keeps Logical Minimum/Maximum as raw unsigned data; a negative minimum shows up
+// larger than the maximum (15 81 25 7F = -127..127)
+static int32_t SignedMinimum(uint32_t mn, uint32_t mx) {
+	if (mn <= mx)
+		return (int32_t)mn;
+	if (mn <= 0xFF)
+		return (int8_t)mn;
+	if (mn <= 0xFFFF)
+		return (int16_t)mn;
+	return (int32_t)mn;
+}
+
+static void SetField(HidField& f, const HID_ReportItem_t* item) {
+	f.bitOffset = item->BitOffset;
+	f.bitSize = item->Attributes.BitSize;
+	f.logMin = SignedMinimum(item->Attributes.Logical.Minimum, item->Attributes.Logical.Maximum);
+	f.logMax = (int32_t)item->Attributes.Logical.Maximum;
+	f.present = 1;
+}
+
+// Keep only IN items; the decoder needs nothing else
+bool CALLBACK_HIDParser_FilterHIDReportItem(HID_ReportItem_t* const CurrentItem) {
+	return CurrentItem->ItemType == HID_REPORT_ITEM_In;
+}
+
+// Length up to the last complete item. A descriptor cut short in the middle of an item makes the
+// parser's remaining-size counter wrap and read far past the buffer.
+static int CompleteItemsLength(const uint8_t* d, int len) {
+	int i = 0;
+	while (i < len) {
+		int next;
+		if (d[i] == 0xFE)
+			next = i + 1 < len ? i + 3 + d[i + 1] : len + 1;
+		else
+			next = i + 1 + ((d[i] & 3) == 3 ? 4 : (d[i] & 3));
+		if (next > len)
+			break;
+		i = next;
+	}
+	return i;
+}
+
+// Runs on the mapper thread only (the parser allocates)
+static bool BuildDecoder(const uint8_t* desc, int len, HidDecoder* d) {
+	HID_ReportInfo_t* info = nullptr;
+	uint8_t result = USB_ProcessHIDReport(desc, (uint16_t)len, &info);
+	if (result != HID_PARSE_Successful || !info) {
+		DbgPrint("EINTIM: mapper: report descriptor parse error %d\n", result);
+		if (info)
+			USB_FreeReportInfo(info);
+		return false;
+	}
+	memset(d, 0, sizeof(*d));
+	d->usingReportIds = info->UsingReportIDs ? 1 : 0;
+
+	// the gamepad report: the first one with stick axes, else the first one with buttons
+	bool found = false;
+	for (HID_ReportItem_t* it = info->FirstReportItem; it && !found; it = it->Next) {
+		if (it->Attributes.Usage.Page == 0x01 && it->Attributes.Usage.Usage >= 0x30 && it->Attributes.Usage.Usage <= 0x35) {
+			d->reportId = it->ReportID;
+			found = true;
+		}
+	}
+	for (HID_ReportItem_t* it = info->FirstReportItem; it && !found; it = it->Next) {
+		if (it->Attributes.Usage.Page == 0x09) {
+			d->reportId = it->ReportID;
+			found = true;
+		}
+	}
+
+	int buttons = 0;
+	for (HID_ReportItem_t* it = info->FirstReportItem; it; it = it->Next) {
+		if (it->ItemType != HID_REPORT_ITEM_In || (it->ItemFlags & HID_IOF_CONSTANT) || !(it->ItemFlags & HID_IOF_VARIABLE))
+			continue;
+		if (d->usingReportIds && it->ReportID != d->reportId)
+			continue;
+		uint16_t page = it->Attributes.Usage.Page, usage = it->Attributes.Usage.Usage;
+		if (page == 0x01 && usage >= 0x30 && usage <= 0x35 && !d->gd[usage - 0x30].present)
+			SetField(d->gd[usage - 0x30], it);
+		else if (page == 0x01 && usage == 0x39 && !d->hat.present)
+			SetField(d->hat, it);
+		else if (page == 0x02 && usage == 0xC4 && !d->accel.present)
+			SetField(d->accel, it);
+		else if (page == 0x02 && usage == 0xC5 && !d->brake.present)
+			SetField(d->brake, it);
+		else if (page == 0x09 && usage >= 1 && usage <= HID_MAX_BUTTONS && !d->button[usage - 1].present) {
+			SetField(d->button[usage - 1], it);
+			buttons++;
+		}
+	}
+	USB_FreeReportInfo(info);
+	DbgPrint("EINTIM: mapper: report ID %d (%s), %d buttons, axes %d%d%d%d%d%d, hat %d, accel/brake %d%d\n",
+		d->reportId, d->usingReportIds ? "used" : "none", buttons,
+		d->gd[0].present, d->gd[1].present, d->gd[2].present, d->gd[3].present, d->gd[4].present, d->gd[5].present,
+		d->hat.present, d->accel.present, d->brake.present);
+	return true;
+}
+
+static void ServiceSlot(int index, bool allowAssistant);
+
+// Handles controllers with a saved mapping while the assistant waits on another one
+static void ServicePendingSlots(int skip) {
+	for (int i = 0; i < 4; i++)
+		if (i != skip)
+			ServiceSlot(i, false);
+}
+
+#define WAIT_FOUND 1
+#define WAIT_SKIPPED 0
+#define WAIT_ABORTED -1   // controller removed
+#define WAIT_GAVE_UP -2   // no usable input for a minute
+#define ASSISTANT_IDLE_MS 60000
+
+// Waits for one button to be pressed and released alone. Holding it 3 s skips the step. The
+// prompt is shown again every 6 s while nothing is pressed; a minute without a usable press (a
+// pad that sends no buttons until a vendor init, a receiver whose pad is off, a stuck bit) gives up.
+static int WaitForButton(int index, DWORD gen, const wchar_t* prompt, uint8_t* out) {
+	HidSlot& slot = g_hidSlots[index];
+	MapperNotify(prompt);
+	DWORD start = GetTickCount();
+	DWORD lastPrompt = start;
+	int held = -1;
+	DWORD heldSince = 0;
+	while (true) {
+		LONG sg = slot.stateGen;
+		if (SLOT_GEN(sg) != gen || SLOT_STATE(sg) != MAPPER_MAPPING)
+			return WAIT_ABORTED;
+		ServicePendingSlots(index);
+		if (held < 0 && GetTickCount() - start >= ASSISTANT_IDLE_MS)
+			return WAIT_GAVE_UP;
+
+		uint32_t b = slot.rawButtons;
+		int single = -1;
+		if (b && !(b & (b - 1)))
+			for (single = 0; !(b & (1u << single)); single++)
+				;
+		DWORD now = GetTickCount();
+		if (held < 0) {
+			if (single >= 0) {
+				held = single;
+				heldSince = now;
+			} else if (!b && now - lastPrompt >= 6000) {
+				MapperNotify(prompt);
+				lastPrompt = now;
+			}
+		} else if (!b) {
+			*out = (uint8_t)held;
+			return WAIT_FOUND;
+		} else if (single != held) {
+			held = -1; // a second button joined in: start over
+		} else if (now - heldSince >= 3000) {
+			MapperNotify(L"Pulado");
+			DWORD skipped = GetTickCount();
+			while (slot.rawButtons && SLOT_GEN(slot.stateGen) == gen) {
+				if (GetTickCount() - skipped >= ASSISTANT_IDLE_MS)
+					return WAIT_GAVE_UP; // the button never came back up
+				ServicePendingSlots(index);
+				Sleep(50);
+			}
+			return WAIT_SKIPPED;
+		}
+		Sleep(50);
+	}
+}
+
+// Upstream's order. LT/RT only when the pad has no analog triggers, the d-pad only without a hat.
+static const struct { int target; const wchar_t* prompt; } kAssistantSteps[] = {
+	{ MAP_A, L"Aperte A" },
+	{ MAP_B, L"Aperte B" },
+	{ MAP_X, L"Aperte X" },
+	{ MAP_Y, L"Aperte Y" },
+	{ MAP_LB, L"Aperte LB" },
+	{ MAP_RB, L"Aperte RB" },
+	{ MAP_BACK, L"Aperte Back (Select)" },
+	{ MAP_START, L"Aperte Start" },
+	{ MAP_L3, L"Aperte o anal\x00f3" L"gico esquerdo (L3)" },
+	{ MAP_R3, L"Aperte o anal\x00f3" L"gico direito (R3)" },
+	{ MAP_GUIDE, L"Aperte o bot\x00e3" L"o guia (Home)" },
+	{ MAP_LT, L"Aperte LT" },
+	{ MAP_RT, L"Aperte RT" },
+	{ MAP_DPAD_LEFT, L"Aperte o direcional para a esquerda" },
+	{ MAP_DPAD_RIGHT, L"Aperte o direcional para a direita" },
+	{ MAP_DPAD_UP, L"Aperte o direcional para cima" },
+	{ MAP_DPAD_DOWN, L"Aperte o direcional para baixo" },
+};
+
+// Returns WAIT_FOUND when every step ran, WAIT_ABORTED or WAIT_GAVE_UP otherwise
+static int RunAssistant(int index, DWORD gen, const HidDecoder& d, ControllerMapping* m) {
+	bool analogTriggers = (d.gd[AXIS_RX].present && d.gd[AXIS_RY].present) || (d.accel.present && d.brake.present);
+	static wchar_t intro[128];
+	swprintf(intro, 128, L"Controle novo (%04X:%04X): vamos mapear. Segure um bot\x00e3" L"o 3 s para pular.",
+		m->vendorId, m->productId);
+	MapperNotify(intro);
+	DbgPrint("EINTIM: mapper: assistant for slot %d (%04X:%04X), analog triggers %d\n", index, m->vendorId, m->productId, analogTriggers);
+
+	for (int i = 0; i < (int)(sizeof(kAssistantSteps) / sizeof(kAssistantSteps[0])); i++) {
+		int target = kAssistantSteps[i].target;
+		if ((target == MAP_LT || target == MAP_RT) && analogTriggers)
+			continue;
+		if (target >= MAP_DPAD_LEFT && d.hat.present)
+			continue;
+		uint8_t idx;
+		int r = WaitForButton(index, gen, kAssistantSteps[i].prompt, &idx);
+		if (r == WAIT_ABORTED || r == WAIT_GAVE_UP)
+			return r;
+		if (r == WAIT_FOUND)
+			m->button[target] = idx;
+		DbgPrint("EINTIM: mapper: step %d -> %s %d\n", target, r == WAIT_FOUND ? "button" : "skipped", r == WAIT_FOUND ? idx + 1 : 0);
+	}
+	return WAIT_FOUND;
+}
+
+static void ServiceSlot(int index, bool allowAssistant) {
+	HidSlot& slot = g_hidSlots[index];
+	LONG sg = slot.stateGen;
+	if (SLOT_STATE(sg) != MAPPER_PARSE)
+		return;
+	DWORD gen = SLOT_GEN(sg);
+	__lwsync();
+
+	// copy first; a new add while copying changes stateGen
+	uint8_t desc[HID_DESC_MAX];
+	int len = slot.descriptorLength;
+	if (len > HID_DESC_MAX)
+		len = HID_DESC_MAX;
+	memcpy(desc, slot.descriptor, len);
+	uint16_t vid = slot.vendorId, pid = slot.productId;
+	__lwsync();
+	if (slot.stateGen != sg)
+		return;
+
+	len = CompleteItemsLength(desc, len);
+	HidDecoder d;
+	if (!BuildDecoder(desc, len, &d)) {
+		InterlockedCompareExchange(&slot.stateGen, SLOT_MAKE(gen, MAPPER_FAILED), sg);
+		MapperNotify(L"hiddriver: n\x00e3" L"o consegui ler a descri\x00e7" L"\x00e3" L"o deste controle");
+		return;
+	}
+
+	const ControllerMapping* saved = FindMapping(vid, pid);
+	if (saved) {
+		d.map = *saved;
+		slot.decoder = d;
+		__lwsync();
+		InterlockedCompareExchange(&slot.stateGen, SLOT_MAKE(gen, MAPPER_READY), sg);
+		DbgPrint("EINTIM: mapper: slot %d (%04X:%04X) uses its saved mapping\n", index, vid, pid);
+		return;
+	}
+	if (!allowAssistant)
+		return;
+
+	// unknown controller: the interrupt handler reports held buttons while the assistant runs
+	InitDefaultMapping(&d.map, vid, pid);
+	slot.decoder = d;
+	slot.rawButtons = 0;
+	__lwsync();
+	if (InterlockedCompareExchange(&slot.stateGen, SLOT_MAKE(gen, MAPPER_MAPPING), sg) != sg)
+		return;
+
+	ControllerMapping m = d.map;
+	g_mapperPhase = 3;
+	int r = RunAssistant(index, gen, d, &m);
+	if (r == WAIT_ABORTED) {
+		DbgPrint("EINTIM: mapper: slot %d removed during the assistant\n", index);
+		return;
+	}
+	if (r == WAIT_GAVE_UP) {
+		// stays connected but idle until it is plugged again
+		LONG mappingState = SLOT_MAKE(gen, MAPPER_MAPPING);
+		if (InterlockedCompareExchange(&slot.stateGen, SLOT_MAKE(gen, MAPPER_FAILED), mappingState) == mappingState)
+			MapperNotify(L"Mapeamento cancelado: nenhum bot\x00e3" L"o em 1 minuto. Reconecte o controle para tentar de novo.");
+		DbgPrint("EINTIM: mapper: slot %d gave up (no usable input)\n", index);
+		return;
+	}
+
+	bool saved_ok = false;
+	if (StoreMapping(m) && !g_mappingFileBroken && g_mappingFile)
+		saved_ok = SaveMappingsToFile(g_mappingFile);
+	DbgPrint("EINTIM: mapper: mapping for %04X:%04X %s\n", vid, pid, saved_ok ? "saved" : "NOT saved");
+
+	slot.decoder.map = m; // the interrupt handler doesn't read the mapping while MAPPER_MAPPING
+	__lwsync();
+	LONG mapping = SLOT_MAKE(gen, MAPPER_MAPPING);
+	if (InterlockedCompareExchange(&slot.stateGen, SLOT_MAKE(gen, MAPPER_READY), mapping) == mapping)
+		MapperNotify(saved_ok ? L"Mapeamento salvo. Controle pronto."
+			: L"Controle pronto, mas o mapeamento n\x00e3" L"o foi salvo no HD");
+}
+
+// The thread does nothing for the first 30 s: touching the disk (drive link, hiddriver.json)
+// while the dashboard was still starting hung FreeStyle (port/logs/teste_mapeador_trava*.txt).
+// Controllers plugged at boot get their mapping once the wait is over.
+#define MAPPER_BOOT_DELAY_MS 30000
+
+static void WaitBootDelay() {
+	static bool done = false;
+	if (done)
+		return;
+	g_mapperPhase = 4;
+	Sleep(MAPPER_BOOT_DELAY_MS);
+	done = true;
+	DbgPrint("EINTIM: mapper: boot delay over\n");
+}
+
+// First use of the disk: pick the root, load hiddriver.json. Runs once, on the mapper thread.
+// The file is opened by its device path when XAPI accepts it, so no drive link is created.
+static void EnsureMappingsLoaded() {
+	if (g_mappingFile)
+		return;
+	WaitBootDelay();
+	g_mapperPhase = 1;
+	if (GetFileAttributesA("\\Device\\Harddisk0\\Partition1\\") != INVALID_FILE_ATTRIBUTES) {
+		g_mappingFile = "\\Device\\Harddisk0\\Partition1\\hiddriver.json";
+	} else {
+		MountMappingDrive();
+		g_mappingFile = "hidmap:\\hiddriver.json";
+	}
+	// Only "file not found" means there is no file; any other failure (drive not ready, file held
+	// by the FTP server) must not lead to rewriting it with just the new mappings
+	int loaded = -1;
+	if (GetFileAttributesA(g_mappingFile) != INVALID_FILE_ATTRIBUTES)
+		loaded = LoadMappingsFromFile(g_mappingFile) == 1 ? 1 : -1;
+	else if (GetLastError() == ERROR_FILE_NOT_FOUND)
+		loaded = 0;
+	g_mappingFileBroken = loaded < 0;
+	DbgPrint("EINTIM: mapper: %s %s, %d mappings\n", g_mappingFile,
+		loaded > 0 ? "loaded" : loaded == 0 ? "not found" : "INVALID (kept, new mappings won't be saved)", MappingCount());
+	if (g_mappingFileBroken)
+		MapperNotify(L"hiddriver: hiddriver.json inv\x00e1" L"lido; mapeamentos novos n\x00e3" L"o ser\x00e3" L"o salvos");
+}
+
+unsigned int __stdcall MapperThread(void*) {
+	WaitBootDelay();
+	while (true) {
+		InterlockedIncrement(&g_mapperLoops);
+		bool pending = false;
+		for (int i = 0; i < 4; i++)
+			if (SLOT_STATE(g_hidSlots[i].stateGen) == MAPPER_PARSE)
+				pending = true;
+		if (pending) {
+			EnsureMappingsLoaded();
+			g_mapperPhase = 2;
+			for (int i = 0; i < 4; i++)
+				ServiceSlot(i, true);
+			g_mapperPhase = 0;
+		}
+		Sleep(100);
+	}
+	return 0;
+}
+
 #if HIDDRIVER_DIAG
 // Shows the result once the dashboard is up. Runs on its own thread: in every earlier log,
 // nothing was ever written after XNotifyQueueUI, so it may never return here.
@@ -1854,10 +2612,27 @@ unsigned int __stdcall NotifyThread(void*) {
 unsigned int __stdcall FlushThread(void*) {
 	SetThreadPriority(GetCurrentThread(), THREAD_PRIORITY_HIGHEST);
 	DWORD lastBeat = GetTickCount();
+	LONG lastGet = 0;
+	int healthyBeats = 0;
+	bool guardRemoved = false;
 	while (true) {
 		DWORD now = GetTickCount();
 		if (now - lastBeat >= 5000) {
 			lastBeat = now;
+			// healthy UI: FreeStyle reads input about 100 times a second. A hang shows up as almost
+			// no reads, followed by a spin of thousands per second.
+			LONG get = g_hits[HIT_GETSTATE];
+			LONG delta = get - lastGet;
+			lastGet = get;
+			DbgPrint("EINTIM: mapper thread loops=%d phase=%d\n", g_mapperLoops, g_mapperPhase);
+			if (!guardRemoved) {
+				healthyBeats = (delta >= 100 && delta <= 15000) ? healthyBeats + 1 : 0;
+				if (healthyBeats >= 12) {
+					RemoveGuard();
+					guardRemoved = true;
+					DbgPrint("EINTIM: UI healthy for 60 s, boot guard removed\n");
+				}
+			}
 			DbgPrint("EINTIM: alive t=%u write=%d read=%d hits dev=%d if=%d addc=%d hidadd=%d hidrem=%d inact=%d get=%d set=%d caps=%d reports=%d\n",
 				now / 1000, g_diagWrite, g_diagRead, g_hits[HIT_DEVMATCH], g_hits[HIT_IFMATCH], g_hits[HIT_ADDCOMPLETE],
 				g_hits[HIT_HIDADD], g_hits[HIT_HIDREMOVE], g_hits[HIT_INACTIVITY], g_hits[HIT_GETSTATE],
@@ -1883,8 +2658,9 @@ BOOL APIENTRY DllMain(HANDLE Handle, DWORD Reason, PVOID Reserved)
 		if (IsTrayOpen())
 			return FALSE;
 		g_stage = HIDDRIVER_STAGE;
-		if (g_stage >= 2)
-			InitDriver(g_stage >= 3);
+		ApplyNotifyPatch(); // the mapping assistant talks through notifications
+		if (g_stage >= 2 && InitDriver(g_stage >= 3))
+			MakeThread((LPTHREAD_START_ROUTINE)MapperThread, nullptr);
 		return TRUE;
 #else
 		MountDiagDrives();
@@ -1897,12 +2673,21 @@ BOOL APIENTRY DllMain(HANDLE Handle, DWORD Reason, PVOID Reserved)
 		DbgPrint("EINTIM: HELLO from xbox 360 HID controller driver version 0.5 (port 17150), kernel %d, stage %d, skip \"%s\", log root %s\n",
 			XboxKrnlVersion->Build, g_stage, g_skipHooks, g_logRoot ? g_logRoot : "(none)");
 
+		char guard[64];
+		if (GuardPath(guard, sizeof(guard)) && GetFileAttributesA(guard) != INVALID_FILE_ATTRIBUTES) {
+			DbgPrint("EINTIM: previous boot never reached a healthy UI (" GUARD_FILE " left over). Not starting this time; the next boot starts normally.\n");
+			RemoveGuard();
+			DiagFlush();
+			return FALSE;
+		}
+
 		if (IsTrayOpen() || DiagFileExists(KILL_SWITCH_FILE)) {
 			DbgPrint("EINTIM: Disc tray open or " KILL_SWITCH_FILE " found. Not starting.\n");
 			DiagFlush();
 			return FALSE;
 		}
 
+		CreateGuard();
 		ApplyNotifyPatch();
 
 		if (g_stage == 1) {
@@ -1910,6 +2695,10 @@ BOOL APIENTRY DllMain(HANDLE Handle, DWORD Reason, PVOID Reserved)
 		} else if (InitDriver(g_stage >= 3)) {
 			g_notifyMessage = g_stage == 2 ? L"hiddriver: etapa 2 ativa (ganchos, sem reset USB)"
 				: L"hiddriver: etapa 3 ativa (ganchos + reset USB)";
+			if (HookEnabled('p'))
+				MakeThread((LPTHREAD_START_ROUTINE)MapperThread, nullptr);
+			else
+				DbgPrint("EINTIM: mapper thread not started ('p')\n");
 		} else {
 			g_notifyMessage = L"hiddriver: enderecos nao conferem, nada foi alterado";
 		}
